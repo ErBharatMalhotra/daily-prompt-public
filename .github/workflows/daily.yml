@@ -41,6 +41,8 @@ jobs:
           GROQ_KEYS: ${{ secrets.GROQ_KEYS }}
           OPENROUTER_KEYS: ${{ secrets.OPENROUTER_KEYS }}
           GEMINI_KEYS: ${{ secrets.GEMINI_KEYS }}
+          GROQ_MODEL: ${{ secrets.GROQ_MODEL || 'qwen/qwen3.8-27b' }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           LLM_MAX_CALLS: "40"
