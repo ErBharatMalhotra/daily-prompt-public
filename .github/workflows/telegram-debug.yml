@@ -12,6 +12,11 @@ on:
         type: boolean
         required: false
         default: false
+      show_updates:
+        description: "Print recent updates (bot ko channel mein admin banake channel mein 1 message post karo, phir ye chalao — sahi chat_id yahin dikhega)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -47,6 +52,35 @@ jobs:
           echo "=== getChatMember (bot's own status in that chat) ==="
           curl -s --max-time 15 --get "https://api.telegram.org/bot${TOKEN}/getChatMember" \
             --data-urlencode "chat_id=${CHAT}" --data-urlencode "user_id=$(curl -s "https://api.telegram.org/bot${TOKEN}/getMe" | grep -o '"id":[0-9]*' | head -1 | cut -d: -f2)" | head -c 500; echo
+
+      - name: Discover correct chat_id from recent updates
+        if: ${{ inputs.show_updates }}
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | tr -d '\r\n\t "')"
+          echo "=== getUpdates (recent chats the bot saw) ==="
+          echo "Agar channel mein bot admin hai aur usme koi message post hua hai,\n'channel_post' -> 'chat' -> 'id' mein -100... wala SAHI id milega:"
+          curl -s --max-time 15 "https://api.telegram.org/bot${TOKEN}/getUpdates" \
+            | python3 -c "
+import json,sys
+try:
+    d=json.load(sys.stdin)
+except Exception as e:
+    print('parse failed:',e); raise SystemExit
+if not d.get('ok') or not d.get('result'):
+    print('no updates — channel mein koi message post karo (bot admin hona chahiye) phir dobara chalao')
+else:
+    seen=set()
+    for u in d['result']:
+        for k in ('channel_post','message','my_chat_member'):
+            obj=u.get(k) or {}
+            c=obj.get('chat') or {}
+            cid=c.get('id')
+            if cid and cid not in seen:
+                seen.add(cid)
+                print(f\"chat_id={cid}  type={c.get('type')}  title={c.get('title') or c.get('username') or '-')}\")
+" 
 
       - name: Send test message
         if: ${{ inputs.send_test }}
