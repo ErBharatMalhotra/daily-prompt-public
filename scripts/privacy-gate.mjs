@@ -32,9 +32,19 @@ for (const f of FORBIDDEN_FILES) {
   }
 }
 
-// 2. no core/ directory committed (it is cloned at runtime only)
-if (fs.existsSync(path.join(ROOT, "core"))) {
-  problems.push("core/ directory committed — private code leaked");
+// 2. no core/ directory COMMITTED (it is cloned at runtime and deleted before CI);
+//    check git index, not the working tree, so a live clone never trips the gate
+const { execSync } = await import("node:child_process");
+try {
+  const tracked = execSync("git ls-files core", { cwd: ROOT, encoding: "utf8" }).trim();
+  if (tracked) {
+    problems.push("core/ directory committed — private code leaked");
+  }
+} catch {
+  // not a git repo (local run) — working tree check below
+  if (fs.existsSync(path.join(ROOT, "core"))) {
+    problems.push("core/ directory committed — private code leaked");
+  }
 }
 
 // 3. secret-shaped strings in text files

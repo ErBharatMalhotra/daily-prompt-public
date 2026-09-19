@@ -50,6 +50,9 @@ jobs:
           node engine/scrape.js
           node engine/run.js
           node site/build.js
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            echo "chat_id shape: $(printf '%s' "$TELEGRAM_CHAT_ID" | head -c 4)... (len $(printf '%s' "$TELEGRAM_CHAT_ID" | wc -c))"
+          fi
           node engine/digest.js
 
       - name: Keepalive commit to core (editions + genomes + quarantine)
