@@ -78,14 +78,5 @@ jobs:
           git diff --cached --quiet || git commit -m "site: $(date -u +%F-%H%M)"
           git push origin main
 
-      - name: Deploy to Cloudflare Pages
-        if: success()
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "skipping Cloudflare deploy (secrets not set yet) — site still updates in the repo"
-            exit 0
-          fi
-          npx --yes wrangler@4 pages deploy site/dist --project-name daily-prompt --branch main --commit-dirty=true
+      # Cloudflare Pages is git-connected to this repo (Settings -> Build -> Git
+      # repository in the dashboard): pushing site/dist above auto-deploys the site.
