@@ -52,7 +52,7 @@ jobs:
           TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
           git config user.name "newsroom-bot"
           git config user.email "noreply@github.com"
-          git add data/ site/dist/
+          git add -f data/ site/dist/
           git diff --cached --quiet || git commit -m "evolve: weekly mutation $(date -u +%F) [skip ci]"
           git push "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" HEAD:main
 
