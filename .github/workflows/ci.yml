@@ -28,7 +28,8 @@ jobs:
           CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
         run: |
           rm -rf core
-          git clone --depth 1 "https://${CORE_TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
+          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
 
       - name: Sanity suite
         working-directory: core

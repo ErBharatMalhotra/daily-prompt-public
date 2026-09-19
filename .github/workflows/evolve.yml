@@ -28,7 +28,8 @@ jobs:
           CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
         run: |
           rm -rf core
-          git clone --depth 1 "https://${CORE_TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
+          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
 
       - name: Run evolution (weakest journalist inherits winner habits)
         working-directory: core
@@ -48,11 +49,12 @@ jobs:
           CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
         run: |
           cd core
+          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
           git config user.name "newsroom-bot"
           git config user.email "noreply@github.com"
           git add data/ site/dist/
           git diff --cached --quiet || git commit -m "evolve: weekly mutation $(date -u +%F) [skip ci]"
-          git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
+          git push "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" HEAD:main
 
       - name: Push rebuilt site to public repo
         if: success()
