@@ -5,3 +5,4 @@ core/
 node_modules/
 Thumbs.db
 .DS_Store
+site/dist/.wrangler/
