@@ -1,0 +1,62 @@
+name: Telegram Debug
+
+on:
+  workflow_dispatch:
+    inputs:
+      chat_id:
+        description: "Optional chat_id to test (e.g. -1001234567890). Empty = use TELEGRAM_CHAT_ID secret"
+        required: false
+        default: ""
+      send_test:
+        description: "Also send a test message"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-debug
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Diagnose bot + chat
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          SECRET_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INPUT_CHAT: ${{ inputs.chat_id }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | tr -d '\r\n\t \"')"
+          SECRET_CHAT="$(printf '%s' "$SECRET_CHAT" | tr -d '\r\n\t \"')"
+          CHAT="${INPUT_CHAT:-$SECRET_CHAT}"
+          CHAT="$(printf '%s' "$CHAT" | tr -d '\r\n\t \"')"
+          echo "testing chat_id: '$CHAT' (len $(printf '%s' "$CHAT" | wc -c))"
+          if [ -z "$TOKEN" ]; then echo "!! TELEGRAM_BOT_TOKEN secret missing"; exit 1; fi
+          if [ -z "$CHAT" ]; then echo "!! no chat_id (secret or input)"; exit 1; fi
+
+          echo "=== getMe (bot identity) ==="
+          curl -s --max-time 15 "https://api.telegram.org/bot${TOKEN}/getMe" | head -c 400; echo
+
+          echo "=== getChat (is chat_id valid & visible to bot?) ==="
+          curl -s --max-time 15 "https://api.telegram.org/bot${TOKEN}/getChat?chat_id=${CHAT}" | head -c 500; echo
+
+          echo "=== getChatMember (bot's own status in that chat) ==="
+          curl -s --max-time 15 --get "https://api.telegram.org/bot${TOKEN}/getChatMember" \
+            --data-urlencode "chat_id=${CHAT}" --data-urlencode "user_id=$(curl -s "https://api.telegram.org/bot${TOKEN}/getMe" | grep -o '"id":[0-9]*' | head -1 | cut -d: -f2)" | head -c 500; echo
+
+      - name: Send test message
+        if: ${{ inputs.send_test }}
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          SECRET_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INPUT_CHAT: ${{ inputs.chat_id }}
+        run: |
+          TOKEN="$(printf '%s' "$TOKEN" | tr -d '\r\n\t \"')"
+          CHAT="${INPUT_CHAT:-$(printf '%s' "$SECRET_CHAT" | tr -d '\r\n\t \"')}"
+          curl -s --max-time 15 -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"${CHAT}\",\"text\":\"✅ test from The Daily Prompt newsroom ($(date -u +%H:%M:%S) UTC)\"}" | head -c 500; echo
