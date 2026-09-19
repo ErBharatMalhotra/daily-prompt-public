@@ -35,13 +35,20 @@ inside the job.
 
 ## 4. Cloudflare Pages (site hosting)
 
-1. Cloudflare Dashboard → Workers & Pages → Create → Pages → **Connect to Git**
-2. Pick the **public** repo, framework: **None**, build command: *(empty)*,
-   output directory: `site/dist`
-3. Deploy. Every workflow push to `site/dist/` auto-redeploys the newspaper.
+Live URL: **https://daily-prompt-do3.pages.dev** (project `daily-prompt`, created once
+via `wrangler pages project create daily-prompt --production-branch main`).
 
-(GitHub Pages alternative: Settings → Pages → deploy from `main` branch,
-folder `/site/dist`.)
+Daily/evolve workflows auto-deploy after every successful run. One-time secret
+setup for that:
+
+1. Cloudflare Dashboard → My Profile → **API Tokens** → Create Token →
+   template **"Cloudflare Pages — Edit"** (include account `bc0070d74ae0fb14e7767bddbd49575b`)
+2. `gh secret set CLOUDFLARE_API_TOKEN -R ErBharatMalhotra/daily-prompt-public`
+3. `CLOUDFLARE_ACCOUNT_ID` is already set. Until the token exists the step
+   prints a skip note — the repo still gets the new edition either way.
+
+Manual deploy alternative (no token needed):
+`cd newsroom-public/site/dist && npx wrangler pages deploy . --project-name daily-prompt`
 
 ## 5. First run
 
