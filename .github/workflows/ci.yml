@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "site/dist/**"
+      - "**.md"
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone private core
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          rm -rf core
+          git clone --depth 1 "https://${CORE_TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+
+      - name: Sanity suite
+        working-directory: core
+        run: node tests/sanity.test.js
+
+      - name: Privacy gate (core must not leak into public repo)
+        run: node scripts/privacy-gate.mjs

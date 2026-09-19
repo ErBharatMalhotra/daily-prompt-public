@@ -1,0 +1,68 @@
+name: Weekly Evolution
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Monday 08:30 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-evolution
+  cancel-in-progress: false
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone private core
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          rm -rf core
+          git clone --depth 1 "https://${CORE_TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+
+      - name: Run evolution (weakest journalist inherits winner habits)
+        working-directory: core
+        env:
+          GROQ_KEYS: ${{ secrets.GROQ_KEYS }}
+          OPENROUTER_KEYS: ${{ secrets.OPENROUTER_KEYS }}
+          GEMINI_KEYS: ${{ secrets.GEMINI_KEYS }}
+        run: node engine/evolve.js
+
+      - name: Rebuild site (leaderboard reflects new genome versions)
+        working-directory: core
+        run: node site/build.js
+
+      - name: Commit evolution report + genomes to core
+        if: success()
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          cd core
+          git config user.name "newsroom-bot"
+          git config user.email "noreply@github.com"
+          git add data/ site/dist/
+          git diff --cached --quiet || git commit -m "evolve: weekly mutation $(date -u +%F) [skip ci]"
+          git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
+
+      - name: Push rebuilt site to public repo
+        if: success()
+        run: |
+          git config user.name "newsroom-bot"
+          git config user.email "noreply@github.com"
+          git pull --rebase origin main || true
+          rm -rf site/dist
+          mkdir -p site/dist
+          cp -r "$GITHUB_WORKSPACE/core/site/dist/." site/dist/
+          git add site/dist
+          git diff --cached --quiet || git commit -m "site: leaderboard update $(date -u +%F)"
+          git push origin main

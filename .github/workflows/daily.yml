@@ -1,0 +1,75 @@
+name: Daily Edition
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 06:00 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone private core
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          rm -rf core
+          git clone --depth 1 "https://${CORE_TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+
+      - name: Run tests (sanity gate)
+        working-directory: core
+        run: node tests/sanity.test.js
+
+      - name: Run pipeline (scrape -> select -> write -> edit -> gate)
+        working-directory: core
+        env:
+          GROQ_KEYS: ${{ secrets.GROQ_KEYS }}
+          OPENROUTER_KEYS: ${{ secrets.OPENROUTER_KEYS }}
+          GEMINI_KEYS: ${{ secrets.GEMINI_KEYS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LLM_MAX_CALLS: "40"
+        run: |
+          node engine/scrape.js
+          node engine/run.js
+          node site/build.js
+          node engine/digest.js
+
+      - name: Keepalive commit to core (editions + genomes + quarantine)
+        if: success()
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          cd core
+          git config user.name "newsroom-bot"
+          git config user.email "noreply@github.com"
+          git add data/ site/dist/
+          git diff --cached --quiet || git commit -m "edition: $(date -u +%F-%H%M)"
+          git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
+
+      - name: Push built site to public repo
+        if: success()
+        run: |
+          git config user.name "newsroom-bot"
+          git config user.email "noreply@github.com"
+          git pull --rebase origin main || true
+          rm -rf site/dist
+          mkdir -p site/dist
+          cp -r "$GITHUB_WORKSPACE/core/site/dist/." site/dist/
+          git add site/dist
+          git diff --cached --quiet || git commit -m "site: $(date -u +%F-%H%M)"
+          git push origin main
