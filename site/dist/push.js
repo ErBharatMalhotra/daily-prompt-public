@@ -72,10 +72,10 @@
 
   function render(btn, state) {
     if (state === "on") {
-      btn.textContent = "🔔 Alerts: on";
+      btn.textContent = "Alerts: on";
       btn.setAttribute("aria-pressed", "true");
     } else {
-      btn.textContent = "🔔 Alerts";
+      btn.textContent = "Alerts";
       btn.setAttribute("aria-pressed", "false");
     }
   }
@@ -113,7 +113,7 @@
     var btn = document.createElement("a");
     btn.href = "#";
     btn.id = "tdp-alerts";
-    btn.textContent = "🔔 Alerts";
+    btn.textContent = "Alerts";
     btn.addEventListener("click", function (e) { e.preventDefault(); });
     nav.appendChild(document.createTextNode(" · "));
     nav.appendChild(btn);

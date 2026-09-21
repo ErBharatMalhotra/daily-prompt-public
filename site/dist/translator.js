@@ -125,7 +125,7 @@
           })
           .catch(function () {
             btn.disabled = false;
-            btn.textContent = "⚠️ failed";
+            btn.textContent = "unavailable";
           });
       });
     });
@@ -168,11 +168,11 @@
           })
           .catch(function () {
             state.busy = false;
-            say("⚠️ Browser translator is model download nahi kar paya — " + hintHtml());
+            say("Browser translator model download nahi kar paya — " + hintHtml());
           });
       }, true);
     } else {
-      say("🌐 " + hintHtml());
+      say(hintHtml());
     }
 
     // 12 seconds baad chhota kar do (sirf ✕ bachta hai) — reading me disturb na kare

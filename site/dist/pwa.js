@@ -67,7 +67,7 @@
   function showIOSBanner() {
     if (document.getElementById("tdp-install-bar")) return;
     makeBanner(
-      "<b>Install on iPhone</b><br>Share button ⇧ → <b>Add to Home Screen</b> → app ban jayega.",
+      "<b>Install on iPhone</b><br>Tap the Share button, then <b>Add to Home Screen</b>.",
       {
         yes: function () {
           set(DISMISS_KEY, String(Date.now()));

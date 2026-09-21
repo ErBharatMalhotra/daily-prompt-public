@@ -78,7 +78,7 @@
     if (!followed.length) return;
     var wrap = document.createElement("div");
     wrap.className = "yournews";
-    var html = '<h2 class="sec">⭐ Your news</h2><div class="cols">';
+    var html = '<h2 class="sec">Your news</h2><div class="cols">';
     followed.forEach(function (beat) {
       var col = document.querySelector('.col h3 a[href="/category/' + beat + '.html"]');
       var colBox = col && col.closest(".col");
@@ -159,7 +159,7 @@
       save.addEventListener("click", function (e) {
         e.preventDefault();
         var nowSaved = saveToggle(save.getAttribute("data-id"), title);
-        save.textContent = nowSaved ? "✓ Saved" : "🔖 Save for later";
+        save.textContent = nowSaved ? "✓ Saved" : "Save for later";
       });
     // reflect initial saved state
     if (save && savedList().some(function (s) { return s.href === save.getAttribute("data-id"); }))
@@ -174,7 +174,7 @@
     sec.className = "yournews";
     sec.id = "tdp-saved";
     sec.innerHTML =
-      '<h2 class="sec">🔖 Saved for later</h2><ul class="savedlist">' +
+      '<h2 class="sec">Saved for later</h2><ul class="savedlist">' +
       list.slice(0, 8).map(function (s) {
         return '<li><a href="/' + s.href.replace(/^\//, "") + '">' + s.title.replace(/[<>&]/g, "") + "</a></li>";
       }).join("") +
@@ -200,7 +200,7 @@
     var btn = document.getElementById("tdp-theme");
     if (!btn) return;
     function label() {
-      btn.textContent = document.documentElement.getAttribute("data-theme") === "light" ? "🌙" : "☀️";
+      btn.textContent = document.documentElement.getAttribute("data-theme") === "light" ? "Dark" : "Light";
     }
     btn.addEventListener("click", function () {
       var light = document.documentElement.getAttribute("data-theme") === "light";
