@@ -9,8 +9,13 @@
 <meta name="theme-color" content="#8b0000">
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
 <link rel="icon" type="image/png" href="/icons/icon-192.png">
 <script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
 <script src="/translator.js" defer></script>
 <script src="/personalize.js" defer></script>
 <script>
@@ -101,7 +106,7 @@ function googleTranslateElementInit() {
      <h3>Latest run</h3>
      <table><tr><td>Edition date</td><td>2026-09-21</td></tr>
        <tr><td>Articles published</td><td>0 / 10</td></tr>
-       <tr><td>Quarantined (fact-gate)</td><td>14</td></tr>
+       <tr><td>Quarantined (fact-gate)</td><td>15</td></tr>
        <tr><td>LLM calls used</td><td>14 of 40 budget</td></tr>
        <tr><td>Provider usage</td><td>single provider</td></tr>
        <tr><td>Pipeline duration</td><td>33s</td></tr>
