@@ -135,7 +135,9 @@
   function init() {
     if (store(STORAGE_KEY)) return;
     var reader = detectReaderLang();
-    if (reader === "en") return; // English readers need nothing
+    // NOTE: we show the bar for ALL locales, including English — an en-IN
+    // reader is often happy to read in Hindi. The bar is dismissible and
+    // auto-minimises, so it never blocks reading.
 
     var langs = [
       { code: "hi", label: "हिंदी" },
@@ -148,8 +150,10 @@
     // reader ki apni bhasha sabse aage
     langs.sort(function (a, b) { return (b.code === reader ? 1 : 0) - (a.code === reader ? 1 : 0); });
 
+    var lead = reader === "en" ? "Read in your language: " : "Translate: ";
+
     if (isChromeTranslatorAvailable()) {
-      say(chromeButtons(langs));
+      say(lead + chromeButtons(langs));
       var bar = document.getElementById("tdp-translate-bar");
       wireChromeButtons(bar, langs);
       // pehla click translator instance banata hai (download ho sakta hai, isliye busy state)
