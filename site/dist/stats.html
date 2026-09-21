@@ -6,6 +6,12 @@
 <meta property="og:title" content="Newsroom Stats — The Daily Prompt">
 <meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
 <meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+<meta property="og:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+
 <meta name="theme-color" content="#8b0000">
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
@@ -103,6 +109,10 @@ function googleTranslateElementInit() {
   .gtr .goog-te-gadget-simple { border:1px solid #ccc !important; border-radius:6px; padding:4px 8px !important; background:#fff; }
   .goog-te-banner-frame { display:none !important; }
   body { top:0 !important; }
+  .sharebar { margin:14px 0 4px; font-size:14px; background:#fff; border:1px solid #ddd; padding:10px 12px; }
+  .sharebar a { text-decoration:none; }
+  .sharebar a:hover { color:var(--accent); }
+  .savedlist li { padding:6px 0; border-bottom:1px dotted #ccc; font-size:15px; }
   #q { width:100%; padding:10px; font-size:16px; font-family:inherit; }
   .hit { border-bottom:1px solid #ddd; padding:10px 0; }
   .hit small { color:#666; }
@@ -110,7 +120,7 @@ function googleTranslateElementInit() {
      <h3>Latest run</h3>
      <table><tr><td>Edition date</td><td>2026-09-21</td></tr>
        <tr><td>Articles published</td><td>0 / 10</td></tr>
-       <tr><td>Quarantined (fact-gate)</td><td>15</td></tr>
+       <tr><td>Quarantined (fact-gate)</td><td>17</td></tr>
        <tr><td>LLM calls used</td><td>14 of 40 budget</td></tr>
        <tr><td>Provider usage</td><td>single provider</td></tr>
        <tr><td>Pipeline duration</td><td>33s</td></tr>
@@ -118,5 +128,5 @@ function googleTranslateElementInit() {
      <h3>Journalist leaderboard</h3>
      <table><tr><th>Journalist</th><th>Genome</th><th>Avg editor score</th><th>Editions</th></tr><tr><td>tech</td><td>v1</td><td>10.0</td><td>1 editions</td></tr><tr><td>business</td><td>v1</td><td>5.6</td><td>5 editions</td></tr><tr><td>sports</td><td>v1</td><td>6.8</td><td>5 editions</td></tr><tr><td>explainer</td><td>v1</td><td>-</td><td>0 editions</td></tr><tr><td>national</td><td>v1</td><td>6.6</td><td>13 editions</td></tr><tr><td>world</td><td>v1</td><td>9.5</td><td>2 editions</td></tr><tr><td>science</td><td>v1</td><td>-</td><td>0 editions</td></tr><tr><td>entertainment</td><td>v1</td><td>9.0</td><td>1 editions · A/B running</td></tr><tr><td>health</td><td>v1</td><td>-</td><td>0 editions</td></tr></table>
      <p class="src">Run metadata is written by the pipeline (<code>run_meta.json</code>) after every edition; this page is rebuilt with it.</p>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/feed.xml">RSS</a></footer>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

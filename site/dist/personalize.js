@@ -116,12 +116,90 @@
     });
   }
 
+  /* ---------------- 3. share buttons + read-later bookmarks ---------------- */
+
+  var SAVED_KEY = "tdp.saved";
+
+  function savedList() {
+    try { return JSON.parse(localStorage.getItem(SAVED_KEY) || "[]"); } catch (e) { return []; }
+  }
+
+  function saveToggle(href, title) {
+    var list = savedList();
+    var i = list.findIndex(function (x) { return x.href === href; });
+    if (i >= 0) list.splice(i, 1);
+    else list.unshift({ href: href, title: title, at: Date.now() });
+    try { localStorage.setItem(SAVED_KEY, JSON.stringify(list.slice(0, 100))); } catch (e) {}
+    return i < 0; // true = now saved
+  }
+
+  function wireShareAndSave() {
+    var bar = document.querySelector(".sharebar");
+    if (!bar) return;
+    var url = location.origin + "/" + (bar.getAttribute("data-href") || "").replace(/^\//, "");
+    var title = bar.getAttribute("data-title") || document.title;
+    var enc = encodeURIComponent(url);
+    var wa = bar.querySelector(".sh-wa");
+    var tg = bar.querySelector(".sh-tg");
+    var x = bar.querySelector(".sh-x");
+    var copy = bar.querySelector(".sh-copy");
+    var save = bar.querySelector(".sh-save");
+    if (wa) wa.href = "https://wa.me/?text=" + encodeURIComponent(title + " — " + url);
+    if (tg) tg.href = "https://t.me/share/url?url=" + enc + "&text=" + encodeURIComponent(title);
+    if (x) x.href = "https://twitter.com/intent/tweet?url=" + enc + "&text=" + encodeURIComponent(title);
+    if (copy)
+      copy.addEventListener("click", function (e) {
+        e.preventDefault();
+        (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
+          copy.textContent = "Copied!";
+          setTimeout(function () { copy.textContent = "Copy link"; }, 1500);
+        }).catch(function () {});
+      });
+    if (save)
+      save.addEventListener("click", function (e) {
+        e.preventDefault();
+        var nowSaved = saveToggle(save.getAttribute("data-id"), title);
+        save.textContent = nowSaved ? "✓ Saved" : "🔖 Save for later";
+      });
+    // reflect initial saved state
+    if (save && savedList().some(function (s) { return s.href === save.getAttribute("data-id"); }))
+      save.textContent = "✓ Saved";
+  }
+
+  function buildSavedBlock() {
+    var list = savedList();
+    var wrap = document.querySelector(".wrap");
+    if (!wrap || !list.length) return;
+    var sec = document.createElement("div");
+    sec.className = "yournews";
+    sec.id = "tdp-saved";
+    sec.innerHTML =
+      '<h2 class="sec">🔖 Saved for later</h2><ul class="savedlist">' +
+      list.slice(0, 8).map(function (s) {
+        return '<li><a href="/' + s.href.replace(/^\//, "") + '">' + s.title.replace(/[<>&]/g, "") + "</a></li>";
+      }).join("") +
+      '</ul><p class="src"><a href="#" id="tdp-saved-clear">clear saved stories</a></p>';
+    var hero = wrap.querySelector(".story.hero");
+    if (hero && hero.nextSibling) wrap.insertBefore(sec, hero.nextSibling);
+    else if (hero) hero.after(sec);
+    else wrap.prepend(sec);
+    var clear = sec.querySelector("#tdp-saved-clear");
+    if (clear)
+      clear.addEventListener("click", function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(SAVED_KEY); } catch (err) {}
+        sec.remove();
+      });
+  }
+
   /* ---------------- boot ---------------- */
   function init() {
     rememberLanguage();
     applySavedLanguage();
     addFollowButtons();
     buildYourNews();
+    wireShareAndSave();
+    buildSavedBlock();
     var s = document.createElement("style");
     s.textContent =
       ".followbtn{margin-left:8px;font-size:10px;padding:2px 7px;border-radius:8px;border:1px solid #999;background:#fff;cursor:pointer;vertical-align:middle}" +

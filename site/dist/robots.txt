@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daily-prompt-do3.pages.dev/sitemap.xml
