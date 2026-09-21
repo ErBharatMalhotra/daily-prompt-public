@@ -1,0 +1,54 @@
+name: Push Test
+
+# Manual: fires a test web-push to every subscriber and prints the wave stats.
+# Use it after enabling Alerts on a device to confirm end-to-end delivery.
+
+on:
+  workflow_dispatch:
+    inputs:
+      headline:
+        description: "Notification headline"
+        default: "Test alert from the newsroom"
+      body:
+        description: "Notification body"
+        default: "If you can read this, web push works end to end."
+
+permissions:
+  contents: read
+
+concurrency:
+  group: push-test
+  cancel-in-progress: false
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone private core
+        env:
+          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
+        run: |
+          rm -rf core
+          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\\"')"
+          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+
+      - name: Send test push
+        working-directory: core
+        env:
+          SITE_BASE: ${{ secrets.SITE_BASE || 'https://daily-prompt-do3.pages.dev' }}
+          PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
+          VAPID_PUBLIC_B64URL: ${{ secrets.VAPID_PUBLIC_B64URL }}
+          VAPID_PRIVATE_JWK: ${{ secrets.VAPID_PRIVATE_JWK }}
+        run: |
+          npm install --no-save web-push >/dev/null 2>&1
+          node scripts/push-notify.mjs count
+          node scripts/push-notify.mjs send --stdin <<EOF
+          {"headline":"${{ inputs.headline }}","body":"${{ inputs.body }}","url":"/?source=push-test"}
+          EOF

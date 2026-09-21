@@ -91,6 +91,23 @@ jobs:
           git diff --cached --quiet || git commit -m "site: $(date -u +%F-%H%M)"
           git push origin main
 
+      # Web push: alert PWA subscribers about the new edition (free, no FCM
+      # project needed — standard VAPID web push). Non-fatal by design.
+      - name: Web push (new edition alert)
+        if: success()
+        working-directory: core
+        env:
+          SITE_BASE: ${{ secrets.SITE_BASE || 'https://daily-prompt-do3.pages.dev' }}
+          PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
+          VAPID_PUBLIC_B64URL: ${{ secrets.VAPID_PUBLIC_B64URL }}
+          VAPID_PRIVATE_JWK: ${{ secrets.VAPID_PRIVATE_JWK }}
+        run: |
+          npm install --no-save web-push >/dev/null 2>&1
+          HEADLINE=$(node -e "const t=require('./data/today.json');const a=(t.articles||[]).find(x=>x.published);if(a)console.log(a.headline.replace(/\\n/g,' '))")
+          COUNT=$(node -e "const t=require('./data/today.json');console.log((t.articles||[]).filter(x=>x.published).length)")
+          node scripts/push-notify.mjs send "{\"headline\":\"$HEADLINE\",\"body\":\"Today's edition: $COUNT stories — written, edited and fact-gated by the AI newsroom.\",\"url\":\"/?source=push\"}" || echo "[push] non-fatal"
+        continue-on-error: true
+
       # Cloudflare Pages is git-connected to this repo (Settings -> Build -> Git
       # repository in the dashboard): pushing site/dist above auto-deploys the site.
 

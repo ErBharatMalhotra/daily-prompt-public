@@ -1,18 +1,50 @@
 {
+  "id": "/?source=pwa",
   "name": "The Daily Prompt — Autonomous AI Newspaper",
   "short_name": "Daily Prompt",
   "description": "An autonomous AI newspaper: scraped, written, edited, fact-gated and published daily by evolving AI journalists.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
   "background_color": "#f7f3e9",
   "theme_color": "#8b0000",
   "lang": "en",
+  "dir": "ltr",
   "categories": ["news", "magazines"],
   "icons": [
     { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
     { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "हिंदी संस्करण (Hindi edition)",
+      "short_name": "हिंदी",
+      "description": "Read today's edition in Hindi",
+      "url": "/hi/?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Search all stories",
+      "short_name": "Search",
+      "description": "Search every published story",
+      "url": "/search.html?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Newsroom stats",
+      "short_name": "Stats",
+      "description": "Live pipeline telemetry — runs, providers, fact-gate",
+      "url": "/stats.html?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": { "title": "title", "text": "text", "url": "url" }
+  }
 }

@@ -1,10 +1,12 @@
-/* service worker — offline support + instant loads for The Daily Prompt.
+/* service worker — offline support + web push for The Daily Prompt.
  * Strategy:
  *   - navigation requests: network-first, cache fallback (offline reading)
- *   - static assets (icons, css-like): stale-while-revalidate
+ *   - static assets: stale-while-revalidate
+ *   - push events: notification with the new edition / article, click -> open
+ *   - onactivate: clear legacy caches from the pre-push version string
  * Version bump invalidates old caches.
  */
-const VERSION = "tdp-v1";
+const VERSION = "tdp-v2-push";
 const CORE = ["/", "/index.html", "/manifest.json", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -13,7 +15,14 @@ self.addEventListener("install", (e) => {
 
 self.addEventListener("activate", (e) => {
   e.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k)))).then(() => self.clients.claim())
+    (async () => {
+      const keys = await caches.keys();
+      await Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k)));
+      if (self.registration.navigationPreload) {
+        try { await self.registration.navigationPreload.disable(); } catch {}
+      }
+      await self.clients.claim();
+    })()
   );
 });
 
@@ -47,5 +56,71 @@ self.addEventListener("fetch", (e) => {
           return res;
         })
     )
+  );
+});
+
+/* ---------------- web push ---------------- */
+
+function notifyTitle(payload) {
+  const n = payload.headline ? String(payload.headline) : "New edition is out";
+  return n.length > 110 ? n.slice(0, 107) + "…" : n;
+}
+
+self.addEventListener("push", (e) => {
+  let payload = {};
+  try { payload = e.data ? e.data.json() : {}; } catch { payload = { headline: e.data ? e.data.text() : "" }; }
+  const title = `${payload.beat ? payload.beat.toUpperCase() + " · " : ""}${notifyTitle(payload)}`;
+  e.waitUntil(
+    self.registration.showNotification(title, {
+      body: payload.body || "Today's edition was written, edited and fact-gated by the AI newsroom.",
+      icon: payload.icon || "/icons/icon-192.png",
+      badge: "/icons/icon-192.png",
+      tag: payload.tag || "daily-prompt-edition",
+      renotify: false,
+      data: { url: payload.url || "/?source=push" },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (e) => {
+  e.notification.close();
+  const target = (e.notification.data && e.notification.data.url) || "/";
+  e.waitUntil(
+    (async () => {
+      const clientList = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+      for (const client of clientList) {
+        try {
+          const u = new URL(client.url);
+          if (u.origin === self.location.origin) {
+            await client.focus();
+            if (u.pathname + u.search !== target) client.navigate && client.navigate(target);
+            return;
+          }
+        } catch {}
+      }
+      await self.clients.openWindow(target);
+    })()
+  );
+});
+
+self.addEventListener("notificationclose", (e) => {
+  // reserved for future read-rate telemetry; intentionally no-op
+});
+
+self.addEventListener("pushsubscriptionchange", (e) => {
+  // The old subscription is dead; the browser may give a new one. Report the
+  // dead endpoint so the nightly prune can clean the KV record.
+  e.waitUntil(
+    (async () => {
+      try {
+        const old = e.oldSubscription && e.oldSubscription.endpoint;
+        if (!old) return;
+        await fetch("/api/push/subscribe", {
+          method: "DELETE",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ endpoint: old, dead: true }),
+        }).catch(() => {});
+      } catch {}
+    })()
   );
 });

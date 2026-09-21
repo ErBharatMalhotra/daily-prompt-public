@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shared link — The Daily Prompt</title>
+<style>
+  body { font-family: Georgia, serif; background: #f7f3e9; color: #111; margin: 0; }
+  .wrap { max-width: 620px; margin: 40px auto; padding: 0 16px; }
+  h1 { font-size: 28px; } a { color: #8b0000; }
+  .card { background: #fff; border: 1px solid #ddd; padding: 18px; margin: 16px 0; word-break: break-word; }
+  small { color: #666; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔗 Shared into The Daily Prompt</h1>
+  <p>You shared this with the newspaper app:</p>
+  <div class="card" id="shared"><small>Reading…</small></div>
+  <p><a href="/">← Back to today's edition</a> · <a href="/search.html">Search the archive</a></p>
+</div>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var url = q.get("url") || "", title = q.get("title") || "", text = q.get("text") || "";
+  var box = document.getElementById("shared");
+  if (!url && !title && !text) { box.innerHTML = "<small>Nothing shared.</small>"; return; }
+  var html = "";
+  if (title) html += "<b>" + title.replace(/[<>&]/g, "") + "</b><br>";
+  if (text) html += text.replace(/[<>&]/g, "") + "<br>";
+  if (url) html += '<a href="' + url + '" rel="noopener">' + url + "</a>";
+  box.innerHTML = html || "<small>Empty share.</small>";
+})();
+</script>
+</body>
+</html>
