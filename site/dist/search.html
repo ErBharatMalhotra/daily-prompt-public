@@ -17,7 +17,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>
   :root { --ink:#111; --paper:#f7f3e9; --accent:#8b0000; }
@@ -91,7 +91,7 @@ function googleTranslateElementInit() {
   #q { width:100%; padding:10px; font-size:16px; font-family:inherit; }
   .hit { border-bottom:1px solid #ddd; padding:10px 0; }
   .hit small { color:#666; }
-</style></head><body><div class="wrap"><header><h1>Search</h1><p>All published stories, searchable.</p></header>
+</style></head><body><div class="gtr"><span>🌐 Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Search</h1><p>All published stories, searchable.</p></header>
        <input id="q" type="search" placeholder="Type to search headlines and stories…" autofocus>
        <div id="hits"></div>
        <script>
@@ -105,6 +105,5 @@ function googleTranslateElementInit() {
        }
        q.addEventListener('input', render);
        </script>
-<div class="gtr"><span>🌐 Read in your language:</span><div id="google_translate_element"></div></div>
 <footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>
