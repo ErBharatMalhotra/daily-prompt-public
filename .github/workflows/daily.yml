@@ -54,7 +54,9 @@ jobs:
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          LLM_MAX_CALLS: "40"
+          LLM_MAX_CALLS: "56"
+          LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
+          LLM_COOLDOWN_MS: "60000"
         run: |
           node engine/scrape.js
           node engine/run.js
