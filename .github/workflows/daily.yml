@@ -35,6 +35,15 @@ jobs:
         working-directory: core
         run: node tests/sanity.test.js
 
+      # Dead-man switch preflight: warns + Telegram-alerts when the last
+      # successful edition is stale (quota dead, feeds down, etc).
+      - name: Staleness guard (dead-man switch)
+        working-directory: core
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node engine/alert.js guard
+
       - name: Run pipeline (scrape -> select -> write -> edit -> gate)
         working-directory: core
         env:
@@ -80,3 +89,13 @@ jobs:
 
       # Cloudflare Pages is git-connected to this repo (Settings -> Build -> Git
       # repository in the dashboard): pushing site/dist above auto-deploys the site.
+
+      # Dead-man switch: must stay the LAST step so `if: failure()` sees any
+      # earlier step's failure and tells the owner on Telegram.
+      - name: Failure alert (Telegram)
+        if: failure()
+        working-directory: core
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node engine/alert.js fail "Daily edition workflow failed at $(date -u +%F\ %H:%M\ UTC) — check the Actions log for the failing step."
