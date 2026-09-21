@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Search — The Daily Prompt</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="Search — The Daily Prompt">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+
+<style>
+  :root { --ink:#111; --paper:#f7f3e9; --accent:#8b0000; }
+  * { box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background:var(--paper); color:var(--ink); margin:0; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 16px 64px; }
+  header { border-bottom:3px double var(--ink); text-align:center; padding:24px 0 12px; }
+  header h1 { font-size:42px; margin:0; letter-spacing:2px; text-transform:uppercase; }
+  header h1 a { color:inherit; text-decoration:none; }
+  header p { margin:4px 0 0; font-style:italic; }
+  .nav { text-align:center; font-size:14px; margin:10px 0 0; }
+  .stale { background:#fdf0d5; border:1px solid #e0b95a; padding:10px 14px; margin:16px 0; font-size:14px; border-radius:4px; }
+  .story { border-bottom:1px solid #ccc; padding:18px 0; }
+  .story.single { border-bottom:none; }
+  .story h2 { margin:4px 0 10px; font-size:26px; }
+  .story h2 a { color:inherit; text-decoration:none; }
+  .story h2 a:hover { color:var(--accent); }
+  .story.hero { background:#fff; border:1px solid #ddd; padding:22px; margin:18px 0; }
+  .story.hero h2 { font-size:32px; margin:6px 0; }
+  .lede { font-size:18px; font-style:italic; color:#444; }
+  .story h1 { margin:6px 0 14px; font-size:34px; }
+  .meta { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#555; }
+  .tags { margin:0 0 12px; font-size:13px; color:#8b0000; }
+  .critique { font-style:italic; color:#555; border-left:3px solid #ccc; padding-left:10px; }
+  .hi-title a { font-size:16px; }
+  .src { font-size:13px; color:#555; }
+  .badge { padding:2px 8px; border-radius:10px; font-size:11px; }
+  .badge.ok { background:#d8f5d8; color:#1a5c1a; }
+  .badge.bad { background:#f5d8d8; color:#5c1a1a; }
+  .badge.conf { background:#dce8f5; color:#1a3a5c; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; }
+  td, th { border:1px solid #ccc; padding:6px 10px; text-align:left; font-size:14px; }
+  footer { margin-top:32px; font-size:12px; color:#666; text-align:center; }
+  a { color: var(--accent); }
+  .crumb { font-size:14px; }
+  .dates { display:flex; justify-content:space-between; font-size:14px; margin:16px 0; }
+  #q { width:100%; padding:10px; font-size:16px; font-family:inherit; }
+  .hit { border-bottom:1px solid #ddd; padding:10px 0; }
+  .hit small { color:#666; }
+</style></head><body><div class="wrap"><header><h1>Search</h1><p>All published stories, searchable.</p></header>
+       <input id="q" type="search" placeholder="Type to search headlines and stories…" autofocus>
+       <div id="hits"></div>
+       <script>
+       const IDX = [{"href":"/article/2026-09-21/iit-bombay-student-death-crime-branch-probes-case-amid-tortu.html","headline":"IIT Bombay Student Death: Crime Branch Probes Case Amid Torture Allegations","beat":"national","date":"2026-09-21","snippet":"The Crime Branch has initiated a thorough investigation into the death of an Indian Institute of Technology Bombay (IIT Bombay) student, fol"},{"href":"/article/2026-09-21/meloni-government-plans-ban-on-burqas-niqabs-in-italys-schoo.html","headline":"Meloni Government Plans Ban on Burqas, Niqabs in Italy's Schools","beat":"world","date":"2026-09-21","snippet":"Italy's government, led by Prime Minister Giorgia Meloni, is reportedly planning to implement a ban on the wearing of burqas and niqabs with"},{"href":"/article/2026-09-21/asian-games-2026-india-thrash-japan-49-24-in-mens-kabaddi-op.html","headline":"Asian Games 2026: India Thrash Japan 49-24 In Men's Kabaddi Opener","beat":"sports","date":"2026-09-21","snippet":"India commenced their men's kabaddi campaign at the Asian Games 2026 with a resounding victory, overpowering Japan 49-24 in their opening fi"},{"href":"/article/2026-09-21/vedaant-actor-r-madhavans-son-compares-in-his-first-asian-ga.html","headline":"Vedaant, Actor R Madhavan's Son, Compares In His First Asian Games. Here's The Result","beat":"sports","date":"2026-09-21","snippet":"Indian swimmers Sajan Prakash, Dhakshan Shashikumar, Vedaant Madhavan, and Aneesh Sunil failed to qualify for the men's 4x200m freestyle rel"},{"href":"/article/2026-09-21/congress-takes-kya-hua-tera-vada-dig-at-bjp-over-skyrocketin.html","headline":"Congress takes 'Kya hua tera vada' dig at BJP over 'skyrocketing' prices of food items","beat":"national","date":"2026-09-21","snippet":"The Congress party today launched a sharp attack on the ruling Bharatiya Janata Party (BJP) government, invoking the popular phrase \"Kya hua"},{"href":"/article/2026-09-21/cji-to-list-mamata-banerjees-plea-against-tmc-symbol-freeze-.html","headline":"CJI to List Mamata Banerjee’s Plea Against TMC Symbol Freeze This Week","beat":"national","date":"2026-09-21","snippet":"Chief Justice of India (CJI) has indicated that the court will strive to list the plea filed by former West Bengal Chief Minister Mamata Ban"},{"href":"/article/2026-09-12/telangana-cm-proposes-generation-based-education-framework-i.html","headline":"Telangana CM Proposes Generation-Based Education Framework in Assembly","beat":"national","date":"2026-09-12","snippet":"Telangana Chief Minister Revanth Reddy outlined a multi-generational strategy for the state’s education policy during a legislative assembly"},{"href":"/article/2026-09-12/brics-summit-modi-putin-pezeshkian-joint-appearance-signals-.html","headline":"BRICS Summit: Modi, Putin, Pezeshkian Joint Appearance Signals Deepening Non-Western Coordination","beat":"national","date":"2026-09-12","snippet":"A recent photograph featuring Indian Prime Minister Narendra Modi, Russian President Vladimir Putin, and Iranian President Masoud Pezeshkian"},{"href":"/article/2026-09-12/modi-pezeshkian-meet-in-tehran-stress-diplomacy-amid-regiona.html","headline":"Modi, Pezeshkian Meet in Tehran, Stress Diplomacy Amid Regional Tensions","beat":"national","date":"2026-09-12","snippet":"Prime Minister Narendra Modi met with Iranian President Masoud Pezeshkian in Tehran on Tuesday, November 18, 2025. The bilateral discussion "}];
+       const q = document.getElementById('q'), hits = document.getElementById('hits');
+       function render() {
+         const t = q.value.trim().toLowerCase();
+         if (!t) { hits.innerHTML = ''; return; }
+         const m = IDX.filter(x => (x.headline + ' ' + x.snippet + ' ' + x.beat).toLowerCase().includes(t)).slice(0, 30);
+         hits.innerHTML = m.map(x => '<div class="hit"><a href="' + x.href + '">' + x.headline + '</a><br><small>' + x.beat + ' · ' + x.date + ' — ' + x.snippet + '…</small></div>').join('') || '<p>No matches.</p>';
+       }
+       q.addEventListener('input', render);
+       </script>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
