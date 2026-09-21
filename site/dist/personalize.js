@@ -192,6 +192,30 @@
       });
   }
 
+  /* ---------------- 4. theme toggle (dark default) ---------------- */
+
+  var THEME_KEY = "tdp.theme";
+
+  function wireThemeToggle() {
+    var btn = document.getElementById("tdp-theme");
+    if (!btn) return;
+    function label() {
+      btn.textContent = document.documentElement.getAttribute("data-theme") === "light" ? "🌙" : "☀️";
+    }
+    btn.addEventListener("click", function () {
+      var light = document.documentElement.getAttribute("data-theme") === "light";
+      if (light) {
+        document.documentElement.removeAttribute("data-theme");
+        try { localStorage.setItem(THEME_KEY, "dark"); } catch (e) {}
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        try { localStorage.setItem(THEME_KEY, "light"); } catch (e) {}
+      }
+      label();
+    });
+    label();
+  }
+
   /* ---------------- boot ---------------- */
   function init() {
     rememberLanguage();
@@ -200,6 +224,7 @@
     buildYourNews();
     wireShareAndSave();
     buildSavedBlock();
+    wireThemeToggle();
     var s = document.createElement("style");
     s.textContent =
       ".followbtn{margin-left:8px;font-size:10px;padding:2px 7px;border-radius:8px;border:1px solid #999;background:#fff;cursor:pointer;vertical-align:middle}" +
