@@ -57,6 +57,8 @@ jobs:
           LLM_MAX_CALLS: "56"
           LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
           LLM_COOLDOWN_MS: "60000"
+          HINDI_EDITION: ${{ secrets.HINDI_EDITION || '1' }}
+          CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN || '' }}
         run: |
           node engine/scrape.js
           node engine/run.js
