@@ -64,9 +64,14 @@ jobs:
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          LLM_MAX_CALLS: "80"
-          DAILY_ARTICLES: "14"
-          BRIEFS_PER_RUN: "12"
+          # Max-throughput knobs (GitHub Actions public repo = unlimited minutes;
+          # the real limits are the free-tier LLM quotas, handled by the
+          # circuit breaker + 429 backoff + 3-provider fallback).
+          LLM_MAX_CALLS: "120"        # ~40/run headroom x 3 providers
+          DAILY_ARTICLES: "18"        # full articles per run (was 14)
+          BRIEFS_PER_RUN: "24"        # short rewrites per run (was 12)
+          LLM_DELAY_MS: "1500"        # pacing between calls (was 2500)
+          RETRY_429_MS: "12000"       # wait on 429 instead of failing over
           LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
           LLM_COOLDOWN_MS: "60000"
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN || '' }}
