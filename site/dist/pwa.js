@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var DISMISS_KEY = "tdp.pwa.dismissed.v2"; // v2: old silent dismissals no longer suppress
+  var DISMISS_KEY = "tdp.pwa.dismissed.v3";
   var INSTALLED_KEY = "tdp.pwa.installed";
   var deferredPrompt = null;
   var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
@@ -89,24 +89,58 @@
     setTimeout(showNativeBanner, 2500);
   });
 
-  // Fallback: if beforeinstallprompt never fires (SW still installing,
-  // engagement heuristics), show manual "Add to Home screen" instructions
-  // after 6s so mobile readers are never left without guidance.
+  // Fallback: if beforeinstallprompt hasn't fired yet (service worker still
+  // installing, engagement heuristics), still offer an Install button. When
+  // tapped, wait briefly for the native prompt and fire it the moment it is
+  // ready; only if it truly never arrives, explain the manual menu path.
   setTimeout(function () {
     if (deferredPrompt || isIOS || isStandalone) return;
     if (get(INSTALLED_KEY)) return;
     var dismissed = get(DISMISS_KEY);
     if (dismissed && Date.now() - Number(dismissed) < 7 * 86400000) return;
     makeBanner(
-      "<b>The Daily Prompt</b><br>To install: open the browser menu (⋮) and tap <b>Add to Home screen</b>.",
+      "<b>The Daily Prompt</b><br>Install the app — offline reading, daily editions, notifications.",
       {
         yes: function () {
-          set(DISMISS_KEY, String(Date.now()));
-          document.getElementById("tdp-install-bar")?.remove();
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function (choice) {
+              if (choice && choice.outcome === "accepted") set(INSTALLED_KEY, "1");
+              document.getElementById("tdp-install-bar")?.remove();
+            });
+            return;
+          }
+          // native prompt not ready yet — wait for it briefly
+          var btn = document.getElementById("tdp-install-yes");
+          if (btn) { btn.textContent = "Preparing…"; btn.disabled = true; }
+          var waited = 0;
+          var iv = setInterval(function () {
+            waited += 500;
+            if (deferredPrompt) {
+              clearInterval(iv);
+              deferredPrompt.prompt();
+              deferredPrompt.userChoice.then(function (choice) {
+                if (choice && choice.outcome === "accepted") set(INSTALLED_KEY, "1");
+                document.getElementById("tdp-install-bar")?.remove();
+              });
+            } else if (waited >= 8000) {
+              clearInterval(iv);
+              document.getElementById("tdp-install-bar")?.remove();
+              makeBanner(
+                "<b>Install on Android</b><br>Tap the browser menu (⋮) → <b>Add to Home screen</b>.",
+                {
+                  yes: function () {
+                    set(DISMISS_KEY, String(Date.now()));
+                    document.getElementById("tdp-install-bar")?.remove();
+                  },
+                }
+              );
+            }
+          }, 500);
         },
       }
     );
-  }, 6000);
+  }, 5000);
 
   window.addEventListener("appinstalled", function () {
     set(INSTALLED_KEY, "1");

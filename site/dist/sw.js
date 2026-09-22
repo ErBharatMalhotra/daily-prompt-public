@@ -6,7 +6,7 @@
  *   - onactivate: clear legacy caches from the pre-push version string
  * Version bump invalidates old caches.
  */
-const VERSION = "tdp-v2-push";
+const VERSION = "tdp-v3-install";
 const CORE = ["/", "/index.html", "/manifest.json", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {
