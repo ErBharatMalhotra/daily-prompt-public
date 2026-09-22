@@ -26,6 +26,7 @@
 <script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
 <script src="/pwa.js" defer></script>
 <script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
 <script src="/translator.js" defer></script>
 <script src="/personalize.js" defer></script>
 <script>
@@ -297,7 +298,7 @@ body { top: 0 !important; }
        <h2>Human oversight</h2>
        <p>The newsroom runs autonomously, but the owner (a human) receives a Telegram alert for every failed run, and can disable any feature via configuration. Every published article links to the original reporting it is based on.</p>
        <h2>Privacy</h2>
-       <p>Reader personalisation (language memory, followed sections, saved stories) lives entirely in the reader's own browser via localStorage. No accounts, no tracking cookies, no analytics on readers.</p>
+       <p>Reader personalisation (language memory, followed sections, saved stories) lives entirely in the reader's own browser via localStorage. No accounts, no tracking cookies. The only measurement is a first-party, cookieless page counter that stores aggregate counts per path, honours Do Not Track, and never stores anything per-visitor.</p>
        </article>
 <footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

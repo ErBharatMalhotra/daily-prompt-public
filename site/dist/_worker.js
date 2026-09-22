@@ -138,6 +138,105 @@ async function handlePush(request, env) {
   return json({ ok: false, error: "not found" }, 404);
 }
 
+
+// ---------- first-party reader analytics (aggregate-only, cookieless) ----------
+// Counts live in KV as `hits:<day>:<path>` and `refs:<day>:<host>` integers.
+// Nothing per-visitor is stored; the beacon sends only path + referrer and
+// honours DNT client-side. Low-traffic races (read-modify-write) are accepted.
+function sameOriginOk(request, url) {
+  const origin = request.headers.get("origin") || "";
+  const refer = request.headers.get("referer") || "";
+  if (!origin && !refer) return true; // beacon may omit both; allow
+  try {
+    const host = url.host;
+    if (origin) return new URL(origin).host === host;
+    return new URL(refer).host === host;
+  } catch { return false; }
+}
+
+async function bumpKey(env, key) {
+  const raw = await env.SUBS.get(key);
+  const n = Math.min(parseInt(raw || "0", 10) + 1 || 1, 1000000);
+  await env.SUBS.put(key, String(n));
+}
+
+async function handleAnalytics(request, env) {
+  const url = new URL(request.url);
+  const route = url.pathname.replace(/^\/api\/analytics\/?/, "");
+
+  if (request.method === "POST" && route === "collect") {
+    if (!env.SUBS) return json({ ok: false, error: "storage not bound" }, 500);
+    if (!sameOriginOk(request, url)) return json({ ok: false, error: "forbidden" }, 403);
+    const body = await readBody(request);
+    const p = body && typeof body.p === "string" && body.p.startsWith("/") ? body.p.slice(0, 120) : "";
+    const ref = body && typeof body.r === "string" ? body.r.slice(0, 200) : "";
+    if (!p) return json({ ok: false, error: "invalid" }, 400);
+    const day = new Date().toISOString().slice(0, 10);
+    const ops = [bumpKey(env, `hits:${day}:${p}`)];
+    if (ref) {
+      try { ops.push(bumpKey(env, `refs:${day}:${new URL(ref).hostname}`.slice(0, 160))); } catch {}
+    }
+    await Promise.all(ops);
+    return json({ ok: true });
+  }
+
+  if (request.method === "GET" && route === "summary") {
+    if (!adminOk(request, env)) return json({ ok: false, error: "forbidden" }, 403);
+    const paths = new Map(), refs = new Map();
+    const days = new Set();
+    if (env.SUBS) {
+      let cursor;
+      do {
+        const page = await env.SUBS.list({ prefix: "hits:", cursor });
+        for (const k of page.keys) {
+          const raw = await env.SUBS.get(k.name);
+          if (!raw) continue;
+          const [, day, ...rest] = k.name.split(":");
+          const p = rest.join(":");
+          days.add(day);
+          paths.set(p, (paths.get(p) || 0) + parseInt(raw, 10));
+        }
+        cursor = page.list_complete ? undefined : page.cursor;
+      } while (cursor);
+      let cursor2;
+      do {
+        const page = await env.SUBS.list({ prefix: "refs:", cursor: cursor2 });
+        for (const k of page.keys) {
+          const raw = await env.SUBS.get(k.name);
+          if (!raw) continue;
+          const host = k.name.split(":").slice(2).join(":");
+          refs.set(host, (refs.get(host) || 0) + parseInt(raw, 10));
+        }
+        cursor2 = page.list_complete ? undefined : page.cursor;
+      } while (cursor2);
+    }
+    const top = [...paths.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+    const topRefs = [...refs.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
+    let totalViews = 0;
+    for (const n of paths.values()) totalViews += n;
+    return json({ ok: true, totalViews, days: days.size, top, referrers: topRefs });
+  }
+
+  if (request.method === "DELETE" && route === "summary") {
+    // Admin reset: wipes aggregate counters (used after tests / policy changes).
+    if (!adminOk(request, env)) return json({ ok: false, error: "forbidden" }, 403);
+    let removed = 0;
+    if (env.SUBS) {
+      for (const prefix of ["hits:", "refs:"]) {
+        let cursor;
+        do {
+          const page = await env.SUBS.list({ prefix, cursor });
+          for (const k of page.keys) { await env.SUBS.delete(k.name); removed++; }
+          cursor = page.list_complete ? undefined : page.cursor;
+        } while (cursor);
+      }
+    }
+    return json({ ok: true, removed });
+  }
+
+  return json({ ok: false, error: "not found" }, 404);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -147,6 +246,13 @@ export default {
       }
       try {
         return await handlePush(request, env);
+      } catch (err) {
+        return json({ ok: false, error: "internal" }, 500);
+      }
+    }
+    if (url.pathname.startsWith("/api/analytics/")) {
+      try {
+        return await handleAnalytics(request, env);
       } catch (err) {
         return json({ ok: false, error: "internal" }, 500);
       }
