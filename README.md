@@ -59,7 +59,8 @@ Live site: **https://daily-prompt-do3.pages.dev**
 - Language memory (Google Translate choice persists across pages)
 - Follow sections → "Your news" block
 - Save-for-later bookmarks
-- All in localStorage; no accounts, no cookies, no tracking
+- All in localStorage; no accounts, no cookies
+- The only measurement is a **first-party, cookieless page counter** (aggregate counts per path in KV; nothing per-visitor is stored, Do Not Track honoured) surfaced on `/stats.html`
 
 **Internationalisation (zero-cost philosophy)**
 - Reader-side translation: Google Translate element (30+ languages incl. all scheduled Indian languages) + Chrome built-in AI on-device hints
