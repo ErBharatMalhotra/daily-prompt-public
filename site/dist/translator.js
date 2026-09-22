@@ -58,12 +58,12 @@
   function hintHtml() {
     var ua = navigator.userAgent;
     if (/Firefox/i.test(ua)) {
-      return "Firefox menu → <b>Translate This Page</b> — model download hoga, phir offline bhi chalega.";
+      return "Firefox menu → <b>Translate This Page</b> — the language model downloads once, then works offline.";
     }
     if (/Safari/i.test(ua) && !/Chrome/i.test(ua)) {
-      return "Safari: <b>View → Translation</b> ya address bar ka translate icon.";
+      return "Safari: <b>View → Translation</b>, or the translate icon in the address bar.";
     }
-    return "Right-click anywhere → <b>Translate to …</b> — Chrome/Edge ka built-in translator use karega.";
+    return "Right-click anywhere → <b>Translate to …</b> — uses the browser's built-in translator.";
   }
 
   // ---- UI ---------------------------------------------------------------
@@ -168,7 +168,7 @@
           })
           .catch(function () {
             state.busy = false;
-            say("Browser translator model download nahi kar paya — " + hintHtml());
+            say("Could not download the browser translator model — " + hintHtml());
           });
       }, true);
     } else {

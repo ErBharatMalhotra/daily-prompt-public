@@ -42,18 +42,6 @@
   ],
   "shortcuts": [
     {
-      "name": "हिंदी संस्करण (Hindi edition)",
-      "short_name": "हिंदी",
-      "description": "Read today's edition in Hindi",
-      "url": "/hi/?source=shortcut",
-      "icons": [
-        {
-          "src": "/icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
       "name": "Search all stories",
       "short_name": "Search",
       "description": "Search every published story",

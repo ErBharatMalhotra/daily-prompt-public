@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var DISMISS_KEY = "tdp.pwa.dismissed";
+  var DISMISS_KEY = "tdp.pwa.dismissed.v2"; // v2: old silent dismissals no longer suppress
   var INSTALLED_KEY = "tdp.pwa.installed";
   var deferredPrompt = null;
   var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
@@ -38,12 +38,11 @@
       set(DISMISS_KEY, String(Date.now()));
       bar.remove();
     });
-    // auto-minimise after 20s of ignoring
+    // auto-minimise after 20s of ignoring — silently, without recording a
+    // dismissal (the banner returns on the next page until dismissed properly)
     setTimeout(function () {
-      if (document.getElementById("tdp-install-bar")) {
-        set(DISMISS_KEY, String(Date.now()));
-        bar.remove();
-      }
+      var b = document.getElementById("tdp-install-bar");
+      if (b) b.remove();
     }, 20000);
     return bar;
   }
@@ -89,6 +88,25 @@
     // small delay so it never fights the page load
     setTimeout(showNativeBanner, 2500);
   });
+
+  // Fallback: if beforeinstallprompt never fires (SW still installing,
+  // engagement heuristics), show manual "Add to Home screen" instructions
+  // after 6s so mobile readers are never left without guidance.
+  setTimeout(function () {
+    if (deferredPrompt || isIOS || isStandalone) return;
+    if (get(INSTALLED_KEY)) return;
+    var dismissed = get(DISMISS_KEY);
+    if (dismissed && Date.now() - Number(dismissed) < 7 * 86400000) return;
+    makeBanner(
+      "<b>The Daily Prompt</b><br>To install: open the browser menu (⋮) and tap <b>Add to Home screen</b>.",
+      {
+        yes: function () {
+          set(DISMISS_KEY, String(Date.now()));
+          document.getElementById("tdp-install-bar")?.remove();
+        },
+      }
+    );
+  }, 6000);
 
   window.addEventListener("appinstalled", function () {
     set(INSTALLED_KEY, "1");
