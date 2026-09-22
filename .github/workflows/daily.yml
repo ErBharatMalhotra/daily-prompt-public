@@ -67,12 +67,15 @@ jobs:
           # Max-throughput knobs (GitHub Actions public repo = unlimited minutes;
           # the real limits are the free-tier LLM quotas, handled by the
           # circuit breaker + 429 backoff + 3-provider fallback).
-          LLM_MAX_CALLS: "120"        # ~40/run headroom x 3 providers
-          DAILY_ARTICLES: "18"        # full articles per run (was 14)
-          BRIEFS_PER_RUN: "24"        # short rewrites per run (was 12)
-          LLM_DELAY_MS: "1500"        # pacing between calls (was 2500)
+          # Max-throughput knobs (GitHub Actions public repo = unlimited minutes;
+          # the real limits are the free-tier LLM quotas, handled by the
+          # model-slot rotation + dual breaker + 429 backoff).
+          LLM_MAX_CALLS: "400"        # 30+40 posts x waves + retries + rescue headroom
+          DAILY_ARTICLES: "30"        # full articles per run (was 18)
+          BRIEFS_PER_RUN: "40"        # short rewrites per run (was 24)
+          LLM_DELAY_MS: "1500"        # pacing between calls
           RETRY_429_MS: "12000"       # wait on 429 instead of failing over
-          LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
+          LLM_SLOTS: ${{ secrets.LLM_SLOTS || '' }}  # empty = default rotation (highest-quota first)
           LLM_COOLDOWN_MS: "60000"
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN || '' }}
           PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
