@@ -2,7 +2,10 @@ name: Daily Edition
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # 06:00 IST
+    - cron: "30 0 * * *"    # 06:00 IST — main edition (14 full articles)
+    - cron: "30 6 * * *"    # 12:00 IST — briefs + wire refresh
+    - cron: "30 10 * * *"   # 16:00 IST — evening editions
+    - cron: "0 14 * * *"    # 19:30 IST — night edition
   workflow_dispatch: {}
 
 permissions:
@@ -61,8 +64,9 @@ jobs:
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          LLM_MAX_CALLS: "56"
+          LLM_MAX_CALLS: "80"
           DAILY_ARTICLES: "14"
+          BRIEFS_PER_RUN: "12"
           LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
           LLM_COOLDOWN_MS: "60000"
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN || '' }}
