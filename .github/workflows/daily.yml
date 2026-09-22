@@ -62,6 +62,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           LLM_MAX_CALLS: "56"
+          DAILY_ARTICLES: "14"
           LLM_PROVIDER_ORDER: ${{ secrets.LLM_PROVIDER_ORDER || 'groq,gemini,openrouter' }}
           LLM_COOLDOWN_MS: "60000"
           HINDI_EDITION: ${{ secrets.HINDI_EDITION || '1' }}
