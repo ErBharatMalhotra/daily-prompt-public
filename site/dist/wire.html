@@ -1,0 +1,294 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>News Wire — The Daily Prompt</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="News Wire — The Daily Prompt">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+<meta property="og:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+
+<meta name="theme-color" content="#121214">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
+<script src="/translator.js" defer></script>
+<script src="/personalize.js" defer></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,mai,mni-Mtei,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en,ar,zh-CN,es,fr,de,ja,ru,pt,id,tr,fa,sw',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
+ * Design tokens first; dark is the default, light via [data-theme=light].
+ * Heavy effects are limited to the sticky nav (small area) so the site stays fast.
+ */
+
+/* ---------- tokens ---------- */
+:root {
+  --ink: #ece7dd;
+  --ink-soft: #b8b2a6;
+  --paper: #121214;
+  --paper-2: #1a1a1e;
+  --card: #1f1f24;
+  --line: #2c2c33;
+  --accent: #e03e3e;
+  --accent-deep: #8b0000;
+  --ok-bg: #10331c; --ok-fg: #7ede9b;
+  --bad-bg: #3a1416; --bad-fg: #f2a0a0;
+  --conf-bg: #14243a; --conf-fg: #9cc4f0;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
+  --nav-bg: rgba(18, 18, 20, .62);
+}
+[data-theme="light"] {
+  --ink: #191919;
+  --ink-soft: #5c5952;
+  --paper: #f7f3ea;
+  --paper-2: #efe9db;
+  --card: #ffffff;
+  --line: #e3dcc9;
+  --accent: #a31212;
+  --accent-deep: #8b0000;
+  --ok-bg: #dff3e2; --ok-fg: #17652e;
+  --bad-bg: #f9e0e0; --bad-fg: #8f1f1f;
+  --conf-bg: #e2ecfa; --conf-fg: #1d4e86;
+  --shadow: 0 10px 26px rgba(60, 50, 30, .12);
+  --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
+  --nav-bg: rgba(247, 243, 234, .68);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.6;
+  transition: background .3s ease, color .3s ease;
+}
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 72px; }
+
+/* ---------- glass header (only heavy effect on the page) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9990;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-row {
+  max-width: 980px; margin: 0 auto; padding: 10px 18px;
+  display: flex; align-items: center; gap: 14px;
+}
+.topbar .brand {
+  font-family: var(--serif);
+  font-weight: 700; font-size: 19px; letter-spacing: .5px;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.topbar .brand span { color: var(--accent); }
+.topbar .tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.topbar .tools a, .topbar .tools button {
+  color: var(--ink-soft); text-decoration: none; font-size: 13px;
+  background: transparent; border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 10px; cursor: pointer; font-family: var(--sans);
+}
+.topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
+.catrow {
+  max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+}
+.catrow::-webkit-scrollbar { display: none; }
+.catrow a {
+  flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: transparent;
+}
+.catrow a:hover { color: var(--ink); border-color: var(--accent); }
+.catrow a.on { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+/* ---------- header block ---------- */
+header.mast { text-align: center; padding: 30px 0 8px; }
+header.mast h1 {
+  font-family: var(--serif); font-size: clamp(30px, 5.4vw, 46px);
+  margin: 0; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+}
+header.mast h1 a { color: inherit; text-decoration: none; }
+header.mast h1 a:hover { color: var(--accent); }
+header.mast p { margin: 6px 0 0; font-style: italic; color: var(--ink-soft); font-size: 15px; }
+.masthead-stats {
+  display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-soft); margin-top: 10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.nav { text-align: center; font-size: 14px; margin: 12px 0 0; color: var(--ink-soft); }
+
+/* ---------- section headers ---------- */
+h2.sec {
+  font-family: var(--serif); font-size: 21px; letter-spacing: 1.5px; text-transform: uppercase;
+  border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin: 34px 0 14px;
+}
+
+/* ---------- stories / cards ---------- */
+.story { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.story.single { border-bottom: none; }
+.story h2 { font-family: var(--serif); margin: 4px 0 10px; font-size: 25px; line-height: 1.25; }
+.story h2 a { color: inherit; text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+.story h1 { font-family: var(--serif); margin: 6px 0 14px; font-size: clamp(26px, 4.6vw, 36px); line-height: 1.2; }
+
+.story.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 26px 20px;
+  margin: 20px 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.story.hero:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(0,0,0,.42); }
+.story.hero h2 { font-size: clamp(27px, 4.8vw, 36px); margin: 8px 0; }
+.lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+.meta {
+  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
+.critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
+.hi-title a { font-size: 16px; }
+.src { font-size: 13px; color: var(--ink-soft); }
+
+/* ---------- badges (pills) ---------- */
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
+
+/* ---------- beat color strips on hero via data attr (optional future) ---------- */
+
+/* ---------- misc blocks ---------- */
+.stale { background: #3a2e10; border: 1px solid #a9852c; color: #f2d489; padding: 12px 16px; margin: 16px 0; font-size: 14px; border-radius: var(--radius); }
+[data-theme="light"] .stale { background: #fdf0d5; border-color: #e0b95a; color: #6b5210; }
+.dates { display: flex; justify-content: space-between; font-size: 14px; margin: 16px 0; }
+.crumb { font-size: 14px; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- columns / briefs ---------- */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 24px; }
+.col { border-right: 1px solid var(--line); padding-right: 18px; }
+.col:last-child { border-right: none; }
+.col h3 { font-family: var(--serif); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin: 12px 0 8px; }
+.col h3 a { color: var(--ink); text-decoration: none; }
+.col h3 a:hover { color: var(--accent); }
+.col ul { list-style: none; margin: 0; padding: 0; }
+.col li { margin: 0 0 12px; font-size: 14px; line-height: 1.45; }
+.col li a { color: var(--ink); text-decoration: none; }
+.col li a:hover { color: var(--accent); }
+.col small, ul.brief li small { color: var(--ink-soft); font-size: 12px; }
+ul.brief { list-style: none; padding: 0; margin: 0; }
+ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+
+/* ---------- tiles / pipeline ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 14px 0; }
+.tile {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 12px; text-align: center; font-size: 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile b { display: block; font-size: 16px; margin-bottom: 2px; font-family: var(--serif); }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.pipeline { display: flex; gap: 10px; align-items: stretch; margin: 14px 0; flex-wrap: wrap; }
+.pstep {
+  flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
+}
+.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
+.pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
+.parrow { align-self: center; font-size: 20px; color: var(--accent); flex: 0 0 auto; }
+@media (max-width: 700px) { .parrow { display: none; } }
+.about-note { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* ---------- translate gadget ---------- */
+.gtr {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+}
+.gtr .goog-te-gadget { font-size: 13px !important; }
+.gtr .goog-te-gadget-simple {
+  border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
+  background: var(--card) !important; color: var(--ink) !important;
+}
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+
+/* ---------- share / saved / search ---------- */
+.sharebar { margin: 14px 0 4px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 14px; }
+.sharebar a { text-decoration: none; }
+.sharebar a:hover { color: var(--accent); }
+.savedlist li { padding: 7px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+#q { width: 100%; padding: 12px 14px; font-size: 16px; font-family: var(--sans); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); }
+.hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.hit small { color: var(--ink-soft); }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style></head><body><div class="topbar"><div class="topbar-row">
+    <a class="brand" href="/">The Daily <span>Prompt</span></a>
+    <div class="tools">
+      <a href="/search.html">Search</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/wire.html">Wire</a>
+      <a href="/stats.html">Stats</a>
+      <a href="/feed.xml" title="RSS">RSS</a>
+      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+  <nav class="catrow"><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/business.html">business</a><a href="/category/tech.html">tech</a><a href="/category/sports.html">sports</a><a href="/category/science.html">science</a><a href="/category/entertainment.html">entertainment</a><a href="/category/health.html">health</a></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>News Wire</h1><p>379 fresh headlines from 28 sources, straight from the wire — no rewriting, zero cost. Stories worth depth become full articles in the next edition.</p></header>
+       <nav class="catrow"><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/business.html">business</a><a href="/category/tech.html">tech</a><a href="/category/sports.html">sports</a><a href="/category/science.html">science</a><a href="/category/entertainment.html">entertainment</a><a href="/category/health.html">health</a></nav>
+       <div class="cols"><div class="col"><h3>national <small>(107)</small></h3><ul class="brief"><li><a href="https://www.news18.com/india/abuse-of-process-of-law-rahul-gandhi-sonia-gandhi-question-eds-revision-petition-in-national-herald-case-in-hc-ws-lt-10346650.html" target="_blank" rel="noopener">‘Abuse Of Process Of Law’: Gandhis Question ED’s Revision Petition In National Herald Case</a> <small>· News18 India · 0h ago</small></li><li><a href="https://www.news18.com/india/what-is-the-p4m-initiative-key-objectives-which-countries-are-involved-and-why-it-matters-for-india-10346634.html" target="_blank" rel="noopener">What Is The P4M Initiative? Key Objectives, Which Countries Are Involved And Why It Matters For India</a> <small>· News18 India · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/kerala/ldf-takes-out-protest-march-to-govt-medical-college-in-kozhikode/article71495813.ece" target="_blank" rel="noopener">LDF takes out protest march to govt. medical college in Kozhikode</a> <small>· The Hindu · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/karnataka/pandit-indudhar-nirody-passes-away/article71495640.ece" target="_blank" rel="noopener">Pandit Indudhar Nirody passes away</a> <small>· The Hindu · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/kerala/ed-not-misused-in-cmrl-payout-case-janeesh/article71496149.ece" target="_blank" rel="noopener">ED not misused in CMRL payout case: Janeesh</a> <small>· The Hindu · 0h ago</small></li><li><a href="https://timesofindia.indiatimes.com/world/south-asia/sri-lanka-court-convicts-15-men-over-2019-easter-sunday-bombings/articleshow/134414563.cms" target="_blank" rel="noopener">Sri Lanka court convicts 15 men over 2019 Easter Sunday bombings</a> <small>· Times of India · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/lakhimpur-kheri-violence-case-sc-asks-allahabad-hc-cj-for-report-on-allegations-against-trial-judge/article71495993.ece" target="_blank" rel="noopener">Lakhimpur Kheri violence case: SC asks Allahabad HC CJ for report on allegations against trial judge</a> <small>· The Hindu · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/kerala/tuna-caught-along-indian-coast-safe-to-consume-says-cmfri/article71495200.ece" target="_blank" rel="noopener">Tuna caught along Indian coast safe to consume, says CMFRI</a> <small>· The Hindu · 0h ago</small></li><li><a href="https://www.thehindu.com/news/national/kerala/expert-panel-to-frame-guidelines-for-compensation-in-human-wildlife-conflict-cases-in-keralam/article71495689.ece" target="_blank" rel="noopener">Expert panel to frame guidelines for compensation in human-wildlife conflict cases in Keralam</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/telangana/fire/article71495815.ece" target="_blank" rel="noopener">A father’s hope cut short as fire incident at RIMS claims newborn daughter in Telangana’s Adilabad</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/andhra-pradesh/house-crows-aid-efforts-to-enhance-green-cover-across-arid-rayalaseema-finds-study/article71494251.ece" target="_blank" rel="noopener">House crows aid efforts to enhance green cover across arid Rayalaseema, finds study</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/andhra-pradesh/woman-dies-after-falling-into-hot-sambar-vessel-during-ganesh-nimajjanam-annadanam/article71495382.ece" target="_blank" rel="noopener">Woman dies after falling into ‘hot sambar vessel’ during Ganesh Nimajjanam ‘Annadanam’</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/karnataka/karnataka-high-court-defers-hearing-on-plea-against-states-decision-for-singing-only-two-stanzas-of-vande-mataram/article71495676.ece" target="_blank" rel="noopener">Karnataka High Court defers hearing on plea against State’s decision for singing only two stanzas of Vande Mataram</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/karnataka/altercation-between-congress-and-bjp-workers-over-sir-in-belagavi/article71495772.ece" target="_blank" rel="noopener">Altercation between Congress and BJP workers over SIR in Belagavi</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.news18.com/videos/india/iit-bombay-death-case-if-cheating-is-proved-should-professor-be-blamed-plain-speak-news18-10346703.html" target="_blank" rel="noopener">IIT Bombay Death Case: If Cheating Is Proved, Should Professor Be Blamed | Plain Speak | News18</a> <small>· News18 India · 1h ago</small></li><li><a href="https://www.thehindu.com/news/national/kerala/estate-woman-watcher-found-dead-in-thrissur/article71495821.ece" target="_blank" rel="noopener">Estate woman watcher found dead in Thrissur</a> <small>· The Hindu · 1h ago</small></li><li><a href="https://www.indiatoday.in/india/video/delhi-park-gang-rape-minor-assaulted-on-birthday-3-held-questions-raised-on-safety-ytvd-3000508-2026-09-22?utm_source=rss" target="_blank" rel="noopener">Delhi Park Gang Rape: Minor Assaulted on Birthday, 3 Held, Questions Raised on Safety</a> <small>· India Today · 1h ago</small></li><li><a href="https://www.news18.com/india/touched-our-cheeks-peeked-at-us-inside-toilet-bihar-school-girls-accuse-principal-of-molestation-10346652.html" target="_blank" rel="noopener">'Touched Our Cheeks, Peeked At Us Inside Toilet': Bihar School Girls Accuse Principal Of Molestation</a> <small>· News18 India · 1h ago</small></li><li><a href="https://www.indiatoday.in/india/video/sitharaman-on-family-disputes-airfare-surge-amid-atf-hike-trai-mandate-ytvd-3000502-2026-09-22?utm_source=rss" target="_blank" rel="noopener">Sitharaman on Family Disputes, Airfare Surge Amid ATF Hike &amp; TRAI Mandate</a> <small>· India Today · 1h ago</small></li><li><a href="https://www.indiatoday.in/india/andhra-pradesh/story/vijayawada-woman-dies-after-falling-into-boiling-sambar-during-vinayaka-chavithi-annadanam-3000493-2026-09-22?utm_source=rss" target="_blank" rel="noopener">Video: Woman falls face-first into boiling sambar meant for Ganesh Puja prasad</a> <small>· India Today · 1h ago</small></li></ul></div><div class="col"><h3>world <small>(70)</small></h3><ul class="brief"><li><a href="https://www.bbc.co.uk/news/articles/cm4gvyz2vlkvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Father admits causing death of his son in Cyprus hotel fall</a> <small>· BBC World · 0h ago</small></li><li><a href="https://www.aljazeera.com/video/newsfeed/2026/9/22/jerusalem-daily-israel-besieges-palestinian-town?traffic_source=rss" target="_blank" rel="noopener">Jerusalem Daily: Israel besieges Palestinian town</a> <small>· Al Jazeera · 0h ago</small></li><li><a href="https://www.aljazeera.com/news/2026/9/22/2425?traffic_source=rss" target="_blank" rel="noopener">Ex-Rwandan official appears at UK trial over 1994 genocide</a> <small>· Al Jazeera · 0h ago</small></li><li><a href="https://www.news18.com/world/you-shouldnt-be-here-trump-fumes-at-cnn-says-broadcaster-shouldnt-be-covering-him-10346672.html" target="_blank" rel="noopener">‘You Shouldn’t Be Here’: Trump Fumes At CNN, Says Broadcaster Shouldn’t Be Covering Him</a> <small>· News18 World · 1h ago</small></li><li><a href="https://www.thehindu.com/news/international/us-president-trump-un-general-assembly-speech-2026/article71496065.ece" target="_blank" rel="noopener">Trump to tout deals, defend war with Iran in UN speech</a> <small>· The Hindu World · 1h ago</small></li><li><a href="https://www.news18.com/world/un-chief-antonio-guterres-calls-for-ai-restrictions-end-to-wars-in-his-final-unga-address-10346628.html" target="_blank" rel="noopener">UN Chief Antonio Guterres Calls For AI Restrictions, End To Wars In His Final UNGA Address</a> <small>· News18 World · 1h ago</small></li><li><a href="https://www.thehindu.com/news/international/trumps-white-house-media-ban-faces-long-odds-in-court-legal-experts-say/article71495738.ece" target="_blank" rel="noopener">Trump's White House media ban faces long odds in court, legal experts say</a> <small>· The Hindu World · 1h ago</small></li><li><a href="https://www.aljazeera.com/video/newsfeed/2026/9/22/colombia-eases-gun-restrictions-despite-fears-of-more-violence?traffic_source=rss" target="_blank" rel="noopener">Colombia eases gun restrictions despite fears of more violence</a> <small>· Al Jazeera · 1h ago</small></li><li><a href="https://www.thehindu.com/news/international/sri-lanka-2019-easter-sunday-bombings-convictions-sentencing/article71495581.ece" target="_blank" rel="noopener">Easter Sunday blasts case: Sri Lanka court convicts 14 accused; nine others acquitted</a> <small>· The Hindu World · 1h ago</small></li><li><a href="https://www.aljazeera.com/news/2026/9/22/iran-delegation-to-present-narrative-of-resilience-diplomacy-at-unga?traffic_source=rss" target="_blank" rel="noopener">Iran delegation to present narrative of resilience, diplomacy at UNGA</a> <small>· Al Jazeera · 1h ago</small></li><li><a href="https://www.aljazeera.com/news/2026/9/22/hundreds-flee-homes-in-far-north-cameroon-after-armed-group-raid-kills-15?traffic_source=rss" target="_blank" rel="noopener">Hundreds flee homes in Far North Cameroon after armed group raid kills 15</a> <small>· Al Jazeera · 1h ago</small></li><li><a href="https://www.thehindu.com/news/international/two-north-korea-members-of-asian-games-seek-asylum-in-japan-report-says/article71494990.ece" target="_blank" rel="noopener">Two North Korea members of Asian Games seek asylum in Japan, report says</a> <small>· The Hindu World · 2h ago</small></li><li><a href="https://www.thehindu.com/news/international/bangladesh-foreign-secretary-asad-alam-siam-to-be-the-next-high-commissioner-to-india/article71495071.ece" target="_blank" rel="noopener">Bangladesh Foreign Secretary Asad Alam Siam to be the next High Commissioner to India</a> <small>· The Hindu World · 2h ago</small></li><li><a href="https://www.news18.com/explainers/us-plans-op-economic-outcast-to-ban-iranian-airlines-across-the-world-what-does-it-mean-and-will-it-impact-india-ws-klrt-10346497.html" target="_blank" rel="noopener">Trump Plans To Ban Iranian Airlines Across The World: Can US Do It And Will It Impact India?</a> <small>· News18 World · 2h ago</small></li><li><a href="https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Sri Lanka court convicts 15 men over deadly Easter Sunday bombings</a> <small>· BBC World · 2h ago</small></li><li><a href="https://www.bbc.co.uk/sport/football/articles/ckz7z5w7ey2jo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Neutral venues and no 'away' fans - how Israel v Republic of Ireland became so contentious</a> <small>· BBC World · 2h ago</small></li><li><a href="https://www.aljazeera.com/sports/2026/9/22/fifa-president-infantinos-letter-a-ploy-for-re-election-says-german-fa?traffic_source=rss" target="_blank" rel="noopener">FIFA President Infantino’s letter a ploy for re-election, says German FA</a> <small>· Al Jazeera · 2h ago</small></li><li><a href="https://www.aljazeera.com/sports/2026/9/22/disgraceful-did-india-bully-umpires-to-win-japan-t20-cricket-match?traffic_source=rss" target="_blank" rel="noopener">‘Disgraceful’: Did India bully umpires to win Japan T20 cricket match?</a> <small>· Al Jazeera · 2h ago</small></li><li><a href="https://www.aljazeera.com/news/2026/9/22/un-warns-of-rising-yemen-displacement-as-thousands-flee-to-djibouti?traffic_source=rss" target="_blank" rel="noopener">UN warns of rising Yemen displacement as thousands flee to Djibouti</a> <small>· Al Jazeera · 2h ago</small></li><li><a href="https://www.aljazeera.com/video/newsfeed/2026/9/22/white-house-launches-trump-tv-after-press-bans?traffic_source=rss" target="_blank" rel="noopener">White House launches ‘Trump TV’ after press bans</a> <small>· Al Jazeera · 2h ago</small></li></ul></div><div class="col"><h3>business <small>(34)</small></h3><ul class="brief"><li><a href="https://economictimes.indiatimes.com/news/india/bombay-hc-warns-vijay-mallya-against-posting-court-documents-on-social-media/articleshow/134413788.cms" target="_blank" rel="noopener">Bombay HC tells Mallya not to share case paper online</a> <small>· Economic Times · 1h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/new-updates/el-nino-health-warning-dengue-malaria-cholera-threat-grows-as-un-and-who-call-climate-cycle-a-risk-multiplier/articleshow/134413540.cms" target="_blank" rel="noopener">UN sounds health alarm over super El Nino</a> <small>· Economic Times · 1h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/international/global-trends/us-news-jennifer-eckharts-suicide-case-takes-a-chilling-turn-after-mother-found-her-body-in-bathtub-with-knife-nearby-and-serious-injuries/articleshow/134413406.cms" target="_blank" rel="noopener">New twist in former Fox News producer's suicide</a> <small>· Economic Times · 2h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/india/cbse-class-12-fresh-exams-board-to-hold-exams-for-students-in-7-west-asian-countries-whose-papers-were-cancelled-no-fee-to-be-charged/articleshow/134413030.cms" target="_blank" rel="noopener">CBSE to conduct Class 12 boards in 7 countries</a> <small>· Economic Times · 2h ago</small></li><li><a href="https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/drug-regulator-warns-against-prolonged-use-of-painkillers-antibiotics/articleshow/134412912.cms" target="_blank" rel="noopener">Regulator urges caution on painkillers, antibiotics</a> <small>· Economic Times · 2h ago</small></li><li><a href="https://www.business-standard.com/companies/news/sebi-settles-proceedings-against-5-adani-firms-over-disclosure-violations-126092200998_1.html" target="_blank" rel="noopener">Five Adani group companies settle Sebi proceedings for ₹1.51 crore</a> <small>· Business Standard · 2h ago</small></li><li><a href="https://www.business-standard.com/markets/news/sebi-looks-to-ease-foreign-investor-access-says-tuhin-kanta-pandey-126092200953_1.html" target="_blank" rel="noopener">Sebi looks to ease foreign investor access, says Tuhin Kanta Pandey</a> <small>· Business Standard · 2h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/company/corporate-trends/sitharaman-urges-india-inc-to-resolve-differences-before-taking-disputes-to-court/articleshow/134412414.cms" target="_blank" rel="noopener">FM to corporates: Resolve disputes before litigation</a> <small>· Economic Times · 2h ago</small></li><li><a href="https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/government-to-assess-airport-operators-airline-ownership-proposal-says-aviation-minister-rammohan-naidu/articleshow/134412085.cms" target="_blank" rel="noopener">Airport operators’ ownership plan under review</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://economictimes.indiatimes.com/wealth/invest/upi-vs-debit-vs-credit-cards-will-upi-payments-with-mdr-charges-still-be-cheapest-npci-explains/articleshow/134411699.cms" target="_blank" rel="noopener">UPI vs debit vs credit cards: Which will be cheapest?</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://www.business-standard.com/companies/news/runwal-enterprises-eyes-stronger-balance-sheet-with-500-crore-ipo-126092200937_1.html" target="_blank" rel="noopener">Runwal Enterprises eyes stronger balance sheet with ₹500-crore IPO</a> <small>· Business Standard · 3h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/india/court-grants-sharjeel-imam-7-day-interim-bail-to-attend-cousins-weddings/articleshow/134411518.cms" target="_blank" rel="noopener">Sharjeel Imam gets 7-day interim bail</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/defence/crpf-marks-40-years-of-women-in-combat-service-to-felicitate-personnel-on-september-25/articleshow/134411129.cms" target="_blank" rel="noopener">CRPF marks 40 years of women in combat</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://www.bbc.co.uk/news/articles/cw305ynd69n6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Sir Jim Ratcliffe suspends production at key UK plants blaming high gas prices</a> <small>· BBC Business · 3h ago</small></li><li><a href="https://economictimes.indiatimes.com/industry/transportation/railways/indias-new-plan-for-fastest-bullet-train-by-2030-india-eyes-350-kmph-b35-after-b28-prototypes-begin-trials-in-2027/articleshow/134410694.cms" target="_blank" rel="noopener">India’s new plan for fastest bullet train</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/international/global-trends/ontario-couple-bought-a-c200-painting-at-a-yard-sale-in-2001-6-years-later-it-was-revealed-as-an-e-j-hughes-artwork-lake-okanagan-worth-c402500/articleshow/134410609.cms" target="_blank" rel="noopener">C$200 E J Hughes painting sold for C$402K</a> <small>· Economic Times · 3h ago</small></li><li><a href="https://www.business-standard.com/world-news/un-general-assembly-2026-who-is-speaking-agenda-126092200895_1.html" target="_blank" rel="noopener">UN General Assembly 2026: Everything about UNGA session and who's attending</a> <small>· Business Standard · 4h ago</small></li><li><a href="https://economictimes.indiatimes.com/wealth/save/8thpay-commission-latest-news-pensioners-seek-11-year-restoration-period-of-commuted-pensioncite-hc-judgment/articleshow/134410424.cms" target="_blank" rel="noopener">8th CPC: BPS seeks 11-year pension restoration period</a> <small>· Economic Times · 4h ago</small></li><li><a href="https://economictimes.indiatimes.com/news/defence/iran-ready-to-reopen-strait-of-hormuz-if-us-eases-military-pressure-and-lifts-blockade/articleshow/134410304.cms" target="_blank" rel="noopener">Iran ready to reopen Strait of Hormuz if...</a> <small>· Economic Times · 4h ago</small></li><li><a href="https://www.bbc.co.uk/news/videos/cmn8eqg2v2xyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Are vet bills about to get cheaper?</a> <small>· BBC Business · 4h ago</small></li></ul></div><div class="col"><h3>tech <small>(39)</small></h3><ul class="brief"><li><a href="https://techcrunch.com/2026/09/22/techcrunch-disrupt-2026-aaron-edsinger-brings-hello-robots-stretch-4-to-life-onstage/" target="_blank" rel="noopener">TechCrunch Disrupt 2026: Aaron Edsinger brings Hello Robot’s Stretch 4 to life onstage</a> <small>· TechCrunch · 0h ago</small></li><li><a href="https://www.engadget.com/2262261/nvme-vs-sata-ssd-drives-difference-between-explained/" target="_blank" rel="noopener">NVMe vs. SATA SSD: What's the difference between the two drive types?</a> <small>· Engadget · 0h ago</small></li><li><a href="https://www.theverge.com/news/998592/xbox-is-merging-its-forza-developers-into-a-single-studio" target="_blank" rel="noopener">Xbox is merging its Forza developers into a single studio</a> <small>· The Verge · 1h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/exhibitor-program-reopened-book-by-sept-30/" target="_blank" rel="noopener">Exhibit tables added: One last chance to showcase your startup at TechCrunch Disrupt 2026</a> <small>· TechCrunch · 1h ago</small></li><li><a href="https://www.theverge.com/news/998589/microsoft-xbox-layoffs-ninja-theory-closure" target="_blank" rel="noopener">Microsoft is laying off 268 Xbox staffers and Ninja Theory may close</a> <small>· The Verge · 1h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/tiktoks-us-arm-joins-lantern-a-cross-platform-child-safety-initiative/" target="_blank" rel="noopener">TikTok&amp;#8217;s US arm joins Lantern, a cross-platform child safety initiative</a> <small>· TechCrunch · 1h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/4-days-to-save-up-to-200-reason-2-of-5-to-be-at-techcrunch-disrupt-2026/" target="_blank" rel="noopener">4 days to save up to $200: Reason 2 of 5 to be at TechCrunch Disrupt 2026</a> <small>· TechCrunch · 1h ago</small></li><li><a href="https://www.engadget.com/2262080/robotaxi-what-passengers-should-look-out-for/" target="_blank" rel="noopener">Robotaxis aren't always a smooth ride - here's what passengers should look out for</a> <small>· Engadget · 1h ago</small></li><li><a href="https://www.engadget.com/2265152/beats-360-headphones-review/" target="_blank" rel="noopener">Beats 360 review: Customizable headphones capable of double duty</a> <small>· Engadget · 1h ago</small></li><li><a href="https://www.engadget.com/2263860/beats-360-vs-airpods-max-2-comparison/" target="_blank" rel="noopener">Beats 360 vs AirPods Max 2: How do Apple's flagship headphones compare?</a> <small>· Engadget · 1h ago</small></li><li><a href="https://www.engadget.com/2263867/beats-360-vs-sony-wh-1000xm6-comparison/" target="_blank" rel="noopener">Beats 360 vs Sony WH-1000XM6: How these high-end wireless headphones compare</a> <small>· Engadget · 1h ago</small></li><li><a href="https://www.engadget.com/2265155/beats-360-headphones-interivew-oliver-schusser/" target="_blank" rel="noopener">How Beats designed the Beats 360 headphones</a> <small>· Engadget · 1h ago</small></li><li><a href="https://www.theverge.com/policy/998726/trump-tv-youtube-livestream" target="_blank" rel="noopener">&amp;#8216;Trump TV&amp;#8217; is just reruns of the president on YouTube</a> <small>· The Verge · 1h ago</small></li><li><a href="https://www.theverge.com/tech/998566/beats-360-headphones-review" target="_blank" rel="noopener">The Beats 360 are what I’d bring to the gym if I hated earbuds</a> <small>· The Verge · 1h ago</small></li><li><a href="https://www.theverge.com/transportation/998184/waymo-public-transportation-discount-subway-bus-visa" target="_blank" rel="noopener">Waymo is offering transit discounts again, this time with Visa</a> <small>· The Verge · 1h ago</small></li><li><a href="https://www.engadget.com/2262051/how-to-start-vr-mode-steam/" target="_blank" rel="noopener">How to enter VR mode on Steam</a> <small>· Engadget · 1h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/" target="_blank" rel="noopener">Singapore’s Nexstrom wants to bring 2D semiconductors to chip fabs</a> <small>· TechCrunch · 2h ago</small></li><li><a href="https://www.theverge.com/gadgets/998688/oppo-find-x10-pro-max-200-megapixel-cameras-china" target="_blank" rel="noopener">Oppo’s new phone is the first with three 200-megapixel cameras</a> <small>· The Verge · 2h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/bill-gates-breakthrough-energy-bets-these-21-startups-will-shape-energys-future/" target="_blank" rel="noopener">Bill Gates’ Breakthrough Energy bets these 21 startups will shape energy’s future</a> <small>· TechCrunch · 2h ago</small></li><li><a href="https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/" target="_blank" rel="noopener">Everyone can find a reason to dislike data center construction</a> <small>· TechCrunch · 2h ago</small></li></ul></div><div class="col"><h3>sports <small>(48)</small></h3><ul class="brief"><li><a href="https://www.cricinfo.com/ci/content/story/1555374.html?ex_cid=OTC-RSS" target="_blank" rel="noopener">Asian Games: Dickwella in Sri Lanka's T20I squad for the first time since 2021</a> <small>· ESPN Cricinfo · 1h ago</small></li><li><a href="https://sports.ndtv.com/cricket/dont-buy-gold-win-it-deepti-sharma-to-ndtv-after-indias-asian-games-2026-glory-in-cricket-12082208#publisher=newsstand" target="_blank" rel="noopener">Don't Buy Gold, Win It: Deepti Sharma To NDTV After India's Asian Games 2026 Glory In Cricket</a> <small>· NDTV Sports · 1h ago</small></li><li><a href="https://www.bbc.co.uk/sport/rugby-union/articles/ckn8eq99jnevo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Pollock left money on table to stay at Saints - Hearn</a> <small>· BBC Sport · 1h ago</small></li><li><a href="https://www.bbc.co.uk/sport/football/articles/ck9802yzr716o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">FAW chief Mooney challenges Infantino's Fifa reform claims</a> <small>· BBC Sport · 1h ago</small></li><li><a href="https://sports.ndtv.com/cricket/joe-root-makes-history-surpasses-sachin-tendulkar-in-yet-another-record-book-12082035#publisher=newsstand" target="_blank" rel="noopener">Joe Root Makes History, Surpasses Sachin Tendulkar In Yet Another Record Book</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://www.cricinfo.com/ci/content/story/1555375.html?ex_cid=OTC-RSS" target="_blank" rel="noopener">Alexa Stonehouse agrees permanent switch to Warwickshire</a> <small>· ESPN Cricinfo · 2h ago</small></li><li><a href="https://www.cricinfo.com/ci/content/story/1555368.html?ex_cid=OTC-RSS" target="_blank" rel="noopener">Kushagra, Kotian fifties rescue India A from 97 for 5</a> <small>· ESPN Cricinfo · 2h ago</small></li><li><a href="https://sports.ndtv.com/cricket/shreyas-iyers-stunning-revelation-after-japan-game-long-travel-took-three-hours-to-reach-stadium-12080965#publisher=newsstand" target="_blank" rel="noopener">Shreyas Iyer's Stunning Remark After Japan Game: &quot;Long Travel, Took Three Hours To Reach Stadium&quot;</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/cricket/jason-holder-keen-to-watch-world-class-players-in-action-in-india-vs-wi-odis-12081870#publisher=newsstand" target="_blank" rel="noopener">Jason Holder Keen To Watch World-Class Players In Action In India vs WI ODIs</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/jason-whitlock-takes-aim-at-deion-sanders-two-way-vision-after-travis-hunters-limited-role-12081748#publisher=newsstand" target="_blank" rel="noopener">Jason Whitlock Takes Aim at Deion Sanders' Two-Way Vision After Travis Hunter's Limited Role</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/myles-garrett-net-worth-in-2026-how-his-record-setting-nfl-contracts-built-his-fortune-12081678#publisher=newsstand" target="_blank" rel="noopener">Myles Garrett Net Worth In 2026: How His Record-Setting NFL Contracts Built His Fortune</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/how-patrick-mahomes-backed-a-1-2b-startup-that-later-reached-a-10-1b-valuation-12081436#publisher=newsstand" target="_blank" rel="noopener">How Patrick Mahomes Backed $1.2B Startup That Later Reached $10.1B Valuation</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-us-streamers/twitch-streamer-lacy-buys-a-470-000-lamborghini-temerario-at-the-age-of-23-12081424#publisher=newsstand" target="_blank" rel="noopener">Twitch Streamer Lacy Buys A $470,000 Lamborghini Temerario At The Age Of 23</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/could-alec-pierce-s-injury-force-indianapolis-colts-to-change-their-plans-around-daniel-jones-12081408#publisher=newsstand" target="_blank" rel="noopener">Could Alec Pierce’s Injury Force Indianapolis Colts To Change Their Plans Around Daniel Jones?</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/jaxson-dart-s-net-worth-in-2026-inside-the-giants-qbs-salary-contract-and-career-earnings-12081403#publisher=newsstand" target="_blank" rel="noopener">Jaxson Dart Net Worth 2026: Giants QB's Salary, Contract And Career Earnings</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/cricket/president-droupadi-murmu-home-minister-amit-shah-congratulate-india-womens-cricket-team-for-asian-games-gold-12081137#publisher=newsstand" target="_blank" rel="noopener">President Droupadi Murmu, Home Minister Amit Shah Congratulate India Women's Cricket Team For Asian Games Gold</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://www.cricinfo.com/ci/content/story/1555372.html?ex_cid=OTC-RSS" target="_blank" rel="noopener">Miller commits to SA despite no national contract</a> <small>· ESPN Cricinfo · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/bo-nix-gets-a-special-reminder-of-his-childhood-after-denver-broncos-comeback-win-12081357#publisher=newsstand" target="_blank" rel="noopener">Bo Nix Gets A Special Reminder Of His Childhood After Denver Broncos' Comeback Win</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/michael-irvin-delivers-blunt-deshaun-watson-warning-ahead-of-cleveland-browns-home-opener-12081297#publisher=newsstand" target="_blank" rel="noopener">Michael Irvin Delivers Blunt Deshaun Watson Warning Ahead Of Cleveland Browns Home Opener</a> <small>· NDTV Sports · 2h ago</small></li><li><a href="https://sports.ndtv.com/us-nfl/jalen-hurts-shares-what-he-relies-on-when-philadelphia-eagles-face-their-biggest-moments-12081269#publisher=newsstand" target="_blank" rel="noopener">Jalen Hurts Shares What He Relies On When Philadelphia Eagles Face Their Biggest Moments</a> <small>· NDTV Sports · 2h ago</small></li></ul></div><div class="col"><h3>science <small>(32)</small></h3><ul class="brief"><li><a href="https://phys.org/news/2026-09-duncan-russet-tolerance-virus-resistance.html" target="_blank" rel="noopener">Duncan Russet offers heat tolerance and virus resistance for southern potato growers</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-newly-orange-killifish-brazilian-amazon.html" target="_blank" rel="noopener">Newly discovered orange killifish in the Brazilian Amazon may already be endangered</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-fish-marine-life-reveal-hidden.html" target="_blank" rel="noopener">Follow the fish: How marine life is helping reveal hidden shipwrecks</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-ways-teachers-residential-school-denialism.html" target="_blank" rel="noopener">Five ways teachers can respond to residential school denialism in the classroom</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-liquid-crystal-page-steel-phase.html" target="_blank" rel="noopener">Liquid crystal takes page from steel in surprising phase transition</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://www.sciencedaily.com/releases/2026/09/260922005719.htm" target="_blank" rel="noopener">Coffee doesn’t have to keep you awake to disrupt your sleep</a> <small>· ScienceDaily · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-children-sport-great-busy.html" target="_blank" rel="noopener">Children&amp;#039;s sport is great at keeping them busy—but are they learning?</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-quantum-protocol-device-position-stations.html" target="_blank" rel="noopener">Quantum protocol securely verifies a device&amp;#039;s position using stations 2 km apart</a> <small>· Phys.org · 1h ago</small></li><li><a href="https://www.sciencedaily.com/releases/2026/09/260922052030.htm" target="_blank" rel="noopener">This emerging treatment could help people avoid knee replacement surgery</a> <small>· ScienceDaily · 1h ago</small></li><li><a href="https://phys.org/news/2026-09-mass.html" target="_blank" rel="noopener">Mass shooting model identifies firearm availability as key limit on risk</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-rope-twine-thread-invisible-technologies.html" target="_blank" rel="noopener">Rope, twine and thread: Invisible technologies of the Stone Age</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://www.sciencedaily.com/releases/2026/09/260921081054.htm" target="_blank" rel="noopener">For the first time, scientists watch sound jump between quantum states</a> <small>· ScienceDaily · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-carbon-nanotube-foams-reveal-kind.html" target="_blank" rel="noopener">Carbon nanotube foams reveal a new kind of mechanical memory</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://www.sciencedaily.com/releases/2026/09/260921081050.htm" target="_blank" rel="noopener">Humpback whale mother may have mourned her dead calf for days</a> <small>· ScienceDaily · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-bacteria-polymers-class-antibiotic.html" target="_blank" rel="noopener">Bacteria-killing polymers—a new class of antibiotic?</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-state-sex-gen-recession-real.html" target="_blank" rel="noopener">The state of sex among Gen Z: Is the sex recession real?</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://www.sciencedaily.com/releases/2026/09/260921081114.htm" target="_blank" rel="noopener">MIT’s tiny flying robot gets 450% faster with AI</a> <small>· ScienceDaily · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-foods-winter.html" target="_blank" rel="noopener">Five foods that could cost even more this winter—and why</a> <small>· Phys.org · 2h ago</small></li><li><a href="https://phys.org/news/2026-09-invasive-deer-goats-hawaii-ranchlands.html" target="_blank" rel="noopener">Invasive deer, goats are eating away Hawaiʻi&amp;#039;s ranchlands</a> <small>· Phys.org · 3h ago</small></li><li><a href="https://phys.org/news/2026-09-brazil-gains-amazon-deforestation.html" target="_blank" rel="noopener">Brazil has made gains against Amazon deforestation, but lasting protection is a challenge</a> <small>· Phys.org · 3h ago</small></li></ul></div><div class="col"><h3>entertainment <small>(48)</small></h3><ul class="brief"><li><a href="https://variety.com/2026/shopping/news/handmaids-tale-testaments-box-set-signed-limited-edition-1236872074/" target="_blank" rel="noopener">This $760 ‘Handmaid’s Tale’ Box Set Comes With Hand-Signed Artwork and a New Margaret Atwood Introduction</a> <small>· Variety · 1h ago</small></li><li><a href="https://variety.com/2026/tv/news/rachel-maddow-kill-bury-print-wins-2026-david-carr-award-1236871616/" target="_blank" rel="noopener">Rachel Maddow&amp;#8217;s ‘Kill. Bury. Print.’ Wins 2026 David Carr Award From Montclair Film Festival</a> <small>· Variety · 1h ago</small></li><li><a href="https://variety.com/2026/tv/news/rosie-odonnell-abc-blocked-epstein-survivors-jimmy-kimmel-live-1236871978/" target="_blank" rel="noopener">Rosie O&amp;#8217;Donnell Says ABC Blocked Her From Having Jeffrey Epstein Survivors on &amp;#8216;Jimmy Kimmel Live&amp;#8217;: &amp;#8216;They Were Certain That Could Not Happen&amp;#8217;</a> <small>· Variety · 1h ago</small></li><li><a href="https://variety.com/2026/gaming/news/xbox-lay-offs-continue-activision-new-halo-game-1236872038/" target="_blank" rel="noopener">Xbox Lay Offs Continue With 268 Employees Cut; Activision to Develop Next &amp;#8216;Halo&amp;#8217; Game as Part of Studio Reorg</a> <small>· Variety · 1h ago</small></li><li><a href="https://variety.com/2026/tv/news/stephanie-ruhle-ms-now-live-audience-inteaction-tv-news-1236870514/" target="_blank" rel="noopener">Stephanie Ruhle Tests Live-Audience Show as MS NOW Seeks More Interaction With Crowds</a> <small>· Variety · 1h ago</small></li><li><a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/rani-mukerjis-mothers-funeral-shah-rukh-khan-alia-bhatt-karan-johar-anil-kapoor-among-others-arrive-to-offer-their-final-respects/articleshow/134414115.cms" target="_blank" rel="noopener">Rani Mukerji's mother's funeral: SRK, Alia, Karan Johar, Anil pay last respects</a> <small>· TOI Entertainment · 1h ago</small></li><li><a href="https://variety.com/2026/film/global/nicola-maccanico-ceo-rainbow-group-colorado-film-1236871873/" target="_blank" rel="noopener">Former Cinecittà Chief Nicola Maccanico Appointed CEO of Rainbow Group&amp;#8217;s Colorado Film</a> <small>· Variety · 1h ago</small></li><li><a href="https://variety.com/2026/film/news/bts-seventeen-enhypen-hybe-cine-fest-1236872029/" target="_blank" rel="noopener">BTS, Seventeen, Tomorrow X Together, Enhypen Anchor Trafalgar-HYBE Cine Fest&amp;#8217;s Global Expansion</a> <small>· Variety · 1h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/parties-and-events/photos-sanjay-dutt-ananya-panday-chunky-panday-and-others-snapped-at-lalbaugcha-raja/" target="_blank" rel="noopener">Photos: Sanjay Dutt, Ananya Panday, Chunky Panday and others snapped at Lalbaugcha Raja</a> <small>· Bollywood Hungama · 1h ago</small></li><li><a href="https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/72nd-national-film-awards-sukumar-gv-prakash-venky-atluri-niharika-konidela-and-other-winners-receive-honours-from-president-droupadi-murmu/articleshow/134412735.cms" target="_blank" rel="noopener">72nd National Film Awards: Sukumar, GV Prakash, Venky Atluri receive honours</a> <small>· TOI Entertainment · 1h ago</small></li><li><a href="https://variety.com/2026/global/global/atresmedia-lineup-san-sebastian-2026-1236871829/" target="_blank" rel="noopener">‘The Future of Spanish Cinema Is Not About Making More Films’: Atresmedia Unveils Broad Slate</a> <small>· Variety · 1h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/bollywood/dharma-productions-wins-rs-12-11-crores-gst-case-in-bombay-high-court-court-rejects-film-copyright-being-treated-as-it-software/" target="_blank" rel="noopener">Dharma Productions wins Rs. 12.11 crores GST case in Bombay High Court; court rejects film copyright being treated as IT software</a> <small>· Bollywood Hungama · 1h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/features/zee-tv-ladies-special-zee-tv-brings-ladies-special-washroom-initiative-to-parel-cha-raja-for-ganesh-chaturthi/" target="_blank" rel="noopener">Zee TV Ladies Special: Zee TV Brings ‘ladies special’ washroom initiative to Parel Cha Raja for Ganesh Chaturthi</a> <small>· Bollywood Hungama · 1h ago</small></li><li><a href="https://variety.com/2026/film/global/oscar-best-picture-category-dominated-international-films-1236871870/" target="_blank" rel="noopener">Oscar Best Picture Category Will Soon Be Dominated by International Films, Claims &amp;#8216;I&amp;#8217;m Still Here&amp;#8217; Producer Rodrigo Teixeira</a> <small>· Variety · 1h ago</small></li><li><a href="https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/motivational-quote-of-the-day-by-ben-affleck-every-scar-we-have-makes-us-who-we-are-were-not-meant-to-go-back-and-fix-them-and-theres-nothing-broken-with-you-that-needs-to-be-fixed-the-batman-stars-words-of-wisdom-about-how-you-need-to-move-on-from-your-past-mistakes-to-grow/articleshow/134408087.cms" target="_blank" rel="noopener">Motivational quote of the day by Ben Affleck</a> <small>· TOI Entertainment · 1h ago</small></li><li><a href="https://variety.com/2026/theater/news/vir-das-i-say-we-run-comedy-tour-dates-1236871622/" target="_blank" rel="noopener">Vir Das Unveils &amp;#8216;I Say We Run!&amp;#8217; Comedy Tour With London Residency, North American Dates (EXCLUSIVE)</a> <small>· Variety · 1h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/features/nora-fatehi-recalls-moving-to-india-at-22-to-pursue-bollywood-dreams-you-have-to-be-fearless/" target="_blank" rel="noopener">Nora Fatehi recalls moving to India at 22 to pursue Bollywood dreams: “You have to be fearless”</a> <small>· Bollywood Hungama · 1h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/parties-and-events/photos-karan-johar-and-vaani-kapoor-snapped-at-rani-mukerjis-mothers-funeral-in-santacruz/" target="_blank" rel="noopener">Photos: Karan Johar and Vaani Kapoor snapped at Rani Mukerji&amp;#8217;s mother&amp;#8217;s funeral in Santacruz</a> <small>· Bollywood Hungama · 2h ago</small></li><li><a href="https://www.bollywoodhungama.com/news/bollywood/exclusive-vivek-oberoi-keeps-his-promise-donates-his-entire-ramayana-remuneration-towards-treatment-of-50-children-battling-cancer-to-mark-his-50th-birthday/" target="_blank" rel="noopener">EXCLUSIVE: Vivek Oberoi keeps his promise; donates his ENTIRE Ramayana remuneration towards treatment of 50 children battling cancer to mark his 50th birthday</a> <small>· Bollywood Hungama · 2h ago</small></li><li><a href="https://variety.com/2026/film/reviews/heart-of-the-beast-review-brad-pitt-1236870505/" target="_blank" rel="noopener">&amp;#8216;Heart of the Beast&amp;#8217; Review: Brad Pitt Is a Veteran Stranded With His Combat Dog in David Ayer&amp;#8217;s Stirringly Crafted Survival-in-the-Wild Saga</a> <small>· Variety · 2h ago</small></li></ul></div><div class="col"><h3>health <small>(1)</small></h3><ul class="brief"><li><a href="https://www.bbc.co.uk/news/videos/ck4glyzjx8xzo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Sisters with life-limiting condition taking NHS fight to Parliament</a> <small>· BBC Health · 5h ago</small></li></ul></div></div>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
