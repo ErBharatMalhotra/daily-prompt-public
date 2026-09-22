@@ -66,6 +66,7 @@ jobs:
           LLM_COOLDOWN_MS: "60000"
           HINDI_EDITION: ${{ secrets.HINDI_EDITION || '1' }}
           CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN || '' }}
+          PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
         run: |
           node engine/scrape.js
           node engine/run.js
