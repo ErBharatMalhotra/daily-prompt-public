@@ -128,3 +128,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node engine/alert.js fail "Daily edition workflow failed at $(date -u +%F\ %H:%M\ UTC) — check the Actions log for the failing step."
+
+      - name: Trigger Cloudflare Pages deploy (deploy hook)
+        if: success()
+        env:
+          CF_DEPLOY_HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$CF_DEPLOY_HOOK" ]; then
+            curl -s -X POST "$CF_DEPLOY_HOOK" && echo "[deploy] cloudflare hook triggered"
+          else
+            echo "[deploy] CF_DEPLOY_HOOK not set - skipping"
+          fi
