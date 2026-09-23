@@ -156,7 +156,7 @@ async function readerTelemetryRows() {
   } catch { return ""; }
 }
 
-async function statsPage() {
+async function statsPage(deskRows = "", candidates = "") {
   const readerRows = await readerTelemetryRows();
   const meta = readJson("run_meta.json", null);
   const q = readJson(`quarantine/${meta?.date || "NA"}.json`, []).filter((e) => e?.reason !== "test");
@@ -194,6 +194,10 @@ async function statsPage() {
      <h3>Latest run</h3>
      <table>${rows}</table>
      ${quotaRows ? `<h3>Quota health (model slots)</h3><table><tr><th>Slot</th><th>OK</th><th>Min-429</th><th>Day-429</th><th>Status</th></tr>${quotaRows}</table>` : ""}
+     <h3>Desk health (all ${BEATS.length} desks)</h3>
+     <table><tr><th>Desk</th><th>Stories</th><th>Editions with stories</th><th>Last publish</th><th>Status</th></tr>${deskRows}</table>
+     <p class="src">"Dry" means the desk has not published for that many days — the daily story pool decides what each desk writes, so some desks legitimately rest when their beats are quiet.</p>
+     ${candidates ? `<h3>Wire candidates for dry desks</h3><table><tr><th>Desk</th><th>Pooled story (candidate for next edition)</th><th>Source</th><th>Confirmations</th></tr>${candidates}</table><p class="src">Suggested by the wire pool: fresh, deduped stories sitting in desks that have not published recently — these are the strongest candidates for the next edition's full articles.</p>` : ""}
      <h3>Journalist leaderboard</h3>
      <table><tr><th>Journalist</th><th>Genome</th><th>Avg editor score</th><th>Editions</th></tr>${leaderboard(loadGenomes())}</table>
      <p class="src">Run metadata is written by the pipeline (<code>run_meta.json</code>) after every edition; this page is rebuilt with it.</p>${readerRows}`
@@ -587,7 +591,34 @@ export async function build() {
     page("Archive — The Daily Prompt", `<header><h1>Archive</h1></header><ul>${archList}</ul>`)
   );
 
-  fs.writeFileSync(path.join(DIST, "stats.html"), await statsPage());
+  // Desk health: per-desk story counts across the archive window + last publish.
+  // Shows which desks are productive and which have gone quiet (pool decides).
+  const editionsAll = editions;
+  const perDesk = BEATS.map((b) => {
+    const mine = allPublished.filter((a) => a.beat === b);
+    const dates = [...new Set(mine.map((a) => a.date).filter(Boolean))].sort();
+    const last = dates[dates.length - 1] || null;
+    const dry = last ? Math.max(0, Math.round((Date.now() - new Date(last).getTime()) / 86400000)) : null;
+    return { beat: b, n: mine.length, last, dry, editions: dates.length };
+  });
+  const deskRows = perDesk
+    .map((d) => {
+      const status = d.n === 0 ? "never published" : d.dry === 0 ? "active today" : d.dry === 1 ? "yesterday" : `dry ${d.dry}d`;
+      const cls = d.n === 0 ? "stale" : d.dry >= 3 ? "warn" : "ok";
+      return `<tr><td><a href="/category/${esc(d.beat)}.html">${esc(d.beat)}</a></td><td>${d.n}</td><td>${d.editions}</td><td>${d.last ? esc(d.last) : "—"}</td><td class="st-${cls}">${esc(status)}</td></tr>`;
+    })
+    .join("");
+  // Wire candidates: fresh pool stories for desks that haven't published recently,
+  // i.e. tomorrow's article queue — the newsroom suggesting its own work.
+  const dryDesks = perDesk.filter((d) => d.dry === null || d.dry >= 2).map((d) => d.beat);
+  const candidates = wirePool
+    .filter((s) => dryDesks.includes(s.beat))
+    .sort((a, b) => (b.confirmations || 1) - (a.confirmations || 1) || new Date(b.published || 0) - new Date(a.published || 0))
+    .slice(0, 10)
+    .map((s) => `<tr><td>${esc(s.beat)}</td><td><a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${esc(s.sourceName)}</td><td>${s.confirmations || 1}×</td></tr>`)
+    .join("");
+  const statsHtml = await statsPage(deskRows, candidates);
+  fs.writeFileSync(path.join(DIST, "stats.html"), statsHtml);
   fs.writeFileSync(path.join(DIST, "feed.xml"), feedXml(editions));
 
   // ---------- OG/social cards (Python/Pillow, deterministic) ----------
