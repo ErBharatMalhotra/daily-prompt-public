@@ -127,9 +127,18 @@ img { max-width: 100%; }
 .topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
 .catrow {
   max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
-  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
 }
 .catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
 .catrow a {
   flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
   text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
@@ -197,6 +206,7 @@ h2.sec {
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
 .badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
 .badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
 
 /* ---------- beat color strips on hero via data attr (optional future) ---------- */
@@ -287,7 +297,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/business.html">business</a><a href="/category/tech.html">tech</a><a href="/category/sports.html">sports</a><a href="/category/science.html">science</a><a href="/category/entertainment.html">entertainment</a><a href="/category/health.html">health</a></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-12</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-12</h1></header><article class="story">
     <div class="meta">NATIONAL · The Hindu · editor 7/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-12/telangana-cm-proposes-generation-based-education-framework-i.html">Telangana CM Proposes Generation-Based Education Framework in Assembly</a></h2>
     <p>Telangana Chief Minister Revanth Reddy outlined a multi-generational strategy for the state’s education policy during a legislative assembly address on Monday. The proposal suggests tailoring curricula and infrastructure to address the distinct needs of different student cohorts, ranging from current workforce entrants to younger students.</p><p>Reddy described the framework as preparing students for rapid technological shifts. For the current school and college-going population, the emphasis is on practical, employable skills to bridge the gap between academic learning and industry requirements. He argued that immediate priority must be given to ensuring these students possess relevant technical and soft skills for the job market.</p><p>For younger students, the strategy shifts toward foundational adaptability. Reddy stated that education for these future cohorts should prioritize cognitive flexibility and digital literacy to navigate AI-driven changes expected in coming decades.</p><p>The government aims to make the educational framework more agile and responsive to global economic trends. By segmenting goals by age group, authorities intend to allocate resources effectively for both immediate economic output and long-term societal preparedness. Reddy warned that ignoring these distinct needs would result in an outdated system before students graduate.</p><p>During the debate, opposition members raised concerns regarding the financial viability of implementing such a segmented approach without a corresponding increase in the overall education budget. The government maintains that this targeted strategy will enhance Telangana’s competitive edge in national and global talent markets. The assembly discussion is expected to continue as budgetary details are scrutinized.</p>

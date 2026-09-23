@@ -1,0 +1,65 @@
+{
+  "updated": "2026-09-23",
+  "sources": [
+    { "id": "toi-top",          "name": "Times of India",    "beat": "national",      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms" },
+    { "id": "thehindu",         "name": "The Hindu",         "beat": "national",      "url": "https://www.thehindu.com/news/national/feeder/default.rss" },
+    { "id": "news18-india",     "name": "News18 India",      "beat": "national",      "url": "https://www.news18.com/rss/india.xml" },
+    { "id": "indiatoday",       "name": "India Today",       "beat": "national",      "url": "https://www.indiatoday.in/rss/1206578" },
+    { "id": "ie-india",         "name": "Indian Express",    "beat": "national",      "url": "https://indianexpress.com/section/india/feed/" },
+
+    { "id": "bbc-world",        "name": "BBC World",         "beat": "world",         "url": "https://feeds.bbci.co.uk/news/world/rss.xml" },
+    { "id": "thehindu-world",   "name": "The Hindu World",   "beat": "world",         "url": "https://www.thehindu.com/news/international/feeder/default.rss" },
+    { "id": "aljazeera",        "name": "Al Jazeera",        "beat": "world",         "url": "https://www.aljazeera.com/xml/rss/all.xml" },
+    { "id": "news18-world",     "name": "News18 World",      "beat": "world",         "url": "https://www.news18.com/rss/world.xml" },
+
+    { "id": "gnews-defence",    "name": "Defence (aggregate)", "beat": "defence",     "url": "https://news.google.com/rss/search?q=defence+india&hl=en-IN&gl=IN&ceid=IN:en" },
+
+    { "id": "et-top",           "name": "Economic Times",    "beat": "business",      "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms" },
+    { "id": "bs-top",           "name": "Business Standard", "beat": "business",      "url": "https://www.business-standard.com/rss/home_page_top_stories.rss" },
+    { "id": "bbc-business",     "name": "BBC Business",      "beat": "business",      "url": "https://feeds.bbci.co.uk/news/business/rss.xml" },
+    { "id": "moneycontrol",     "name": "Moneycontrol",      "beat": "business",      "url": "https://www.moneycontrol.com/rss/latestnews.xml" },
+
+    { "id": "mc-business",      "name": "Moneycontrol Business", "beat": "finance",   "url": "https://www.moneycontrol.com/rss/business.xml" },
+    { "id": "bs-finance",       "name": "BS Personal Finance",   "beat": "finance",   "url": "https://www.business-standard.com/rss/personal-finance-106.rss" },
+    { "id": "livemint-money",   "name": "Livemint Money",        "beat": "finance",   "url": "https://www.livemint.com/rss/money" },
+
+    { "id": "gnews-education",  "name": "Education (aggregate)", "beat": "education", "url": "https://news.google.com/rss/search?q=education+india&hl=en-IN&gl=IN&ceid=IN:en" },
+
+    { "id": "ndtv-sports",      "name": "NDTV Sports",       "beat": "sports",        "url": "https://feeds.feedburner.com/ndtvsports-latest" },
+    { "id": "bbc-sport",        "name": "BBC Sport",         "beat": "sports",        "url": "https://feeds.bbci.co.uk/sport/rss.xml" },
+    { "id": "crictracker",      "name": "Crictracker",       "beat": "cricket",       "url": "https://www.crictracker.com/feed/" },
+    { "id": "espn-cricket",     "name": "ESPN Cricinfo",     "beat": "cricket",       "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml" },
+
+    { "id": "variety",          "name": "Variety",           "beat": "entertainment", "url": "https://variety.com/feed/" },
+    { "id": "bollywoodhungama", "name": "Bollywood Hungama", "beat": "entertainment", "url": "https://www.bollywoodhungama.com/feed/" },
+    { "id": "toi-entertainment", "name": "TOI Entertainment", "beat": "entertainment", "url": "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms" },
+
+    { "id": "goodnews",         "name": "Good News Network", "beat": "positive",      "url": "https://www.goodnewsnetwork.org/feed/" },
+    { "id": "betterindia",      "name": "The Better India",  "beat": "positive",      "url": "https://thebetterindia.com/feed/" },
+
+    { "id": "nottheonion",      "name": "r/nottheonion",     "beat": "funny",         "url": "https://www.reddit.com/r/nottheonion/.rss" },
+
+    { "id": "sciencedaily",     "name": "ScienceDaily",      "beat": "science",       "url": "https://www.sciencedaily.com/rss/all.xml" },
+    { "id": "physorg",          "name": "Phys.org",          "beat": "science",       "url": "https://phys.org/rss-feed/" },
+    { "id": "bbc-science",      "name": "BBC Science",       "beat": "science",       "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml" },
+
+    { "id": "guardian-env",     "name": "Guardian Environment", "beat": "environment", "url": "https://www.theguardian.com/environment/rss" },
+    { "id": "mongabay-india",   "name": "Mongabay India",    "beat": "environment",   "url": "https://india.mongabay.com/feed/" },
+
+    { "id": "sd-space",         "name": "ScienceDaily Space", "beat": "space",        "url": "https://www.sciencedaily.com/rss/space_time/space_exploration.xml" },
+    { "id": "nasa",             "name": "NASA",              "beat": "space",         "url": "https://www.nasa.gov/news-release/feed/" },
+
+    { "id": "who-news",         "name": "WHO News",          "beat": "health",        "url": "https://www.who.int/rss-feeds/news-english.xml" },
+    { "id": "bbc-health",       "name": "BBC Health",        "beat": "health",        "url": "https://feeds.bbci.co.uk/news/health/rss.xml" },
+    { "id": "et-health",        "name": "ET Healthworld",    "beat": "health",        "url": "https://health.economictimes.indiatimes.com/rss/topstories" },
+
+    { "id": "techcrunch",       "name": "TechCrunch",        "beat": "tech",          "url": "https://techcrunch.com/feed/" },
+    { "id": "verge",            "name": "The Verge",         "beat": "tech",          "url": "https://www.theverge.com/rss/index.xml" },
+    { "id": "ars",              "name": "Ars Technica",      "beat": "tech",          "url": "https://feeds.arstechnica.com/arstechnica/index" },
+    { "id": "engadget",         "name": "Engadget",          "beat": "tech",          "url": "https://www.engadget.com/rss.xml" },
+
+    { "id": "tc-ai",            "name": "TechCrunch AI",     "beat": "ai",            "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+    { "id": "verge-ai",         "name": "The Verge AI",      "beat": "ai",            "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
+    { "id": "mit-ai",           "name": "MIT Tech Review AI", "beat": "ai",           "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" }
+  ]
+}

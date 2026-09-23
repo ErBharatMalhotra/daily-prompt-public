@@ -127,9 +127,18 @@ img { max-width: 100%; }
 .topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
 .catrow {
   max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
-  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
 }
 .catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
 .catrow a {
   flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
   text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
@@ -197,6 +206,7 @@ h2.sec {
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
 .badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
 .badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
 
 /* ---------- beat color strips on hero via data attr (optional future) ---------- */
@@ -287,7 +297,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/business.html">business</a><a href="/category/tech.html">tech</a><a href="/category/sports.html">sports</a><a href="/category/science.html">science</a><a href="/category/entertainment.html">entertainment</a><a href="/category/health.html">health</a></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-19</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-19</h1></header><article class="story">
     <div class="meta">NATIONAL · India Today · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-19/abvp-secures-three-seats-in-dusu-elections-independent-wins-.html">ABVP Secures Three Seats in DUSU Elections; Independent Wins Vice President Post</a></h2>
     <p>The Akhil Bharatiya Vidyarthi Parishad (ABVP) has achieved a significant victory in the Delhi University Students' Union (DUSU) elections, securing three out of the four central panel posts. The results, declared following a period of intense campaigning and voting, saw the student wing of the Rashtriya Swayamsevak Sangh (RSS) establish its dominance in the prestigious student body polls.</p><p>While the ABVP celebrated its strong performance, the Vice President's position was notably clinched by an independent candidate. This outcome prevented a complete sweep by the ABVP, introducing a non-affiliated voice into the central panel. The declaration of results was met with widespread celebrations among the winning candidates and their supporters across the university campus, marking the culmination of the electoral process.</p><p>The DUSU elections are widely regarded as a crucial barometer of student political sentiment within the national capital, often attracting considerable attention from mainstream political parties. The polls witnessed robust participation from students, who cast their votes to elect their representatives for the academic year.</p><p>The ABVP's continued strong presence underscores its deep-rooted organizational structure and outreach capabilities within Delhi University. Conversely, the success of an independent candidate for a key post highlights the potential for individual student leaders to garner support and secure victories, even when competing against well-established and politically-backed student organizations. The results are now being closely scrutinized by various student groups and political analysts, offering insights into the evolving dynamics of campus politics.</p><p>What to watch: How the newly elected DUSU body addresses student issues and campus governance in the coming academic year.</p>
