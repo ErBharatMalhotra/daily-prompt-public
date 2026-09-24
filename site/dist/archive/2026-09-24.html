@@ -1,0 +1,573 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-24</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="The Daily Prompt — 2026-09-24">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+<meta property="og:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+
+<meta name="theme-color" content="#121214">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
+<script src="/translator.js" defer></script>
+<script src="/personalize.js" defer></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,mai,mni-Mtei,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en,ar,zh-CN,es,fr,de,ja,ru,pt,id,tr,fa,sw',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
+ * Design tokens first; dark is the default, light via [data-theme=light].
+ * Heavy effects are limited to the sticky nav (small area) so the site stays fast.
+ */
+
+/* ---------- tokens ---------- */
+:root {
+  --ink: #ece7dd;
+  --ink-soft: #b8b2a6;
+  --paper: #121214;
+  --paper-2: #1a1a1e;
+  --card: #1f1f24;
+  --line: #2c2c33;
+  --accent: #e03e3e;
+  --accent-deep: #8b0000;
+  --ok-bg: #10331c; --ok-fg: #7ede9b;
+  --bad-bg: #3a1416; --bad-fg: #f2a0a0;
+  --conf-bg: #14243a; --conf-fg: #9cc4f0;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
+  --nav-bg: rgba(18, 18, 20, .62);
+}
+[data-theme="light"] {
+  --ink: #191919;
+  --ink-soft: #5c5952;
+  --paper: #f7f3ea;
+  --paper-2: #efe9db;
+  --card: #ffffff;
+  --line: #e3dcc9;
+  --accent: #a31212;
+  --accent-deep: #8b0000;
+  --ok-bg: #dff3e2; --ok-fg: #17652e;
+  --bad-bg: #f9e0e0; --bad-fg: #8f1f1f;
+  --conf-bg: #e2ecfa; --conf-fg: #1d4e86;
+  --shadow: 0 10px 26px rgba(60, 50, 30, .12);
+  --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
+  --nav-bg: rgba(247, 243, 234, .68);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.6;
+  transition: background .3s ease, color .3s ease;
+}
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 72px; }
+
+/* ---------- glass header (only heavy effect on the page) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9990;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-row {
+  max-width: 980px; margin: 0 auto; padding: 10px 18px;
+  display: flex; align-items: center; gap: 14px;
+}
+.topbar .brand {
+  font-family: var(--serif);
+  font-weight: 700; font-size: 19px; letter-spacing: .5px;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.topbar .brand span { color: var(--accent); }
+.topbar .tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.topbar .tools a, .topbar .tools button {
+  color: var(--ink-soft); text-decoration: none; font-size: 13px;
+  background: transparent; border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 10px; cursor: pointer; font-family: var(--sans);
+}
+.topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
+.catrow {
+  max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
+}
+.catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
+.catrow a {
+  flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: transparent;
+}
+.catrow a:hover { color: var(--ink); border-color: var(--accent); }
+.catrow a.on { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+/* ---------- header block ---------- */
+header.mast { text-align: center; padding: 30px 0 8px; }
+header.mast h1 {
+  font-family: var(--serif); font-size: clamp(30px, 5.4vw, 46px);
+  margin: 0; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+}
+header.mast h1 a { color: inherit; text-decoration: none; }
+header.mast h1 a:hover { color: var(--accent); }
+header.mast p { margin: 6px 0 0; font-style: italic; color: var(--ink-soft); font-size: 15px; }
+.masthead-stats {
+  display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-soft); margin-top: 10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.nav { text-align: center; font-size: 14px; margin: 12px 0 0; color: var(--ink-soft); }
+
+/* ---------- section headers ---------- */
+h2.sec {
+  font-family: var(--serif); font-size: 21px; letter-spacing: 1.5px; text-transform: uppercase;
+  border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin: 34px 0 14px;
+}
+
+/* ---------- stories / cards ---------- */
+.story { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.story.single { border-bottom: none; }
+.story h2 { font-family: var(--serif); margin: 4px 0 10px; font-size: 25px; line-height: 1.25; }
+.story h2 a { color: inherit; text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+.story h1 { font-family: var(--serif); margin: 6px 0 14px; font-size: clamp(26px, 4.6vw, 36px); line-height: 1.2; }
+
+.story.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 26px 20px;
+  margin: 20px 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.story.hero:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(0,0,0,.42); }
+.story.hero h2 { font-size: clamp(27px, 4.8vw, 36px); margin: 8px 0; }
+.lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+.meta {
+  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
+.critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
+.hi-title a { font-size: 16px; }
+.src { font-size: 13px; color: var(--ink-soft); }
+
+/* ---------- badges (pills) ---------- */
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
+.badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
+
+/* ---------- beat color strips on hero via data attr (optional future) ---------- */
+
+/* ---------- misc blocks ---------- */
+.stale { background: #3a2e10; border: 1px solid #a9852c; color: #f2d489; padding: 12px 16px; margin: 16px 0; font-size: 14px; border-radius: var(--radius); }
+[data-theme="light"] .stale { background: #fdf0d5; border-color: #e0b95a; color: #6b5210; }
+.st-ok { color: #7fc97f; }
+.st-warn { color: #e0b95a; }
+.st-stale { color: #e03e3e; }
+[data-theme="light"] .st-ok { color: #256b25; }
+[data-theme="light"] .st-warn { color: #8a6d1a; }
+[data-theme="light"] .st-stale { color: #b02020; }
+.dates { display: flex; justify-content: space-between; font-size: 14px; margin: 16px 0; }
+.crumb { font-size: 14px; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- columns / briefs ---------- */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 24px; }
+.col { border-right: 1px solid var(--line); padding-right: 18px; }
+.col:last-child { border-right: none; }
+.col h3 { font-family: var(--serif); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin: 12px 0 8px; }
+.col h3 a { color: var(--ink); text-decoration: none; }
+.col h3 a:hover { color: var(--accent); }
+.col ul { list-style: none; margin: 0; padding: 0; }
+.col li { margin: 0 0 12px; font-size: 14px; line-height: 1.45; }
+.col li a { color: var(--ink); text-decoration: none; }
+.col li a:hover { color: var(--accent); }
+.col small, ul.brief li small { color: var(--ink-soft); font-size: 12px; }
+ul.brief { list-style: none; padding: 0; margin: 0; }
+ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+
+/* ---------- tiles / pipeline ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 14px 0; }
+.tile {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 12px; text-align: center; font-size: 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile b { display: block; font-size: 16px; margin-bottom: 2px; font-family: var(--serif); }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.pipeline { display: flex; gap: 10px; align-items: stretch; margin: 14px 0; flex-wrap: wrap; }
+.pstep {
+  flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
+}
+.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
+.pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
+.parrow { align-self: center; font-size: 20px; color: var(--accent); flex: 0 0 auto; }
+@media (max-width: 700px) { .parrow { display: none; } }
+.about-note { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* ---------- translate gadget ---------- */
+.gtr {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+}
+.gtr .goog-te-gadget { font-size: 13px !important; }
+.gtr .goog-te-gadget-simple {
+  border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
+  background: var(--card) !important; color: var(--ink) !important;
+}
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+
+/* ---------- share / saved / search ---------- */
+.sharebar { margin: 14px 0 4px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 14px; }
+.sharebar a { text-decoration: none; }
+.sharebar a:hover { color: var(--accent); }
+.savedlist li { padding: 7px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+#q { width: 100%; padding: 12px 14px; font-size: 16px; font-family: var(--sans); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); }
+.hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.hit small { color: var(--ink-soft); }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style></head><body><div class="topbar"><div class="topbar-row">
+    <a class="brand" href="/">The Daily <span>Prompt</span></a>
+    <div class="tools">
+      <a href="/search.html">Search</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/wire.html">Wire</a>
+      <a href="/stats.html">Stats</a>
+      <a href="/feed.xml" title="RSS">RSS</a>
+      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-24</h1></header><article class="story">
+    <div class="meta">ENVIRONMENT · Mongabay India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/odours-offer-new-clues-in-monitoring-big-cats.html">Odours offer new clues in monitoring big cats</a></h2>
+    <p>Researchers are expanding the toolkit for tracking big cats by turning to odour evidence. Traditional methods such as camera trapping and genetic sampling have proven valuable for estimating population size, density and for identifying individual animals. However, these techniques often fall short when it comes to revealing details about an animal's age, sex, reproductive status or overall health. A recent study highlighted in Mongabay India suggests that analysing urine and scat can provide insights beyond mere presence, potentially filling gaps left by visual and genetic data. By examining chemical signatures in these waste products, scientists hope to infer physiological conditions and demographic information that were previously difficult to obtain in the field. The approach could complement existing monitoring strategies, offering a more nuanced picture of big cat populations across diverse habitats. While the method is still under development, early results indicate that odour analysis may become a practical addition to conservation efforts, especially in remote forest areas where direct observation is limited. What to watch: further validation of scent‑based metrics and integration with camera and DNA surveys.</p>
+    <p class="src">Source: <a href="https://india.mongabay.com/2026/09/odours-offer-new-clues-in-monitoring-big-cats/" rel="noopener">Mongabay India</a> · <a href="article/2026-09-24/odours-offer-new-clues-in-monitoring-big-cats.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS · BBC Business · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/rise-in-commuter-students-due-to-living-costs.html">Rise in 'commuter students' due to living costs</a></h2>
+    <p>A growing number of university students are opting to remain at home while pursuing higher education, a trend linked to rising living expenses. Reports from BBC Business note that financial pressures are preventing many young people from moving into independent accommodation near campuses. As tuition fees and rent continue to climb, staying with family offers a cost‑effective alternative, allowing students to allocate limited resources toward tuition and study materials. This shift has implications for campus life, commuter patterns, and local economies that traditionally benefit from student spending. Universities are observing changes in housing demand, while transport services report increased usage during peak travel times. The phenomenon also raises questions about student wellbeing, social integration, and academic performance when daily commutes replace on‑campus living. Policymakers and educational institutions may need to consider support measures, such as affordable housing schemes or subsidies, to address the financial barriers driving this trend. What to watch: how universities and governments respond to the expanding commuter‑student demographic.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/c670lknwqyxno?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-24/rise-in-commuter-students-due-to-living-costs.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/shillong-teer-result-today-september-24-2026-winning-numbers.html">Shillong Teer Result Today, September 24, 2026: Winning Numbers Released</a></h2>
+    <p>The latest Shillong Teer results for September 24, 2026 have been published, covering all major draws. Participants can now check the winning numbers for Shillong Teer, Juwai Teer, Khanapara Teer, as well as the Shillong Morning Teer and Night Teer sessions. The release provides the official outcomes for each game, allowing players to verify their tickets against the announced figures. While the summary does not list the specific numbers, it confirms that the results are available for public viewing and that enthusiasts can access them through the usual channels. This update ensures that the community stays informed about the day's draws and can settle any pending claims promptly. What to watch: any upcoming changes to draw schedules or result dissemination methods for future Teer sessions.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/shillong-teer-result-today-september-24-2026-winning-numbers-10348767.html" rel="noopener">News18 India</a> · <a href="article/2026-09-24/shillong-teer-result-today-september-24-2026-winning-numbers.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · The Hindu World · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/pentagon-investigates-after-china-obtains-parts-from-f35-ste.html">Pentagon investigates after China obtains parts from F‑35 stealth fighter jet</a></h2>
+    <p>The United States Pentagon has launched an investigation after reports emerged that components from an F‑35 stealth fighter jet were obtained by China. Australian Defence Minister Richard Marles confirmed to reporters that the missing jet parts had surfaced in Hong Kong, but he rejected claims that the items were &quot;sensitive equipment.&quot; Marles’ statement, given during a press briefing, stopped short of detailing the nature of the components or how they left Australian custody. The Pentagon’s probe will examine the chain of custody, assess any potential breach of security protocols, and determine whether the parts could compromise the aircraft’s stealth capabilities. While the Australian government has denied the sensitivity of the equipment, U.S. officials have expressed concern about the possible transfer of advanced technology to a strategic competitor. The investigation underscores ongoing tensions over defence technology security and highlights the challenges of safeguarding high‑value military assets in a global supply chain. What to watch: Findings of the Pentagon’s inquiry and any diplomatic response from China.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/international/pentagon-investigates-after-china-obtains-parts-from-f-35-stealth-fighter-jet/article71502726.ece" rel="noopener">The Hindu World</a> · <a href="article/2026-09-24/pentagon-investigates-after-china-obtains-parts-from-f35-ste.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/the-economist-indias-education-system-faces-crisis-beyond-le.html">The Economist: India’s education system faces crisis beyond leaky roofs</a></h2>
+    <p>The Economist reports that India’s education system is confronting a crisis that extends far beyond the well‑documented problem of leaky school roofs. While infrastructure decay remains visible, the publication highlights deeper issues such as uneven resource allocation, chronic teacher shortages and gaps in curriculum relevance. It notes that enrolment figures have risen dramatically, yet learning outcomes lag, with many students completing primary school without mastering basic literacy and numeracy. The analysis points to a mismatch between funding formulas and on‑ground needs, suggesting that money is often spent on cosmetic repairs rather than on teacher training, digital tools or curriculum updates. The article also references recent government initiatives aimed at upgrading facilities, but stresses that without parallel reforms in assessment standards and accountability mechanisms, physical repairs alone will not resolve the systemic weakness. The Economist calls for coordinated policy action that links funding to measurable improvements in student performance, urging state‑level audits and a transparent reporting framework. What to watch: upcoming Ministry of Education budget revisions and the rollout of the National Education Policy reforms.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxONUtiRW1OSkptaW0xMWwxMjF5X2EyUWUyTGlDcHRDUGZQdWRoai05MlpHV3VCRHBUd0xSaVNwcVJoQ3NxUGRXMWR2NXRNQUJMT1JIRGExelFja3k5V0lnQ05OcFloUnBwdWYxUkdlSDN2LWdLQUJLUHBfa2hZVGxoNGVscEhnMXJ2OHI0ZkxWVllpLS1Ka20tdVJ0M0J4dw?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-24/the-economist-indias-education-system-faces-crisis-beyond-le.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/sean-gunn-says-hes-too-old-and-retired-from-playing-rocket-r.html">Sean Gunn Says He’s ‘Too Old’ and ‘Retired’ From Playing Rocket Raccoon in ‘Guardians of the Galaxy’: It ‘Hurts After a While’</a></h2>
+    <p>Sean Gunn announced that he is retiring from the on‑set motion‑capture work that brings the fan‑favorite Rocket Raccoon to life in the Guardians of the Galaxy franchise. In a recent interview, Gunn explained that the physical demands of contorting his body into the small, animal‑like shape have become increasingly painful, leading him to conclude that he has “aged out” of the role. He said the repetitive strain on his joints and muscles makes the work “hurt after a while,” prompting the decision to step back. The actor clarified that he is not abandoning the character entirely, but will no longer perform the on‑set puppeteering that complements the CGI animation. Marvel Studios has not announced a replacement, and the upcoming film schedule will determine whether a new performer will be hired for future scenes. Gunn’s retirement underscores the often‑overlooked physical toll that motion‑capture work can exact on actors. What to watch: casting updates for the next Guardians of the Galaxy installment and any statements from Marvel Studios regarding the character’s future portrayal.</p>
+    <p class="src">Source: <a href="https://variety.com/2026/film/news/sean-gunn-retired-rocket-raccoon-guardians-of-the-galaxy-1236873997/" rel="noopener">Variety</a> · <a href="article/2026-09-24/sean-gunn-says-hes-too-old-and-retired-from-playing-rocket-r.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/meet-sarvesh-sharma-himachal-labourers-son-who-turned-a-rs-8.html">Meet Sarvesh Sharma: Himachal labourer's son who turned a Rs 87,000 drone prototype into a Rs 3.5 crore d</a></h2>
+    <p>A feature in The Times of India profiles Sarvesh Sharma, the son of a Himachal labourer who transformed a modest Rs 87,000 drone prototype into a commercial‑grade system valued at Rs 3.5 crore. Sharma began experimenting with off‑the‑shelf components in a modest workshop, focusing on improving payload capacity, flight endurance and autonomous navigation. Over a series of iterative tests, he incorporated locally sourced carbon‑fiber frames and custom‑built flight controllers, driving the unit’s performance to meet the specifications demanded by defence and agricultural customers. The article notes that the upgraded drone has attracted interest from state‑run agencies seeking cost‑effective aerial surveillance solutions, as well as private firms in precision farming. Sharma’s journey illustrates how grassroots innovation can bridge the gap between low‑cost prototypes and high‑value market offerings, highlighting the potential for similar talent pools in remote Indian regions. The story also references government schemes that support technology start‑ups in mountainous states, suggesting that Sharma may benefit from future grants or incubation programmes. What to watch: potential partnership announcements between Sharma’s venture and Indian defence procurement agencies.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi6wJBVV95cUxOYlpPRjFKZi0zZjFBMlcwYTlRenF0VkFJZFJDcERlZmRzOTdCRGVIbTZrY2lGdW5LUV8weFJBQ0hERndmZU1OZmpjTVM5Rk1jWXdXUGlySXZTNFZGbVFUenpmYTNkM2lTS0dDaXhSMm9aQjNySWFiQUljS0ZLc05XUDVTTjJpek1wMXA1OTF6WjJ6US1WNE9TODlfSkotbUhZeER2c2dhU2FyQ1dMMmNBY2JLQmRFblY1WF83MWZObjdCdFdKLUp6M3hJMm5sZ0oyMlNoOWFCZnhaRkxacGpqNHBGcWF2T0FKaEFsTVZTQ3RGVnljaUJDc3BLbEtKdVVQMVVTbUNXZzNTZGd4NFMySE5mTXZFRXdqRFh6VWFvUFFtU056ZTZqd0NDTHZyb3RXMTh6TmhKWGw3MFViaTJWWWswV3RlOHQ2anFWdHh0ZEZFX2JyOVZGZFg5VFhQNk9RNDdNejJISHhCUGPSAfACQVVfeXFMUElMbjlucjhTRmtVMTh0UEZRTGdQMDc2QjlfNE9Wc0Jwa3o3ZUpSSXRIMDVkVGN1dUt5eGxFcFJPM3NNYXg3Q3h0OU1WaEJremhKaXQ3bDVMQVkzNjA2VEZvWlNySGdaY0FPR2hzS2NQT1BpNHdMajNqd1lYQmN5YTFsdjZjREQ3R1AxY3daLVZlR2xZWE9uQmhpR1hFdUlIbEZvaFhqeHNERFNtb3A2a1hCeEJIandLVFlzdkhDVmVUQjM0R3VyYnRMbTVIQ0NLdk1qaTVUWk1PblpIY2lVc0puUXpQSE5kNV9qS1d6eENTWGlwa05RQXdVQjFQTWtWaGJSSXlLU2dDcGwza0YzWi1RcklSbTI3cGMwMTZqWkRENk1KSXg2X0YxU2tPRnN5SmszdERNTDdhUmRMZ0plTUZfaEIwNDFKX1VqWjZ1YjcxQVZ2d1JLM21MSWp3d21tRmtKWGlNSmJCWTRuN3B1V1c?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-24/meet-sarvesh-sharma-himachal-labourers-son-who-turned-a-rs-8.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/insurance-related-stocks-crack-pb-fintech-max-hdfc-life-slid.html">Insurance-related stocks crack: PB Fintech, Max, HDFC Life slide up to 20%</a></h2>
+    <p>Insurance stocks jolted after the Insurance Regulatory and Development Authority of India (IRDAI) proposed a phased reduction in the expenses of management (EoM) limits for insurers. The regulator’s proposal, disclosed on a Wednesday, aims to curb excessive cost structures by tightening the ceiling on how much insurers can spend on management and distribution expenses. Analysts interpret the move as an effort to protect policyholder interests and improve the sector’s profitability, but the immediate market reaction was negative, with shares of PB Fintech, Max Financial Services and HDFC Life dropping as much as 20 per cent. For ordinary savers, the change could mean insurers may pass on cost efficiencies through lower premium hikes or enhanced policy features over time. Taxpayers are unlikely to feel a direct impact, but the broader push for tighter cost control may influence the pricing of future insurance products. What to watch: IRDAI’s final rulebook release and subsequent earnings reports from the major insurers mentioned.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/insurance-related-stocks-crack-pb-fintech-max-hdfc-life-slide-up-to-20-126092400252_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/insurance-related-stocks-crack-pb-fintech-max-hdfc-life-slid.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/apod-2026-september-24-the-ghosts-of-five-supernovas.html">APOD: 2026 September 24 – The Ghosts of Five Supernovas</a></h2>
+    <p>The Astronomy Picture of the Day (APOD) for 24 September 2026, titled “The Ghosts of Five Supernovas,” showcases a composite image that reveals the lingering remnants of five historic stellar explosions. Curated by NASA’s APOD team, the picture combines data from space‑based observatories and ground‑based telescopes to illustrate the faint nebular shells that persist long after the initial blast. The accompanying description, written by a professional astronomer, explains how each ghostly filament traces the shockwave’s interaction with interstellar gas, providing clues about the progenitor stars’ mass and the chemical enrichment of the galaxy. While the image itself is a visual highlight, the write‑up also notes that the supernovae occurred over a range of centuries, allowing researchers to compare evolutionary stages across different remnants. The APOD entry links to the full archive and offers a brief educational guide for readers interested in supernova physics. What to watch: upcoming NASA releases on supernova remnant spectroscopy and any scheduled public webinars tied to the APOD feature.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/image-article/apod-2026-september-24-the-ghosts-of-five-supernovas/" rel="noopener">NASA</a> · <a href="article/2026-09-24/apod-2026-september-24-the-ghosts-of-five-supernovas.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · Phys.org · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/aerial-maps-reveal-successful-woodland-expansion-in-scotland.html">Aerial maps reveal successful woodland expansion in Scotland's Cairngorms</a></h2>
+    <p>A University of Cambridge‑led team has completed an extensive aerial survey of the Cairngorms National Park in Scotland. Using high‑resolution imaging, the researchers produced detailed three‑dimensional maps that capture the early stages of a large‑scale recovery of native woodland across the landscape. The 3D visualisation highlights newly established tree cover, confirming that reforestation efforts are beginning to take hold in areas that were previously open or degraded. By comparing the new data with historic satellite records, the team can track the pace of natural regeneration and assess the effectiveness of conservation policies. The maps also provide a baseline for future ecological monitoring, enabling scientists to pinpoint hotspots of growth and identify zones that may need additional protection. This work demonstrates how modern remote‑sensing technology can deliver actionable insights for land managers and policymakers working to restore Scotland's forest heritage. What to watch: future monitoring of woodland expansion and its impact on biodiversity.</p>
+    <p class="src">Source: <a href="https://phys.org/news/2026-09-aerial-reveal-successful-woodland-expansion.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-24/aerial-maps-reveal-successful-woodland-expansion-in-scotland.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/house-of-jamakkalam-breathes-new-life-into-300yearold-tamil-.html">House of Jamakkalam breathes new life into 300‑year‑old Tamil craft</a></h2>
+    <p>On a sunny Saturday in Bhavani, 26‑year‑old Varsha Sivakumar moves among thirty pit looms, coordinating new design orders and guiding weavers on colour combinations. Veteran weaver Agilandam, 56, and her colleague Mariyamma work side by side, threading multicoloured yarns into the traditional Jamakkalam stripe pattern that has defined Tamil households for three centuries. The craft earned a Geographical Indication tag in 2005‑06 but has struggled as government cooperative orders dried up, leaving many looms idle. Varsha’s initiative, House of Jamakkalam (HOJ), offers a 30‑35% premium on complex orders and absorbs the higher cost of finer, better‑dyed yarn, allowing weavers to earn between Rs 2,000 and Rs 6,000 a month. A single custom piece still requires two weavers four days, preserving the slow, stripe‑by‑stripe rhythm of the heritage technique. Instagram has connected the cluster to overseas buyers, including the Sri Lankan Tamil diaspora, expanding market reach. The community’s resilience, shared meals, and collective problem‑solving keep the looms humming despite health challenges and reduced orders. Why it matters: it sustains livelihoods, preserves cultural heritage, and shows how community‑driven innovation can revive a centuries‑old craft.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/culture/varsha-sivakumar-saving-bhavani-jamakkalam-weave-tamil-nadu-12568487" rel="noopener">The Better India</a> · <a href="article/2026-09-24/house-of-jamakkalam-breathes-new-life-into-300yearold-tamil-.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · BBC Sport · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/what-are-welsh-sides-chances-for-new-urc-season.html">What are Welsh sides' chances for new URC season?</a></h2>
+    <p>BBC Sport Wales has published a preview of the four Welsh franchises as they approach the 2026‑27 United Rugby Championship season. The article examines the outlook for Cardiff, the Dragons, the Ospreys and the Scarlets, focusing on each side’s recent campaign and the variables that could shape their performance in the new competition format. For Cardiff, the piece highlights the club’s attempt to build on its previous season’s results while navigating the challenges of squad depth. The Dragons are portrayed as a side in transition, with attention given to their rebuilding efforts and potential to compete more consistently. Ospreys’ ambitions are discussed in the context of maintaining a competitive edge, and the Scarlets are evaluated on the basis of their historic strength and the task of sustaining success. Across all four clubs, the analysis notes the importance of player recruitment, coaching stability and financial health as factors that may influence league standing. The preview does not provide definitive predictions but offers a balanced assessment of what each Welsh side may need to achieve in the upcoming URC campaign. Readers are encouraged to follow the early fixtures to see how these assessments translate into on‑field results. What to watch: the early-season performances of the four Welsh clubs will reveal whether the outlined prospects hold true.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/sport/rugby-union/articles/cm3wjyxnyw0wo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a> · <a href="article/2026-09-24/what-are-welsh-sides-chances-for-new-urc-season.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">HEALTH · ET Healthworld · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/fssai-proposes-single-phase-food-warning-labels-gives-indust.html">FSSAI proposes single-phase food warning labels, gives industry one-year transition time</a></h2>
+    <p>The Food Safety and Standards Authority of India (FSSAI) announced plans to roll out a new front‑of‑pack nutrition labeling system. Under the proposal, packaged foods that exceed defined limits for sugar, fat or salt will carry a red hexagonal warning label. The label is intended to give shoppers an immediate visual cue about high levels of these nutrients.</p><p>Food Business Operators will be given a one‑year transition period to redesign packaging and meet the new requirements. The nutrient thresholds that trigger the warning will be drawn from recommendations issued by the Indian Council of Medical Research‑National Institute of Nutrition (ICMR‑NIN). The approach mirrors similar front‑of‑pack schemes in other markets, aiming to curb over‑consumption of unhealthy ingredients.</p><p>The proposal is still under consultation, and the final rules will be published after stakeholder feedback. Industry groups have been asked to align product formulations and packaging within the stipulated timeframe. The one‑year timeline gives companies a defined period to adjust packaging, supply chains, and product recipes if necessary.</p><p>What to watch: finalised thresholds and the impact on product reformulation once the one‑year deadline passes.</p>
+    <p class="src">Source: <a href="https://health.economictimes.indiatimes.com/news/policy/fssai-proposes-single-phase-food-warning-labels-gives-industry-one-year-transition-time/134449263" rel="noopener">ET Healthworld</a> · <a href="article/2026-09-24/fssai-proposes-single-phase-food-warning-labels-gives-indust.html">permalink</a> · <a href="/category/health.html">more health</a></p>
+  </article><article class="story">
+    <div class="meta">ENVIRONMENT · Mongabay India · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/five-orangutans-trafficked-to-odisha-begin-legal-journey-hom.html">Five Orangutans Trafficked to Odisha Begin Legal Journey Home</a></h2>
+    <p>Five infant orangutans discovered roaming a woodland in Odisha earlier this month are facing a complex legal and bureaucratic process to return to their native Indonesia. Conservationists indicate that the animals were likely trafficked across multiple international borders. The journey home is expected to be lengthy due to the differing legal frameworks and administrative systems in both India and Indonesia. The situation highlights the severe consequences of wildlife trafficking, which begins with hunting in the wild and the separation of infants from their mothers. These five infants are now the subject of a cross-border conservation effort that requires coordination between authorities in both nations. The case underscores the challenges in tracking and reversing the illegal wildlife trade, where animals are moved through various jurisdictions before being found. The local relevance is significant for Odisha, which has become a point of discovery for such trafficked species, necessitating robust local intervention. The process involves navigating strict international agreements on endangered species protection. No specific names of officials or exact legal timelines are provided in the source, but the emphasis is on the bureaucratic hurdles ahead. What to watch: The progress of legal handover procedures between Indian and Indonesian conservation authorities.</p>
+    <p class="src">Source: <a href="https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/" rel="noopener">Mongabay India</a> · <a href="article/2026-09-24/five-orangutans-trafficked-to-odisha-begin-legal-journey-hom.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/retirement-in-plans-yuzvendra-chahals-the-last-dance-post-sp.html">Retirement in plans? Yuzvendra Chahal's 'The Last Dance' post sparks speculation</a></h2>
+    <p>India's premier leg‑spinner Yuzvendra Chahal sparked a wave of speculation on social media after posting a cryptic caption reading &quot;The Last Dance&quot; on his X account. The brief message, devoid of further explanation, quickly trended among fans and commentators, who began debating whether Chahal is hinting at retirement, a final tournament, or a personal milestone. While the post generated extensive chatter, the exact meaning behind the phrase remains unclear, as Chahal has not provided additional context or confirmation. Observers noted that the timing coincides with the winding down of the current international season, but without an official statement, any conclusions remain conjectural. The lack of clarification has kept the cricketing community engaged, with many awaiting a follow‑up from the player or his management. Until Chahal addresses the post directly, the speculation will likely continue to swirl across platforms. What to watch: A formal announcement from Chahal regarding his future in international cricket.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/social-tracker-cricket/retirement-in-plans-yuzvendra-chahals-the-last-dance-post-sparks-speculation-0309/" rel="noopener">Crictracker</a> · <a href="article/2026-09-24/retirement-in-plans-yuzvendra-chahals-the-last-dance-post-sp.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/bjp-appoints-new-in-charge-for-karnataka-unit.html">BJP Appoints New In-Charge for Karnataka Unit</a></h2>
+    <p>The Bharatiya Janata Party (BJP) has appointed a new in-charge leader for its Karnataka unit. This organizational change involves replacing Dr. Radhamohan Das Agarwal, who previously held the position of in-charge for the state unit. The specific name of the new in-charge is not detailed in the provided summary, but the shift signifies a strategic adjustment in the party’s leadership structure for one of its key states. Karnataka is a significant political battleground where the BJP has sought to expand its influence in recent election cycles. Changes in state-level in-charges often reflect broader party strategies to address local political dynamics and organizational needs. The transition from Dr. Agarwal suggests that the party is looking to revitalize its campaign or administrative approach in the region. No further details on the reasons for the change or the background of the new appointee are available in the source material. This move is part of the ongoing administrative reshuffles that political parties undertake to optimize their performance in upcoming electoral contests. The local relevance is high given the competitive nature of politics in Karnataka, where state-level leadership plays a crucial role in mobilizing support. What to watch: How the new in-charge will engage with state-level leadership and local political stakeholders in Karnataka.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/karnataka-bjp-gets-new-in-charge-leader/article71500938.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-24/bjp-appoints-new-in-charge-for-karnataka-unit.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/icai-announces-ca-january-2027-foundation-intermediate-exam-.html">ICAI announces CA January 2027 Foundation, Intermediate exam dates</a></h2>
+    <p>The Institute of Chartered Accountants of India (ICAI) has officially announced the examination dates for the CA Foundation and Intermediate levels for the January 2027 session. Candidates preparing for these professional examinations are advised to note the schedule released by the institute.</p><p>The announcement, reported via India Today, confirms that the ICAI is moving forward with the administrative planning for the upcoming cycle. Students should monitor the official ICAI website for detailed notifications, including specific subject-wise timetables, admit card release schedules, and registration deadlines.</p><p>As these examinations are pivotal for aspiring chartered accountants, candidates must ensure their eligibility criteria are met and that they remain updated on any further communications from the ICAI. Following the official schedule provided by the institute is essential for successful enrollment and participation in the January 2027 testing window.</p><p>What to watch: The official ICAI website for detailed subject-wise exam timetables and registration guidelines.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZ1paNnBKQjY1T0p1VXpNRWtOYkRIeW05WGhhRExpZkpDb2lTSmVJeVIxZmd0NGNRc3Ntcm0wd1dLR3NHZVFZVXhVcTZuU3JhZ0NsdGVVeDhGc203MzJhT2psc1V5QVMzVGt0NDRSMUhkUTZiMnNGdUdZQ0lZY0hSZXh0RmhqdkNZZ3ZLSnE5dVoyMHlaQjdTZ2czN1FCOWpZM0xTVGVETEFFUG9LemlNLTZJV2dRVEFtZHltLXExSGhORTBiRzA1NjFJZXN6TlF1NVc3YlZtaEtCRkNGYlQwem9MTm0wQUZNTG1JQtIB7AFBVV95cUxPZ1paNnBKQjY1T0p1VXpNRWtOYkRIeW05WGhhRExpZkpDb2lTSmVJeVIxZmd0NGNRc3Ntcm0wd1dLR3NHZVFZVXhVcTZuU3JhZ0NsdGVVeDhGc203MzJhT2psc1V5QVMzVGt0NDRSMUhkUTZiMnNGdUdZQ0lZY0hSZXh0RmhqdkNZZ3ZLSnE5dVoyMHlaQjdTZ2czN1FCOWpZM0xTVGVETEFFUG9LemlNLTZJV2dRVEFtZHltLXExSGhORTBiRzA1NjFJZXN6TlF1NVc3YlZtaEtCRkNGYlQwem9MTm0wQUZNTG1JQg?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-24/icai-announces-ca-january-2027-foundation-intermediate-exam-.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/hurun-rich-list-2025-shah-rukh-khans-wealth-surpasses-combin.html">Hurun Rich List 2025: Shah Rukh Khan’s Wealth Surpasses Combined Total of Peers</a></h2>
+    <p>The M3M Hurun India Rich List 2025 has highlighted the significant business success of Bollywood's top stars. While these personalities are known for their box office contributions, their wealth is increasingly derived from expansive business empires.</p><p>Shah Rukh Khan and his family have emerged at the forefront of this list. According to the data, Khan’s wealth is valued at Rs. 12,490 crore. This figure is notable as it surpasses the combined wealth of fellow industry figures Juhi Chawla, Hrithik Roshan, and Karan Johar.</p><p>The report underscores a shift in how India's most prominent entertainers accumulate and maintain their fortunes, moving beyond traditional film earnings to build diversified business holdings. The Hurun India Rich List provides a snapshot of these financial standings within the broader Indian economy.</p><p>What to watch: Further analysis of entertainment industry business models in future wealth reports.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/bollywood/hurun-rich-list-2025-shah-rukh-khans-rs-12490-crore-wealth-surpasses-the-combined-wealth-of-juhi-chawla-hrithik-roshan-karan-johar/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-24/hurun-rich-list-2025-shah-rukh-khans-wealth-surpasses-combin.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/defence-ministry-signs-81079-crore-deal-with-bdl-for-anti-ai.html">Defence ministry signs ₹810.79-crore deal with BDL for anti-airfield weapons</a></h2>
+    <p>The Ministry of Defence has formally entered into a contract with Bharat Dynamics Limited (BDL) to bolster the capabilities of the Indian Air Force. The deal, valued at ₹810.79 crore, involves the procurement of 160 satellite-guided anti-airfield weapons.</p><p>This acquisition is aimed at enhancing the precision strike capabilities of the Air Force. The selection of satellite-guided technology reflects the military's focus on modernizing its arsenal with advanced, reliable systems. BDL will be responsible for the production and delivery of these units, which are designed to target and neutralize airfield infrastructure.</p><p>This contract is part of ongoing efforts to ensure the Air Force is equipped with specialized munitions to maintain operational readiness. The deal represents a significant investment in domestic defence manufacturing and tactical hardware.</p><p>What to watch: The timeline for the delivery and integration of these weapons into the Air Force inventory.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxNblQwMG9DMUR6MjNPZmdPY2tNRDJya1JJd1hnSU9DOENMcUQzeVRWdEoxTU1iNW52TTh6cmdMS1FlaDZNTkhQclRjc2pQX3BBQjBNN2Z0eFYxSzhDXy1JNndPOU9LWklScXE4ZzF0enF6SEZIb29JLWZhOGh0ejd1WXk1cmhDalJtSmJqamdPYU1jR1pDMEVRMHlpQUd3VkxVR19fbFJraDZneU1DRHF0SFhqRGJYRzZ5bERxdWY2MkFVWkJzUEh5bm1odzkxdlN1eFdCdjZ6MUsxMFY5aGVfQVpMSm5hLVd6SDlKcVJfWXZpVUp2bWVkRldn?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-24/defence-ministry-signs-81079-crore-deal-with-bdl-for-anti-ai.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/rupee-slides-against-dollar-as-oil-prices-surge-amid-geopoli.html">Rupee slides against dollar as oil prices surge amid geopolitical tensions</a></h2>
+    <p>The Indian rupee experienced a sharp decline on Thursday morning, trading at Rs 95.84 per dollar and reaching a low of 95.87. This volatility follows a surge in global oil prices, triggered by rising tensions between the United States and Iran.</p><p>For the average saver and taxpayer, this development is significant. A weaker rupee often leads to higher import costs, particularly for crude oil, which can put upward pressure on domestic fuel prices and inflation. Meanwhile, Indian equity markets have reacted negatively; the Nifty 50 dropped nearly 1% to 23,221.80, and the BSE Sensex fell over 600 points to trade near 74,187.70.</p><p>Rising U.S. bond yields are also creating pressure, leading to market expectations that the Federal Reserve may implement another interest-rate hike. For individuals, this global economic environment suggests potential volatility in both fuel costs and investment portfolios in the near term.</p><p>What to watch: Crude oil price stability and any further impact on domestic inflation and interest rates.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/inr-slides-as-oil-prices-resurge-on-us-iran-tensions-126092400268_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/rupee-slides-against-dollar-as-oil-prices-surge-amid-geopoli.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/cloudy-cloak-over-the-northwest.html">Cloudy Cloak Over the Northwest</a></h2>
+    <p>A recent atmospheric phenomenon brought a distinct autumn ambiance to the western regions of Washington and Oregon. The area was blanketed by a low-lying cloud layer, creating a pervasive &quot;cloudy cloak&quot; over the landscape, according to observations from NASA. This widespread cloud cover significantly impacted visibility and the general feel of the environment across these states.</p><p>The cloud formation was notably concentrated in the lower elevations of western Washington and Oregon. In contrast, mountainous areas situated along the coast presented a different picture. These higher geographical features remained distinctly above the pall of clouds, enjoying clearer conditions. This stark division illustrates how local topography can play a crucial role in shaping meteorological patterns, with elevated terrains often escaping the atmospheric conditions prevalent in the surrounding lowlands.</p><p>The event provided a clear example of how specific weather systems can introduce a particular seasonal feel, in this case, an autumnal one, even without other typical markers like falling leaves or temperature drops. Such cloud layers are a common feature in certain climates, influencing everything from light quality to local microclimates. The persistent nature of this particular layer contributed to a consistent atmospheric character throughout the affected areas.</p><p>What to watch: Further observations on how local topography influences regional cloud distribution.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/earth/earth-observatory/cloudy-cloak-over-the-northwest/" rel="noopener">NASA</a> · <a href="article/2026-09-24/cloudy-cloak-over-the-northwest.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · ScienceDaily · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/more-rem-sleep-linked-to-lower-risk-of-83-diseases.html">More REM sleep linked to lower risk of 83 diseases</a></h2>
+    <p>New research involving a substantial cohort of over 95,000 individuals has unveiled a significant association between sleep patterns and the risk of developing numerous diseases. The comprehensive study suggests that the specific stages of sleep one experiences may play a crucial role in long-term health outcomes, linking how people sleep to their susceptibility to dozens of medical conditions.</p><p>A key finding from the research indicates that participants who dedicated more time to Rapid Eye Movement (REM) sleep demonstrated a lower risk of acquiring 83 different health conditions. This broad spectrum of conditions included serious neurological disorders such as dementia and Parkinson’s disease, alongside critical cardiovascular ailments like heart failure. These observations underscore the potential benefits of sufficient REM sleep for maintaining robust health across various bodily systems.</p><p>Moreover, the study also shed light on the protective effects of deep sleep. Increased durations of deep sleep were correlated with reduced risks for other specific conditions. These encompassed prevalent health issues such as type 2 diabetes and significant mental health challenges, including major depression. The findings from this large-scale investigation emphasize the intricate relationship between sleep architecture and overall disease prevention, highlighting the importance of both REM and deep sleep for comprehensive well-being.</p><p>What to watch: Further studies to understand the biological mechanisms underlying these sleep-disease associations.</p>
+    <p class="src">Source: <a href="https://www.sciencedaily.com/releases/2026/09/260923035930.htm" rel="noopener">ScienceDaily</a> · <a href="article/2026-09-24/more-rem-sleep-linked-to-lower-risk-of-83-diseases.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/16yo-autistic-girls-bond-with-her-baby-sister.html">16YO Autistic Girl’s Bond With Her Baby Sister</a></h2>
+    <p>In a heartwarming testament to the power of familial love, 16-year-old Riddhima, who lives with autism and requires assistance with daily tasks, has forged an extraordinary bond with her baby sister, Advika. Despite Riddhima's communication challenges, Advika perceives her elder sister as the safest person in her world.</p><p>Riddhima’s journey has not been without societal misconceptions. Upon her autism diagnosis, her mother faced advice to keep Riddhima away from infants, with some even labeling her as &quot;abnormal.&quot; However, the arrival of Advika shattered these preconceptions. Riddhima embraced her role as a loving elder sister, demonstrating profound care. She is observed gently holding Advika, expressing worry when her sister cries, and eagerly awaiting her return home.</p><p>This powerful connection challenges conventional notions of &quot;normal.&quot; The child once misunderstood by society has become the central figure in her sister’s life, proving that love and understanding can transcend perceived limitations. Perhaps, it is not Riddhima who needs to adapt, but rather society’s definition of what constitutes normal.</p><p>Why it matters: This story highlights the importance of neurodiversity acceptance and challenges societal misconceptions about individuals with autism.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/videos/lifestyle/16yo-autistic-girls-bond-with-her-baby-sister-12569976" rel="noopener">The Better India</a> · <a href="article/2026-09-24/16yo-autistic-girls-bond-with-her-baby-sister.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/india-vs-chinese-taipei-mens-kabaddi-live-streaming-asian-ga.html">India vs Chinese Taipei Men's Kabaddi LIVE Streaming, Asian Games 2026 LIVE Telecast: When And Where To Watch</a></h2>
+    <p>The Indian men's kabaddi team is set to conclude its Group A engagements in the Asian Games 2026 with a highly anticipated match against Chinese Taipei. This final group stage encounter is scheduled for Thursday, and all eyes will be on the Indian squad as they aim to solidify their position within the tournament.</p><p>The crucial clash will unfold at the Tokai Citizens Gymnasium, a venue that will host the culmination of Group A's competitive fixtures. As the Indian team steps onto the mat, their focus will be on delivering a strong performance to ensure a favorable outcome in what is considered a significant game in their Asian Games journey. The kabaddi tournament at the Asian Games consistently features intense competition, and this match is expected to be no exception.</p><p>For enthusiasts and supporters, information regarding the live streaming and telecast of this particular match is of paramount interest. Spectators across the region will be keen to follow the action as India vies against Chinese Taipei. The outcome will undoubtedly influence the team's momentum and confidence heading into the subsequent stages of the Asian Games 2026 kabaddi competition.</p><p>What to watch: The Indian men's kabaddi team's strategy and performance in their last Group A match.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/kabaddi/india-vs-chinese-taipei-mens-kabaddi-live-streaming-asian-games-2026-live-telecast-when-and-where-to-watch-12089926#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-24/india-vs-chinese-taipei-mens-kabaddi-live-streaming-asian-ga.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">TECH · TechCrunch · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/everything-new-coming-to-meta8217s-ai-agent-muse.html">Everything new coming to Meta&amp;#8217;s AI agent Muse</a></h2>
+    <p>Meta is making a significant push into artificial intelligence, with CEO Mark Zuckerberg highlighting the company's &quot;all-in&quot; strategy on its AI agent, Muse. The announcement came during Meta's annual Connect event, held on Wednesday in Menlo Park, where Zuckerberg delivered a keynote address outlining the company's future direction in AI.</p><p>A key revelation from the event is the expansion of Muse's integration across Meta's product ecosystem. Notably, the AI agent is slated to arrive on Meta's AI glasses, signaling a move towards embedding advanced AI capabilities directly into wearable technology. This integration suggests a vision where AI becomes a more seamless and interactive part of users' daily lives, extending beyond traditional screens.</p><p>The focus on Muse at the Connect event underscores Meta's commitment to developing and deploying sophisticated AI tools. By integrating Muse into its AI glasses, Meta is positioning itself to explore new frontiers in augmented reality and personalized AI assistance. This strategic direction indicates a future where AI agents like Muse will play an increasingly central role in how users interact with Meta's platforms and devices.</p><p>What to watch: The practical applications and user experience of Muse on Meta's AI glasses.</p>
+    <p class="src">Source: <a href="https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/" rel="noopener">TechCrunch</a> · <a href="article/2026-09-24/everything-new-coming-to-meta8217s-ai-agent-muse.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/former-cec-quraishi-questions-special-intensive-revision.html">Former CEC Quraishi questions Special Intensive Revision</a></h2>
+    <p>Former Chief Election Commissioner S.Y. Quraishi has raised concerns regarding the Special Intensive Revision (SIR) exercise, questioning its legality, necessity, and implementation. Quraishi argued that India's electoral rolls have been maintained effectively for decades.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/videos/former-chief-election-commissioner-questions-legality-of-sir-demands-reversal-of-decisions/article71502825.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-24/former-cec-quraishi-questions-special-intensive-revision.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/trumps-historical-approval-ratings-reviewed.html">Trump's historical approval ratings reviewed</a></h2>
+    <p>Former President Trump's approval rating hovered around 40 percent during his first term, concluding at approximately 34 percent on January 4, 2021.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/trumps-approval-falls-to-29-as-americans-raise-concerns-over-economy-prices-ws-klt-10349870.html" rel="noopener">News18 World</a> · <a href="article/2026-09-24/trumps-historical-approval-ratings-reviewed.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/nimhans-and-partners-to-launch-ai-driven-mental-health-initi.html">NIMHANS and partners to launch AI-driven mental health initiative</a></h2>
+    <p>NIMHANS, in partnership with IIT Kharagpur and the Lokopriya Gopinath Bordoloi Regional Institute of Mental Health, is set to launch the Human-in-the-loop Evaluation of Assisted Depression Screening (HEADS) project on September 24.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/heads-to-bridge-indias-mental-healthcare-gap-with-ai/article71499835.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-24/nimhans-and-partners-to-launch-ai-driven-mental-health-initi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/justice-datta-criticizes-executive-handling-of-collegium-rec.html">Justice Datta criticizes executive handling of Collegium recommendations</a></h2>
+    <p>Justice Datta has criticized the executive branch for the selective implementation of judicial appointments recommended by the Collegium.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/sanctity-is-lost-on-collegium-justice-dipankar-datta-says-judges-appointing-judges-is-a-myth-ws-lr-10349802.html" rel="noopener">News18 India</a> · <a href="article/2026-09-24/justice-datta-criticizes-executive-handling-of-collegium-rec.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/rahul-gandhi-contacts-parents-of-deceased-iit-b-student.html">Rahul Gandhi contacts parents of deceased IIT-B student</a></h2>
+    <p>Rahul Gandhi held a video call with the parents of Sahil Wakode, a second-year BTech student at IIT-Bombay who was found dead following an exam incident. His parents allege caste-based discrimination and are calling for an independent investigation into his death amid ongoing protests.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/india/rahul-gandhi-speaks-to-iit-b-student-sahil-wakodes-parents-assures-all-help/articleshow/134451801.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-24/rahul-gandhi-contacts-parents-of-deceased-iit-b-student.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/crime-branch-investigates-iit-bombay-student-death.html">Crime Branch investigates IIT Bombay student death</a></h2>
+    <p>The Crime Branch is investigating the death of an IIT Bombay student following the emergence of CCTV footage from an exam hall.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/iit-bombay-student-death-exam-hall-cctv-surfaces-crime-branch-probes-suicide-ytvd-3001705-2026-09-24?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-24/crime-branch-investigates-iit-bombay-student-death.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/karnataka-government-considers-supreme-court-appeal-in-kpsc-.html">Karnataka government considers Supreme Court appeal in KPSC case</a></h2>
+    <p>The Karnataka government is considering filing an appeal in the Supreme Court against a High Court order regarding an SIT probe into the KPSC scam.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/kpsc-scam-karnataka-government-contemplates-moving-supreme-court-against-hc-order-on-sit-probe-ytvd-3001702-2026-09-24?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-24/karnataka-government-considers-supreme-court-appeal-in-kpsc-.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Business Standard · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/nse-shares-debut-with-gains.html">NSE Shares Debut with Gains</a></h2>
+    <p>NSE shares listed at ₹1800, representing a 0.84 per cent increase from the IPO price of ₹1,785.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/nse-s-4-45-trillion-valuation-on-listing-nearly-double-that-of-bse-mcx-iex-combined-126092400283_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-24/nse-shares-debut-with-gains.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/gambhir-reflects-on-dropping-samson-from-t20i-squad.html">Gambhir reflects on dropping Samson from T20I squad</a></h2>
+    <p>Gautam Gambhir described the emotional difficulty of dropping Sanju Samson from India's T20I squad following a loss to England. Gambhir emphasized the need to prioritize player form and team cohesion. Samson was later brought back into the squad for the Afghanistan series.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/sports/cricket/news/the-night-i-could-not-sleep-gautam-gambhir-opens-up-on-toughest-decision-to-drop-sanju-samson-for-vaibhav-sooryavanshi/articleshow/134451405.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-24/gambhir-reflects-on-dropping-samson-from-t20i-squad.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/viral-video-shows-contrasting-reactions-to-b-1-bombers-durin.html">Viral video shows contrasting reactions to B-1 bombers during Xi's arrival</a></h2>
+    <p>A viral video capturing the arrival of Chinese President Xi Jinping showed differing reactions to a B-1 bomber flyover. Social media users debated whether Donald Trump's response diminished the impact of the military display.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/trump-winces-xi-remains-unfazed-as-b-1-bombers-fly-over-during-chinese-prezs-welcome-video-goes-viral-ws-l-10349903.html" rel="noopener">News18 World</a> · <a href="article/2026-09-24/viral-video-shows-contrasting-reactions-to-b-1-bombers-durin.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/thiruvananthapuram-riding-clubs-unite-two-wheeler-enthusiast.html">Thiruvananthapuram Riding Clubs Unite Two-Wheeler Enthusiasts</a></h2>
+    <p>Riding clubs across Thiruvananthapuram are fostering community among vintage-bike enthusiasts, new riders, and women who share a passion for two-wheelers.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/cities/Thiruvananthapuram/from-vintage-vespas-to-royal-enfields-meet-thiruvananthapurams-riding-communities/article71494763.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-24/thiruvananthapuram-riding-clubs-unite-two-wheeler-enthusiast.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/steel-exchange-india-receives-credit-rating-upgrade.html">Steel Exchange India receives credit rating upgrade</a></h2>
+    <p>Infomerics Valuation and Rating has upgraded the credit ratings of Steel Exchange India.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/steel-exchange-india-receives-upgrade-in-credit-ratings-126092400267_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/steel-exchange-india-receives-credit-rating-upgrade.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/supreme-court-judge-discusses-election-commissioner-appointm.html">Supreme Court judge discusses Election Commissioner appointment panel</a></h2>
+    <p>Justice Dipankar Datta stated that a cabinet member on the selection panel is bound by collective responsibility and is unlikely to oppose the Prime Minister who appointed them.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/election-commissioners-law-sc-judge-says-pms-cabinet-pick-not-cjis-exclusion-is-sticking-point-ws-l-10349890.html" rel="noopener">News18 India</a> · <a href="article/2026-09-24/supreme-court-judge-discusses-election-commissioner-appointm.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/jagsonpal-pharmaceuticals-to-acquire-group-pharmaceuticals-w.html">Jagsonpal Pharmaceuticals to acquire Group Pharmaceuticals' wellness portfolio</a></h2>
+    <p>Jagsonpal Pharmaceuticals has signed a business transfer agreement to acquire the wellness portfolio of Group Pharmaceuticals via a slump sale.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/jagsonpal-pharma-to-acquire-group-pharmaceuticals-wellness-portfolio-126092400266_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/jagsonpal-pharmaceuticals-to-acquire-group-pharmaceuticals-w.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/idfc-first-bank-performance-update.html">IDFC First Bank performance update</a></h2>
+    <p>IDFC First Bank Ltd shares declined by 0.29% over the past month, while the BSE BANKEX index fell by 2.99% and the SENSEX dropped by 4.36%.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/idfc-first-bank-ltd-falls-3-53-bse-bankex-index-drops-1-12-126092400265_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/idfc-first-bank-performance-update.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/dinesh-reddy-urges-industries-to-manage-hazardous-waste-disp.html">Dinesh Reddy urges industries to manage hazardous waste disposal</a></h2>
+    <p>Dinesh Reddy has appealed to industries to upload hazardous waste management and shifting details to the APEMCL website, which features a GPS-enabled monitoring system.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/ensure-proper-disposal-of-hazardous-waste-dinesh-reddy/article71502694.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-24/dinesh-reddy-urges-industries-to-manage-hazardous-waste-disp.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/nse-favored-over-bse-for-long-term-investment.html">NSE favored over BSE for long-term investment</a></h2>
+    <p>On a three-to-five-year outlook, the NSE is considered the preferred choice for investors. In Q1FY27, the NSE reported earnings of ₹3,122 crore, more than 3.5 times the ₹873 crore earned by the BSE.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/nse-vs-bse-which-exchange-should-now-be-the-preferred-bet-for-investors-126092400192_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/nse-favored-over-bse-for-long-term-investment.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/taapsee-pannu-on-gandharis-unexpected-global-success.html">Taapsee Pannu on Gandhari's unexpected global success</a></h2>
+    <p>Taapsee Pannu expressed surprise at the global reach of her film Gandhari, noting that the team intended to create a deeply rooted Indian story. The Netflix film reached Global No. 1 and became the highest single-week viewed Indian Netflix Original.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/exclusive-taapsee-pannu-reveals-why-gandharis-global-success-surprised-her-we-thought-we-made-a-very-indian-film/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-24/taapsee-pannu-on-gandharis-unexpected-global-success.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Business Standard · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/nse-ipo-sees-571-times-subscription.html">NSE IPO sees 5.71 times subscription</a></h2>
+    <p>The ₹22,562-crore NSE IPO concluded with an overall subscription of 5.71 times, receiving bids for 50.58 crore shares against an offer of 8.86 crore shares.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/nse-s-big-bang-ipo-delivers-quiet-debut-shares-list-at-nearly-1-premium-126092400221_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-24/nse-ipo-sees-571-times-subscription.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/cjp-to-prioritize-electoral-reforms.html">CJP to prioritize electoral reforms</a></h2>
+    <p>The Cockroach Janta Party (CJP) is focusing on electoral reforms following concerns regarding Election Commission processes and the integrity of voting rights. Founder Abhijeet Dipke emphasized the importance of safeguarding the right to vote for systemic change.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/city/delhi/gyanesh-its-done-bro-cjp-to-take-up-issue-of-ec-reforms-as-cec-faces-flak/articleshow/134451343.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-24/cjp-to-prioritize-electoral-reforms.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/quad-nations-to-brief-iran-on-mecca-defence-alliance.html">Quad nations to brief Iran on Mecca Defence Alliance</a></h2>
+    <p>Officials from Pakistan, Saudi Arabia, and Turkey are meeting with Iranian representatives in New York to discuss the Mecca Joint Defence Agreement. The session aims to assure Iran that the defensive alliance is not directed at any third party while addressing regional security and Houthi movement threats.</p>
+    <p class="src">Source: <a href="https://www.news18.com/videos/world/mecca-pact-briefing-in-new-york-what-saudi-arabia-pakistan-and-turkey-will-offer-iran-exclusive-10349933.html" rel="noopener">News18 World</a> · <a href="article/2026-09-24/quad-nations-to-brief-iran-on-mecca-defence-alliance.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/claude-ai-identifies-new-crispr-like-gene-editing-system.html">Claude AI Identifies New CRISPR-like Gene-Editing System</a></h2>
+    <p>Claude AI has discovered a new gene-editing system similar to CRISPR after analyzing over 200,000 reverse transcriptases, which are enzymes capable of copying genetic information from RNA into DNA.</p>
+    <p class="src">Source: <a href="https://www.news18.com/science/claude-ai-finds-new-dna-system-like-crispr-the-gene-editing-tool-what-did-it-discover-ws-l-10349900.html" rel="noopener">News18 World</a> · <a href="article/2026-09-24/claude-ai-identifies-new-crispr-like-gene-editing-system.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · Al Jazeera · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/anthropics-claude-discovers-new-enzyme-system.html">Anthropic's Claude Discovers New Enzyme System</a></h2>
+    <p>AI company Anthropic announced that its Claude model has discovered a CRISPR-like enzyme system, a finding that emerges amidst ongoing global discussions about mitigating catastrophic risks.</p>
+    <p class="src">Source: <a href="https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-24/anthropics-claude-discovers-new-enzyme-system.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/insufficient-data-provided.html">Insufficient Data Provided</a></h2>
+    <p>This task could not be completed as the provided summary was empty.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/us/an-arkansas-mom-secretly-cleared-67676-60-in-family-debt-in-45-days-while-her-husband-had-no-idea-social-media-followers-helped-erase-their-mortgage-truck-loan-and-bakery-business-debt/articleshow/134436000.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-24/insufficient-data-provided.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/insufficient-data-provided.html">Insufficient Data Provided</a></h2>
+    <p>This task could not be completed as the provided summary was empty.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/us/trump-winces-as-b-1-bombers-roar-xi-stands-unfazed-during-us-welcome-watch/articleshow/134449689.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-24/insufficient-data-provided.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/lawsuit-against-sam-smith-and-normanis-dancing-with-a-strang.html">Lawsuit against Sam Smith and Normani’s 'Dancing with a Stranger' to proceed to trial</a></h2>
+    <p>A federal judge has overturned the dismissal of a copyright lawsuit regarding the 2019 hit 'Dancing with a Stranger' by Sam Smith and Normani. The case, which reached No. 7 on the Billboard Hot 100, will now head to a jury trial to evaluate the song's originality.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/english/music/news/judge-dismisses-sam-smith-and-normanis-plea-to-drop-the-dancing-with-a-stranger-lawsuit/articleshow/134451359.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-24/lawsuit-against-sam-smith-and-normanis-dancing-with-a-strang.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/richa-chadha-labels-2026-as-the-year-of-ali-fazal.html">Richa Chadha labels 2026 as 'The year of Ali Fazal'</a></h2>
+    <p>Richa Chadha highlighted 2026 as a major career year for her husband, Ali Fazal, noting his professional growth across streaming and theatrical projects. Chadha, who is currently balancing motherhood, reflected on Fazal's journey from his early days living in a shanty to his current success.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/richa-chadha-calls-2026-the-year-of-ali-fazal-ive-seen-him-when-he-lived-in-a-shanty-i-feel-like-maine-iss-din-ke-liye-isko-paal-pos-ke-bada-kiya-hai/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-24/richa-chadha-labels-2026-as-the-year-of-ali-fazal.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-24/landmark-cars-and-olx-india-announce-strategic-partnership.html">Landmark Cars and OLX India Announce Strategic Partnership</a></h2>
+    <p>Landmark Cars and OLX India, a division of CarTrade Tech, have formed a partnership to develop an integrated phygital experience for buying and selling pre-owned cars in India.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/landmark-cars-announces-strategic-partnership-with-olx-india-126092400235_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-24/landmark-cars-and-olx-india-announce-strategic-partnership.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
