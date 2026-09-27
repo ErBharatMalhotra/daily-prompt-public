@@ -1,0 +1,573 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-27</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="The Daily Prompt — 2026-09-27">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+<meta property="og:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+
+<meta name="theme-color" content="#121214">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
+<script src="/translator.js" defer></script>
+<script src="/personalize.js" defer></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,mai,mni-Mtei,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en,ar,zh-CN,es,fr,de,ja,ru,pt,id,tr,fa,sw',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
+ * Design tokens first; dark is the default, light via [data-theme=light].
+ * Heavy effects are limited to the sticky nav (small area) so the site stays fast.
+ */
+
+/* ---------- tokens ---------- */
+:root {
+  --ink: #ece7dd;
+  --ink-soft: #b8b2a6;
+  --paper: #121214;
+  --paper-2: #1a1a1e;
+  --card: #1f1f24;
+  --line: #2c2c33;
+  --accent: #e03e3e;
+  --accent-deep: #8b0000;
+  --ok-bg: #10331c; --ok-fg: #7ede9b;
+  --bad-bg: #3a1416; --bad-fg: #f2a0a0;
+  --conf-bg: #14243a; --conf-fg: #9cc4f0;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
+  --nav-bg: rgba(18, 18, 20, .62);
+}
+[data-theme="light"] {
+  --ink: #191919;
+  --ink-soft: #5c5952;
+  --paper: #f7f3ea;
+  --paper-2: #efe9db;
+  --card: #ffffff;
+  --line: #e3dcc9;
+  --accent: #a31212;
+  --accent-deep: #8b0000;
+  --ok-bg: #dff3e2; --ok-fg: #17652e;
+  --bad-bg: #f9e0e0; --bad-fg: #8f1f1f;
+  --conf-bg: #e2ecfa; --conf-fg: #1d4e86;
+  --shadow: 0 10px 26px rgba(60, 50, 30, .12);
+  --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
+  --nav-bg: rgba(247, 243, 234, .68);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.6;
+  transition: background .3s ease, color .3s ease;
+}
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 72px; }
+
+/* ---------- glass header (only heavy effect on the page) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9990;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-row {
+  max-width: 980px; margin: 0 auto; padding: 10px 18px;
+  display: flex; align-items: center; gap: 14px;
+}
+.topbar .brand {
+  font-family: var(--serif);
+  font-weight: 700; font-size: 19px; letter-spacing: .5px;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.topbar .brand span { color: var(--accent); }
+.topbar .tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.topbar .tools a, .topbar .tools button {
+  color: var(--ink-soft); text-decoration: none; font-size: 13px;
+  background: transparent; border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 10px; cursor: pointer; font-family: var(--sans);
+}
+.topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
+.catrow {
+  max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
+}
+.catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
+.catrow a {
+  flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: transparent;
+}
+.catrow a:hover { color: var(--ink); border-color: var(--accent); }
+.catrow a.on { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+/* ---------- header block ---------- */
+header.mast { text-align: center; padding: 30px 0 8px; }
+header.mast h1 {
+  font-family: var(--serif); font-size: clamp(30px, 5.4vw, 46px);
+  margin: 0; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+}
+header.mast h1 a { color: inherit; text-decoration: none; }
+header.mast h1 a:hover { color: var(--accent); }
+header.mast p { margin: 6px 0 0; font-style: italic; color: var(--ink-soft); font-size: 15px; }
+.masthead-stats {
+  display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-soft); margin-top: 10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.nav { text-align: center; font-size: 14px; margin: 12px 0 0; color: var(--ink-soft); }
+
+/* ---------- section headers ---------- */
+h2.sec {
+  font-family: var(--serif); font-size: 21px; letter-spacing: 1.5px; text-transform: uppercase;
+  border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin: 34px 0 14px;
+}
+
+/* ---------- stories / cards ---------- */
+.story { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.story.single { border-bottom: none; }
+.story h2 { font-family: var(--serif); margin: 4px 0 10px; font-size: 25px; line-height: 1.25; }
+.story h2 a { color: inherit; text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+.story h1 { font-family: var(--serif); margin: 6px 0 14px; font-size: clamp(26px, 4.6vw, 36px); line-height: 1.2; }
+
+.story.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 26px 20px;
+  margin: 20px 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.story.hero:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(0,0,0,.42); }
+.story.hero h2 { font-size: clamp(27px, 4.8vw, 36px); margin: 8px 0; }
+.lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+.meta {
+  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
+.critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
+.hi-title a { font-size: 16px; }
+.src { font-size: 13px; color: var(--ink-soft); }
+
+/* ---------- badges (pills) ---------- */
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
+.badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
+
+/* ---------- beat color strips on hero via data attr (optional future) ---------- */
+
+/* ---------- misc blocks ---------- */
+.stale { background: #3a2e10; border: 1px solid #a9852c; color: #f2d489; padding: 12px 16px; margin: 16px 0; font-size: 14px; border-radius: var(--radius); }
+[data-theme="light"] .stale { background: #fdf0d5; border-color: #e0b95a; color: #6b5210; }
+.st-ok { color: #7fc97f; }
+.st-warn { color: #e0b95a; }
+.st-stale { color: #e03e3e; }
+[data-theme="light"] .st-ok { color: #256b25; }
+[data-theme="light"] .st-warn { color: #8a6d1a; }
+[data-theme="light"] .st-stale { color: #b02020; }
+.dates { display: flex; justify-content: space-between; font-size: 14px; margin: 16px 0; }
+.crumb { font-size: 14px; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- columns / briefs ---------- */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 24px; }
+.col { border-right: 1px solid var(--line); padding-right: 18px; }
+.col:last-child { border-right: none; }
+.col h3 { font-family: var(--serif); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin: 12px 0 8px; }
+.col h3 a { color: var(--ink); text-decoration: none; }
+.col h3 a:hover { color: var(--accent); }
+.col ul { list-style: none; margin: 0; padding: 0; }
+.col li { margin: 0 0 12px; font-size: 14px; line-height: 1.45; }
+.col li a { color: var(--ink); text-decoration: none; }
+.col li a:hover { color: var(--accent); }
+.col small, ul.brief li small { color: var(--ink-soft); font-size: 12px; }
+ul.brief { list-style: none; padding: 0; margin: 0; }
+ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+
+/* ---------- tiles / pipeline ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 14px 0; }
+.tile {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 12px; text-align: center; font-size: 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile b { display: block; font-size: 16px; margin-bottom: 2px; font-family: var(--serif); }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.pipeline { display: flex; gap: 10px; align-items: stretch; margin: 14px 0; flex-wrap: wrap; }
+.pstep {
+  flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
+}
+.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
+.pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
+.parrow { align-self: center; font-size: 20px; color: var(--accent); flex: 0 0 auto; }
+@media (max-width: 700px) { .parrow { display: none; } }
+.about-note { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* ---------- translate gadget ---------- */
+.gtr {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+}
+.gtr .goog-te-gadget { font-size: 13px !important; }
+.gtr .goog-te-gadget-simple {
+  border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
+  background: var(--card) !important; color: var(--ink) !important;
+}
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+
+/* ---------- share / saved / search ---------- */
+.sharebar { margin: 14px 0 4px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 14px; }
+.sharebar a { text-decoration: none; }
+.sharebar a:hover { color: var(--accent); }
+.savedlist li { padding: 7px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+#q { width: 100%; padding: 12px 14px; font-size: 16px; font-family: var(--sans); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); }
+.hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.hit small { color: var(--ink-soft); }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style></head><body><div class="topbar"><div class="topbar-row">
+    <a class="brand" href="/">The Daily <span>Prompt</span></a>
+    <div class="tools">
+      <a href="/search.html">Search</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/wire.html">Wire</a>
+      <a href="/stats.html">Stats</a>
+      <a href="/feed.xml" title="RSS">RSS</a>
+      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-27</h1></header><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/rohit-sharma-virat-kohli-eye-several-milestones-ahead-of-1st.html">Rohit Sharma-Virat Kohli Eye Several Milestones Ahead Of 1st ODI Against West Indies</a></h2>
+    <p>Thiruvananthapuram is preparing to host a significant cricketing event as India commences its One Day International series against West Indies. The opening match will place a spotlight on two of India's most prominent cricketers, Rohit Sharma and Virat Kohli, who are set to begin their pursuit of several major milestones. Both players, now established as 'ODI-exclusive legends,' are expected to command considerable attention as they aim for career-defining records.</p><p>The first India-West Indies ODI is anticipated to be a crucial platform for Sharma and Kohli to initiate their chase for these significant achievements. These potential milestones are projected to dominate cricketing headlines, generating widespread discussion and anticipation in the lead-up to the 2027 ICC Cricket World Cup. Their individual quests add an intriguing dimension to the upcoming series.</p><p>As the Men in Blue take the field, the focus will extend beyond the team's collective performance to the individual accomplishments of this iconic duo. The records they are targeting and their continued impact on the game are considered vital aspects that could influence narratives and generate excitement leading into the next global tournament. The Thiruvananthapuram fixture therefore holds enhanced importance as the starting point for these aspirations.</p><p>What to watch: The start of Rohit Sharma and Virat Kohli's chase for significant ODI milestones.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/cricket/ro-ko-record-hunt-rohit-virat-eye-several-milestones-ahead-of-1st-odi-against-wi-12103535#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-27/rohit-sharma-virat-kohli-eye-several-milestones-ahead-of-1st.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/name-missing-from-sir-if-tribunals-take-a-decade-to-decide-a.html">Name Missing From SIR? If Tribunals Take A Decade To Decide Appeals, What Happens To Your Right To Vote</a></h2>
+    <p>Delays in the judicial process, specifically concerning the resolution of appeals related to the Special Identification Register (SIR), are raising significant constitutional concerns. Advocate Jatin Bhardwaj has highlighted that if tribunals take an extensive period, potentially a decade, to decide these appeals, it could have profound implications for a citizen's fundamental right to vote.</p><p>Such prolonged delays directly impinge upon a voter’s constitutional entitlements, as articulated under Articles 14 and 21 of the Indian Constitution. Article 14 ensures equality before the law and equal protection of the laws, while Article 21 guarantees the protection of life and personal liberty. The right to vote, a cornerstone of democratic participation, is intrinsically linked to these fundamental rights.</p><p>Bhardwaj's observations underscore a critical issue within the legal framework, suggesting that the efficiency of the appellate process is vital for safeguarding democratic principles. When an individual’s name is missing from the SIR and their appeal for inclusion faces a decade-long wait, their ability to exercise their franchise is effectively suspended for an unacceptably long duration. This situation necessitates a closer examination of judicial timelines and their impact on civic rights.</p><p>What to watch: The debate surrounding judicial delays and their impact on fundamental voting rights.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/name-missing-from-voter-roll-after-sir-if-tribunals-take-a-decade-to-decide-appeals-what-happens-to-your-right-to-vote-supreme-court-election-commission-10355207.html" rel="noopener">News18 India</a> · <a href="article/2026-09-27/name-missing-from-sir-if-tribunals-take-a-decade-to-decide-a.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/tamil-nadu-government-exempts-public-law-and-order-departmen.html">Tamil Nadu government exempts Public (Law and Order) Department from RTI Act</a></h2>
+    <p>The Tamil Nadu government has issued a significant order, exempting its Public (Law and Order) Department from the purview of the Right to Information (RTI) Act. This move means that specific categories of information, deemed sensitive by the government, will no longer be accessible to the public under the transparency legislation.</p><p>The exemption order covers a broad range of subjects that are central to public safety and governance. Among the key areas now excluded from the RTI Act's ambit are details concerning communal and caste clashes, which are often subjects of intense public scrutiny. Additionally, information related to all matters concerning detentions under the National Security Act (NSA) will also be withheld.</p><p>Furthermore, the government order specifies that reports investigating deaths in police custody will be exempt from RTI requests. Agitations carried out by students and farmers, which frequently involve law and order interventions, are also included in the exemption. This decision by the Tamil Nadu government effectively limits the public's ability to seek information on these critical issues, raising questions about transparency in public administration.</p><p>What to watch: Public and legal reactions to the Tamil Nadu government's RTI exemption.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-exempts-public-law-and-order-department-from-rti-act/article71515196.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/tamil-nadu-government-exempts-public-law-and-order-departmen.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/two-state-solution-key-to-lasting-israel-palestine-peace-jai.html">‘Two-State Solution’ Key To Lasting Israel-Palestine Peace, Jaishankar Says At UNGA</a></h2>
+    <p>India's External Affairs Minister, S. Jaishankar, recently addressed the United Nations General Assembly (UNGA), emphasizing the critical importance of a 'Two-State Solution' for achieving lasting peace between Israel and Palestine. Jaishankar's remarks reiterated India's consistent stance on the long-standing conflict, highlighting the necessity of a diplomatic resolution that addresses the aspirations of both sides.</p><p>During his address, the Minister underscored that a viable and sustainable two-state solution remains the most credible path forward to ensure stability and security in the region. This position aligns with broad international consensus regarding the framework for resolving the Israeli-Palestinian dispute.</p><p>Further demonstrating India's commitment to the region, the Ministry of External Affairs (MEA) confirmed that India has provided substantial humanitarian assistance to Palestinians. Since the onset of the recent conflict, approximately 70 metric tonnes of aid have been dispatched. This provision of humanitarian support underscores India's concern for the well-being of the Palestinian people amidst the ongoing challenges. Jaishankar's statement at the UNGA reinforces India's diplomatic engagement and humanitarian efforts in the context of the Middle East.</p><p>What to watch: Diplomatic efforts at the UN and regional developments concerning the two-state solution.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/two-state-solution-key-to-lasting-israel-palestine-peace-jaishankar-says-at-unga-ws-kl-10355183.html" rel="noopener">News18 World</a> · <a href="article/2026-09-27/two-state-solution-key-to-lasting-israel-palestine-peace-jai.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/pakistan-ranks-highest-on-global-terrorism-index-2026.html">Pakistan Ranks Highest on Global Terrorism Index 2026</a></h2>
+    <p>Pakistan has been identified as the nation most significantly affected by terrorism, according to the Global Terrorism Index 2026. This ranking highlights a persistent challenge for the South Asian country. The index, which assesses the impact of terrorism across various nations, placed Pakistan at the top of its list for the upcoming year.</p><p>The findings prompted a sharp reaction from former envoy Husain Haqqani. He commented on the situation via X, attributing the country's predicament to a policy of &quot;keeping 'snakes in backyard'.&quot; This statement suggests a critical view on past or present strategies concerning extremist elements within the region.</p><p>The Global Terrorism Index is a comprehensive study that analyzes trends and patterns in terrorism worldwide. Its 2026 report draws attention to the severe consequences experienced by Pakistan, underscoring the human and geopolitical costs associated with terrorism. The report's methodology typically involves assessing factors such as the number of terrorist incidents, fatalities, injuries, and property damage.</p><p>Haqqani's remarks, while succinct, reflect a sentiment that has often been voiced by observers regarding the complexities of combating terrorism, particularly when internal policies are perceived as contributing factors. The former envoy's use of a vivid metaphor underscores the gravity of the situation as seen from his perspective.</p><p>What to watch: The implications of this ranking on Pakistan's international relations and internal security policies.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/pakistan-tops-global-terrorism-index-2026-husain-haqqani-reaction-ws-l-10355164.html" rel="noopener">News18 World</a> · <a href="article/2026-09-27/pakistan-ranks-highest-on-global-terrorism-index-2026.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/actor-vishal-sustains-back-injury-during-purushan-climax-sho.html">Actor Vishal Sustains Back Injury During 'Purushan' Climax Shoot</a></h2>
+    <p>Actor Vishal recently sustained a back injury during an action sequence for his upcoming film, 'Purushan', while shooting in Goa. The incident took place during the crucial climax portion of the movie, requiring the actor to seek immediate medical attention for the ailment.</p><p>Doctors attending to Vishal have prescribed a recovery period of three weeks. This unforeseen hiatus has reportedly caused disappointment for the actor, as it will regrettably prevent him from participating in the important Nadigar Sangam general body meeting. His absence from this key organizational event marks a significant personal setback amidst his recovery.</p><p>In the wake of the injury, Vishal has acknowledged and expressed his deep gratitude for the overwhelming support he has received from his dedicated fanbase. The outpouring of well-wishes and concern from his admirers has been a source of encouragement during this challenging time.</p><p>The actor is now focused on healing swiftly, emphasizing his eagerness to return to his professional duties. He is keen to resume both his film commitments and his responsibilities within various organizational capacities as soon as his health permits. His commitment to his craft and industry roles remains strong.</p><p>What to watch: Further updates on Vishal's recuperation and the resumption of the 'Purushan' production schedule.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/vishal-suffers-back-injury-during-purushan-climax-shoot-in-goa-im-sorry-i-cannot-attend-the-nadigar-sangam-general-body-meeting/articleshow/134515036.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-27/actor-vishal-sustains-back-injury-during-purushan-climax-sho.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/alisha-chinai-reveals-behind-the-scenes-trivia-for-iconic-ka.html">Alisha Chinai Reveals Behind-the-Scenes Trivia for Iconic 'Kajra Re'</a></h2>
+    <p>Singer Alisha Chinai recently shared previously unknown details about the creation and recording of the popular song ‘Kajra Re’ from the 2005 film 'Bunty Aur Babli'. During a conversation with Komal Nahta, Chinai recounted several fascinating anecdotes surrounding the track.</p><p>Chinai revealed that she was contacted at the eleventh hour to lend her voice to the song. She recalled having to rush from Alibaug to make it to the recording session, highlighting the last-minute nature of her involvement. The urgency underscored the rapid pace often encountered in film music production.</p><p>She also disclosed that the legendary lyricist Gulzar penned the distinctive 'alaap' section of the song in a remarkably short span of ten minutes. This detail offers insight into the spontaneous creative genius behind one of Bollywood's most enduring item numbers.</p><p>Chinai further mentioned that the makers had initially informed her that ‘Kajra Re’ was conceived as an item song, with the possibility of Aishwarya Rai Bachchan performing it. She also praised Aishwarya Rai's appearance in the song, describing her as looking &quot;like a GODDESS.&quot; These revelations provide a glimpse into the collaborative process and the artistic vision that brought the memorable track to life.</p><p>What to watch: Further interviews with artists revealing untold stories from Bollywood's musical history.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/alisha-chinai-shares-fascinating-kajra-re-trivia-i-was-called-at-the-last-minute-i-rushed-from-alibaug-gulzar-wrote-the-alaap-in-10-minutes-says-aishw/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-27/alisha-chinai-reveals-behind-the-scenes-trivia-for-iconic-ka.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/what-the-8th-pay-commission-consultations-mean-for-you.html">What the 8th Pay Commission Consultations Mean for You</a></h2>
+    <p>The 8th Pay Commission is currently in its consultative phase, actively engaging with various employee organizations and other relevant stakeholders. This process is crucial as it will determine future salary, fitment, and pension structures for central government employees.</p><p>For the ordinary taxpayer, the discussions surrounding the 8th Pay Commission are significant because any revisions in pay scales and allowances will have an impact on government expenditure. While not directly affecting private sector salaries, these changes can influence broader economic trends and government financial planning.</p><p>Employee organizations are actively presenting their demands. For instance, the National Council (Joint Consultative Machinery) or NC-JCM has proposed a minimum pay of ₹69,000. They also advocate for a fitment factor of 3.833, which is used to multiply existing basic pay to arrive at the new basic pay.</p><p>Separately, the Bhartiya Pratiraksha Mazdoor Sangh (BPMS) has put forward its own set of demands, seeking a minimum pay of ₹72,000 and a higher fitment factor of 4.0. These figures represent the aspirations of different employee groups for improved financial conditions.</p><p>What to watch: The final recommendations of the 8th Pay Commission and their eventual implementation.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/8th-pay-commission-as-meetings-gather-pace-check-nc-jcm-and-bpms-demands-on-salary-fitment-and-pension-11790478214976.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-27/what-the-8th-pay-commission-consultations-mean-for-you.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/new-rbi-rules-for-bulk-fixed-deposits-from-october-1-what-sa.html">New RBI Rules for Bulk Fixed Deposits from October 1: What Savers Need to Know</a></h2>
+    <p>From October 1, 2026, new regulations from the Reserve Bank of India (RBI) will come into effect, altering how banks manage and disclose interest rates for bulk fixed deposits (FDs). These changes are primarily aimed at enhancing transparency and consistency for larger depositors.</p><p>For an ordinary saver, these rules might not directly impact your typical small to medium-sized FDs, as &quot;bulk deposits&quot; usually refer to larger sums, often above a certain threshold set by the RBI. However, understanding these changes is beneficial if you consider making a substantial deposit in the future.</p><p>Under the new guidelines, banks will be required to disclose their bulk deposit interest rates daily. This means that if you are considering a large FD, you should expect more frequent updates on available rates, allowing for more informed decisions.</p><p>Furthermore, the rules mandate consistency in bulk deposit rates across all branches of a bank. This ensures that the interest rate offered for a bulk FD should be uniform, regardless of which branch you approach. There may be specific exceptions, particularly those related to liquidity regulations, which depositors should be aware of before committing to a bulk FD.</p><p>What to watch: How these changes affect transparency and competition among banks for large deposits.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/fd-rules-change-from-1-october-what-depositors-should-know-about-bulk-deposit-rates-11790469926484.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-27/new-rbi-rules-for-bulk-fixed-deposits-from-october-1-what-sa.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/ndtv-defence-summit-2026-rajnath-singh-military-chiefs-to-ta.html">NDTV Defence Summit 2026: Rajnath Singh, Military Chiefs To Take The Stage — Check Full Schedule, Timings - NDTV Profit</a></h2>
+    <p>The NDTV Defence Summit 2026 is gearing up to be a pivotal event for India's strategic community, as confirmed by NDTV Profit. The summit will host Defence Minister Rajnath Singh and the nation's Military Chiefs, who are slated to address the gathering. This high-level participation highlights the summit's role as a significant forum for discussions on national security and defence policies. The convergence of such prominent figures offers a crucial platform for exploring the evolving challenges and opportunities within the defence sector.</p><p>While the preliminary announcement did not detail specific hardware procurements, ongoing programmes, or particular agency initiatives, the involvement of the Defence Minister and top military brass indicates a focus on broader strategic themes. Such events typically facilitate an exchange of views on defence preparedness, technological advancements, and geopolitical dynamics impacting India. The summit's schedule and precise timings, which are expected to be released, will offer further insights into the specific topics slated for discussion. The gathering of these key decision-makers is anticipated to provide valuable perspectives on the nation's defence posture and its future strategic direction, fostering dialogue among stakeholders. The summit serves as a public-facing platform to underscore the government's commitment to robust defence.</p><p>What to watch: The overarching strategic insights and potential policy signals emanating from the high-level addresses.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbEtjQm80UHp0TUctUjVzbm0xMHRzd29vaVlBOW5ZNkxZdUYtcXNvZEE4LTl4SXlicWo0T2xUNEdmUWhtX3F6M1VhTTRfQmhKbGZ1NlhNZ0hzbGhCV2J2aWFKcDEzVnVOd1BhSjdfVVlMR0daVmpVbGp4VFlPY2U1cWwtQlE1ODB2T3doR1lJRGIzWjhjc2RlcDd2ZFpzb0dLMzZSdVFRVU5VNXFmdFZoRnU4STg2alNMLWsxNlBMLXVUOUJ0dV9MSklpVVpJaHI3MW1MaDRfMXZzXzFsYWfSAeYBQVVfeXFMTU9TOHZqQTN5eWhJbFBEeFdnN2xjZTNVOWY2bFBEdVc5Q2J1NXNsUFhCbl9xVFV2Wm1rb3pFV1p6Z01XeE5YLU5wLWVjblBvcVRRVnhzOGRaalpyeDhjMmNnOVJILU1TNHlEVXhpdy1oRmJSb24wWTlwYmNtRGVmMV82SEdSOVBHU1BsaThiclJLa002bzhDZ0VwNllYVXdpZmRDSk9LSU5TNGpZRUp5NzNXUXBNb2R6cmhvMWRXMl9NRlpHNjMtM2RvdlJfaUYyb1d6dnQwMFBLZDRoZDAyQ1pIdFJES0E?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-27/ndtv-defence-summit-2026-rajnath-singh-military-chiefs-to-ta.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/indias-defence-exports-can-beat-rs-50000-crore-target-by-202.html">India’s Defence Exports Can Beat Rs 50,000 Crore Target by 2029, According to Govt; What is Driving This Growth, Who are Buying? - Jagran Josh</a></h2>
+    <p>India's defence export ambitions are reportedly set to reach new heights, with government projections indicating a potential to surpass the Rs 50,000 crore target by the year 2029. This optimistic outlook was highlighted in a report by Jagran Josh, attributing the claim directly to the government. The ambitious target reflects a concerted effort to bolster the domestic defence manufacturing base and increase India's footprint in the global defence market.</p><p>While the government's assertion signals significant confidence in the sector's growth trajectory, details concerning the specific drivers behind this projected expansion were not elaborated upon in the summary. Similarly, the identity of the key purchasing nations or regions contributing to this anticipated surge in exports was not disclosed. Analysts and industry observers will be keen to understand the underlying strategies, specific hardware platforms, or defence services that are expected to fuel this growth. The pursuit of such a substantial export milestone underscores India's broader 'Make in India' initiative within the defence sector, aiming for self-reliance while also emerging as a reliable global supplier. This development marks a pivotal moment for indigenous defence production capabilities.</p><p>What to watch: Further government statements clarifying the specific growth drivers and key export destinations.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMimgJBVV95cUxORXV3NHB4QktTMVV4RFBjNDVOMHRpeFJ4NEt2cnNsRERuVk11Vno5WHJmSU1GXzZWN2xvcmFIOEthUUNMVkY1dTIzVV8wMzh4RmdkTVBpbklvSnRKUlVNV3Q4MHNLRExtQ2tjeFdueHJkNGJhd0ExZHM4QlptWGlCbmM4cUI1MHpKVkt3LUVTZl9HZ3V1aEN3Wk41eEhSQV9ISmU1cTFkNTR0YWZsRG5yZFlyOUNlMEdLMGZhT2lHRWNDYzctbnR4WWs4a2hyMnF1ZHgwXzdLRm5xM05mczZZbjZoamppNGFqaTlEWG5EUDVTVFd5dW5pNzJuZS04aDJ2c2I0WWFkTHRsU1c4ZDJMNHlVcWhzakdpZ1HSAaACQVVfeXFMTllDcHVWblZKZ2FrU05VWnMxVUI2WGVWTTI4Y2daa29YUVlrU3NjYWZ1VmppWFpWWnZCTFFjYzhaUVZFbTlPaUVzaUdJajdQSm5rd3RhTHI2MGNMRG95QzhlN3BJSmw1bFZaTjVkS1V4MWFuMDFLQ2gzS0taT2tvSEhpZFMzaHRHUDVvYUdPekJpb3hHa0EtSnJjdENwckoydEszMFZGTUVBelF6N3I3YlBtdzhNcmtKUDNhNXB2c3pfdEZ5TVYzNUY1YkpUMDhVWjRKWDg4VTZoY1hxXzh5dEFMZ2NVVFBGQVBvYWhYZVdzQi01WDZvcXlUU0d2QkxPTkRrZi1XbjdGNUZnYmdGeTV0UXVCcG1DN3dPOUp6VFJH?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-27/indias-defence-exports-can-beat-rs-50000-crore-target-by-202.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS · Economic Times · editor 0/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/vijay-announces-gold-ring-scheme-for-newborns-in-tamil-nadu.html">Vijay Announces Gold Ring Scheme for Newborns in Tamil Nadu</a></h2>
+    <p>Tamil Nadu is set to introduce a new welfare initiative as actor-turned-politician Vijay prepares to launch a gold ring scheme for newborns. The program aims to provide support to families across the state, marking a significant move in the local political and social welfare landscape.</p><p>While specific eligibility criteria and administrative details regarding the distribution of the gold rings remain to be finalized, the announcement has drawn attention to the intersection of political outreach and public welfare programs. The initiative aligns with existing traditions of state-sponsored support for families, though it carries the distinct branding associated with Vijay’s political entry.</p><p>Observers are looking to see how the scheme will be implemented on the ground and what impact it will have on public sentiment. As the program prepares for rollout, the focus remains on the logistical framework required to manage a state-wide distribution of precious metals to eligible households.</p><p>What to watch: The official rollout timeline and specific eligibility requirements for the scheme.</p>
+    <p class="src">Source: <a href="https://economictimes.indiatimes.com/news/india/tamil-nadu-cm-vijay-to-launch-1-gram-gold-ring-scheme-for-newborns-on-monday-sept-28/articleshow/134514254.cms" rel="noopener">Economic Times</a> · <a href="article/2026-09-27/vijay-announces-gold-ring-scheme-for-newborns-in-tamil-nadu.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/the-biggest-recognition-here-had-nothing-to-do-with-my-marks.html">‘The biggest recognition here had nothing to do with my marks’ | Life in an IIT - The Indian Express</a></h2>
+    <p>The Indian Express article titled “The biggest recognition here had nothing to do with my marks” offers a snapshot of student life inside an Indian Institute of Technology (IIT). While the headline emphasizes that the most valued acknowledgement for the subject of the piece is unrelated to academic scores, the piece situates that claim within the broader culture of IIT campuses. It suggests that peer respect, project outcomes, or extracurricular achievements can outweigh traditional grade‑based validation. The narrative frames the IIT environment as one where personal initiative and practical contributions shape a student’s reputation more than marks alone. By focusing on lived experience rather than exam results, the article invites readers to reconsider conventional metrics of success in elite engineering institutes. What to watch: Shifts in how IIT students and alumni define achievement beyond grades.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRUIzT0Vqd3gwZXVUTDNsTFRNa2JkQVF1YUFzRDdaZVdMc2RmR3Q1ZlZGdGdncTRjakdnUzZ6ZHBrd29pcGtaUGRXSUxsUlJ4YkhvM0JPU2VNUk0wYXhqZjdYVVd2eFpuVjlGS2t2ZzNJeW1zNnU2UTJxd1ZhTmtSV1p0YzFxeGx5V0VjOFZQWFpXcDJVZVAtazBjMzl5bFRsUm5NRkd6VXFmNVZsTDNJZWVDc2R4a2xTNVRXRG9RdEhhekY2WFJBOUQ0NXNSdjZZTTIwbWhNdGNQRDl3M0U2b2FXcEl1TUHSAe4BQVVfeXFMTkYwSUtHeEFteGJNbDRpSHM4RXdxR3lrcGJxeWRXVFo3U1VhXzNqclNRYi1CaXZhN24ybnZKNEwtQk4xY3k5RTkzYnF2a3BVU0tvNjNBbDBzSjNwcUQxelhLTmgyaEFPMENNQVRHcXl3UmJWbHdJdDc3UVprQUdpb2RXQmk4WEpSd0NKRndjbWpyUXdFUzRvU3hGZ0pOazNjWVZDTEh5UUNCU2U2VFE4OGFoYUF4RkNQZGZmamQzX3FTVThRWGJIZjBYUXhFMFpjTVBNMTlVSnkzWnpZbElERjNWblFmMktNd05NUWFZUQ?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-27/the-biggest-recognition-here-had-nothing-to-do-with-my-marks.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/germanys-free-education-can-still-cost-up-to-rs-70-lakh-what.html">Germany's 'free' education can still cost up to Rs 70 lakh: What Indian students miss</a></h2>
+    <p>India Today reports that the promise of tuition‑free higher education in Germany can still translate into a total expenditure of up to Rs 70 lakh for Indian students. The article highlights that while German public universities do not charge tuition fees to domestic or international students, ancillary expenses – such as accommodation, health insurance, travel, and living costs – can accumulate to a figure that rivals the cost of private education in India. No specific dates for admission cycles or scholarship deadlines are provided in the summary, and eligibility criteria are not detailed. The piece urges prospective Indian applicants to examine the full cost structure before deciding, noting that the apparent &quot;free&quot; label may mask substantial financial commitments. Readers are directed to the original India Today story for a complete breakdown and any official links to German university portals or German Academic Exchange Service (DAAD) resources that may be referenced in the full article. What to watch: prospective students should compare total living expenses alongside tuition when evaluating German study options.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNX3pCZ0lwdkh2RG9KTDBKa1U0aFg2bllvLWkzU1FpVmNYWU9HS19tRW1CV3dxT3M3QVhsM1QzZUZKR0V3ajRqRTRFTFF3MHFDZW9FTUFZS2hrZWExdEJDMlJfUnJiVTZMNVhpLUVJeG44YXJkbV9SWDRkdmxsLS1PSVhDazE3eF9mOTBsQjlkNUZvR2VpT3NQVFRGenM3Y2VQazlkZHhKR0RmRFRTMXV2dm5BWFBJZXctN2Mwa1NHRTRkUjlrOFBtQk5icG1wa1cydFFwSlUzMEwtbjRkdjUwZnI1RlNNUXFlS3JZMUJsVlpObTTSAfgBQVVfeXFMT0xFUmJSMTRuYjRCLWx3b290WFZiSjZhbVdtOG5zdDNZcFFWQldlVHhMQkNpVDMtbzFwSkdreUNBR0dncFgtRWc3WWcteGd2SEp6a3h5ZE5xSE9WWExJUkl6Q1JGZ2hOanVxdFdlRUpNMVRKczlWTnhXdlk2WUhzOHFSY3FRRHZGYVpBMDVJd2tZRkVJVV9Xc3ZmMVREU2RWZTNjOFRpY3dDLVNTOWZJbDUyNkVLb1RvaXlDbUZmSElZQWZ2anlhVDU2LXJxclpPaUVGTG1ScWY4OVhrWXFLVnl4OXZCNDBzeHl0UE1KUVVraGZYSVh3VlE?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-27/germanys-free-education-can-still-cost-up-to-rs-70-lakh-what.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/apod-2026-september-27-andromeda-before-and-after-photoshop.html">APOD: 2026 September 27 – Andromeda Before and After Photoshop</a></h2>
+    <p>NASA’s Astronomy Picture of the Day (APOD) for 27 September 2026 showcases a side‑by‑side comparison of the Andromeda galaxy before and after digital processing. The daily APOD feature, managed by the NASA‑affiliated APOD team, presents a new astronomical image each day accompanied by a brief explanation written by a professional astronomer. The September 27 entry invites viewers to observe the raw telescope capture of Andromeda alongside a version enhanced with Photoshop techniques, illustrating how post‑processing can reveal structural details that are less evident in the original data. The summary notes that the APOD archive, searchable by date, includes this image as part of its ongoing educational outreach. No additional mission dates, agency collaborations, or sky‑event specifics beyond the image comparison are mentioned. The entry continues APOD’s tradition of encouraging public engagement with the cosmos through visual storytelling. What to watch: future APOD releases will further explore image processing impacts on astronomical interpretation.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/image-article/apod-2026-september-27-andromeda-before-photoshop/" rel="noopener">NASA</a> · <a href="article/2026-09-27/apod-2026-september-27-andromeda-before-and-after-photoshop.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/mumbai-promotes-artificial-ponds-for-sustainable-ganpati-vis.html">Mumbai Promotes Artificial Ponds for Sustainable Ganpati Visarjan</a></h2>
+    <p>The Brihanmumbai Municipal Corporation (BMC) is championing a sustainable shift in how Mumbai celebrates Ganesh Chaturthi. By promoting the use of artificial ponds for Ganpati Visarjan, the city is offering devotees a practical and respectful alternative to traditional sea immersion. This initiative aims to maintain the sanctity of the festival while significantly reducing the environmental impact on natural water bodies.</p><p>Traditionally, idol immersion has often led to debris and broken idols washing up along shorelines. Artificial ponds provide a controlled environment that ensures the ritual is completed with full devotion while protecting the city's coastal ecosystem. This shift reflects a growing civic consciousness, balancing long-standing traditions with the urgent need for environmental responsibility. As the city prepares for the festivities, the BMC's approach highlights that modern urban living can successfully integrate ecological preservation with cultural heritage. By choosing artificial ponds, citizens are participating in a collective effort to keep Mumbai’s waters clean while honoring their faith.</p><p>Why it matters: This transition demonstrates how civic authorities and citizens can collaborate to preserve cultural traditions while actively protecting urban natural resources.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/videos/lifestyle/no-sea-visarjan-mumbai-promotes-artificial-ponds-12580970" rel="noopener">The Better India</a> · <a href="article/2026-09-27/mumbai-promotes-artificial-ponds-for-sustainable-ganpati-vis.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">ENVIRONMENT · Guardian Environment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/bangkoks-flood-disaster-in-pictures.html">Bangkok’s Flood Disaster – In Pictures</a></h2>
+    <p>Authorities in Thailand have officially declared a flood disaster across Bangkok after nearly two days of intense rainfall turned streets, homes, and businesses into waterways. Over a 48‑hour period ending Saturday, some parts of the capital recorded 300 mm of rain, enough to inundate roads and submerge vehicles. Residents were observed wading through waist‑deep water as the city’s extensive canal network struggled to cope with the volume, causing murky water to spill into adjacent neighborhoods, restaurants and shops. The sudden surge left many commercial premises and private dwellings water‑logged, disrupting daily life and commerce. Emergency services have been deployed to assist those trapped and to pump water from critical thoroughfares, while local officials continue to monitor water levels in the canals. The event highlights the vulnerability of Bangkok’s low‑lying terrain to extreme precipitation events, underscoring the importance of robust drainage and flood‑management strategies. What to watch: Ongoing water levels in the city’s canals and any further emergency alerts from Thai authorities.</p>
+    <p class="src">Source: <a href="https://www.theguardian.com/weather/gallery/2026/sep/27/bangkoks-flood-disaster-in-pictures" rel="noopener">Guardian Environment</a> · <a href="article/2026-09-27/bangkoks-flood-disaster-in-pictures.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/india-enters-day-8-of-asian-games-2026.html">India Enters Day 8 of Asian Games 2026</a></h2>
+    <p>India continues its campaign at the 2026 Asian Games as the event reaches its eighth day. The focus shifts to the squash courts, where Abhay Singh and Anahat Singh are slated to compete in their respective final matches for the men's and women's singles events.</p><p>As the competition intensifies, the Indian contingent remains in the spotlight with high expectations for these final-stage performances. The squad has been active throughout the week, maintaining a presence across various disciplines as the games progress toward their conclusion.</p><p>The upcoming matches represent a critical juncture for the Indian athletes involved in the singles brackets. Supporters and sports analysts are monitoring these events closely as the athletes look to secure their final rankings in the competition. The ongoing updates reflect the broader participation of the Indian team in the 2026 edition of the Games.</p><p>What to watch: The results of the men's and women's singles squash finals.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/othersports/asian-games-2026-live-updates-day-8-india-medal-tally-squash-badminton-athletics-aichi-nagoya-japan-live-news-12103175#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-27/india-enters-day-8-of-asian-games-2026.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/hornets-acquire-rob-dillingham-from-bulls-in-trade-for-buddy.html">Hornets Acquire Rob Dillingham from Bulls in Trade for Buddy Hield</a></h2>
+    <p>The Charlotte Hornets have officially landed a new guard in a notable NBA trade. According to Shams Charania, the team acquired Rob Dillingham from the Chicago Bulls. In return, Charlotte sent veteran sharpshooter Buddy Hield to the Bulls, along with cash considerations. The move signals a strategic shift for the Hornets, as they look to bolster their backcourt with a 6-foot-2 guard. Dillingham brings a different profile to the team, offering size and versatility that may fit their current roster needs. For the Chicago Bulls, the priority appears to be floor spacing. Hield is a career 39.5 percent three-point shooter, a statistic that aligns perfectly with the Bulls' desire to improve their perimeter shooting. The trade also provides Chicago with significant cap space, a crucial asset for future roster moves. This financial flexibility allows the Bulls to maneuver in the upcoming free agency period or further trade windows. The cash considerations included in the deal add an additional layer of financial benefit for Charlotte, though the primary focus remains on the personnel changes. Both teams are now looking to integrate these new players into their respective rotations. The Hornets will need to assess how Dillingham fits with their existing guard corps. Meanwhile, the Bulls will evaluate Hield's impact on their offensive spacing. This transaction represents a clear divergence in the two franchises' immediate goals. One team seeks depth and size, while the other prioritizes shooting and financial flexibility. The league will watch closely to see how these rosters evolve in the coming weeks. What to watch: How Rob Dillingham integrates into the Charlotte Hornets' rotation and whether Buddy Hield improves Chicago's floor spacing.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/us-nba/nba-trade-charlotte-hornets-lands-6-foot-2-guard-from-bulls-giving-up-buddy-hield-and-a-major-cap-space-12103631#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-27/hornets-acquire-rob-dillingham-from-bulls-in-trade-for-buddy.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">TECH · Engadget · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/understanding-power-bank-requirements-for-laptop-charging.html">Understanding Power Bank Requirements for Laptop Charging</a></h2>
+    <p>Selecting the right power bank for a laptop requires looking beyond simple capacity metrics. While battery capacity is a common focus, it is not the sole determinant of successful charging. A critical factor is the rate at which the power bank can deliver energy. This delivery speed is essential to ensure that the laptop does not drain its internal battery while connected to the external source. If the power bank cannot supply power fast enough, the device may continue to lose charge even when plugged in. This phenomenon occurs when the input power is insufficient to offset the laptop's consumption. Therefore, users must verify the output specifications of their power banks. The wattage and voltage capabilities must align with the laptop's charging requirements. Ignoring these details can lead to frustration and inefficient power management. The market offers a wide range of power banks, but not all are suitable for high-power devices like laptops. Consumers should look for models that explicitly state their power delivery capabilities. This ensures that the external battery acts as a true extension of the laptop's power source. The goal is to achieve a net positive charge, where the battery level increases over time. Understanding this dynamic is key to making an informed purchase. It prevents the common mistake of buying a high-capacity bank that still fails to charge the device effectively. The interplay between capacity and delivery speed is what defines a practical mobile charging solution. What to watch: The specific wattage and power delivery ratings of power banks to ensure they exceed the laptop's consumption rate.</p>
+    <p class="src">Source: <a href="https://www.engadget.com/2266595/how-powerful-power-bank-needs-to-be-charge-laptop/" rel="noopener">Engadget</a> · <a href="article/2026-09-27/understanding-power-bank-requirements-for-laptop-charging.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/neet-with-a-disability-whats-holding-back-visually-impaired-.html">NEET with a disability: What's holding back visually impaired young people who want to work</a></h2>
+    <p>A long-term research project has tracked the life paths of 80 young people with vision impairment over an 11-year period. The study followed participants as they transitioned from their school years into adulthood, aiming to understand the challenges they face in the workforce.</p><p>Researchers engaged with the participants at regular intervals throughout this decade-plus timeframe. By monitoring their progress, the study sought to document what aspects of their personal and professional journeys were successful and which areas required improvement.</p><p>The findings center on the experiences of these individuals as they navigate the transition to independent adult life and employment. By speaking directly with the participants, the research highlights the factors that either support or hinder their ability to secure and maintain work.</p><p>This study provides an longitudinal view of the obstacles encountered by visually impaired youth, offering insight into systemic or personal barriers that persist after formal education ends. The goal remains to identify clear opportunities for better support structures during this critical life stage.</p><p>What to watch: Future policy recommendations based on the long-term outcomes of these 80 participants.</p>
+    <p class="src">Source: <a href="https://phys.org/news/2026-09-neet-disability-visually-impaired-young.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-27/neet-with-a-disability-whats-holding-back-visually-impaired-.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/black-hole-jets-reach-far-beyond-galaxies-visible-edges-pote.html">Black hole jets reach far beyond galaxies' visible edges, potentially deciding their fate</a></h2>
+    <p>Galaxies are vast structures containing hundreds of billions of stars, which derive their formation from cold, dense gas. Every large galaxy, including our own Milky Way, is surrounded by a massive envelope of gas known as the circumgalactic medium, or CGM.</p><p>This reservoir serves as a primary source of raw material for star formation. Research indicates that the CGM extends significantly, reaching 10 to 20 times the diameter of the galaxy's visible portion. </p><p>Recent scientific observation focuses on how black hole jets interact with this expansive gas environment. Because the CGM is so much larger than the visible galaxy, the reach of these jets can extend far beyond the visible boundaries, potentially influencing the availability of the gas needed to form new stars. </p><p>Understanding the dynamics of this gas reservoir is essential to determining the long-term evolution and ultimate fate of galaxies. The interaction between internal black hole activity and this external gas cloud remains a key area of study in galactic development.</p><p>What to watch: Further data on how black hole jets physically alter the density of the circumgalactic medium.</p>
+    <p class="src">Source: <a href="https://phys.org/news/2026-09-black-hole-jets-galaxies-visible.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-27/black-hole-jets-reach-far-beyond-galaxies-visible-edges-pote.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">FUNNY · r/nottheonion · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/new-york-city-utilities-warn-against-sewer-exploration.html">New York City Utilities Warn Against Sewer Exploration</a></h2>
+    <p>New York City officials have issued a formal warning regarding a persistent trend among residents who treat the municipal sewer system as a destination for recreational activity. While the city’s underground infrastructure is designed primarily for waste management and utility maintenance, it has apparently attracted a subculture of explorers who venture into the subterranean tunnels. Utility providers have characterized this practice as a dangerous hobby, noting that the environment poses significant risks to human life. The hazards of navigating these restricted areas are manifold, involving unstable structures, exposure to hazardous materials, and the constant threat of rapidly changing conditions within the pipes. Authorities are urging the public to restrict their recreational pursuits to the surface level, where the risk of accidental expiration is considerably lower. It appears that the underground is best left to the professionals and the rats.</p>
+    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wqud1e/new_york_citys_sewer_dwellers_are_still_at_it_and/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-27/new-york-city-utilities-warn-against-sewer-exploration.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · ESPN Cricinfo · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/kohli-eyes-dream-world-cup-finale.html">Kohli Eyes Dream World Cup Finale</a></h2>
+    <p>Virat Kohli has expressed his desire to play a match-winning, finishing knock in a World Cup final, describing it as the ideal scenario for his career.</p>
+    <p class="src">Source: <a href="https://www.cricinfo.com/ci/content/story/1555869.html?ex_cid=OTC-RSS" rel="noopener">ESPN Cricinfo</a> · <a href="article/2026-09-27/kohli-eyes-dream-world-cup-finale.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/election-commission-denies-rift.html">Election Commission Denies Rift</a></h2>
+    <p>The Election Commission has officially refuted claims of internal discord, clarifying that decisions regarding SIR were made unanimously.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/election-commission-rebuts-rift-claims-clarifies-unanimous-decisions-on-sir-ytvd-3003984-2026-09-27?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-27/election-commission-denies-rift.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/gavaskar-warns-incoming-selection-chief.html">Gavaskar Warns Incoming Selection Chief</a></h2>
+    <p>Former cricketer Sunil Gavaskar has cautioned the next chairman of selectors about the pressures of the role, noting that collective committee decisions often result in individual blame.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/the-mischief-makers-could-be-the-other-selectors-sunil-gavaskars-warning-to-ajit-agarkars-successor-4464/" rel="noopener">Crictracker</a> · <a href="article/2026-09-27/gavaskar-warns-incoming-selection-chief.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/mojtaba-khamenei-remains-out-of-sight-after-strike.html">Mojtaba Khamenei Remains Out of Sight After Strike</a></h2>
+    <p>Following reports that 56-year-old Mojtaba Khamenei was pulled from hospital rubble after strikes in February, he has remained out of public view and has not issued any statements.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/mojtaba-khamenei-was-pulled-from-rubble-after-february-strikes-vanished-to-an-unknown-location-ws-lr-10355193.html" rel="noopener">News18 World</a> · <a href="article/2026-09-27/mojtaba-khamenei-remains-out-of-sight-after-strike.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/private-university-students-protest-over-unverified-reports.html">Private university students protest over unverified reports</a></h2>
+    <p>Students at a private university blocked a highway to protest an alleged rape report. However, Kapurthula Senior Superintendent of Police Gaurav Toora stated that police have no information regarding such a crime.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/punjab/private-university-students-hold-protest-block-highway-over-unverified-rape-report/article71515254.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/private-university-students-protest-over-unverified-reports.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/public-sector-and-rural-banks-to-open-this-sunday.html">Public-sector and rural banks to open this Sunday</a></h2>
+    <p>Public-sector and regional rural banks across India will remain open on Sunday, September 27. The decision precedes a planned three-day nationwide strike by bank unions.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/rare-sunday-for-public-and-rural-sector-banks-check-if-your-bank-is-open-or-closed-today-11790482706270.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-27/public-sector-and-rural-banks-to-open-this-sunday.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/proposed-greenfield-shipyard-planned-for-thoothukudi.html">Proposed greenfield shipyard planned for Thoothukudi</a></h2>
+    <p>A mega greenfield shipyard has been proposed for Thoothukudi, which is expected to provide significant developmental benefits to both the district and the broader southern region.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/greenfield-shipyard-in-thoothukudi-a-southern-port-to-development/article71513807.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/proposed-greenfield-shipyard-planned-for-thoothukudi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/shai-hope-addresses-challenge-of-playing-in-india.html">Shai Hope addresses challenge of playing in India</a></h2>
+    <p>West Indies captain Shai Hope noted that competing against India in their home country is a challenge as his team prepares for the first ODI in Thiruvananthapuram.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/playing-india-in-their-backyard-is-always-a-challenge-says-shai-hope-7095/" rel="noopener">Crictracker</a> · <a href="article/2026-09-27/shai-hope-addresses-challenge-of-playing-in-india.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · Al Jazeera · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/pope-leo-xiv-leads-mass-in-paris.html">Pope Leo XIV leads Mass in Paris</a></h2>
+    <p>An estimated 800,000 people gathered at Place de la Concorde in central Paris for an open-air Mass led by Pope Leo XIV.</p>
+    <p class="src">Source: <a href="https://www.aljazeera.com/video/newsfeed/2026/9/27/huge-crowds-cheer-pope-leo-as-he-leads-open-air-mass-in-paris?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-27/pope-leo-xiv-leads-mass-in-paris.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/vijay-marks-anniversary-of-karur-stampede.html">Vijay marks anniversary of Karur stampede</a></h2>
+    <p>On the first anniversary of a deadly crowd crush at a political rally in Velusamypuram, Karur, actor and politician Vijay issued a statement on X recalling the September 27, 2025 incident that claimed 41 lives.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/karur-stampede-left-an-indelible-scar-says-vijay-on-first-anniversary/article71515129.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/vijay-marks-anniversary-of-karur-stampede.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/taiwan-awaits-14-billion-us-arms-deal.html">Taiwan awaits $14 billion US arms deal</a></h2>
+    <p>Taiwanese Deputy Foreign Minister Chen Ming-chi stated that the U.S. is aware of Taiwan's defense needs as a $14 billion arms package remains on hold. President Trump has described the deal as a bargaining tool following talks with Xi Jinping, while China continues to bolster its military.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/rest-of-world/taiwan-says-us-understands-defence-needs-as-14-billion-arms-package-remains-on-hold/articleshow/134514839.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-27/taiwan-awaits-14-billion-us-arms-deal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE BRIEF<span class="badge quick">quick bite</span> · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/taiwan-awaits-14-billion-arms-package.html">Taiwan awaits $14 billion arms package</a></h2>
+    <p>Taiwan reports that the United States is aware of its defense needs, though a $14 billion arms package is currently on hold.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxNQlRabnBaanJCN2tTZTdUbVdrSmVrOXFyV2Y0NEZ2YzVuaXJuaGNqVUwxVFl5MjAyZnR3eDk3Unh0SkhxSlVOaTZ5NjVmMDZaTHZEV2txWDdZb0lpTGtBYTdBaHBlLXo1NFY4blJ6RThNWUQtTjl4TnpEVTJtSWlMSDJoMExJTEYzWjFiX0w4OHZEbXBvWmRSN1FnOF8wVmM4ZjRSblpHb01XOWdTenRFQkVFekFLdnNmT2JtaFQxRUlYblA2Zm5HM3hhRnMyQTJSTEhUS3VpV0Jxc2JIZWVnS0s3X1FacE5zbzNrZ3c1VlFjSWpyYkxPZdIB_gFBVV95cUxQMTBmWjFOQXJFUXBQYnN3MWZZem9GRW0yMFZHeXRmSVBRaEVYelBnTVhHTVNScFMxTWloOHJjRF9iQVUxdHB3MEhUUnY0VkNOUTBkaUJlRWdqZ196eG1WaExubVdXR3lXUjNFX0pIQTk0NU5zRWxXNThiWjNXaE56dmFHaVE2RWpzSnZpY0dWSDJXQVRlRmROQnpNaUJXUV83OERadVR5ckhmUDgwYWhzc25EVmpXSHFBZ3RYQWZEa3BRTXQ0dy1paTg2VlNkc3JESmVXM3BlZEt4cmdsbWJYZTlaOHpsdHM5V0lGT0R6STBVOG5tbnJqTGVGMzNhUQ?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-27/taiwan-awaits-14-billion-arms-package.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/iit-bombay-student-protests.html">IIT-Bombay student protests</a></h2>
+    <p>Students at IIT-Bombay are staging protests, raising questions about their specific demands, the institute's official response, and concerns voiced by faculty members.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/maharashtra/why-are-students-protesting-at-iit-bombay-explained/article71513061.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/iit-bombay-student-protests.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/border-clash-reported-between-pakistan-and-afghanistan.html">Border clash reported between Pakistan and Afghanistan</a></h2>
+    <p>Tensions have escalated at the Pakistan-Afghanistan border following a thwarted infiltration attempt in the Kurram sector. Pakistani security sources report that firing originated from Afghan Taliban positions in Nangarhar and Paktia after militants allegedly attempted to cross the border.</p>
+    <p class="src">Source: <a href="https://www.news18.com/videos/breaking-news/pakistan-afghanistan-border-clash-taliban-posts-hit-by-pakistani-artillery-in-kurram-news18-10355217.html" rel="noopener">News18 India</a> · <a href="article/2026-09-27/border-clash-reported-between-pakistan-and-afghanistan.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/michael-clarke-supports-kuldeep-yadavs-selection.html">Michael Clarke supports Kuldeep Yadav's selection</a></h2>
+    <p>Former Australian captain Michael Clarke has described Kuldeep Yadav as the world's best all-format spinner, expressing concern over the player's inconsistent selection for the Indian team.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/michael-clarke-says-kuldeep-yadav-is-not-getting-enough-opportunities-1958/" rel="noopener">Crictracker</a> · <a href="article/2026-09-27/michael-clarke-supports-kuldeep-yadavs-selection.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/jeremy-culhane-returns-as-tucker-carlson-on-snl.html">Jeremy Culhane Returns as Tucker Carlson on SNL</a></h2>
+    <p>In the Season 52 premiere of Saturday Night Live, Jeremy Culhane reprised his impression of Tucker Carlson during 'Weekend Update' to critique summer films, including 'The Odyssey'.</p>
+    <p class="src">Source: <a href="https://variety.com/2026/tv/news/snl-tucker-carlson-weekend-update-summer-movies-1236876744/" rel="noopener">Variety</a> · <a href="article/2026-09-27/jeremy-culhane-returns-as-tucker-carlson-on-snl.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/australia-senate-summons-openai-and-anthropic-ceos.html">Australia Senate Summons OpenAI and Anthropic CEOs</a></h2>
+    <p>OpenAI's Sam Altman and Anthropic's Dario Amodei have been asked to testify at a public hearing in Canberra following an AI agent breach that Prime Minister Anthony Albanese labeled 'unacceptable'.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/rest-of-world/openai-anthropic-ceos-summoned-by-australia-senate-over-ai-agent-breach/articleshow/134514749.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-27/australia-senate-summons-openai-and-anthropic-ceos.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/lpu-campus-situation.html">LPU Campus Situation</a></h2>
+    <p>Information is currently unavailable regarding the campus situation.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/india/property-damaged-highway-blocked-lpu-campus-tense-over-unverified-rape-claim-top-developments/articleshow/134514777.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-27/lpu-campus-situation.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/mohanlal-showcases-organic-gardening-at-kochi-home.html">Mohanlal Showcases Organic Gardening at Kochi Home</a></h2>
+    <p>Actor Mohanlal maintains an organic vegetable garden at his Elamakkara residence in Kochi, utilizing methods like grow bags to produce fresh vegetables even in small spaces.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/malayalam/movies/news/a-look-inside-mohanlals-organic-garden-at-his-elamakkara-home-actor-grows-bitter-gourd-tomatoes-okra-and-more-video/articleshow/134514769.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-27/mohanlal-showcases-organic-gardening-at-kochi-home.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/ex-kerala-chief-secretary-alleges-cec-gyanesh-kumar-proposed.html">Ex-Kerala Chief Secretary Alleges CEC Gyanesh Kumar Proposed BJP Candidacy</a></h2>
+    <p>Former Kerala Chief Secretary Jiji Thomson has alleged that current Chief Election Commissioner Gyanesh Kumar suggested he run as a BJP candidate for the 2019 Lok Sabha elections while both were serving as IAS officers in 2016. Thomson claims the suggestion occurred during a flight to Delhi.</p>
+    <p class="src">Source: <a href="https://www.news18.com/videos/breaking-news/gyanesh-kumar-bjp-ticket-claim-ex-kerala-chief-secretary-s-allegation-cec-under-scanner-news18-10355205.html" rel="noopener">News18 India</a> · <a href="article/2026-09-27/ex-kerala-chief-secretary-alleges-cec-gyanesh-kumar-proposed.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/cm-vijay-commemorates-karur-stampede-victims.html">CM Vijay Commemorates Karur Stampede Victims</a></h2>
+    <p>One year after the Karur stampede, Chief Minister Vijay has issued a statement remembering the victims of the tragedy.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/tamil-nadu/story/karur-stampede-victims-cm-vijay-remembers-41-dead-one-year-on-3003974-2026-09-27?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-27/cm-vijay-commemorates-karur-stampede-victims.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE BRIEF<span class="badge quick">quick bite</span> · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/mecca-defence-pact-highlights-european-economic-policy-issue.html">Mecca Defence Pact Highlights European Economic Policy Issues</a></h2>
+    <p>A report by Defence.in suggests that the Mecca Defence Pact exposes the strategic failure of European economic support for nuclear-armed Pakistan.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOFVQNWNza2lYWXJpaC1JN3p2SW14MHdFVmVSeEhHUEtpZElpTzdGckt4bUdLMTZUUTFpOGFXT2ducnJyYS00UUNnMVNCcElXWEFpajA3TEtrNmU1bDBwUi1LRE14bW05Nm5XOEIwU09wY09Qb1FCZzRQVDhpVGhOa0dGVmVzRlBlZ3VkZmthcmdPclpZUTk0cUVna1VPMWFCZFJvMlkxOE5abGZ3UWlPbTVURVg5RnEyU2RFdGZXUklGa3otMnRPYnR1YlBscjZGY1dwUUQ2dEc5Z1BQMDNldTZR?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-27/mecca-defence-pact-highlights-european-economic-policy-issue.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/kajol-rakul-preet-singh-and-jackky-bhagnani-attend-mijwan-fu.html">Kajol, Rakul Preet Singh, and Jackky Bhagnani Attend Mijwan Fundraiser</a></h2>
+    <p>Kajol, Rakul Preet Singh, and Jackky Bhagnani were among the celebrities photographed on the red carpet at the Mijwan Fundraiser Fashion Show.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/parties-and-events/photos-kajol-rakul-preet-singh-jackky-bhagnani-and-others-snapped-at-red-carpet-of-mijwan-fundraiser-fashion-show/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-27/kajol-rakul-preet-singh-and-jackky-bhagnani-attend-mijwan-fu.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/weather-change-brings-relief-to-andhra-pradesh.html">Weather Change Brings Relief to Andhra Pradesh</a></h2>
+    <p>Parts of Andhra Pradesh, which had been suffering from a severe rainfall deficit linked to El Niño, have received a refreshing shift in weather.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/news-in-frames-after-the-droughta-refreshing-respite/article71515224.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-27/weather-change-brings-relief-to-andhra-pradesh.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/bollywood-stars-offer-travel-inspiration-for-world-tourism-d.html">Bollywood Stars Offer Travel Inspiration for World Tourism Day</a></h2>
+    <p>For World Tourism Day 2026, travelers are looking to destinations frequented by celebrities like Kareena Kapoor and Alia Bhatt, ranging from European cities and tropical islands to African landscapes.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/world-tourism-day-2026-planning-your-next-holiday-take-cues-from-kareena-kapoor-alia-bhatt-and-more/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-27/bollywood-stars-offer-travel-inspiration-for-world-tourism-d.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/dmk-mp-files-complaint-against-tvk-leaders.html">DMK MP Files Complaint Against TVK Leaders</a></h2>
+    <p>A DMK MP has approached the Election Commission to report alleged violations of the Model Code of Conduct by TVK leaders.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/dmk-mp-moves-election-commission-against-tvk-leaders-over-model-code-violation-ytvd-3003972-2026-09-27?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-27/dmk-mp-files-complaint-against-tvk-leaders.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/off-duty-couple-rescues-five-from-expressway-crash.html">Off-Duty Couple Rescues Five from Expressway Crash</a></h2>
+    <p>An off-duty police couple rescued five people from an overturned car following a crash on the Agra-Lucknow Expressway.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/agra-lucknow-expressway-crash-off-duty-cop-couple-rescues-five-people-from-overturned-car-ytvd-3003970-2026-09-27?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-27/off-duty-couple-rescues-five-from-expressway-crash.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/privacy-concerns-over-fitness-data-in-health-insurance.html">Privacy Concerns Over Fitness Data in Health Insurance</a></h2>
+    <p>Health insurers are increasingly offering wellness rewards for fitness tracking, requiring policyholders to share data from wearables. Experts advise consumers to review what data is collected and how it is used to manage privacy risks.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/health-insurance-wellness-rewards-should-you-share-your-fitness-tracker-data-with-your-insurer-know-the-privacy-risks-11790482360821.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-27/privacy-concerns-over-fitness-data-in-health-insurance.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/understanding-the-risks-of-stock-averaging.html">Understanding the Risks of Stock Averaging</a></h2>
+    <p>Investors may use averaging strategies to manage costs or increase exposure during market fluctuations. While these methods can improve returns, they also carry significant risks that investors should consider.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/stock-averaging-explained-how-does-it-work-and-what-are-the-risks-investors-should-keep-in-mind-11790476425943.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-27/understanding-the-risks-of-stock-averaging.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-27/election-commission-denies-internal-discord.html">Election Commission Denies Internal Discord</a></h2>
+    <p>The Election Commission of India has rejected reports of internal conflict, stating that all decisions over the past year were unanimously approved. The statement follows reports that two commissioners had raised objections regarding electoral rolls and technology systems.</p>
+    <p class="src">Source: <a href="https://www.news18.com/videos/breaking-news/eci-denies-internal-rift-election-commission-says-all-decisions-were-unanimous-news18-10355168.html" rel="noopener">News18 India</a> · <a href="article/2026-09-27/election-commission-denies-internal-discord.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
