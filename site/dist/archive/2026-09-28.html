@@ -1,0 +1,578 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-28</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="The Daily Prompt — 2026-09-28">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://daily-prompt-do3.pages.dev">
+<meta property="og:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://daily-prompt-do3.pages.dev/og/home.png">
+
+<meta name="theme-color" content="#121214">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
+<script src="/translator.js" defer></script>
+<script src="/personalize.js" defer></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,mai,mni-Mtei,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en,ar,zh-CN,es,fr,de,ja,ru,pt,id,tr,fa,sw',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
+ * Design tokens first; dark is the default, light via [data-theme=light].
+ * Heavy effects are limited to the sticky nav (small area) so the site stays fast.
+ */
+
+/* ---------- tokens ---------- */
+:root {
+  --ink: #ece7dd;
+  --ink-soft: #b8b2a6;
+  --paper: #121214;
+  --paper-2: #1a1a1e;
+  --card: #1f1f24;
+  --line: #2c2c33;
+  --accent: #e03e3e;
+  --accent-deep: #8b0000;
+  --ok-bg: #10331c; --ok-fg: #7ede9b;
+  --bad-bg: #3a1416; --bad-fg: #f2a0a0;
+  --conf-bg: #14243a; --conf-fg: #9cc4f0;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
+  --nav-bg: rgba(18, 18, 20, .62);
+}
+[data-theme="light"] {
+  --ink: #191919;
+  --ink-soft: #5c5952;
+  --paper: #f7f3ea;
+  --paper-2: #efe9db;
+  --card: #ffffff;
+  --line: #e3dcc9;
+  --accent: #a31212;
+  --accent-deep: #8b0000;
+  --ok-bg: #dff3e2; --ok-fg: #17652e;
+  --bad-bg: #f9e0e0; --bad-fg: #8f1f1f;
+  --conf-bg: #e2ecfa; --conf-fg: #1d4e86;
+  --shadow: 0 10px 26px rgba(60, 50, 30, .12);
+  --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
+  --nav-bg: rgba(247, 243, 234, .68);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.6;
+  transition: background .3s ease, color .3s ease;
+}
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 72px; }
+
+/* ---------- glass header (only heavy effect on the page) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9990;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-row {
+  max-width: 980px; margin: 0 auto; padding: 10px 18px;
+  display: flex; align-items: center; gap: 14px;
+}
+.topbar .brand {
+  font-family: var(--serif);
+  font-weight: 700; font-size: 19px; letter-spacing: .5px;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.topbar .brand span { color: var(--accent); }
+.topbar .tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.topbar .tools a, .topbar .tools button {
+  color: var(--ink-soft); text-decoration: none; font-size: 13px;
+  background: transparent; border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 10px; cursor: pointer; font-family: var(--sans);
+}
+.topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
+.catrow {
+  max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
+}
+.catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
+.catrow a {
+  flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: transparent;
+}
+.catrow a:hover { color: var(--ink); border-color: var(--accent); }
+.catrow a.on { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+/* ---------- header block ---------- */
+header.mast { text-align: center; padding: 30px 0 8px; }
+header.mast h1 {
+  font-family: var(--serif); font-size: clamp(30px, 5.4vw, 46px);
+  margin: 0; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+}
+header.mast h1 a { color: inherit; text-decoration: none; }
+header.mast h1 a:hover { color: var(--accent); }
+header.mast p { margin: 6px 0 0; font-style: italic; color: var(--ink-soft); font-size: 15px; }
+.masthead-stats {
+  display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-soft); margin-top: 10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.nav { text-align: center; font-size: 14px; margin: 12px 0 0; color: var(--ink-soft); }
+
+/* ---------- section headers ---------- */
+h2.sec {
+  font-family: var(--serif); font-size: 21px; letter-spacing: 1.5px; text-transform: uppercase;
+  border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin: 34px 0 14px;
+}
+
+/* ---------- stories / cards ---------- */
+.story { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.story.single { border-bottom: none; }
+.story h2 { font-family: var(--serif); margin: 4px 0 10px; font-size: 25px; line-height: 1.25; }
+.story h2 a { color: inherit; text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+.story h1 { font-family: var(--serif); margin: 6px 0 14px; font-size: clamp(26px, 4.6vw, 36px); line-height: 1.2; }
+
+.story.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 26px 20px;
+  margin: 20px 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.story.hero:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(0,0,0,.42); }
+.story.hero h2 { font-size: clamp(27px, 4.8vw, 36px); margin: 8px 0; }
+.lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+.meta {
+  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
+.critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
+.hi-title a { font-size: 16px; }
+.src { font-size: 13px; color: var(--ink-soft); }
+
+/* ---------- badges (pills) ---------- */
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
+.badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
+
+/* ---------- beat color strips on hero via data attr (optional future) ---------- */
+
+/* ---------- misc blocks ---------- */
+.stale { background: #3a2e10; border: 1px solid #a9852c; color: #f2d489; padding: 12px 16px; margin: 16px 0; font-size: 14px; border-radius: var(--radius); }
+[data-theme="light"] .stale { background: #fdf0d5; border-color: #e0b95a; color: #6b5210; }
+.st-ok { color: #7fc97f; }
+.st-warn { color: #e0b95a; }
+.st-stale { color: #e03e3e; }
+[data-theme="light"] .st-ok { color: #256b25; }
+[data-theme="light"] .st-warn { color: #8a6d1a; }
+[data-theme="light"] .st-stale { color: #b02020; }
+.dates { display: flex; justify-content: space-between; font-size: 14px; margin: 16px 0; }
+.crumb { font-size: 14px; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- columns / briefs ---------- */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 24px; }
+.col { border-right: 1px solid var(--line); padding-right: 18px; }
+.col:last-child { border-right: none; }
+.col h3 { font-family: var(--serif); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin: 12px 0 8px; }
+.col h3 a { color: var(--ink); text-decoration: none; }
+.col h3 a:hover { color: var(--accent); }
+.col ul { list-style: none; margin: 0; padding: 0; }
+.col li { margin: 0 0 12px; font-size: 14px; line-height: 1.45; }
+.col li a { color: var(--ink); text-decoration: none; }
+.col li a:hover { color: var(--accent); }
+.col small, ul.brief li small { color: var(--ink-soft); font-size: 12px; }
+ul.brief { list-style: none; padding: 0; margin: 0; }
+ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+
+/* ---------- tiles / pipeline ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 14px 0; }
+.tile {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 12px; text-align: center; font-size: 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile b { display: block; font-size: 16px; margin-bottom: 2px; font-family: var(--serif); }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.pipeline { display: flex; gap: 10px; align-items: stretch; margin: 14px 0; flex-wrap: wrap; }
+.pstep {
+  flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
+}
+.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
+.pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
+.parrow { align-self: center; font-size: 20px; color: var(--accent); flex: 0 0 auto; }
+@media (max-width: 700px) { .parrow { display: none; } }
+.about-note { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* ---------- translate gadget ---------- */
+.gtr {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+}
+.gtr .goog-te-gadget { font-size: 13px !important; }
+.gtr .goog-te-gadget-simple {
+  border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
+  background: var(--card) !important; color: var(--ink) !important;
+}
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+
+/* ---------- share / saved / search ---------- */
+.sharebar { margin: 14px 0 4px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 14px; }
+.sharebar a { text-decoration: none; }
+.sharebar a:hover { color: var(--accent); }
+.savedlist li { padding: 7px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+#q { width: 100%; padding: 12px 14px; font-size: 16px; font-family: var(--sans); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); }
+.hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.hit small { color: var(--ink-soft); }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style></head><body><div class="topbar"><div class="topbar-row">
+    <a class="brand" href="/">The Daily <span>Prompt</span></a>
+    <div class="tools">
+      <a href="/search.html">Search</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/wire.html">Wire</a>
+      <a href="/stats.html">Stats</a>
+      <a href="/feed.xml" title="RSS">RSS</a>
+      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-28</h1></header><article class="story">
+    <div class="meta">NATIONAL · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/supreme-court-takes-suo-motu-cognisance-of-delhi-ncr-rape-in.html">Supreme Court Takes Suo Motu Cognisance of Delhi-NCR Rape Incidents</a></h2>
+    <p>The Supreme Court of India has initiated suo motu cognisance of recent rape incidents reported across the Delhi-National Capital Region (NCR). The apex court underscored the critical need to ensure the safety of public spaces, stating unequivocally that these areas must not transform into high-risk zones for citizens.</p><p>This proactive intervention by the Supreme Court highlights growing concerns regarding women's safety in urban environments. Suo motu cognisance allows the court to take up a matter on its own initiative, without a formal petition, typically in cases of significant public interest or human rights violations. The move comes in the wake of a series of reported incidents that have drawn widespread attention and sparked public outrage.</p><p>The court's emphasis on public spaces reflects a broader societal demand for accountability and effective measures to prevent such crimes. The incidents in Delhi-NCR have prompted renewed discussions on urban safety, law enforcement vigilance, and the implementation of deterrents. This action is expected to prompt a comprehensive review of existing safety protocols and their enforcement across the region.</p><p>What to watch: The court's directives and the subsequent actions by authorities to enhance public safety.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/painful-parallels-to-nirbhaya-case-sc-takes-suo-motu-cognisance-of-delhi-ncr-rape-cases-kalkaji-case-noida-rape-case-10356476.html" rel="noopener">News18 India</a> · <a href="article/2026-09-28/supreme-court-takes-suo-motu-cognisance-of-delhi-ncr-rape-in.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/violent-protests-erupt-at-lpu-over-alleged-assault-claim-sit.html">Violent Protests Erupt at LPU Over Alleged Assault Claim, SIT Ordered</a></h2>
+    <p>Tensions have significantly escalated at Lovely Professional University (LPU) in Phagwara, Punjab, following student protests over an alleged sexual assault claim involving a female student. The demonstration reportedly drew around 2,000 students and turned violent, leading to damage to university property, fires, and a blockade of the Jalandhar-Phagwara stretch of National Highway-44.</p><p>During the clashes, several police personnel sustained injuries, and multiple vehicles were damaged. Authorities have since registered an FIR against an unidentified individual and constituted a Special Investigation Team (SIT) to probe the allegation, which includes examining CCTV footage and other pertinent evidence.</p><p>The university, however, has denied the alleged sexual assault, labeling the claims circulating on social media as false and fabricated. Meanwhile, Punjab Chief Minister Bhagwant Mann has directed the state police leadership to investigate the situation thoroughly. In response to the unrest, LPU has suspended regular classes for a period of ten days and postponed mid-term examinations. The situation remains under close scrutiny as the investigation proceeds.</p><p>What to watch: The findings of the Special Investigation Team and the university's response to the allegations.</p>
+    <p class="src">Source: <a href="https://www.news18.com/videos/india/lpu-university-campus-news-2-000-students-protest-alleged-assault-sit-probe-ordered-punjab-news-10356490.html" rel="noopener">News18 India</a> · <a href="article/2026-09-28/violent-protests-erupt-at-lpu-over-alleged-assault-claim-sit.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/sp-chief-to-skip-india-bloc-meet-seat-sharing-rift-with-cong.html">SP Chief To Skip INDIA Bloc Meet, Seat-Sharing Rift With Congress And Opposition Strategy Over CEC</a></h2>
+    <p>The Chief of the Samajwadi Party (SP) is set to skip the upcoming meeting of the INDIA Bloc, a significant development that underscores existing internal challenges within the opposition alliance. This decision comes amidst reports of a growing seat-sharing rift between the SP and the Congress party, a key component of the INDIA Bloc.</p><p>The absence of a prominent leader from a crucial ally at such a gathering signals potential hurdles in forging a united front ahead of future electoral contests. Seat-sharing negotiations are often a contentious aspect of multi-party alliances, as each party seeks to maximize its electoral prospects. Disagreements on this front can significantly impact the cohesion and effectiveness of a coalition.</p><p>Furthermore, the meeting was also slated to address the opposition's strategy concerning the Chief Election Commissioner (CEC). The formulation of a unified approach on such critical institutional matters is vital for the alliance's overall political agenda. The SP Chief's decision to abstain from these discussions highlights the complexities and differing viewpoints that may be present among the constituent parties.</p><p>What to watch: How the INDIA Bloc addresses the absence and works to resolve internal differences.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/sp-chief-to-skip-india-bloc-meet-seat-sharing-rift-with-congress-and-opposition-strategy-over-cec-ytvd-3004556-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/sp-chief-to-skip-india-bloc-meet-seat-sharing-rift-with-cong.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · Al Jazeera · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/russian-strikes-kill-eight-injure-dozens-across-ukraine.html">Russian strikes kill eight, injure dozens across Ukraine</a></h2>
+    <p>Ukrainian President Volodymyr Zelenskyy said Moscow launched nearly 4,000 drones, aerial bombs and missiles against Ukraine over the past week. The barrage resulted in eight fatalities and dozens of injuries across multiple regions, according to local authorities. The attacks targeted both civilian infrastructure and military sites, though specific locations were not disclosed. Zelenskyy’s statement underscores the intensity of the air campaign and its impact on the civilian population. Ukrainian defence officials are monitoring the situation and have urged residents to seek shelter during further raids. International observers have called for an immediate de‑escalation, warning that the high volume of weapons could exacerbate the humanitarian crisis. The Ukrainian government continues to appeal for additional defensive aid from its partners. What to watch: further statements from Kyiv on civilian protection measures and any diplomatic response to the reported scale of the attacks.</p>
+    <p class="src">Source: <a href="https://www.aljazeera.com/news/2026/9/28/russian-strikes-kill-eight-injure-dozens-across-ukraine?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-28/russian-strikes-kill-eight-injure-dozens-across-ukraine.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/egypts-intel-chief-warned-netanyahu-of-hamas-attack-days-bef.html">Egypt's Intel Chief Warned Netanyahu Of Hamas Attack Days Before Oct 7, After 2 Earlier Alerts</a></h2>
+    <p>Egypt's intelligence chief reportedly issued a direct warning to Israeli Prime Minister Benjamin Netanyahu regarding an impending Hamas attack just days prior to October 7. This critical alert followed two earlier warnings that had also been conveyed, bringing into sharp focus the intelligence landscape leading up to the devastating events.</p><p>These revelations have significantly renewed scrutiny of the security and intelligence failures that preceded October 7. On that date, Hamas-led militants breached the Gaza border, launching coordinated attacks on Israeli communities and taking numerous hostages. The scale and coordination of the assault caught many by surprise, leading to widespread questions about preparedness and intelligence assessment.</p><p>The disclosure of multiple warnings from a key regional intelligence partner like Egypt intensifies the examination of how such information was received, evaluated, and acted upon by Israeli authorities. It underscores the complexities of intelligence sharing and the challenges inherent in preventing sophisticated cross-border incursions. The sequence of alerts and the subsequent events have prompted a re-evaluation of security protocols and decision-making processes within the Israeli establishment.</p><p>What to watch: The outcomes of investigations into intelligence lapses and their potential political repercussions.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/egypts-intel-chief-warned-netanyahu-of-hamas-attack-days-before-oct-7-after-2-earlier-alerts-ws-l-10356420.html" rel="noopener">News18 World</a> · <a href="article/2026-09-28/egypts-intel-chief-warned-netanyahu-of-hamas-attack-days-bef.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/indian-economy-shows-resilience-despite-global-volatility-rb.html">Indian economy shows resilience despite global volatility, RBI says</a></h2>
+    <p>The Reserve Bank of India’s September bulletin notes that while the world faces higher energy prices and market volatility, India’s economy kept growing at a solid 7.8 % in the first quarter of FY 2026‑27. Domestic data through August show the economy staying on track, helped by strong export growth that narrowed the merchandise trade deficit. Inflation rose slightly to 4.8 % in August, mainly because food, beverages, fuel and core items became more expensive. At the same time, the banking system saw a liquidity surplus as foreign‑currency non‑resident (FCNR‑B) deposits flowed in. A modest current‑account deficit in the same quarter and robust foreign‑direct investment further supported the external sector, pushing foreign‑exchange reserves to a record high. For an ordinary saver, the picture suggests that despite global headwinds, the Indian economy remains resilient, keeping growth and jobs relatively stable. However, the modest rise in headline inflation means everyday costs for food and fuel may edge higher. What to watch: future RBI policy moves if inflation stays above the 4 % target.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/indian-economy-demonstrates-resilience-despite-increased-volatility-amid-re-escalating-tensions-in-west-asia-rbi-126092800270_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/indian-economy-shows-resilience-despite-global-volatility-rb.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/pc-jeweller-declares-debtfree-status-after-repaying-14-banks.html">PC Jeweller declares debt‑free status after repaying 14 banks</a></h2>
+    <p>PC Jeweller, a listed jewellery retailer, announced that it has cleared all outstanding loans owed to 14 banks, achieving a debt‑free status. The company’s statement says the repayment fulfills its financial objective of eliminating debt, but it provides no further detail on the amount settled or the timing of the payments. For ordinary investors or savers, a debt‑free balance sheet can improve a firm’s financial flexibility, potentially lowering the risk of future cash‑flow stress and reducing the need for costly borrowing. However, the announcement does not indicate how the company funded the repayments – whether through retained earnings, asset sales or fresh equity – so the impact on its profitability or dividend policy remains unclear. Customers may see no immediate change, but a stronger balance sheet could support the retailer’s ability to invest in inventory or expand stores over time. Analysts will likely scrutinise the company’s balance sheet in upcoming reports. What to watch: PC Jeweller’s next earnings release for clues on cash flow and any changes to its capital allocation strategy.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/pc-jeweller-achieves-debt-free-status-repays-outstanding-debt-of-14-banks-126092800268_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/pc-jeweller-declares-debtfree-status-after-repaying-14-banks.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/the-vvaan-box-office-sidharth-malhotra-tamannaah-bhatia-star.html">The Vvaan Box Office: Sidharth Malhotra, Tamannaah Bhatia starrer opens at Rs. 31.94 crore over weekend</a></h2>
+    <p>Sidharth Malhotra and Tamannaah Bhatia’s supernatural thriller *The Vvaan: Force of the Forrest* recorded a net opening weekend of Rs 31.94 crore in India, according to Bollywood Hungama. The film, directed by Deepak Kumar Mishra, was released on 25 September and showed steady growth through its first three days. The opening figure signals a solid start for the genre‑bending thriller, which has drawn attention for its blend of action and supernatural elements. Industry observers note that the weekend performance reflects audience interest in the lead pair and the film’s high‑concept premise. While detailed regional breakdowns are not provided, the overall net collection confirms that the movie is on a positive trajectory at the box office. </p><p>What to watch: *The Vvaan* continues to pull audiences, making its weekend run a key barometer for upcoming releases in the thriller segment.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/box-office-special-features/the-vvaan-box-office-sidharth-malhotra-tamannaah-bhatia-starrer-opens-at-rs-31-94-crore-over-weekend/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-28/the-vvaan-box-office-sidharth-malhotra-tamannaah-bhatia-star.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/bigg-boss-20-salman-khan-urges-censorship-on-social-media-ra.html">Bigg Boss 20: Salman Khan urges censorship on social media, raises concern over AI deepfakes; says, “I am going to take this up very seriously”</a></h2>
+    <p>During the latest episode of *Bigg Boss 20*, host Salman Khan warned of the growing misuse of artificial intelligence on social media platforms. Khan highlighted the creation of fake videos and manipulated audio that feature public figures, noting that he himself has been depicted in AI‑generated content. He called for legal action against those responsible for such deepfakes and urged stricter censorship to curb the spread of misinformation. The actor‑host emphasized that the issue is a serious threat to personal reputation and public discourse, stating, “I am going to take this up very seriously.” While specific legislative measures were not detailed, Khan’s comments underscore a broader industry concern about the impact of AI‑driven media manipulation. The remarks come amid heightened scrutiny of digital content authenticity across entertainment and news sectors. </p><p>What to watch: Salman Khan’s call for tighter AI regulation is likely to shape future discussions on digital ethics in Indian media.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/bigg-boss-20-salman-khan-urges-censorship-on-social-media-raises-concern-over-ai-deepfakes-says-i-am-going-to-take-this-up-very-seriously/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-28/bigg-boss-20-salman-khan-urges-censorship-on-social-media-ra.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS · BBC Business · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/uni-student-living-at-home-wasnt-ready-to-move-away.html">Uni student living at home 'wasn't ready' to move away</a></h2>
+    <p>A recent report from the University of Gloucestershire revealed that one‑third of students beginning their courses are still residing with their families. The data underscores a growing trend of first‑year undergraduates opting to stay at home rather than relocate to campus accommodations. University officials noted that many of these students cite financial considerations, familiarity, and the desire for a gradual transition to independent living. The finding highlights challenges for higher‑education institutions as they plan housing capacity and support services. While the university did not disclose specific numbers beyond the one‑third proportion, it emphasized the need to tailor orientation programs for students who may be less prepared for the demands of campus life. The statement also hinted at potential implications for student wellbeing and academic performance when the home‑to‑university shift is delayed. What to watch: upcoming university policies aimed at easing the transition for students living at home.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cmwyzjgw7q6zo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-28/uni-student-living-at-home-wasnt-ready-to-move-away.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/ai-semiconductors-quantum-tech-next-major-frontier-for-india.html">AI, semiconductors, quantum tech next major frontier for India: Sitharaman | Education - Hindustan Times</a></h2>
+    <p>In a brief statement covered by Hindustan Times' education section, India's finance minister Nirmala Sitharaman identified artificial intelligence, semiconductor manufacturing, and quantum technology as the country's next major frontiers. The comment positions these sectors as strategic priorities for future growth and competitiveness. No specific timelines, funding amounts, or program details were included in the summary. Sitharaman's remarks suggest that policy focus may shift toward building domestic capabilities in high‑technology domains, potentially influencing curricula, research grants, and industry collaborations. While the article did not reference any official launch dates or eligibility criteria for related initiatives, the emphasis on these three areas aligns with global trends in technology investment. Stakeholders in academia and industry are expected to monitor forthcoming government actions that could shape India's role in the emerging tech landscape. What to watch: official policy documents or budget allocations that operationalise the minister's vision.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTjV6RU1lQkVyS1Z5Wk5ncUVUdUdsQmY0QjlrVzJvSUo4bzJ2QXM2Zm9KZ1hWamdJck9HazJ1UHg3dFRnN01oX2JPN3dXVFk1QlRZSnF4ZG9kd1A4VEtxeV9NUUg1UTZ0cVpDdUttY3JVdjFTUVVlYkd6QUROOS1HdjYwZW5LclZ4U2NrTmZUZ3lEaXJselRHaGFyb21xYVJFTGtFZXRMcGo2ZGpVMnVSMnZzaHVFRnBUaXJtbTNWVUVPQlIySmlHTURYUXJ6WVhHREUta9IB2gFBVV95cUxNY19ZakFVbmo2ZElOOVlGak5xMTU1MDMwM0ZJZ0stcEVhSk05UHZLWmpXTWUzcXdpLTJVOWFiNk5fUXF5UDF3V21rYzczRXBvUEtBeEVBbHFaX3d1Z1p3TFhjUkFtLVBxX1h0T2F4ajR6UHMtMkFWT1B1SzRqT0NYeDBrajFJZ2pudHgyOXBVVm82amE5UEQzMXdiSmozWFZydFFBQ0c3VF9kYi1QVGtYTURicXdHTjJGVkMwcVdMRTMzeVRwb3p4dVNKcWhJaF9CdzJMWklrMF9tdw?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-28/ai-semiconductors-quantum-tech-next-major-frontier-for-india.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/how-india-should-recruit-and-train-higher-education-faculty-.html">How India should recruit and train higher education faculty for the AI era - The Hindu</a></h2>
+    <p>The Hindu published a piece titled “How India should recruit and train higher education faculty for the AI era”. The article highlights the need for a systematic overhaul of faculty recruitment and professional development to meet the demands of artificial intelligence in academia. It stresses that existing hiring practices must evolve to prioritize digital literacy, interdisciplinary expertise, and continuous upskilling. While the summary does not provide specific dates, eligibility criteria, or official links, the focus is on policy recommendations that could shape future regulations and institutional strategies. The discussion points to a collaborative approach involving universities, government bodies, and industry partners to design training modules and certification pathways. By aligning faculty competencies with AI-driven curricula, the higher‑education sector can better prepare students for emerging job markets. What to watch: forthcoming policy drafts and pilot training programmes that may be announced by education ministries or university councils.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV2M5WnY0bzR4VmRlSFhVek9vRnJ3LU05TEt6YkRWbF9DUEZGM0pVWklsUkNkOC1Ub0JkekVyMXlINUxpY1ByNmhaREx3VHJ1RGNLU1I5U0pvZGwyRXg0cDdRTVhkemk5NVVPTkFHTXpGS0tZX1lmTEZBWV9fcXYtVUpCTWM5WE9kbURrbEpQWERNUFFqSFdITncyc0JpYWU4ZzJQNkJ2bE5WeXVOVExwb2g1VTJ4a2ttenU3UWxhOEhPRGZQdFFaeNIBzwFBVV95cUxOSHNSSndMbW1kWnJiSWdELXdpVl9mZTkzWUg0eUlBLUQxc2VGTHByaVB1SnktZ0tQZTRuX3VlRUgzaUhJeU9QZzRhM0tQejRJV2M5SjlFWHpTQ2ttRUZaU1Y4cFJsTjQ0RWNaUGJxcDA5ZkhhYUIybDhHWmM0TDF6MHVua01kRG5nTXJRM3ctUW53Nl9ycFNLZVJpQkcxdXAtTzA0N2pTRTRzQ1F4XzhmS3ljclMtVFM4VWIzMDByd3Z4WXVZRFVOeW8tVFN4ZE0?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-28/how-india-should-recruit-and-train-higher-education-faculty-.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/lg-releases-book-on-nep-2020-ancient-indian-education-rising.html">LG releases book on NEP-2020, ancient Indian education - Rising Kashmir</a></h2>
+    <p>Rising Kashmir reported that LG has released a book focusing on the National Education Policy 2020 (NEP‑2020) and the heritage of ancient Indian education. The publication aims to bridge contemporary reform agendas with historical pedagogical practices. Although the summary does not list a release date, specific eligibility requirements, or web links, it notes the thematic connection between modern policy frameworks and traditional learning systems. The book is positioned as a resource for educators, policymakers, and scholars interested in understanding how ancient educational philosophies can inform the implementation of NEP‑2020. By documenting historical perspectives, the work seeks to enrich current debates on curriculum design, teacher training, and inclusive education. What to watch: upcoming seminars, reviews, or academic discussions that may reference the book as a catalyst for integrating ancient insights into present‑day educational reforms.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOWmdHQWpHWkNZcmJzd2ZzTnFtSjdydFlEd3UwQl90UzhxVngzQm05Vy15YVNGMXh2WWVmYXp3SkI2ZUpwM2xTSFZUN3U2UHQ1SVdEM1V1OTdhX1hzX24wUW05YW5meFNOeUl1T1EtX1JKNWJRbTVUX0lleS1TT1RYc1BwLWV4QUUyTmg2Q2VUNUM2UGJrV21faWlPODBOTXhwZUE?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-28/lg-releases-book-on-nep-2020-ancient-indian-education-rising.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · BBC Science · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/bristol-residents-report-persistent-river-pollution.html">Bristol Residents Report Persistent River Pollution</a></h2>
+    <p>Residents across Bristol have voiced significant concerns regarding a persistent environmental issue impacting local waterways. For several years, an oil-like substance has reportedly been observed bubbling up in the river, raising alarms among the community. This ongoing phenomenon has been directly linked to detrimental effects on local wildlife, with residents reporting fatalities.</p><p>The consistent presence of this unidentified substance has led to growing frustration among the community. Residents describe the process of getting the pollution thoroughly investigated as challenging, akin to 'pulling teeth,' according to a BBC Science report. They have consistently witnessed the substance's adverse impact on the ecosystem, highlighting a clear threat to the area's biodiversity.</p><p>The recurring nature of the issue underscores a long-standing environmental challenge that continues to affect the local natural habitat. The observations from Bristol residents highlight a significant concern for the health of the river and its inhabitants, pointing to a pressing need for sustained attention and resolution. The substance's characteristics as 'oil-like' and its bubbling appearance have been consistently reported by those living near the affected areas, prompting calls for comprehensive assessment and intervention to mitigate the environmental degradation and protect the local wildlife.</p><p>What to watch: Further developments in the investigation of the reported river pollution and its impact on local wildlife.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/c95y4ejvl655o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Science</a> · <a href="article/2026-09-28/bristol-residents-report-persistent-river-pollution.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · BBC Science · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/spacex-starship-test-flights-a-retrospective.html">SpaceX Starship Test Flights: A Retrospective</a></h2>
+    <p>SpaceX's Starship program, a leading initiative in advanced space exploration, has been progressing through a series of critical test flights. These trials are an essential component of the ambitious development trajectory for the next-generation spacecraft. The BBC's Ricky Boleto has recently provided an overview, examining how these previous test flights have unfolded. His analysis offers a comprehensive look into the journey of the Starship prototype.</p><p>These test flights are fundamental to the iterative design and engineering process that defines modern aerospace development. Each flight, irrespective of its specific outcome, yields invaluable data and insights. This information is crucial for informing subsequent design modifications, refining operational strategies, and advancing the Starship's capabilities. The BBC's examination underscores the inherent nature of such pioneering endeavors, where continuous learning, rigorous testing, and adaptation are paramount to achieving long-term objectives in space travel.</p><p>The Starship project is designed to develop a fully reusable transportation system, envisioned to carry both crew and cargo to destinations ranging from Earth orbit to the Moon and Mars. The ongoing sequence of test flights therefore represents vital milestones in validating the vehicle's design and assessing its performance capabilities under various conditions. Boleto's review serves as a timely reminder of the complex and often challenging path involved in pushing the boundaries of space technology and exploration.</p><p>What to watch: Future Starship test flights and the ongoing development of SpaceX's ambitious space transportation system.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/videos/c5zjzx49p049o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Science</a> · <a href="article/2026-09-28/spacex-starship-test-flights-a-retrospective.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/meet-indias-himalayan-grey-langur-the-leaf-eating-primate-of.html">Meet India’s Himalayan Grey Langur: The Leaf-Eating Primate of the Mountains</a></h2>
+    <p>The Himalayan grey langur, Semnopithecus schistaceus, is a captivating primate found across the majestic Himalayan range, including parts of northern India, Nepal, Bhutan, and Tibet. This leaf-eating species, often mistaken for the Kashmir grey langur, thrives at elevations from 1,500 to 4,000 meters, adapting its diet to the diverse mountain landscapes. Its distinctive features include a grey coat, dark face, long limbs, and a long tail, with males sometimes sporting a pronounced shoulder mane.</p><p>Recent scientific advancements have helped clarify its classification. A 2020 study by researchers from the Indian Institute of Science and the Wildlife Institute of India, utilizing morphology, DNA, and ecology, confirmed Semnopithecus schistaceus as the species name for the Himalayan langur, distinguishing it from the plains Hanuman langur. This research is crucial for understanding the species.</p><p>Remarkably, these langurs are not confined to pristine forests but are also observed in human-dominated areas, coexisting with villages and agricultural fields. Their survival depends on the connectivity of their habitat, which spans national borders. Efforts to understand their distribution, like at Buxa Tiger Reserve, are vital. Preserving these connections across varied landscapes is paramount for their future.</p><p>Why it matters: Protecting the Himalayan grey langur ensures the biodiversity and ecological balance of its unique mountain habitats.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/wildlife/himalayan-grey-langur-india-habitat-conservation-12575611" rel="noopener">The Better India</a> · <a href="article/2026-09-28/meet-indias-himalayan-grey-langur-the-leaf-eating-primate-of.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/6-things-asha-workers-want-every-household-to-know-about-den.html">6 Things ASHA Workers Want Every Household To Know About Dengue And Malaria Prevention</a></h2>
+    <p>India's ASHA workers are on the frontline, tirelessly educating communities to prevent dengue and malaria, especially during monsoon. They dispel crucial myths, starting with the fact that dengue-carrying Aedes aegypti mosquitoes prefer clean, still water found in household items like overhead tanks and flowerpot trays, not just dirty water. This often-overlooked detail is critical for effective prevention.</p><p>ASHA workers explain that municipal fogging only kills adult mosquitoes, leaving larvae and eggs to hatch again, making it a temporary solution. They stress that dengue and malaria require distinct treatments; rapid diagnostic tests are essential, as dengue's critical phase often begins after the fever subsides. They also caution against unproven home remedies, which can delay vital hospital care.</p><p>Crucially, ASHA workers emphasize that prevention is a shared responsibility. Residents must actively drain stagnant water, cover containers, and clear waste around their homes. These dedicated efforts, often undervalued, are pivotal in preventing outbreaks, one torch-lit inspection at a time.</p><p>Why it matters: The tireless efforts of ASHA workers are vital in educating communities and preventing vector-borne diseases across India.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/health-care/6-things-asha-workers-dengue-malaria-prevention-12575597" rel="noopener">The Better India</a> · <a href="article/2026-09-28/6-things-asha-workers-want-every-household-to-know-about-den.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/lockheed-martin-presents-c-130j-30-case-for-indias-medium-tr.html">Lockheed Martin Presents C-130J-30 Case for India’s Medium Transport Deal</a></h2>
+    <p>Lockheed Martin has formally laid out its case for the C-130J-30 aircraft in the ongoing competition for India’s medium transport aircraft procurement. The manufacturer is positioning the C-130J-30 as the preferred solution against the C-390, a contender in the same category. The proposal focuses on the strategic advantages of the C-130J-30 platform, which is designed to enhance India’s logistical reach in complex operational environments.</p><p>The specific configuration of the C-130J-30 is highlighted in the submission, emphasizing its suitability for the Indian Air Force’s requirements. While the C-390 remains a competitor in the bidding process, Lockheed Martin’s presentation underscores the established reliability and operational history of the C-130 series. The company argues that the C-130J-30 offers distinct technical and logistical benefits that align with India’s defense modernization goals.</p><p>No specific financial details or final technical specifications beyond the model designation were disclosed in the initial overview of the proposal. The decision rests with the Indian government, which is evaluating the bids to ensure the selected aircraft meets rigorous performance standards. This procurement is a significant component of India’s broader strategy to upgrade its strategic airlift capabilities. The competition between these two platforms represents a key moment in the country’s defense aviation sector, with implications for future bilateral defense partnerships. Officials have not yet announced a timeline for the final decision, but the submission marks a critical step in the tender process.</p><p>What to watch: The final technical evaluation scores and the government's decision on the preferred bidder for the medium transport aircraft program.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTEh4bXc3U2d2T0xyamZkZlFITUhRTmJwZXVNY2N6T1cyMDlHc0xzOHk3S2hkdEw4S0swV2VYcjViN08wcHBybGhJVFI1OFNIaXA1OEZZLUJzWktlc1BkZURMdDJjWFdGcmRqZWxfR29KeVU2U0pxQ3NVaGNWT1ZiUFlhWU42bUFKX0FhWnJuMm1SaUZyM3pOcEViUGk2X3d3TVVScElraE1iN0lmMlVLOWhUMDd1MVg0aDhaWTJESUNtd9IBxwFBVV95cUxPb2FteE4zakMxTU5rWVpWYmhXYmtzajg3M2ZQVDhPRWhvMjBMeWpMdklVdkVNQ2JxUEwyZFFnMzhjMjNqc1ZMMm83aFBUU2hyS0ktZ0ZUSlZsakpDSmEwdnBGNXJPbUZlanB5cjBOMkwtemV4bk01XzNIemRiS0hBb3lFcmRXVTB6djdaYmJJY1phUUJwbkJndU5hR054aWFFNzdFb3NrQWNmbVRNWHYzNHBLRzRFUjJKWFQxTDByQ0t4cEN4bWFz?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-28/lockheed-martin-presents-c-130j-30-case-for-indias-medium-tr.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/navy-chief-directs-skyroot-to-develop-next-gen-space-defence.html">Navy Chief Directs Skyroot to Develop Next-Gen Space Defence Capabilities</a></h2>
+    <p>The Chief of the Naval Staff has engaged with Skyroot, a prominent Indian private space company, to accelerate the development of next-generation space defence capabilities. The directive emphasizes the need for indigenous solutions to bolster India’s strategic posture in the space domain. This collaboration signals a growing integration between the Indian Navy’s operational requirements and the private sector’s technological advancements in aerospace.</p><p>The focus is on building robust capabilities that address emerging threats in space, which are increasingly viewed as critical to national security. Skyroot is tasked with contributing to these efforts, leveraging its expertise in launch vehicle technology and space systems. The Navy’s involvement highlights the expanding role of space assets in naval operations and broader defense strategies. This move aligns with India’s broader defense modernization agenda, which prioritizes indigenous manufacturing and technological self-reliance.</p><p>No specific technical details or project timelines were disclosed in the initial reports of this engagement. The initiative represents a significant step in the partnership between military institutions and private entities in the space sector. By directing Skyroot to build these capabilities, the Navy aims to ensure that India maintains a competitive edge in space-based defence technologies. The collaboration is expected to foster innovation and reduce dependency on foreign suppliers for critical space defence systems. This strategic alignment underscores the importance of space in contemporary warfare and national security frameworks.</p><p>What to watch: The specific technological milestones and contractual agreements between the Indian Navy and Skyroot for space defence projects.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWmt6VEtOUF9oSmRvUks4NkVUOHlENkw3M1ptQWlzRTV2aldETFl4ZEQtTldFZEIzbU5nUVQ4NjgydnIxZG5DWERaS05jX0VjY3IzUVFhc2NkSDBoSHd0YVVlQXlHN1p3VTVMQ18tOUF3QlRiVmFuLUdmM1VuVVFleFRlOWw2dWE5UmNLX0VyRnVDdDlUQXZ2R1dKM0xGMW1QLW9LSHhmaVBSb1RvN3IwckpHUU45dmNCS2xvRUZpaC1vYllZQzd2cFotbWoxRXBRbFFZ?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-28/navy-chief-directs-skyroot-to-develop-next-gen-space-defence.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/india-misses-team-medal-as-bhaker-and-sarnobat-exit-womens-2.html">India Misses Team Medal as Bhaker and Sarnobat Exit Women's 25m Air Pistol</a></h2>
+    <p>India’s shooting contingent faced a setback on Day 9 of the Asian Games 2026 after Manu Bhaker and Rahi Sarnobat failed to qualify for the final in the women's 25m air pistol event. Despite their individual efforts, the duo missed the cut for the final round, which had significant implications for the team's overall performance. The event was closely watched, given the high expectations placed on India's shooting stars.</p><p>Esha Singh, however, secured a spot in the final by finishing 8th in the qualification round. Her performance was a bright spot for the Indian team, but it was not enough to secure a team medal. The team medal is typically awarded based on the aggregate performance of the athletes in the event, and the absence of Bhaker and Sarnobat from the final round meant that India could not accumulate the necessary points to compete for a podium finish in the team category.</p><p>The qualification round was intense, with shooters from various nations competing for limited spots in the final. The outcome highlights the competitive nature of the Asian Games and the high level of skill required to succeed in such events. India's shooting team will now focus on other events where they have qualified, aiming to redeem their performance in the days ahead. The incident serves as a reminder of the unpredictability of live shooting competitions, where form can fluctuate rapidly.</p><p>What to watch: India's performance in upcoming shooting events and the final standings in the women's 25m air pistol final.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/othersports/asian-games-2026-live-updates-day-9-india-medal-tally-results-live-manu-bhaker-lovlina-borgohain-boxing-12106384#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-28/india-misses-team-medal-as-bhaker-and-sarnobat-exit-womens-2.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/india-vs-afghanistan-quarterfinal-abandoned-due-to-rain-at-a.html">India vs Afghanistan Quarterfinal Abandoned Due to Rain at Asian Games 2026</a></h2>
+    <p>The men's cricket quarterfinal between India and Afghanistan at the Asian Games 2026 was abandoned without a toss due to heavy rain in Nisshin on Monday. The adverse weather conditions made it impossible to commence the match, leading to the immediate cancellation of the contest. This development has significant implications for the tournament's progression, as the abandonment of a quarterfinal affects the advancement of teams to the next stage.</p><p>The match was scheduled to be a crucial encounter in the quarterfinals, with both teams vying for a spot in the semifinals. The rain in Nisshin, where the matches are being held, has disrupted the schedule, causing delays and cancellations. The decision to abandon the match without a toss indicates that the conditions were deemed unfit for play from the outset. This is a rare occurrence in high-profile cricket matches, highlighting the impact of weather on sporting events.</p><p>The announcement of the abandonment has left fans and teams uncertain about the next steps in the tournament. The organizing committee has not yet clarified how the abandonment will affect the qualification of teams for the semifinals. Both India and Afghanistan will now await further instructions regarding the impact on their tournament journey. The incident underscores the challenges of hosting outdoor sports in variable weather conditions.</p><p>What to watch: The tournament committee's decision on which team qualifies for the semifinal following the abandoned match.</p>
+    <p class="src">Source: <a href="https://sports.ndtv.com/cricket/india-vs-afghanistan-live-score-ind-vs-afg-asian-games-2026-quarterfinal-live-updates-aichi-nagoya-japan-shreyas-iyer-vaibhav-sooryavanshi-12107226#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-28/india-vs-afghanistan-quarterfinal-abandoned-due-to-rain-at-a.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">TECH · TechCrunch · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/truecaller-expands-scam-intelligence-beyond-caller-id.html">Truecaller expands scam intelligence beyond caller ID</a></h2>
+    <p>Truecaller is expanding its scam intelligence services to the open web, marking a strategic shift as the company seeks to grow beyond its traditional caller ID business. This move follows increasing pressure on the platform's core operations in India, which currently serves as its largest market. By extending its reach, Truecaller aims to leverage its existing expertise in identifying scams to provide utility to a broader user base outside of its mobile application's primary caller identification function. The expansion reflects the company's efforts to diversify its service offerings in response to market challenges. What to watch: Whether this web-based expansion successfully mitigates the impact of competitive and regulatory pressures in the Indian market.</p>
+    <p class="src">Source: <a href="https://techcrunch.com/2026/09/27/truecaller-takes-its-scam-intelligence-to-the-open-web-as-it-looks-beyond-caller-id/" rel="noopener">TechCrunch</a> · <a href="article/2026-09-28/truecaller-expands-scam-intelligence-beyond-caller-id.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
+  </article><article class="story">
+    <div class="meta">TECH · Engadget · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/evaluating-level-1-2-and-3-ev-charging-options.html">Evaluating Level 1, 2, and 3 EV charging options</a></h2>
+    <p>Choosing the appropriate electric vehicle (EV) charging solution depends largely on individual driving habits and daily mileage requirements. While there are three distinct levels of charging technology available, not every user requires the fastest option. For drivers who do not regularly travel long distances on a daily basis, Level 1 charging may be sufficient to meet their needs. This entry-level option utilizes standard household outlets, offering a convenient, if slower, method for maintaining vehicle battery levels. Understanding the differences between Level 1, 2, and 3 chargers is essential for EV owners to optimize their charging infrastructure based on their specific lifestyle and commute patterns. While higher levels offer increased speed, they are not always necessary for the average driver. What to watch: Future developments in residential charging infrastructure and home compatibility requirements.</p>
+    <p class="src">Source: <a href="https://www.engadget.com/2267893/level-1-2-vs-3-ev-charger-which-is-better/" rel="noopener">Engadget</a> · <a href="article/2026-09-28/evaluating-level-1-2-and-3-ev-charging-options.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/new-map-reveals-hidden-valleys-beneath-greenland-ice-sheet.html">New map reveals hidden valleys beneath Greenland Ice Sheet</a></h2>
+    <p>A comprehensive new map of the terrain situated beneath the Greenland Ice Sheet has provided researchers with a clearer understanding of the region's hidden geography. By utilizing advanced mapping techniques, scientists have successfully linked hundreds of valleys that were previously either missed or appeared fragmented in earlier surveys. This project offers a more cohesive view of the landscape buried under the ice, shedding light on the complex topography of the island. The findings are significant for understanding the structure of the ice sheet and the underlying landmass. This detailed mapping effort resolves long-standing gaps in geological data, providing a more accurate representation of the valleys that shape the subterranean environment of Greenland. What to watch: How these findings influence future climate models regarding ice sheet stability and movement.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/earth/earth-observatory/uncovering-the-valleys-hidden-below-greenlands-ice/" rel="noopener">NASA</a> · <a href="article/2026-09-28/new-map-reveals-hidden-valleys-beneath-greenland-ice-sheet.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">HEALTH · BBC Health · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/expert-advice-on-selecting-the-right-pillow.html">Expert advice on selecting the right pillow</a></h2>
+    <p>Finding the ideal pillow is a common challenge, but expert guidance can simplify the decision-making process. Dr. Chris McCarthy has outlined four key considerations that individuals should evaluate before purchasing a new pillow to ensure comfort and support. These factors are designed to help consumers navigate the wide variety of options available on the market today. By focusing on these specific criteria, buyers can make more informed choices tailored to their personal sleep needs. The advice highlights the importance of matching pillow characteristics to individual requirements, suggesting that a systematic approach is the most effective way to find a suitable match. What to watch: Whether these expert-recommended criteria lead to improved sleep quality for consumers.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cmn0jey2dde7o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Health</a> · <a href="article/2026-09-28/expert-advice-on-selecting-the-right-pillow.html">permalink</a> · <a href="/category/health.html">more health</a></p>
+  </article><article class="story">
+    <div class="meta">ENVIRONMENT · Guardian Environment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/northern-california-couple-injured-in-bear-attack.html">Northern California couple injured in bear attack</a></h2>
+    <p>A couple in rural northern California sustained serious injuries following a bear attack that occurred in the early hours of 19 September. The incident took place after Jeff Wilson let his French bulldog, Cassie, outside. The dog reportedly attempted to protect the couple from the animal during the encounter. The couple is now mourning the loss of their pet, who died while defending them. Reports from the San Francisco Chronicle indicate the severity of the situation, which has left both individuals recovering from their injuries. The encounter serves as a stark reminder of the risks associated with wildlife in rural areas. What to watch: Any follow-up statements from local authorities regarding wildlife safety in the region.</p>
+    <p class="src">Source: <a href="https://www.theguardian.com/us-news/2026/sep/27/northern-california-bear-attack" rel="noopener">Guardian Environment</a> · <a href="article/2026-09-28/northern-california-couple-injured-in-bear-attack.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/boeing-737-max-software-glitch-identified.html">Boeing 737 MAX Software Glitch Identified</a></h2>
+    <p>A software issue involving the vertical navigation (VNAV) system in the flight-management computer has sparked new concerns regarding the Boeing 737 MAX.</p>
+    <p class="src">Source: <a href="https://www.news18.com/explainers/boeing-737-max-software-glitch-sparks-fresh-concerns-should-passengers-be-worried-ws-lr-10356494.html" rel="noopener">News18 World</a> · <a href="article/2026-09-28/boeing-737-max-software-glitch-identified.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/sun-tv-network-sees-surge-in-trading-volume.html">Sun TV Network Sees Surge in Trading Volume</a></h2>
+    <p>Sun TV Network Ltd recorded a volume of 5.28 lakh shares on the BSE by 10:45 IST, marking a 6.51 times increase compared to its two-week average daily volume of 81,203 shares.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/volumes-jump-at-sun-tv-network-ltd-counter-126092800269_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/sun-tv-network-sees-surge-in-trading-volume.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/indian-rupee-declines-amid-oil-price-pressures.html">Indian Rupee Declines Amid Oil Price Pressures</a></h2>
+    <p>The Indian rupee fell 20 paise to 95.95 against the US dollar on Monday morning. The depreciation is attributed to a stronger greenback, consistent foreign fund outflows, and elevated global crude oil prices linked to the West Asia conflict.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/inr-stays-pressured-as-oil-prices-rebound-amid-the-ongoing-west-asia-conflict-126092800267_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/indian-rupee-declines-amid-oil-price-pressures.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/political-tensions-escalate-in-tamil-nadu.html">Political Tensions Escalate in Tamil Nadu</a></h2>
+    <p>A TVK minister has criticized Udhayanidhi Stalin over recent remarks, intensifying the ongoing political conflict in Tamil Nadu.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/tvk-minister-slams-udhayanidhi-stalin-over-remarks-as-political-war-heats-up-in-tamil-nadu-ytvd-3004558-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/political-tensions-escalate-in-tamil-nadu.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/virat-kohli-matches-sachin-tendulkars-list-a-record.html">Virat Kohli Matches Sachin Tendulkar's List A Record</a></h2>
+    <p>Virat Kohli scored an unbeaten 139 off 88 balls in Thiruvananthapuram, leading India to an eight-wicket victory and tying him with Sachin Tendulkar on an all-time list.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/virat-kohli-equals-sachin-tendulkars-list-a-record-with-masterclass-139-against-west-indies-6414/" rel="noopener">Crictracker</a> · <a href="article/2026-09-28/virat-kohli-matches-sachin-tendulkars-list-a-record.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/markets-dip-as-rupee-falls.html">Markets dip as rupee falls</a></h2>
+    <p>Indian markets have fallen below 23,000 points while the rupee has weakened to 95.88 against the dollar. Meanwhile, anticipation grows surrounding the upcoming Tata Sons AGM.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/markets-slip-below-23000-as-rupee-hits-9588-big-suspense-over-tata-sons-agm-ytvd-3004552-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/markets-dip-as-rupee-falls.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · BBC Business · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/savings-habits-explored-in-east-london.html">Savings habits explored in East London</a></h2>
+    <p>A report on personal savings highlights that individual holdings range from £65 to $60,000, based on interviews with residents in East London's Brick Lane.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/videos/cqrm99we3rjxo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-28/savings-habits-explored-in-east-london.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/lpu-campus-unrest-leads-to-class-suspension.html">LPU campus unrest leads to class suspension</a></h2>
+    <p>Classes at LPU have been suspended following unrest, prompting students to leave campus. Chief Minister Mann has vowed to take action.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/punjab/story/lpu-protest-classes-suspended-10-days-mobile-internet-cut-cm-bhagwant-mann-vows-action-3004546-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/lpu-campus-unrest-leads-to-class-suspension.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/mirzapur-the-movie-crosses-rs-211-crore.html">Mirzapur – The Movie crosses Rs. 211 crore</a></h2>
+    <p>Mirzapur – The Movie collected Rs. 1.11 crore on its 24th day, bringing its total India net collection to Rs. 211.48 crores.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/box-office-special-features/mirzapur-the-movie-box-office-day-24-film-collects-rs-1-11-crore-on-sunday-total-reaches-rs-211-48-crores/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-28/mirzapur-the-movie-crosses-rs-211-crore.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/chemplast-sanmar-partially-restarts-karaikal-plant.html">Chemplast Sanmar partially restarts Karaikal plant</a></h2>
+    <p>Chemplast Sanmar has resumed partial operations at its EDC manufacturing facility in Karaikal after receiving a provisional revocation of a prohibition order.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/chemplast-sanmar-resumes-operations-at-karaikal-manufacturing-plant-126092800255_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/chemplast-sanmar-partially-restarts-karaikal-plant.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/robokidz-eduventures-shares-surge-on-bse-debut.html">Robokidz Eduventures shares surge on BSE debut</a></h2>
+    <p>Robokidz Eduventures shares debuted on the BSE at Rs 211.45, marking a 99.48% premium over the initial issue price of Rs 106.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/bse-sme-robokidz-eduventures-takes-flight-on-debut-126092800254_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/robokidz-eduventures-shares-surge-on-bse-debut.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/supreme-court-addresses-rising-sexual-assault-cases-in-delhi.html">Supreme Court addresses rising sexual assault cases in Delhi</a></h2>
+    <p>The Supreme Court has taken suo motu cognizance of increasing sexual assault cases in Delhi, citing a systematic failure of law enforcement and comparing the situation to the 2012 Nirbhaya case.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/legal/news/growing-sexual-assault-cases-in-delhi-supreme-court-draws-parallel-to-2012-nirbhaya-gangrape/articleshow/134532687.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-28/supreme-court-addresses-rising-sexual-assault-cases-in-delhi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/som-distilleries-shares-rise-following-court-order.html">Som Distilleries shares rise following court order</a></h2>
+    <p>Shares of Som Distilleries &amp; Breweries increased 6.83% to Rs 79.35 after the Madhya Pradesh High Court directed the renewal of the company's manufacturing excise licences.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/som-distilleries-jumps-after-mp-high-court-orders-renewal-of-excise-licences-126092800253_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/som-distilleries-shares-rise-following-court-order.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/sensex-and-nifty-decline-over-1-as-market-focus-shifts-to-ec.html">Sensex and Nifty decline over 1% as market focus shifts to economic data</a></h2>
+    <p>Indian stock indices fell by more than 1% as investors monitored crude oil prices, primary market activity, and upcoming IPOs. The market is also bracing for domestic and global economic data releases that may impact central bank monetary policy expectations.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/sensex-nifty-plunge-over-1-realty-shares-skid-126092800252_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/sensex-and-nifty-decline-over-1-as-market-focus-shifts-to-ec.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/indigo-flight-avoids-major-incident-during-landing-in-bengal.html">IndiGo flight avoids major incident during landing in Bengaluru</a></h2>
+    <p>An IndiGo flight struck the runway in Bengaluru during gusty weather conditions, but a major mishap was averted.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/indigo-flight-hits-runway-in-bengaluru-amid-gusty-weather-major-mishap-averted-ytvd-3004548-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/indigo-flight-avoids-major-incident-during-landing-in-bengal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · BBC Business · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/waste-food-initiative-supports-families-in-the-west-midlands.html">Waste food initiative supports families in the West Midlands</a></h2>
+    <p>A scheme aimed at helping families by utilizing waste food is currently operating in schools across the West Midlands, including locations in Birmingham and Walsall.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cjqlw1p4pvxgo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-28/waste-food-initiative-supports-families-in-the-west-midlands.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/shillong-teer-results-for-september-28-2026.html">Shillong Teer Results for September 28, 2026</a></h2>
+    <p>The latest winning numbers for the Shillong, Juwai, Khanapara, Shillong Morning, and Night Teer games for September 28, 2026, are now available.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/shillong-teer-result-today-september-28-2026-winning-numbers-ws-k-10355853.html" rel="noopener">News18 India</a> · <a href="article/2026-09-28/shillong-teer-results-for-september-28-2026.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/aggressive-hybrid-funds-see-mixed-five-year-sip-returns.html">Aggressive hybrid funds see mixed five-year SIP returns</a></h2>
+    <p>Seven aggressive hybrid funds achieved five-year SIP returns of at least 12%, with the Bank of India Aggressive Hybrid Fund leading at 16.50%. Other major schemes showed varied results, including 12.26% for ICICI Prudential and 5.99% for HDFC Aggressive Hybrid Fund.</p>
+    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/7-aggressive-hybrid-funds-delivered-12-5-year-sip-returns-bank-of-india-led-with-165-11790571825473.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-28/aggressive-hybrid-funds-see-mixed-five-year-sip-returns.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/virat-kohli-reaches-15000-odi-runs-with-55th-century.html">Virat Kohli reaches 15,000 ODI runs with 55th century</a></h2>
+    <p>Virat Kohli scored an unbeaten century in Thiruvananthapuram, pushing his career total past 15,000 ODI runs and extending his world record to 55 ODI centuries.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/virat-kohli-hits-10th-odi-ton-against-west-indies-equals-record-for-most-hundreds-against-a-team-6986/" rel="noopener">Crictracker</a> · <a href="article/2026-09-28/virat-kohli-reaches-15000-odi-runs-with-55th-century.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/rape-case-pendency-rises-as-conviction-rates-remain-low.html">Rape case pendency rises as conviction rates remain low</a></h2>
+    <p>While the number of rape cases has remained steady since 2018, the pendency of these cases has increased, with less than 2% of cases resulting in a conviction within the same year of trial.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/data/rape-cases-in-india-long-wait-for-justice-as-pendencies-in-rape-cases-mount/article71517284.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-28/rape-case-pendency-rises-as-conviction-rates-remain-low.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/taylor-swift-wins-video-of-the-year-at-mtv-vmas.html">Taylor Swift Wins Video of the Year at MTV VMAs</a></h2>
+    <p>Taylor Swift won the Video of the Year award at the MTV VMAs for 'Fate of Ophelia.' Accepting the honor as a director and artist, she dedicated the win to Dolly Parton, citing the impact of Parton's songwriting, and expressed gratitude to her fans and industry colleagues.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/english/music/news/mtv-vmas-2026-taylor-swift-takes-home-video-of-the-year-title-thanks-dolly-parton-for-being-an-inspiration-i-am-lucky-to-be-/articleshow/134532456.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-28/taylor-swift-wins-video-of-the-year-at-mtv-vmas.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/supreme-court-notes-rise-in-delhi-rape-cases.html">Supreme Court Notes Rise in Delhi Rape Cases</a></h2>
+    <p>The Supreme Court has taken note of recent rape cases in Delhi, noting that the situation draws parallels to the 2012 Nirbhaya case.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/law-news/story/cant-help-but-draw-parallels-to-nirbhaya-case-scs-tough-words-as-it-takes-note-of-delhi-rape-cases-3004545-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/supreme-court-notes-rise-in-delhi-rape-cases.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/pm-modi-pays-tribute-to-ashok-singhal.html">PM Modi Pays Tribute to Ashok Singhal</a></h2>
+    <p>Prime Minister Narendra Modi has described the late Ashok Singhal as a great personality who was deeply committed to the cause of nation-building.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/pm-modi-tribute-to-organisational-genius-ashok-singhal-on-birth-centennary-3004511-2026-09-28?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-28/pm-modi-pays-tribute-to-ashok-singhal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/kerala-government-reviewing-waqf-board-reconstitution.html">Kerala Government Reviewing Waqf Board Reconstitution</a></h2>
+    <p>Waqf Minister N. Samsudheen stated that the Kerala government is examining all aspects regarding the state's Waqf Board. He clarified that no decision has been reached yet concerning the dissolution or reconstitution of the current board.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/keralam-waqf-board-reconstitution-govt-to-examine-all-aspects-before-decision-says-minister/article71518405.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-28/kerala-government-reviewing-waqf-board-reconstitution.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/pc-jeweller-achieves-debt-free-status.html">PC Jeweller achieves debt-free status</a></h2>
+    <p>PC Jeweller has cleared its remaining bank debt, successfully meeting its goal of becoming a debt-free company.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/pc-jeweller-share-price-jumps-4-percent-on-debt-free-status-rallies-32-percent-in-sept-so-far-126092800227_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-28/pc-jeweller-achieves-debt-free-status.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Business Standard · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/market-sell-off-hits-sectoral-indices.html">Market sell-off hits sectoral indices</a></h2>
+    <p>Markets faced significant pressure as all sectoral indices traded in the red. Midcap and smallcap indices both declined by 1 percent.</p>
+    <p class="src">Source: <a href="https://www.business-standard.com/markets/news/sensex-tanks-790-pts-intraday-nifty-below-23k-what-s-driving-mkts-lower-126092800155_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-28/market-sell-off-hits-sectoral-indices.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/shweta-tripathi-makes-production-debut-with-queer-love-story.html">Shweta Tripathi makes production debut with queer love story</a></h2>
+    <p>Actor Shweta Tripathi has transitioned into producing, debuting with the feature film 'Mujhe Jaan Na Kaho Meri Jaan.' She stars in the film alongside Tillotama Shome and recently presented the project at the 51st Toronto International Film Festival.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/exclusive-shweta-tripathi-on-pitching-at-tiff-as-a-producer-i-felt-like-i-was-giving-an-exam-opens-up-producing-queer-love-story-mujhe-jaan-na-kaho-meri-jaan-hum-pyaar-p/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-28/shweta-tripathi-makes-production-debut-with-queer-love-story.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-28/unrest-at-lpu-following-student-death.html">Unrest at LPU Following Student Death</a></h2>
+    <p>Violent protests broke out at LPU in Punjab following unverified reports that a female student had been sexually assaulted and died by suicide.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/bhai-ps-5-le-aaye-hain-lpu-students-loot-university-mall-amid-violent-protests-video-ws-lt-10356374.html" rel="noopener">News18 India</a> · <a href="article/2026-09-28/unrest-at-lpu-following-student-death.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
