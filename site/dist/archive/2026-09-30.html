@@ -1,0 +1,583 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-30</title>
+<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Daily Prompt">
+<meta property="og:title" content="The Daily Prompt — 2026-09-30">
+<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:image" content="https://news.bharatdn.com/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://news.bharatdn.com/og/home.png">
+
+<meta name="theme-color" content="#121214">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons/splash-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons/splash-2048x1536.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('tdp.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<script src="/pwa.js" defer></script>
+<script src="/push.js" defer></script>
+<script src="/telemetry.js" defer></script>
+<script src="/translator.js" defer></script>
+<script src="/personalize.js" defer></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,mai,mni-Mtei,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en,ar,zh-CN,es,fr,de,ja,ru,pt,id,tr,fa,sw',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
+ * Design tokens first; dark is the default, light via [data-theme=light].
+ * Heavy effects are limited to the sticky nav (small area) so the site stays fast.
+ */
+
+/* ---------- tokens ---------- */
+:root {
+  --ink: #ece7dd;
+  --ink-soft: #b8b2a6;
+  --paper: #121214;
+  --paper-2: #1a1a1e;
+  --card: #1f1f24;
+  --line: #2c2c33;
+  --accent: #e03e3e;
+  --accent-deep: #8b0000;
+  --ok-bg: #10331c; --ok-fg: #7ede9b;
+  --bad-bg: #3a1416; --bad-fg: #f2a0a0;
+  --conf-bg: #14243a; --conf-fg: #9cc4f0;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
+  --nav-bg: rgba(18, 18, 20, .62);
+}
+[data-theme="light"] {
+  --ink: #191919;
+  --ink-soft: #5c5952;
+  --paper: #f7f3ea;
+  --paper-2: #efe9db;
+  --card: #ffffff;
+  --line: #e3dcc9;
+  --accent: #a31212;
+  --accent-deep: #8b0000;
+  --ok-bg: #dff3e2; --ok-fg: #17652e;
+  --bad-bg: #f9e0e0; --bad-fg: #8f1f1f;
+  --conf-bg: #e2ecfa; --conf-fg: #1d4e86;
+  --shadow: 0 10px 26px rgba(60, 50, 30, .12);
+  --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
+  --nav-bg: rgba(247, 243, 234, .68);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.6;
+  transition: background .3s ease, color .3s ease;
+}
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 72px; }
+
+/* ---------- glass header (only heavy effect on the page) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9990;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-row {
+  max-width: 980px; margin: 0 auto; padding: 10px 18px;
+  display: flex; align-items: center; gap: 14px;
+}
+.topbar .brand {
+  font-family: var(--serif);
+  font-weight: 700; font-size: 19px; letter-spacing: .5px;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.topbar .brand span { color: var(--accent); }
+.topbar .tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.topbar .tools a, .topbar .tools button {
+  color: var(--ink-soft); text-decoration: none; font-size: 13px;
+  background: transparent; border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 10px; cursor: pointer; font-family: var(--sans);
+}
+.topbar .tools a:hover, .topbar .tools button:hover { color: var(--ink); background: rgba(128,128,128,.14); }
+.catrow {
+  max-width: 980px; margin: 0 auto; padding: 0 18px 9px;
+  display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; scrollbar-width: none;
+}
+.catrow::-webkit-scrollbar { display: none; }
+.catgrp {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line);
+}
+.catgrp:last-child { border-right: 0; margin-right: 0; }
+.catgrp b {
+  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+}
+.catrow a {
+  flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: transparent;
+}
+.catrow a:hover { color: var(--ink); border-color: var(--accent); }
+.catrow a.on { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+/* ---------- header block ---------- */
+header.mast { text-align: center; padding: 30px 0 8px; }
+header.mast h1 {
+  font-family: var(--serif); font-size: clamp(30px, 5.4vw, 46px);
+  margin: 0; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+}
+header.mast h1 a { color: inherit; text-decoration: none; }
+header.mast h1 a:hover { color: var(--accent); }
+header.mast p { margin: 6px 0 0; font-style: italic; color: var(--ink-soft); font-size: 15px; }
+.masthead-stats {
+  display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-soft); margin-top: 10px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.nav { text-align: center; font-size: 14px; margin: 12px 0 0; color: var(--ink-soft); }
+
+/* ---------- section headers ---------- */
+h2.sec {
+  font-family: var(--serif); font-size: 21px; letter-spacing: 1.5px; text-transform: uppercase;
+  border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin: 34px 0 14px;
+}
+
+/* ---------- stories / cards ---------- */
+.story { border-bottom: 1px solid var(--line); padding: 20px 0; }
+.story.single { border-bottom: none; }
+.story h2 { font-family: var(--serif); margin: 4px 0 10px; font-size: 25px; line-height: 1.25; }
+.story h2 a { color: inherit; text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+.story h1 { font-family: var(--serif); margin: 6px 0 14px; font-size: clamp(26px, 4.6vw, 36px); line-height: 1.2; }
+
+.story.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 26px 20px;
+  margin: 20px 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.story.hero:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(0,0,0,.42); }
+.story.hero h2 { font-size: clamp(27px, 4.8vw, 36px); margin: 8px 0; }
+.lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+.meta {
+  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
+.critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
+.hi-title a { font-size: 16px; }
+.src { font-size: 13px; color: var(--ink-soft); }
+
+/* ---------- badges (pills) ---------- */
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
+.badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
+.badge.conf { background: var(--conf-bg); color: var(--conf-fg); }
+
+/* ---------- beat color strips on hero via data attr (optional future) ---------- */
+
+/* ---------- misc blocks ---------- */
+.stale { background: #3a2e10; border: 1px solid #a9852c; color: #f2d489; padding: 12px 16px; margin: 16px 0; font-size: 14px; border-radius: var(--radius); }
+[data-theme="light"] .stale { background: #fdf0d5; border-color: #e0b95a; color: #6b5210; }
+.st-ok { color: #7fc97f; }
+.st-warn { color: #e0b95a; }
+.st-stale { color: #e03e3e; }
+[data-theme="light"] .st-ok { color: #256b25; }
+[data-theme="light"] .st-warn { color: #8a6d1a; }
+[data-theme="light"] .st-stale { color: #b02020; }
+.dates { display: flex; justify-content: space-between; font-size: 14px; margin: 16px 0; }
+.crumb { font-size: 14px; color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- columns / briefs ---------- */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0 24px; }
+.col { border-right: 1px solid var(--line); padding-right: 18px; }
+.col:last-child { border-right: none; }
+.col h3 { font-family: var(--serif); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin: 12px 0 8px; }
+.col h3 a { color: var(--ink); text-decoration: none; }
+.col h3 a:hover { color: var(--accent); }
+.col ul { list-style: none; margin: 0; padding: 0; }
+.col li { margin: 0 0 12px; font-size: 14px; line-height: 1.45; }
+.col li a { color: var(--ink); text-decoration: none; }
+.col li a:hover { color: var(--accent); }
+.col small, ul.brief li small { color: var(--ink-soft); font-size: 12px; }
+ul.brief { list-style: none; padding: 0; margin: 0; }
+ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+
+/* ---------- tiles / pipeline ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 14px 0; }
+.tile {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 12px; text-align: center; font-size: 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile b { display: block; font-size: 16px; margin-bottom: 2px; font-family: var(--serif); }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.pipeline { display: flex; gap: 10px; align-items: stretch; margin: 14px 0; flex-wrap: wrap; }
+.pstep {
+  flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
+}
+.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
+.pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
+.parrow { align-self: center; font-size: 20px; color: var(--accent); flex: 0 0 auto; }
+@media (max-width: 700px) { .parrow { display: none; } }
+.about-note { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 12px; font-style: italic; }
+
+/* ---------- translate gadget ---------- */
+.gtr {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+}
+.gtr .goog-te-gadget { font-size: 13px !important; }
+.gtr .goog-te-gadget-simple {
+  border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
+  background: var(--card) !important; color: var(--ink) !important;
+}
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+
+/* ---------- share / saved / search ---------- */
+.sharebar { margin: 14px 0 4px; font-size: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 14px; }
+.sharebar a { text-decoration: none; }
+.sharebar a:hover { color: var(--accent); }
+.savedlist li { padding: 7px 0; border-bottom: 1px dotted var(--line); font-size: 15px; }
+#q { width: 100%; padding: 12px 14px; font-size: 16px; font-family: var(--sans); background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); }
+.hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.hit small { color: var(--ink-soft); }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style></head><body><div class="topbar"><div class="topbar-row">
+    <a class="brand" href="/">The Daily <span>Prompt</span></a>
+    <div class="tools">
+      <a href="/search.html">Search</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/wire.html">Wire</a>
+      <a href="/stats.html">Stats</a>
+      <a href="/feed.xml" title="RSS">RSS</a>
+      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+    </div>
+  </div>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-30</h1></header><article class="story">
+    <div class="meta">NATIONAL · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/tvk-left-rift-widens-ahead-of-tamil-nadu-by-polls-cpim-to-fi.html">TVK-Left Rift Widens Ahead of Tamil Nadu By-Polls; CPI(M) to Field Own Candidates</a></h2>
+    <p>A significant political development has emerged in Tamil Nadu as the rift between the TVK and the Left parties has reportedly widened. This escalation comes ahead of the upcoming by-polls in the state, signaling a potential shift in the political landscape.</p><p>Sources indicate that the Communist Party of India (Marxist), CPI(M), has decided to field its own candidates in the impending elections. This move by the CPI(M) underscores the deepening divisions within what was once a collaborative political front. The decision highlights a breakdown in alliance dynamics, particularly concerning seat-sharing or strategic coordination for the by-polls.</p><p>The widening chasm between the TVK and the Left, specifically the CPI(M)'s independent electoral strategy, suggests a more fragmented contest in the by-elections. Such a scenario could lead to multi-cornered fights, potentially altering the electoral outcomes and requiring parties to recalibrate their campaign approaches. The by-polls are often seen as a litmus test for broader political trends and alliances.</p><p>This development will undoubtedly draw close scrutiny from political observers, who will be keen to assess the impact of these fractured alliances on voter sentiment and the overall distribution of power in the state. The by-polls are set to become a key indicator of the evolving political equations in Tamil Nadu.</p><p>What to watch: The performance of independent CPI(M) candidates in the by-polls and the subsequent impact on state politics.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/tvk-left-rift-widens-ahead-of-tamil-nadu-by-polls-cpim-to-field-own-candidates-ytvd-3006280-2026-09-30?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-30/tvk-left-rift-widens-ahead-of-tamil-nadu-by-polls-cpim-to-fi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/battlefield-needs-dictate-strategy-says-cds-subramani.html">Battlefield Needs Dictate Strategy, Says CDS Subramani</a></h2>
+    <p>Chief of Defence Staff (CDS) Subramani has emphasized a critical shift in military procurement and strategic planning, stating that the focus should be on &quot;what the battlefield needs&quot; rather than the individual requirements of the Army or Navy. This perspective, reported by The Economic Times, signals a move towards greater integration and jointness across India's armed forces.</p><p>CDS Subramani's remarks underscore a contemporary understanding of modern warfare, where interoperability and combined arms operations are paramount. His statement suggests an imperative to streamline resource allocation and development of military capabilities, ensuring that assets and doctrines are tailored to the demands of a unified operational environment. This approach seeks to optimize the effectiveness of the entire defence apparatus.</p><p>The emphasis on battlefield requirements implies a holistic assessment of threats and operational landscapes, moving beyond service-specific demands that might lead to duplication or inefficiencies. It advocates for common platforms, integrated command structures, and synergistic training regimes that prepare all branches of the military for joint missions.</p><p>This strategic direction aims to foster a more agile and potent fighting force, capable of responding to complex and evolving security challenges. Attributed to CDS Subramani, this vision reflects a commitment to enhancing the overall combat readiness and efficacy of the nation's defence forces through integrated planning.</p><p>What to watch: Future defence procurement policies and joint military exercises reflecting this integrated approach.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSWloYzZ1eVJsN09zVXRJV1BvLWRucV9YQzVHQmtQMkxPWEcxU19TMThHbnZsLVotd3ktZWVQcUc3WlFVUThIb2VoX2NHdTRuRlN0V09DaGpQR2dVNXBBeVNJX2FybDQ1a3BiZG9McWZqMklOQ2FSbzNKOTJvc0oxM2NWWG9XTW5CNnpRcksyRzItbzN4aGk2d29wb19wbTJ6eWpJRkVGNWJVNGthUEtDZE1IMWtVQTRVdlRXNzdxdWJQdjg0QnF3MjdfY2dQZDNQMWFV0gHYAUFVX3lxTE1xVlVOT0o3TTRMNzh5Wm9vbjM4MDhoczZUWnR3QW1wNGJCSXcyRmxlNm9kcHgzcDZhaGtaandmcEdhMnI3SmQ3NjJaaUxGbVg3M3JZREdfU0JTTjdGT1lxX2Iwa2F3ZVZnRmViYnlPSjFBSU5QTWM0UU04VmlLdkpYYnc1UUZUZE9LeDB0RTJQYkVWTlA3XzlFNTZzUkoxYTBjdVJKZDN0blpoY01BcHhzQ3JMZEhsTjdSa3RNWno5UFhjcTkyczFHa2xTR2hJZ09rRTZzcm5icA?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-30/battlefield-needs-dictate-strategy-says-cds-subramani.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/indias-higher-education-sector-sees-sharp-growth-increased-w.html">India's Higher Education Sector Sees Sharp Growth, Increased Women's Participation</a></h2>
+    <p>India's higher education landscape has undergone significant expansion, with a notable increase in overall enrollment and a particularly sharp rise in women's participation, according to a recent report highlighted by Telangana Today. This growth signifies a positive trend in access to advanced learning opportunities across the nation.</p><p>The report indicates that the sector has broadened its reach, suggesting an increase in institutions, courses, or student intake capacities. Such expansion is crucial for a developing nation, contributing to a more skilled workforce and fostering innovation. While specific figures or report names were not detailed in the summary, the general trend points to a robust growth trajectory across various disciplines.</p><p>Crucially, the rise in women's participation is a key takeaway. This development suggests improved access, reduced barriers, and possibly enhanced societal support for women pursuing higher studies. Greater female representation in universities and colleges can have far-reaching socio-economic benefits, including improved gender equality, empowerment, and diverse contributions to various professional fields.</p><p>The report underscores the evolving dynamics within India's educational framework, reflecting efforts to make higher education more inclusive and accessible. This sustained growth is vital for meeting the demands of a rapidly changing global economy and for enhancing human capital. No specific dates, eligibility criteria for admissions, or official links were provided in the summary.</p><p>What to watch: Further detailed reports on specific enrolment numbers and policy initiatives driving this growth.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOYldzd3NMTENGaXpWQmVDUi1jR0NYUHVIMHNCRHFIRmJhdDNQX2ZPYndQQzY5Q0hrUC1SbWZvZGN6M2dqdjNQeTVQelZNX2VLc09CTFBDd1NOQ2pXeS1fNk91cFYwRGlOYW9oMWIyc19iYVRzS1kxUUxGTlYyb0IwS0owbVU0cGoySTdnS0NwSjVpanN5YllpcFBtbW9pS1JpZHZGXw?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-30/indias-higher-education-sector-sees-sharp-growth-increased-w.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">HEALTH · BBC Health · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/the-irish-international-rugby-trailblazer-and-her-legacy-of-.html">The Irish international rugby 'trailblazer' and her legacy of cancer awareness</a></h2>
+    <p>Rosie Stewart, an esteemed former Irish international rugby player, is remembered for her pioneering spirit and significant contributions to the sport. She was a pivotal figure in the development of women's rugby, notably serving as a founding member of Ulster Women's Rugby. Her dedication helped shape the early landscape of the sport in the region.</p><p>Stewart's influence extended beyond her athletic achievements and organizational roles. She passed away following a diagnosis of breast cancer, an event that brought a crucial spotlight to cancer awareness. Her personal journey underscored the importance of health vigilance within the sporting community and among the wider public.</p><p>Her legacy is therefore twofold: that of a trailblazer who helped establish and advance Irish women's rugby, and that of an advocate whose experience fostered greater awareness around breast cancer. Her foundational work in Ulster Women's Rugby stands as a testament to her commitment to growing the sport.</p><p>The awareness generated through her battle with cancer continues to resonate, contributing to ongoing conversations about health, early detection, and the impact of such conditions on individuals and communities. Stewart's life and career serve as a powerful reminder of her enduring impact.</p><p>What to watch: The ongoing focus on health awareness within sports organizations.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/crkgwek13y2no?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Health</a> · <a href="article/2026-09-30/the-irish-international-rugby-trailblazer-and-her-legacy-of-.html">permalink</a> · <a href="/category/health.html">more health</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/dhurandhar-the-revenge-tv-premiere-faces-significant-cbfc-cu.html">&quot;Dhurandhar The Revenge&quot; TV Premiere Faces Significant CBFC Cuts</a></h2>
+    <p>The action saga &quot;Dhurandhar The Revenge,&quot; released in 2026, is set for its television premiere on Star Gold on Sunday, October 18, at 7:00 pm, following a successful run in cinemas and impressive viewership on OTT platforms. However, its broadcast debut will feature a significantly altered version due to mandates from the Central Board of Film Certification (CBFC).</p><p>Originally certified 'A' for its theatrical release, the film underwent review by the CBFC for its television airing. The board has reportedly ordered between 45 to 50 cuts to the movie. This extensive editing is standard procedure for films transitioning from an adult rating to a family-friendly broadcast.</p><p>As a result of these modifications, the television version of &quot;Dhurandhar The Revenge&quot; will be approximately 10 minutes shorter than its original cut. The edited film will carry a U/A 16+ rating, indicating suitability for viewing by individuals aged 16 and above, under parental guidance.</p><p>The substantial changes highlight the stringent censorship requirements for content aired on Indian television, particularly for films that initially received an 'A' certificate. Viewers anticipating the premiere should be aware of the revised content.</p><p>What to watch: How the edited version of &quot;Dhurandhar The Revenge&quot; is received by television audiences.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/bollywood/exclusive-cbfc-orders-45-50-cuts-for-dhurandhar-the-revenges-tv-premiere-u-a-16-version-is-10-minutes-shorter/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-30/dhurandhar-the-revenge-tv-premiere-faces-significant-cbfc-cu.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/the-neem-tree-a-living-legacy-of-utility-and-sustainability.html">The Neem Tree: A Living Legacy of Utility and Sustainability</a></h2>
+    <p>For generations, the neem tree has been an integral part of daily life across India, a testament to its remarkable versatility and enduring value. Known scientifically as Azadirachta indica, this native tree thrives alongside homes, roads, and farms, offering welcome shade and a wealth of practical uses. Its enduring presence and diverse applications embody a deep-rooted understanding of nature's gifts.</p><p>The &quot;1 Plant, 100 Uses&quot; ethos truly comes alive with neem. Its leaves, a familiar sight in Indian households, have traditionally been used to deter insects from stored grains and clothes. Scientific research, including by the Indian Council of Agricultural Research, validates these practices, documenting the use of dried leaves, kernel powder, and neem oil in pest management.</p><p>Beyond its leaves, neem seeds are pressed to yield oil, a traditional ingredient in soaps, cosmetics, and household products, and vital for botanical pest control. The solid material left after oil extraction, neem cake, enriches the soil as an organic input and helps manage soil pests, completing a sustainable cycle where little is wasted.</p><p>Even a simple twig from a neem tree served as a natural toothbrush long before modern conveniences. The bark and small white flowers have been incorporated into traditional medicine and food preparations. Neem wood is utilized for furniture and construction, ensuring the tree's usefulness spans its entire life cycle. This chain of utility, where nearly every part serves a distinct and valuable purpose, highlights its exceptional contribution to sustainable living.</p><p>Why it matters: The neem tree exemplifies how natural resources, when understood and utilized holistically, can sustain communities and ecosystems for centuries.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/sustainability/neem-tree-traditional-uses-india-one-plant-100-uses-leaves-bark-12590180" rel="noopener">The Better India</a> · <a href="article/2026-09-30/the-neem-tree-a-living-legacy-of-utility-and-sustainability.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · The Hindu World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/brazils-lula-slams-interference-in-previously-colonised-coun.html">Brazil’s Lula slams ‘interference’ in previously colonised countries</a></h2>
+    <p>Brazil’s President Luiz Inácio Lula da Silva has strongly criticized what he described as a &quot;renewed colonial push&quot; targeting developing nations. Speaking at a recent summit held in Colombia, President Lula voiced his concerns over external pressures and interference impacting countries that have historically endured colonial rule.</p><p>His remarks highlighted the perception that some developing nations are once again facing challenges to their sovereignty and independent decision-making. Lula's address underscored the importance of self-determination and equitable relationships in the global arena, particularly for those countries striving to overcome legacies of past colonization.</p><p>The summit provided a platform for leaders to discuss the evolving dynamics of international relations and the need for greater respect for national autonomy. Lula’s statement, while not singling out any specific entity, resonated with broader discussions among developing countries about safeguarding their interests and fostering fair global partnerships.</p><p>This stance reflects a growing call for a re-evaluation of how international powers interact with previously colonized states, advocating for policies that support genuine development without undue external influence. The Brazilian President's intervention signals a continued push for a more balanced global order.</p><p>What to watch: How developing nations respond to calls for greater autonomy in international relations.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/international/brazils-lula-slams-interference-in-previously-colonised-countries-without-naming-trump/article70773261.ece" rel="noopener">The Hindu World</a> · <a href="article/2026-09-30/brazils-lula-slams-interference-in-previously-colonised-coun.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS · BBC Business · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/household-energy-bills-forecast-to-see-biggest-rise-in-four-.html">Household energy bills forecast to see biggest rise in four years</a></h2>
+    <p>Households across the nation are bracing for a significant increase in energy costs, with a key forecast indicating that typical annual gas and electricity bills are set to reach £1,999 starting in January. This projected rise represents the largest surge in household energy expenses seen in four years.</p><p>The forecast highlights the ongoing volatility in the energy market and the direct impact on consumer finances. This substantial increase is expected to place additional financial pressure on families already navigating a complex economic landscape. The figure of £1,999 applies to a typical household, meaning individual bills may vary based on consumption and specific tariffs.</p><p>Analysts suggest this rise could prompt households to review their energy consumption habits and explore options for reducing utility costs. The broader implications for household budgets and the economy are likely to be a subject of continued discussion among policymakers and consumer advocates.</p><p>The forecast underscores the persistent challenge of managing energy affordability amidst global market fluctuations. As January approaches, consumers will be keenly observing updates and potential measures aimed at mitigating the impact of these rising costs.</p><p>What to watch: Government and regulatory responses to rising energy costs and their impact on households.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-30/household-energy-bills-forecast-to-see-biggest-rise-in-four-.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/molineux-hamilton-ruled-out-of-bangladesh-odis-mcgrath-to-ca.html">Molineux, Hamilton ruled out of Bangladesh ODIs; McGrath to captain</a></h2>
+    <p>Australia's women's cricket team faces a significant challenge ahead of their three-match One Day International (ODI) series against Bangladesh, with key players Sophie Molineux and Lucy Hamilton officially ruled out due to injury. The absence of these two talents will undoubtedly test the squad's depth and tactical flexibility as they prepare for the upcoming contests.</p><p>In a crucial leadership development, Tahlia McGrath has been confirmed as the captain for the series. McGrath, a seasoned all-rounder, will step into the captaincy role, bringing her experience and strategic acumen to the forefront. Her leadership will be vital as the team navigates the series without two of its established players.</p><p>Molineux and Hamilton's injuries mean that selectors will need to adjust the team composition, potentially offering opportunities for other players to demonstrate their capabilities on the international stage. This situation often provides a chance for emerging talents to impress and solidify their positions within the squad.</p><p>The three-match ODI series against Bangladesh represents an important fixture in the international calendar, and the team will be keen to perform strongly despite the setbacks. All eyes will be on McGrath's captaincy and how the team adapts to the changes forced upon them by these unfortunate injuries.</p><p>What to watch: How the Australian squad adapts to key injuries under new captain Tahlia McGrath.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/molineux-hamilton-ruled-out-of-bangladesh-odis-mcgrath-to-captain-1171/" rel="noopener">Crictracker</a> · <a href="article/2026-09-30/molineux-hamilton-ruled-out-of-bangladesh-odis-mcgrath-to-ca.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS · BBC Sport · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/how-do-teams-deal-with-longer-international-window.html">How do teams deal with longer international window?</a></h2>
+    <p>The recent extension of the international window to four games has presented national football teams with new logistical and player management challenges. This expanded schedule demands increased consideration for player welfare, travel, and the delicate balance between club and country commitments.</p><p>Nations such as Northern Ireland, with smaller player pools and often relying on players from various club leagues, are particularly impacted. The additional demands on both players and staff require meticulous planning to ensure athletes remain in peak condition and that coaching resources are effectively managed across the longer period.</p><p>Clubs also face heightened pressure, as their key players are away for an extended duration, potentially affecting domestic league performances. Managing player fatigue and preventing injuries become paramount concerns for national team staff, who must coordinate closely with club medical and coaching teams.</p><p>The extended window necessitates a comprehensive approach to player recovery, training loads, and strategic substitutions. It also puts a spotlight on the depth of squads, as more players might be needed to cover the increased number of fixtures within a tighter timeframe. This evolution in the international calendar continues to shape how national associations prepare and compete.</p><p>What to watch: How national teams adapt their player management strategies to the extended international window.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/sport/football/articles/ckwyz97v042vo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a> · <a href="article/2026-09-30/how-do-teams-deal-with-longer-international-window.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/arp-78-a-peculiar-galaxy-featured-on-astronomy-picture-of-th.html">Arp 78: A Peculiar Galaxy Featured on Astronomy Picture of the Day</a></h2>
+    <p>On September 30, 2026, the Astronomy Picture of the Day (APOD) will feature Arp 78, identified as a peculiar galaxy located within the constellation Aries. APOD, a project that showcases different images or photographs of the universe daily, provides a brief explanation accompanying each feature, typically authored by a professional astronomer.</p><p>The APOD initiative, under the broader umbrella of science education, serves to help the public discover the cosmos. Its daily selections aim to highlight the fascinating aspects of our universe through visual media. The specific details regarding the peculiar nature of Arp 78 or the image itself are elaborated upon within the daily feature.</p><p>This particular selection, Arp 78, draws attention to the diverse and often unusual formations found throughout the cosmos. Such galaxies are of significant interest to astronomers for understanding galactic evolution and interactions. The APOD program, with its regular updates, offers an accessible platform for both enthusiasts and the general public to engage with the latest astronomical imagery and concepts. The presentation of Arp 78 in Aries provides a specific celestial target for observation and study.</p><p>What to watch: Future APOD features for more celestial discoveries.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/image-article/apod-2026-september-30-arp-78-peculiar-galaxy-in-aries/" rel="noopener">NASA</a> · <a href="article/2026-09-30/arp-78-a-peculiar-galaxy-featured-on-astronomy-picture-of-th.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">ENVIRONMENT · Guardian Environment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/tern-colonies-in-england-show-encouraging-signs-of-recovery.html">Tern Colonies in England Show Encouraging Signs of Recovery</a></h2>
+    <p>England's significant tern colonies are demonstrating encouraging signs of recovery, following periods of decline attributed to factors such as bird flu, flooding, and increasingly unpredictable weather. New figures released by the National Trust highlight this positive trend, indicating a rise in bird numbers.</p><p>While the latest data is seen as encouraging, the National Trust emphasizes that further work remains essential for the sustained recovery of these seabird populations. A notable success has been observed at Long Nanny in Northumberland, a site identified as one of the UK's most crucial breeding grounds. Here, the trust reported record numbers of little terns.</p><p>The little tern holds a particular conservation status, being recognized as the country’s second-rarest breeding seabird. The rebound in its population at key sites like Long Nanny suggests that conservation efforts, alongside potential natural resilience, are beginning to yield positive results. This development offers a hopeful perspective on wildlife conservation challenges, demonstrating that targeted interventions and monitoring can contribute to the recovery of vulnerable species. The ongoing efforts are crucial for securing the long-term future of these important bird colonies across England.</p><p>What to watch: Continued monitoring of tern populations and conservation efforts.</p>
+    <p class="src">Source: <a href="https://www.theguardian.com/environment/2026/sep/30/england-tern-colonies-signs-of-recovery-national-trust" rel="noopener">Guardian Environment</a> · <a href="article/2026-09-30/tern-colonies-in-england-show-encouraging-signs-of-recovery.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">TECH · The Verge · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/sam-altman-says-openai-wont-go-public-until-its-models-are-s.html">Sam Altman says OpenAI won’t go public until its models are safe</a></h2>
+    <p>Public speculation about an OpenAI listing has persisted for months. In a recent statement, CEO Sam Altman said the company will not pursue an IPO until it can make stronger assurances about the safety of its models. Altman offered no specific timetable, emphasizing that the firm will continue advancing AI while addressing the rapid surge in model capability. The comment reflects growing regulatory and investor focus on responsible AI development. OpenAI’s board and investors are reportedly monitoring progress on safety benchmarks, but the company has not disclosed concrete milestones. The announcement underscores the tension between rapid innovation and the need for robust safeguards before a public offering. What to watch: any formal safety roadmap or timeline from OpenAI that could signal a shift toward a public market.</p>
+    <p class="src">Source: <a href="https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety" rel="noopener">The Verge</a> · <a href="article/2026-09-30/sam-altman-says-openai-wont-go-public-until-its-models-are-s.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL · News18 India · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/vijay-singla-to-replace-raja-warring-punjab-congress-could-g.html">Vijay Singla To Replace Raja Warring? Punjab Congress Could Get New Chief In 48 Hours, Say Sources</a></h2>
+    <p>Political observers note that the Punjab Congress is weighing a rapid leadership change. Sources mention Charanjit Channi, Sukhjinder Singh Randhawa and Vijay Inder Singla as names circulating for the party's top post. The speculation follows internal discussions about replacing the current chief, Raja Warring, within the next two days. While no official announcement has been made, the three figures are being evaluated for their ability to steer the party ahead of upcoming state elections. Party insiders stress the need for a leader who can consolidate support across factions. The short‑timeframe suggests a desire to present a unified front quickly. What to watch: an official statement from the Punjab Congress confirming the new chief.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/vijay-singla-to-replace-raja-warring-punjab-congress-could-get-a-new-chief-in-48-hours-say-sources-ws-lr-10360371.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/vijay-singla-to-replace-raja-warring-punjab-congress-could-g.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/solar-industries-shares-up-over-6-whats-driving-defence-stoc.html">Solar Industries shares up over 6%! What's driving defence stock that has surged 60% in YTD | Check target price - Livemint</a></h2>
+    <p>Defence sector equities have posted a strong year‑to‑date performance, with the overall index climbing roughly 60 percent. Within that rally, Solar Industries Ltd saw its share price rise more than six percent in a single trading session, according to Livemint. Analysts attribute the broader surge to heightened government procurement, renewed focus on domestic defence manufacturing, and favorable policy announcements. Solar Industries, known for its involvement in ammunition and related hardware, benefitted from the sector‑wide optimism. Market participants are watching target price revisions as investors seek to gauge the sustainability of the gains. The report highlights that the defence stock momentum is linked to both macro‑policy support and company‑specific news flows. What to watch: upcoming defence budget allocations that could further influence stock performance.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMihwJBVV95cUxPVUE3Yk1UYi11S2tVQ1Z4cS10Y2tud3A2aVNhSkl3anhQU2RpbE9NeUJ6UmZuc09ZdFdjTUJnM0gzMXRhaGhaVm5KQkZfOXdCVXZKMDlBanBpb3lZbGl5STV4VGdxY0tpbFhjZkx2ckt1WEhBU3lQdlpCN0I5eDdrY19BakRlelRKamVuUnFmb1FZXy1CTkxPOGJwSER3NF95V0VwWnN0SEdfNHRQRm1BLWk1c3VDakM3T0J2Rl9yN2pTd2NRRVZNZjlMTlZ6NGptWW9GZzNxZVpudUxLTXpMNzNrZ2hENmhNVW5zbEdTWnNjbnVwdWd5ckFKLUxWc2QwQVlCMDl1NNIBjAJBVV95cUxOYVVCclVxUGJHdlVwT3dIckRIT1p6T0tEcmlWdHl5MFRCcC1Xa0RUdkh3VWxMRkJnVEoxMGpWU3FVa3ZpeG15UGNXNFNnOXZRYXVVck82V3lCTHdDbG54cUxRQVd1UC1ObTRNTDB6NEJpN0pqVnZPZWJEUXhPMHVkSkNnMWJKNERXTFF5UzVOTXptdnNZOWFDS09fWWE0SmJVU2tiQkw3c0U4QW9oNVNrZ2luVGZxWWRtcXRXWVcxbGs2eHNXVG5WdkhpT0Fkc0hQR3BMdG9ZM0xRb0o2LUtkNl9Oa00tWHdQZnEzSGVNS1E5aE5tOG5jY3MyNUg1WmFOUndyb2Zvdl9EZGVY?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-30/solar-industries-shares-up-over-6-whats-driving-defence-stoc.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">EDUCATION · Education (aggregate) · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/iisc-highest-ranked-indian-institute-at-254-the-world-univer.html">IISc highest-ranked Indian institute at 254: THE World University Rankings 2027 - The Indian Express</a></h2>
+    <p>The Indian Institute of Science (IISc) has achieved the top position among Indian institutions in the Times Higher Education World University Rankings for 2027, securing the 254th spot globally. The ranking, released by THE, places IISc ahead of all other Indian universities, reflecting its research output, teaching reputation, and international outlook. The Indian Express notes that the ranking methodology considers factors such as citations, industry income, and global collaborations. IISc's ascent underscores its continued emphasis on scientific research and postgraduate education. While the report does not detail specific score components, the placement signals strong performance across the measured criteria. The institute’s leadership has previously highlighted plans to expand interdisciplinary programmes, which may have contributed to the improved standing. What to watch: future THE rankings to see if IISc maintains or improves its global position.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMihgJBVV95cUxOa0drQ0xHSDFzZ3I5V1VhTjJsTklpekVrVWdEcDNUeW4yMGNMYkxTUm82X2NKSU5YdEZrYnF4VndTWHl4VzF6S1NrUlRwUTZaNzI3Znd4czlrYzk4NDNHQXdCdDRsVkpUaUgwcGU2d19Yc041RmFUaE1qOGFOdVJTWWN3RW9ZWWItM3FtYnZET2FYT2xnSC11US1QREFNeVFONkNqcTNXTzd5Slo4dGFxRU8zVlZ0cW1UQTNYbUdtWS1YUnd6RW1xbUhPVlhjWUhjVkw3US11VnJ2d1FmdkNYVmdfTGN2YzM4LWZMRGlTSVlIemZDQjZ5RHIwd0dWOFpoZHlXajFR0gGMAkFVX3lxTE11U196QlNsWlF1bHdBanJwWEZfcTUwenEyMVdSZnEtaDNyaFpWQ0toZXIzaVN1V09CcjNCaWNQNFF6UkhWRFZiMDJIT2t4ZmM4eXpuci0tXzVoeVBtdnJqclFSZHpMTFhMLUhPOFlCXzBLeG5hUzlIS1NfbU9jMVJSY2ZuTm9DbEg5Qjg5SzI5U0RSenljT2tNNDBacGYwNVJrMFR6LWdJdWtCb1F5RUtweFFQbXdyLXlEZTU3ZlJUYnVCM0xzUGI1MTBxMnhKcVZwelBoY2hnMThDSmpKMmtDU0NrLThUUGg4cTh5UWo2MXlSSVJsTHlnSEdpSHZLaDBfcjl6ZWRSbzZ2RG0?oc=5" rel="noopener">Education (aggregate)</a> · <a href="article/2026-09-30/iisc-highest-ranked-indian-institute-at-254-the-world-univer.html">permalink</a> · <a href="/category/education.html">more education</a></p>
+  </article><article class="story">
+    <div class="meta">HEALTH · BBC Health · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/they-disgust-me-the-fight-for-smaller-breasts.html">'They disgust me': The fight for smaller breasts</a></h2>
+    <p>Charlotte Howard has been denied breast reduction surgery by the National Health Service, despite experiencing daily pain. Howard’s case highlights ongoing debates over NHS eligibility criteria for reduction mammaplasty. The NHS decision, as reported by BBC Health, cites clinical guidelines that often require a combination of physical symptoms and psychological distress. Howard’s statement, &quot;They disgust me,&quot; reflects frustration with the perceived lack of empathy in the assessment process. Advocacy groups argue that chronic pain and quality‑of‑life impacts should warrant broader access to the procedure. The case adds to a broader discussion about how the NHS balances resource constraints with patient‑centred care for elective surgeries. What to watch: potential policy reviews or legal challenges concerning NHS breast reduction criteria.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cm624v28plz7o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Health</a> · <a href="article/2026-09-30/they-disgust-me-the-fight-for-smaller-breasts.html">permalink</a> · <a href="/category/health.html">more health</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/yung-dsa-vows-to-keep-distance-from-love-gill-after-onair-re.html">Yung DSA vows to keep distance from Love Gill after on‑air remark</a></h2>
+    <p>In the latest episode of Bigg Boss 20, a heated exchange unfolded between contestants Yung DSA and Love Gill. The incident occurred after the morning wake‑up call when Love was seen dancing on fellow housemate Gullu's bed. Yung later taunted her, asking, “Gullu ke aang pe chadhke nachti hai?” Love responded by calling out the remark, prompting Yung to say he will &quot;maintain a boundary&quot; with her moving forward. The confrontation highlighted the growing tension in the house as participants navigate personal space and public perception. Producers have not indicated any further disciplinary action, leaving viewers to anticipate how the rivalry will evolve in upcoming episodes. The episode underscores the reality‑show formula of conflict and strategic alliances, with both contestants now aware that their interactions are under close scrutiny from the audience and fellow housemates. What to watch: upcoming Bigg Boss 20 episodes for further tension between the two.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/bigg-boss-20-yung-dsa-says-he-will-maintain-a-boundary-with-love-gill-after-latter-calls-out-his-remark-for-dancing-with-gullu/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-30/yung-dsa-vows-to-keep-distance-from-love-gill-after-onair-re.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/kutchs-pastoral-communities-tap-ageold-water-wisdom-amid-sev.html">Kutch’s pastoral communities tap age‑old water wisdom amid severe drought</a></h2>
+    <p>When travel writer Fauzia Shaikh arrived in Kutch between September 3 and 7, she expected the Banni grasslands to be lush after the monsoon. Instead, the landscape remained barren, with seasonal ponds dry and grass barely visible. By early September, the region had received only about 30% of its normal rainfall, and a deficit of roughly 70% was recorded by mid‑month, with just 149.7 mm of rain against a typical 499.8 mm. The shortfall hit agriculture first, shrinking cultivated area from 6.5 lakh hectares the previous year to 4.82 lakh hectares this year, and reducing irrigated land to 1.8 lakh hectares. For the Maldhari, whose livelihoods depend on grass‑fed livestock, the drought forced a shift to purchased fodder, driving prices from Rs 6 to Rs 12 per kilogram and cutting milk output. Traditional water sources—shallow wells known as virdas and seasonal dhands—are being revived, though many now yield saline water. Ecologist Chetan Misher notes that while virdas have historically provided “fresh enough” water, they cannot meet modern drinking standards. The community’s resilience rests on blending age‑old knowledge with reliable infrastructure to secure safe water for people and cattle alike. Why it matters: preserving traditional water practices can buffer climate shocks for vulnerable livelihoods.</p>
+    <p class="src">Source: <a href="https://thebetterindia.com/conservation/nature/kutch-water-crisis-banni-maldharis-water-solutions-12591103" rel="noopener">The Better India</a> · <a href="article/2026-09-30/kutchs-pastoral-communities-tap-ageold-water-wisdom-amid-sev.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD · The Hindu World · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/experts-warn-brazil-may-face-us-election-meddling-linked-to-.html">Experts warn Brazil may face US election meddling linked to Trump</a></h2>
+    <p>A professor of political science, Oliver Stuenkel, cautioned that Brazil could become a target of a U.S. attempt to influence its presidential election. He based the warning on former President Donald Trump’s history of partisan interventionism, suggesting that similar tactics might be deployed abroad. Stuenkel’s comment underscores concerns that external powers could seek to sway voter sentiment or campaign dynamics in Brazil, a nation already navigating a complex political landscape. No concrete evidence of current interference has been presented, but the professor’s observation adds to a broader discourse on the vulnerability of emerging democracies to foreign influence. Brazilian election officials have not publicly responded to the speculation, and the international community continues to monitor the situation for any signs of covert activity. What to watch: Brazil’s electoral commissions for any foreign influence disclosures.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/international/trump-looms-large-over-brazils-presidential-election/article71079348.ece" rel="noopener">The Hindu World</a> · <a href="article/2026-09-30/experts-warn-brazil-may-face-us-election-meddling-linked-to-.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS · BBC Business · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/st-pauls-pantry-in-norton-lees-faces-funding-shortfall.html">St Paul’s Pantry in Norton Lees faces funding shortfall</a></h2>
+    <p>St Paul’s Pantry, a community food hub in Norton Lees, has warned that its operations are at risk due to a drop in donations. The pantry’s managers described the situation as &quot;pretty grim&quot; without renewed support from local donors. The shortfall threatens the pantry’s ability to provide essential groceries to vulnerable residents who rely on its services daily. While the pantry continues to operate on existing stock, staff have indicated that without additional contributions, the pantry may have to scale back distribution or suspend services altogether. The appeal comes amid broader concerns about charitable giving in the area, prompting local groups and individuals to consider stepping forward. What to watch: local fundraising efforts to sustain the pantry.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cme30d4qkj3eo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-30/st-pauls-pantry-in-norton-lees-faces-funding-shortfall.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">CRICKET · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/india-will-get-better-with-time-says-abhishek-nayar-on-bowli.html">India will get better with time, says Abhishek Nayar on bowling ahead of 2nd ODI vs West Indies</a></h2>
+    <p>Abhishek Nayar has expressed confidence in India's bowling unit, stating that the team will improve with time. His comments come ahead of the second One Day International against West Indies, following a challenging performance in the first ODI.</p><p>The initial match of the series, held in Thiruvananthapuram, presented difficult conditions for the Indian bowlers. Despite these circumstances, Nayar has chosen to publicly back the unit, suggesting that their performance will evolve as the series progresses.</p><p>This endorsement from Nayar indicates a belief in the inherent capabilities and potential for adaptation within the Indian bowling attack. Such support from within the cricket fraternity can be crucial for team morale, particularly after a demanding start to a series.</p><p>The focus now shifts to the upcoming second ODI, where the Indian bowling contingent will have another opportunity to demonstrate their prowess. Conditions and pitch characteristics often play a significant role in bowling performances, and adjustments are frequently necessary.</p><p>Nayar's statement suggests that the team management and coaching staff are looking at the bigger picture, anticipating improvements as the bowlers gain more rhythm and familiarity with the playing conditions against West Indies.</p><p>What to watch: India's bowling adjustments in the second ODI against West Indies.</p>
+    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/india-will-get-better-with-time-says-abhishek-nayar-on-bowling-ahead-of-2nd-odi-vs-west-indies/" rel="noopener">Crictracker</a> · <a href="article/2026-09-30/india-will-get-better-with-time-says-abhishek-nayar-on-bowli.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
+  </article><article class="story">
+    <div class="meta">SCIENCE · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/insects-are-essential-to-vertebrate-lifeas-food-shelter-and-.html">Insects are essential to vertebrate life—as food, shelter and medicine</a></h2>
+    <p>Insects play a critical, multi‑layered role in the lives of vertebrate animals, extending far beyond their function as a protein source. Field observations show chimpanzees deliberately applying insects to wounds, using their antimicrobial properties to sterilise cuts. Herons have been recorded dropping insects into water to attract fish, effectively using them as bait. Sloths host moths in their fur; the moths help cultivate algae that the sloth later consumes, creating a mutualistic food chain. Several bird and reptile species lay their eggs inside termite mounds, exploiting the stable temperature and humidity the structures provide. In arid regions, certain desert frogs seek refuge in ant nests, where the nest’s moisture helps prevent desiccation. These examples illustrate how insects underpin nutrition, health, shelter and reproductive success across a wide range of vertebrates. Collectively, these relationships demonstrate that insects are integral to vertebrate survival, influencing diet, disease resistance and habitat selection. What to watch: monitor insect population health as it underpins broader ecosystem stability.</p>
+    <p class="src">Source: <a href="https://phys.org/news/2026-09-insects-essential-vertebrate-life-food.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-30/insects-are-essential-to-vertebrate-lifeas-food-shelter-and-.html">permalink</a> · <a href="/category/science.html">more science</a></p>
+  </article><article class="story">
+    <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/powerful-storms-continue-to-prowl-the-pacific.html">Powerful Storms Continue to Prowl the Pacific</a></h2>
+    <p>The Pacific Ocean is currently experiencing a period of heightened storm activity, with Hurricanes Polo and Nolo demonstrating significant power. These recent hurricanes have been notable for the destructive effects they delivered ashore, impacting coastal areas within the vast northeastern and central Pacific regions. The presence and intensity of both Polo and Nolo underscore what is being characterized as an active storm season for this part of the globe.</p><p>The repeated occurrence of powerful systems such as these highlights the dynamic nature of weather patterns in the Pacific basin. While specific dates or mission details are not provided in this summary, the focus remains on the observable impact of these large-scale atmospheric events. The destructive effects reaching land emphasize the critical importance of monitoring such storms, particularly for communities situated along the Pacific coastlines.</p><p>The combined force of Hurricanes Polo and Nolo contributes to a broader understanding of the meteorological conditions driving this active season. Their impact serves as a reminder of the continuous natural forces at play, shaping environments and posing challenges to human settlements in their path. The ongoing activity in these Pacific zones indicates a sustained period of vigilance for weather watchers and affected populations.</p><p>What to watch: The continued development of storm systems in the Pacific.</p>
+    <p class="src">Source: <a href="https://science.nasa.gov/earth/earth-observatory/powerful-storms-continue-to-prowl-the-pacific/" rel="noopener">NASA</a> · <a href="article/2026-09-30/powerful-storms-continue-to-prowl-the-pacific.html">permalink</a> · <a href="/category/space.html">more space</a></p>
+  </article><article class="story">
+    <div class="meta">ENVIRONMENT · Guardian Environment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/an-ev-sold-every-100-seconds-australian-demand-for-electric-.html">An EV sold every 100 seconds: Australian demand for electric cars more than doubles</a></h2>
+    <p>The Electric Vehicle Council reports that 157,957 new electric vehicles were sold across Australia between January and June, setting a national record. This volume represents a 117 % increase compared with the same half‑year period last year, effectively more than doubling year‑on‑year sales. At that pace, an electric car is being purchased roughly every 100 seconds, underscoring the rapid uptake of clean‑technology transport. The surge reflects expanding model availability, growing consumer awareness of emissions reductions and the impact of government incentives such as rebates and reduced registration fees. While the data does not break down regional sales, the trend suggests a broadening market beyond metropolitan hubs into regional areas. Industry analysts attribute the growth to improved battery ranges, faster charging infrastructure and a shift in buyer preferences toward lower‑running‑cost vehicles. The council’s figures also hint at a looming need for expanded charging networks and grid capacity to support the accelerating fleet. Policymakers are watching the trajectory closely as it aligns with national emissions targets. What to watch: upcoming government announcements on EV subsidies and charging infrastructure expansion.</p>
+    <p class="src">Source: <a href="https://www.theguardian.com/environment/2026/sep/30/australia-electric-cars-vehichles-ev-sales-double" rel="noopener">Guardian Environment</a> · <a href="article/2026-09-30/an-ev-sold-every-100-seconds-australian-demand-for-electric-.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/ed-raids-bengal-congress-leader.html">ED Raids Bengal Congress Leader</a></h2>
+    <p>The Enforcement Directorate conducted raids at the home of a Bengal Congress leader regarding his business dealings and links to a coal firm.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/ed-dilip-turi-west-bengal-raid-congress-leader-home-ecl-business-links-3006254-2026-09-30?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-30/ed-raids-bengal-congress-leader.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/flea-market-buddha-statue-fetches-millions.html">Flea Market Buddha Statue Fetches Millions</a></h2>
+    <p>A Buddha statue purchased for over SEK 20 at a Uppsala flea market sold for SEK 2,437,500 after being identified as a rare Ming dynasty artifact from the Yongle period.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/rest-of-world/in-the-1980s-a-swedish-flea-market-buyer-paid-just-over-sek-20-for-a-small-buddha-statue-four-decades-later-experts-traced-it-to-the-ming-dynasty-and-it-sold-for-sek-2-44-million-at-auction/articleshow/134581276.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-30/flea-market-buddha-statue-fetches-millions.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/police-file-new-fir-following-lpu-protests.html">Police File New FIR Following LPU Protests</a></h2>
+    <p>Phagwara Police have registered a new FIR against unidentified individuals for blocking the Delhi-Amritsar highway during protests at Lovely Professional University.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/lpu-lovely-professional-university-protest-fir-against-unidentified-students-non-students-highway-blockade-ws-l-10360307.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/police-file-new-fir-following-lpu-protests.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/security-increased-for-dharapuram-by-poll-campaign.html">Security increased for Dharapuram by-poll campaign</a></h2>
+    <p>Security measures have been heightened in preparation for the upcoming Dharapuram Assembly by-election campaign.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/security-beefed-up-ahead-of-dharapuram-assembly-by-poll-campaign-ytvd-3006257-2026-09-30?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-30/security-increased-for-dharapuram-by-poll-campaign.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">DEFENCE BRIEF<span class="badge quick">quick bite</span> · Defence (aggregate) · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/global-firms-compete-for-10-billion-indian-navy-submarine-co.html">Global firms compete for $10 billion Indian Navy submarine contract</a></h2>
+    <p>International submarine vendors are competing in Delhi to secure the Indian Navy's $10 billion contract.</p>
+    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNN1VxMlJZT2pBYkJxeGhBbGtPckdib2VJWVMwV1EzX0lvaldUYVBLaFNIOC1CMFNWemRIcllrcGN4VmFUa2gtSzcxYThWTzVBM3VSM08ybnhXS19OOHlQUkJWTExzYVQ0T2pQUFhucUZyeHVkZVZMQmdnY0l6dGN4S0hlUE8?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-30/global-firms-compete-for-10-billion-indian-navy-submarine-co.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/retired-ias-officer-murdered-in-bhopal.html">Retired IAS officer murdered in Bhopal</a></h2>
+    <p>Rakesh Agrawal, a retired Indian Administrative Service officer, was found murdered at his home in Suraj Nagar, Bhopal.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/retired-ias-officer-found-murdered-at-bhopal-residence-house-help-on-the-run-ws-l-10360350.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/retired-ias-officer-murdered-in-bhopal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/kalyani-priyadarshan-moves-to-mumbai-for-hindi-debut.html">Kalyani Priyadarshan moves to Mumbai for Hindi debut</a></h2>
+    <p>Actor Kalyani Priyadarshan has relocated to Mumbai to prepare for her Hindi film debut in the zombie thriller 'Pralay' alongside Ranveer Singh, undergoing intensive training for the role.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/pralay-kalyani-priyadarshan-shifts-to-mumbai-for-ranveer-singh-starrer-undergoes-intense-action-training-follows-special-diet-ahead-of-bollywood-debut-in-jai-mehtas-zombie-thriller/articleshow/134582067.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-30/kalyani-priyadarshan-moves-to-mumbai-for-hindi-debut.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · BBC World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/south-korea-demands-apology-from-pyongyang-over-dmz-landmine.html">South Korea demands apology from Pyongyang over DMZ landmine blasts</a></h2>
+    <p>South Korea is demanding an apology from Pyongyang following landmine blasts in the Demilitarised Zone that injured three South Korean personnel earlier this month.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cwj3dkvpm4e7o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC World</a> · <a href="article/2026-09-30/south-korea-demands-apology-from-pyongyang-over-dmz-landmine.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/drishyam-3-sees-strong-opening-day-ticket-sales.html">Drishyam 3 sees strong opening day ticket sales</a></h2>
+    <p>The Ajay Devgn starrer Drishyam 3, directed by Abhishek Pathak, has sold 1.29 lakh tickets for its opening day as of Wednesday morning, marking a strong performance in advance bookings.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/box-office-special-features/drishyam-3-advance-booking-film-records-huge-advances-ajay-devgn-starrer-sells-1-29-lakh-tickets-for-day-1/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-30/drishyam-3-sees-strong-opening-day-ticket-sales.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · BBC Sport · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/2027-north-west-200-schedule-and-format-changes-announced.html">2027 North West 200 schedule and format changes announced</a></h2>
+    <p>The 2027 North West 200 road race will move back one week to avoid a scheduling conflict and will return to its previous format, featuring qualifying sessions that begin on Tuesday.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/sport/motorsport/articles/cmn5d0xlwyqwo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a> · <a href="article/2026-09-30/2027-north-west-200-schedule-and-format-changes-announced.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/kerala-high-court-calls-for-transparency-in-temple-priest-se.html">Kerala High Court calls for transparency in temple priest selection</a></h2>
+    <p>The Kerala High Court has directed for transparency in the selection of Sabarimala and Malikappuram Melsanthis, based on a report filed by Special Commissioner R. Jayakrishnan.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/kerala-hc-directs-transparency-in-selection-of-sabarimala-malikappuram-melsanthis/article71525050.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/kerala-high-court-calls-for-transparency-in-temple-priest-se.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/microdramas-attract-mainstream-stars.html">Microdramas attract mainstream stars</a></h2>
+    <p>India's microdrama industry is seeing an influx of established talent, with actors like Kusha Kapila, Sheeba Chadha, Nikki Tamboli, and Vishal Aditya Singh joining the vertical video format previously dominated by influencers and digital creators.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/bollywood/microdramas-get-star-power-kusha-kapila-sheeba-chadha-nikki-tamboli-vishal-aditya-singh-join-the-vertical-wave/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-30/microdramas-attract-mainstream-stars.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">HEALTH BRIEF<span class="badge quick">quick bite</span> · BBC Health · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/new-endometriosis-study-launched.html">New endometriosis study launched</a></h2>
+    <p>A £2.3m research trial is investigating whether personalized pain management plans can improve quality of life for women suffering from endometriosis.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cme3r9ny2p4xo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Health</a> · <a href="article/2026-09-30/new-endometriosis-study-launched.html">permalink</a> · <a href="/category/health.html">more health</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/casting-directors-post-triggers-debate-on-industry-talent.html">Casting director's post triggers debate on industry talent</a></h2>
+    <p>Casting director Shanoo Sharma's social media comment calling for 'talent' to be the next big trend has sparked controversy. The post follows Anjali Anand's claims about past weight-related criticism, leading actors like Ridhima Pandit and Bhumi Pednekar to debate the role of connections versus talent in Bollywood.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/is-shanoo-sharmas-next-big-trend-post-a-response-to-anjali-anand-fans-speculate/articleshow/134582440.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-30/casting-directors-post-triggers-debate-on-industry-talent.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/birth-centenary-of-poet-kannadasan-observed.html">Birth centenary of poet Kannadasan observed</a></h2>
+    <p>The birth centenary of Tamil poet Kannadasan, born Muthaiah in the Sivaganga district, is being celebrated. Known for his contributions to Tamil cinema, he transitioned from an atheist involved in the Dravidian movement to a spiritual individual.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/birth-centenary-of-poet-kannadasan-a-creative-mind-that-enriched-tamil-cinema-with-exquisite-philosophical-songs/article71524092.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/birth-centenary-of-poet-kannadasan-observed.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/bihar-minister-responds-to-chirag-paswan.html">Bihar Minister responds to Chirag Paswan</a></h2>
+    <p>Bihar Minister and BJP leader Lakhendra Paswan suggested that Union Minister Chirag Paswan hold direct talks with the state government regarding his comments on rising crime against women.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/bihar/he-should-better-visit-bihar-minister-takes-a-dig-at-chirag-paswan-over-his-remarks-against-state-govt/article71524847.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/bihar-minister-responds-to-chirag-paswan.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/the-enduring-legacy-of-fort-st-george.html">The enduring legacy of Fort St. George</a></h2>
+    <p>The Tamil Nadu legislature has frequently returned to Fort St. George, a 17th-century colonial site that has maintained a lasting appeal for the government's assembly and secretariat operations.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/beyond-fort-st-george-tamil-nadu-governments-quest-for-an-assembly-secretariat-site-is-more-than-a-century-old/article71441612.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/the-enduring-legacy-of-fort-st-george.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/aishwarya-rai-bachchan-greets-fans-and-photographers.html">Aishwarya Rai Bachchan greets fans and photographers</a></h2>
+    <p>Following her return from Paris Fashion Week with a new burgundy hairstyle, Aishwarya Rai Bachchan interacted with fans and paparazzi, signing autographs and posing for a group photo while wearing a trench coat and flared jeans.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/aishwarya-rai-bachchan-warms-hearts-after-returning-from-paris-fashion-week-invites-paparazzi-to-take-group-pics/articleshow/134582380.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-30/aishwarya-rai-bachchan-greets-fans-and-photographers.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/posters-targeting-rahul-gandhi-and-akhilesh-yadav-appear-in-.html">Posters targeting Rahul Gandhi and Akhilesh Yadav appear in Delhi</a></h2>
+    <p>Ahead of the INDIA bloc meeting, posters have appeared in Delhi targeting Rahul Gandhi and Akhilesh Yadav. One poster specifically criticizes Rahul Gandhi for his absence during the Bihar Assembly election campaign.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/how-convenient-pookie-posters-take-jibes-at-rahul-gandhi-akhilesh-yadav-ahead-of-india-bloc-meet-ws-l-10360224.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/posters-targeting-rahul-gandhi-and-akhilesh-yadav-appear-in-.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/hansal-mehtas-shahid-arrives-on-prime-video.html">Hansal Mehta’s 'Shahid' arrives on Prime Video</a></h2>
+    <p>Thirteen years after its theatrical release, the 2013 drama 'Shahid' is now available on Prime Video. The National Award-winning film, directed by Hansal Mehta and produced by Bohra Bros, stars Rajkummar Rao and is based on the life of human rights activist Shahid Azmi.</p>
+    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/exclusive-shahid-producer-sunil-bohra-recalls-borrowing-a-few-lakhs-at-extremely-high-interest-during-the-making-as-film-finds-a-new-home-on-prime-video-after-13-years-says-i-dont-re/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-30/hansal-mehtas-shahid-arrives-on-prime-video.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/tirupattur-assembly-constituency-returns-to-the-spotlight.html">Tirupattur Assembly constituency returns to the spotlight</a></h2>
+    <p>The Madras High Court is currently hearing litigation regarding the Tirupattur Assembly constituency, where the TVK candidate was declared the winner by a single vote. The constituency previously gained national attention for unusual circumstances 40 years ago.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/the-1981-assembly-byelection-that-triggered-turns-and-twists-in-tamil-nadu-politics/article71496870.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/tirupattur-assembly-constituency-returns-to-the-spotlight.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/karthik-subbarajs-dorothy-resonates-with-the-queer-community.html">Karthik Subbaraj’s 'Dorothy' resonates with the queer community</a></h2>
+    <p>Karthik Subbaraj’s film 'Dorothy' is receiving positive feedback from trans activists and the queer community, who have praised the film for its tender portrayal of their lives, struggles, and desires.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/entertainment/movies/dorothy-queer-community-lgbtqia-karthik-subbaraj-ilaiyaraaja-sananth-rishikanth-keerthy-suresh/article71522912.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/karthik-subbarajs-dorothy-resonates-with-the-queer-community.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/aiadmk-internal-tensions-prompt-historical-review.html">AIADMK Internal Tensions Prompt Historical Review</a></h2>
+    <p>Following the removal of K.A. Sengottaiyan from party posts after his call for the return of estranged leaders, internal unrest within the AIADMK has sparked a review of significant past rebellions within Tamil Nadu's Dravidian parties.</p>
+    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/lessons-from-the-history-of-rebellions-in-aiadmk-and-dmk/article70083698.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-30/aiadmk-internal-tensions-prompt-historical-review.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/rajinikanth-wraps-filming-for-dharmam.html">Rajinikanth Wraps Filming for 'Dharmam'</a></h2>
+    <p>Rajinikanth has finished filming for the movie 'Dharmam' in Mysuru, where he portrays a doctor fighting criminals. The actor drew attention after arriving at the set in an auto-rickshaw, while a deleted post by Raashii Khanna has led to speculation regarding Ram Pothineni's potential involvement.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/superstar-rajinikanth-arrives-at-dharmam-shoot-in-an-auto-rickshaw-fans-cheer-thalaiva/articleshow/134582175.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-30/rajinikanth-wraps-filming-for-dharmam.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/shillong-teer-results-for-september-30-2026.html">Shillong Teer Results for September 30, 2026</a></h2>
+    <p>The winning numbers for the first and second rounds of the Shillong, Juwai, Khanapara, Morning, and Night Teer draws are available for September 30, 2026.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/shillong-teer-result-today-september-30-2026-winning-numbers-10359706.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/shillong-teer-results-for-september-30-2026.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/varanasi-to-host-milestone-event-for-pm-modi.html">Varanasi to host milestone event for PM Modi</a></h2>
+    <p>On October 7, Varanasi will host a key event marking the culmination of two Seva Yatras that connect Prime Minister Modi's birthplace in Vadnagar, Gujarat, to his constituency in Varanasi.</p>
+    <p class="src">Source: <a href="https://www.news18.com/india/pm-modis-25-year-milestone-bjps-up-poll-push-why-varanasi-will-be-in-focus-on-october-7-ws-l-10360327.html" rel="noopener">News18 India</a> · <a href="article/2026-09-30/varanasi-to-host-milestone-event-for-pm-modi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/ashwin-discusses-tendulkar-vs-kohli-debate.html">Ashwin discusses Tendulkar vs. Kohli debate</a></h2>
+    <p>Ravichandran Ashwin has weighed in on the comparison between Sachin Tendulkar and Virat Kohli, noting that Tendulkar's standing is bolstered by the challenges of his era. While Ashwin praises Kohli's consistency, he emphasizes the difficulty in comparing legends across different periods.</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/sports/cricket/news/ashwin-picks-sachin-over-kohli-reveals-what-virat-must-do-to-be-on-the-same-level/articleshow/134581750.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-30/ashwin-discusses-tendulkar-vs-kohli-debate.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story">
+    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/trump-denies-offering-iran-concessions.html">Trump denies offering Iran concessions</a></h2>
+    <p>Donald Trump has denied reports that he offered concessions to Iran to end the war, specifically dismissing claims that sanctions would be eased in exchange for progress on nuclear program negotiations.</p>
+    <p class="src">Source: <a href="https://www.news18.com/world/us-iran-war-live-updates-donald-trump-tehran-sanction-irgc-strait-of-hormuz-oil-prices-ceasefire-proposal-liveblog-ws-lt-10360129.html" rel="noopener">News18 World</a> · <a href="article/2026-09-30/trump-denies-offering-iran-concessions.html">permalink</a> · <a href="/category/world.html">more world</a></p>
+  </article><article class="story">
+    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · BBC Business · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/heating-oil-customers-delaying-orders.html">Heating oil customers delaying orders</a></h2>
+    <p>An oil firm reports that customers in Berkshire and Hampshire are waiting until late in the season to refill their heating oil tanks.</p>
+    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/crd68d96zeq8o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-30/heating-oil-customers-delaying-orders.html">permalink</a> · <a href="/category/business.html">more business</a></p>
+  </article><article class="story">
+    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-09-30/congress-criticizes-centre-over-nicobar-project.html">Congress criticizes Centre over Nicobar project</a></h2>
+    <p>The Congress party has criticized the central government for its decision to move the Supreme Court regarding the Nicobar project.</p>
+    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/great-nicobar-island-project-row-congress-slams-centre-supreme-court-move-ptag-3006221-2026-09-30?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-30/congress-criticizes-centre-over-nicobar-project.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article>
+<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/stats.html">newsroom stats</a> · <a href="/ethics.html">ethics</a> · <a href="/feed.xml">RSS</a></footer>
+</div></body></html>
