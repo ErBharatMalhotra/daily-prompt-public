@@ -42,7 +42,7 @@ jobs:
       - name: Send test push
         working-directory: core
         env:
-          SITE_BASE: ${{ secrets.SITE_BASE || 'https://daily-prompt-do3.pages.dev' }}
+          SITE_BASE: ${{ secrets.SITE_BASE || 'https://news.bharatdn.com' }}
           PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
           VAPID_PUBLIC_B64URL: ${{ secrets.VAPID_PUBLIC_B64URL }}
           VAPID_PRIVATE_JWK: ${{ secrets.VAPID_PRIVATE_JWK }}

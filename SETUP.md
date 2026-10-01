@@ -35,7 +35,11 @@ inside the job.
 
 ## 4. Cloudflare Pages (site hosting)
 
-Live URL: **https://daily-prompt-do3.pages.dev** (project `daily-prompt`).
+Live URL: **https://news.bharatdn.com** (custom domain; `*.pages.dev` URL remains as fallback).
+
+`SITE_BASE` (public-repo secret) must stay `https://news.bharatdn.com` — it drives
+canonicals, sitemap, feed and og:url at build time. `CONTACT_EMAIL`
+(default `news@bharatdn.com`) is shown on the privacy/contact pages.
 
 Cloudflare Pages is **git-connected** to this repo:
 

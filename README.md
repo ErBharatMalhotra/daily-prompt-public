@@ -7,7 +7,7 @@
 
 **Every morning, without any human touching a keyboard, this system reads the news, writes its own newspaper, fact-checks itself against its sources, publishes a website, installs as a phone app, and pushes an alert to its readers.**
 
-Live site: **https://daily-prompt-do3.pages.dev**
+Live site: **https://news.bharatdn.com** (custom domain on Cloudflare Pages)
 
 ---
 
@@ -19,9 +19,10 @@ Live site: **https://daily-prompt-do3.pages.dev**
 | **2 · Select** | The most important stories chosen per beat, with cross-edition dedupe |
 | **3 · Write** | 8 AI journalists — one per section, each with its own **evolving prompt-genome** — draft original articles |
 | **4 · Edit + Fact-gate** | An AI editor scores every draft against its source. Invented quotes or numbers → **quarantined, never published** |
-| **5 · Publish** | Static site rebuilds (per-article pages, categories, search, sitemap, OG cards, JSON-LD) |
+| **5 · Publish** | Static site rebuilds (per-article pages, categories, search, sitemap, OG cards, JSON-LD, About/Privacy/Contact pages) |
 | **6 · Distribute** | Telegram digest to the channel + **web push alert** to PWA subscribers |
 | **7 · Observe** | Run telemetry published on `/stats.html`; a dead-man switch alerts the owner if anything fails |
+| **8 · Monetise** | Publisher-review compliance pages live (`/about`, `/privacy`, `/contact`); ads strategy tracked in `MONETISATION.md` |
 
 ## Screenshots
 
@@ -46,7 +47,7 @@ Live site: **https://daily-prompt-do3.pages.dev**
 - Category pages for all 8 roster beats (empty sections render a friendly note — never 404)
 - Client-side search, date navigation, full archive by edition
 - **OG/social cards** generated per article/category at build time (Pillow); sitemap.xml, robots.txt, JSON-LD (NewsArticle + WebSite/SearchAction)
-- Custom 404, Ethics & Corrections page
+- Custom 404, About, Ethics & Corrections, Privacy Policy (incl. ad-cookie disclosure) and Contact pages — publisher-review ready
 - Hindi translator-guide page (see i18n below)
 
 **PWA (installable app)**
@@ -60,7 +61,7 @@ Live site: **https://daily-prompt-do3.pages.dev**
 - Follow sections → "Your news" block
 - Save-for-later bookmarks
 - All in localStorage; no accounts, no cookies
-- The only measurement is a **first-party, cookieless page counter** (aggregate counts per path in KV; nothing per-visitor is stored, Do Not Track honoured) surfaced on `/stats.html`
+- The only measurement is **Cloudflare Web Analytics** (cookieless, dashboard-side; no cookies, no identifiers, nothing per-visitor stored, Do Not Track honoured) surfaced on `/stats.html`
 
 **Internationalisation (zero-cost philosophy)**
 - Reader-side translation: Google Translate element (30+ languages incl. all scheduled Indian languages) + Chrome built-in AI on-device hints

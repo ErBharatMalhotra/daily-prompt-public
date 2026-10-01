@@ -64,15 +64,14 @@ jobs:
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Max-throughput knobs (GitHub Actions public repo = unlimited minutes;
-          # the real limits are the free-tier LLM quotas, handled by the
-          # circuit breaker + 429 backoff + 3-provider fallback).
-          # Max-throughput knobs (GitHub Actions public repo = unlimited minutes;
-          # the real limits are the free-tier LLM quotas, handled by the
-          # model-slot rotation + dual breaker + 429 backoff).
-          LLM_MAX_CALLS: "400"        # 30+40 posts x waves + retries + rescue headroom
-          DAILY_ARTICLES: "30"        # full articles per run (was 18)
-          BRIEFS_PER_RUN: "40"        # short rewrites per run (was 24)
+          # Quality-first knobs: the site is also a monetisation platform, so
+          # every published page must clear the editor floor. Fewer, denser,
+          # better-scored stories beat volume — exhausted free-tier quotas are
+          # acceptable, weak pages are not. (Throughput knobs kept for rollback.)
+          LLM_MAX_CALLS: "400"        # budget headroom stays high on purpose
+          DAILY_ARTICLES: "10"        # fewer picks, deeper attention per story
+          BRIEFS_PER_RUN: "8"         # short rewrites (thin summaries filtered in-run)
+          MIN_EDITOR_SCORE: "6"       # publish floor: below = held back, not shown
           LLM_DELAY_MS: "1500"        # pacing between calls
           RETRY_429_MS: "12000"       # wait on 429 instead of failing over
           LLM_SLOTS: ${{ secrets.LLM_SLOTS || '' }}  # empty = default rotation (highest-quota first)
@@ -117,7 +116,7 @@ jobs:
         if: success()
         working-directory: core
         env:
-          SITE_BASE: ${{ secrets.SITE_BASE || 'https://daily-prompt-do3.pages.dev' }}
+          SITE_BASE: ${{ secrets.SITE_BASE || 'https://news.bharatdn.com' }}
           PUSH_ADMIN_KEY: ${{ secrets.PUSH_ADMIN_KEY }}
           VAPID_PUBLIC_B64URL: ${{ secrets.VAPID_PUBLIC_B64URL }}
           VAPID_PRIVATE_JWK: ${{ secrets.VAPID_PRIVATE_JWK }}
