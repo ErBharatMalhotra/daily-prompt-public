@@ -73,7 +73,7 @@ jobs:
           BRIEFS_PER_RUN: "8"         # short rewrites (thin summaries filtered in-run)
           MIN_EDITOR_SCORE: "6"       # publish floor: below = held back, not shown
           FULLTEXT_ENABLED: "1"       # full-article enrichment (0 = summary-only fallback)
-          FULLTEXT_MAX_FETCHES: "30"  # politeness cap: source-article fetches per run
+          FULLTEXT_MAX_FETCHES: "40"  # politeness cap: source-article fetches per run
           LLM_DELAY_MS: "1500"        # pacing between calls
           RETRY_429_MS: "12000"       # wait on 429 instead of failing over
           LLM_SLOTS: ${{ secrets.LLM_SLOTS || '' }}  # empty = default rotation (highest-quota first)
