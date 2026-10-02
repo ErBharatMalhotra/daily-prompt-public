@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#World News</span> <span>#Conflict</span> <span>#Saudi Arabia</span> <span>#Yemen</span></div>
        <p>The Saudi-led coalition announced it has successfully intercepted and shot down six ballistic missiles launched by Yemen's Houthi forces. The coalition stated that these missiles were aimed at the Saudi cities of Taif and Yanbu, marking another incident in the ongoing conflict.</p><img class="hero-art" src="/img/2026-09-24/saudi-led-coalition-claims-downing-six-houthi-ballistic-miss.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>According to the coalition's statement, the defensive action prevented the missiles from reaching their intended targets, underscoring the effectiveness of their air defence systems. Such claims are frequently made by the coalition in response to missile and drone attacks emanating from Houthi-controlled territories in Yemen.</p><p>However, as of the time of this report, there has been no official response or acknowledgment from Yemen's Houthis regarding the coalition's claim. This silence leaves details surrounding the alleged launch and interception unconfirmed by the Houthi side. The lack of immediate reaction from the Houthis is consistent with previous patterns in the conflict, where claims and counter-claims often remain unilateral for a period.</p><p>The targeting of Taif and Yanbu, if confirmed, would represent a continued pattern of cross-border attacks that have escalated tensions in the region. The coalition maintains its right to defend its territories against such incursions. The situation remains a point of contention in the wider Yemen conflict.</p><p>What to watch: Any future statements or denials from the Houthi forces regarding the alleged missile launches.</p>
        <p class="critique">Editor's note: Matches the source summary, noting the coalition claim and lack of Houthi response.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.aljazeera.com/news/2026/9/24/saudi-led-coalition-says-shot-down-6-ballistic-missiles-launched-by-houthis?traffic_source=rss" rel="noopener">Al Jazeera</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.aljazeera.com/news/2026/9/24/saudi-led-coalition-says-shot-down-6-ballistic-missiles-launched-by-houthis?traffic_source=rss" rel="noopener">Al Jazeera</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-24/saudi-led-coalition-claims-downing-six-houthi-ballistic-miss.html" data-title="Saudi-led Coalition Claims Downing Six Houthi Ballistic Missiles Targeting Saudi Cities"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

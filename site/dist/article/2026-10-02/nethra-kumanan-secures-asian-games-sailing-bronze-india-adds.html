@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Sports</span> <span>#Sailing</span> <span>#Asian Games</span> <span>#India</span></div>
        <p>India's Nethra Kumanan secured a bronze medal in the women's dinghy event at the Asian Games sailing competition on Friday. The 29-year-old Olympian from Chennai achieved a total of 14 points, comprising seven from her final races and seven from qualification rounds, to finish third overall.</p><img class="hero-art" src="/img/2026-10-02/nethra-kumanan-secures-asian-games-sailing-bronze-india-adds.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>Kumanan's performance placed her behind Thailand's Sophia Montgomery, who won gold with 5 points, and Singapore's Jania Ang, who took silver with 13 points. In the intricate scoring system of sailing, points are assigned based on finishing positions in each race, with the lowest total score determining the regatta winner. Kumanan notably won one of her two final races and placed sixth in the other.</p><p>In the men's competition, India's Vishnu Saravanan finished fourth with an overall total of 21 points, despite placing second in both his final races. His accumulated qualification score stood at 17 points. South Korea's Jeemin Haa claimed gold with 9 points, while Nicholas Halliday of Hong Kong, China, secured silver with 11 points, and Malaysia's Mohd Khairulnizam earned bronze with 14 points.</p><p>Earlier on Thursday, India also celebrated two other sailing medals. The men's skiff team of Manu Francis and Kurisinkal Noble bagged a silver medal, while the women's duo of Harshita Tomar and Shital Verma secured a bronze in their respective skiff competition.</p><p>What to watch: Further Indian performances in ongoing Asian Games events.</p>
        <p class="critique">Editor's note: Comprehensive coverage of the source material, including all relevant statistics and medal counts.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://sports.ndtv.com/sailing/nethra-kumanan-sails-to-asian-games-bronze-adds-to-indias-medal-haul-12128625#publisher=newsstand" rel="noopener">NDTV Sports</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://sports.ndtv.com/sailing/nethra-kumanan-sails-to-asian-games-bronze-adds-to-indias-medal-haul-12128625#publisher=newsstand" rel="noopener">NDTV Sports</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-10-02/nethra-kumanan-secures-asian-games-sailing-bronze-india-adds.html" data-title="Nethra Kumanan Secures Asian Games Sailing Bronze, India Adds to Medal Tally"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

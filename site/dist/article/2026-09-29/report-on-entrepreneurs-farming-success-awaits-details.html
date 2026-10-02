@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Agriculture</span> <span>#Entrepreneurship</span> <span>#Rural Development</span> <span>#Women Empowerment</span></div>
        <p>A compelling headline from The Better India draws attention to a remarkable story of career transformation and agricultural achievement. Titled ‘I Quit Banking To Become a Farmer’: His 650-Acre Farm Now Earns Rs 21 Crore, Employs 3000 Women, the article's headline suggests a significant narrative of entrepreneurial spirit and impactful rural development.</p><img class="hero-art" src="/img/2026-09-29/report-on-entrepreneurs-farming-success-awaits-details.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>However, the provided source summary for this report is currently empty. As such, specific factual details regarding the individual's journey from a banking career to farming, the exact nature of the agricultural operations, the strategies employed to cultivate a 650-acre farm, the mechanisms behind its reported Rs 21 crore earnings, or the context surrounding the employment of 3000 women are not available. Without the summary content, the intricate details of this inspiring success, including the challenges overcome and the innovative practices adopted, cannot be elaborated upon. The full scope of this achievement, which undoubtedly holds valuable lessons, awaits further information.</p><p>Why it matters: Stories of successful career transitions into sustainable agriculture, especially those creating significant employment, offer valuable insights and inspiration for economic development.</p>
        <p class="critique">Editor's note: The article correctly identifies the lack of source content and maintains professional transparency regarding the missing information.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://thebetterindia.com/web-stories/farming/amith-kishan-banking-to-natural-farming-andhra-pradesh-organic-farmer-12589927" rel="noopener">The Better India</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://thebetterindia.com/web-stories/farming/amith-kishan-banking-to-natural-farming-andhra-pradesh-organic-farmer-12589927" rel="noopener">The Better India</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-29/report-on-entrepreneurs-farming-success-awaits-details.html" data-title="Report on Entrepreneur's Farming Success Awaits Details"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

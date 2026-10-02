@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#EPFO</span> <span>#wage ceiling</span> <span>#labour ministry</span> <span>#India</span></div>
        <p>On September 17, the government increased the Employees' Provident Fund Organisation (EPFO) wage threshold from Rs 15,000 to Rs 25,000. This revision is expected to extend mandatory coverage to more than 10 million additional workers and further propel workforce formalisation.</p><img class="hero-art" src="/img/2026-10-02/government-directs-companies-not-to-cut-salaries-as-epfo-wag.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The labour and employment ministry has specifically instructed employers against cutting employees' statutory wages. This directive aims to mitigate concerns that companies might absorb increased employer contributions by adjusting them against employees' cost to company (CTC). The ministry urged employers to consider their share of social security contributions as an investment in human resource practices to improve employee satisfaction and retention.</p><p>Acknowledging that the revised wage ceiling would inevitably raise employers' costs, the ministry highlighted incentives available. Employers can partly offset this burden with up to Rs 3,000 per month for every additional employment created under the Pradhan Mantri Viksit Bharat Rojgar Yojana (PMVBRY). It was also clarified that workers earning between Rs 15,000 and Rs 25,000 in salary must be enrolled under the Employees' Pension Scheme (EPS).</p><p>What to watch: How companies adapt their payrolls and ensure compliance with the ministry's directive.</p>
        <p class="critique">Editor's note: The article is accurate and captures the core details from the source text effectively, though it misses some procedural nuances mentioned in the full text.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://timesofindia.indiatimes.com/business/india-business/dont-cut-salaries-after-epf-wage-ceiling-rises-to-rs-25000-from-rs-15000-ministry-directs-employers-to-bear-statutory-contribution-not-pass-it-on-to-employees-through-ctc-adjustments/articleshow/134633761.cms" rel="noopener">Times of India</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://timesofindia.indiatimes.com/business/india-business/dont-cut-salaries-after-epf-wage-ceiling-rises-to-rs-25000-from-rs-15000-ministry-directs-employers-to-bear-statutory-contribution-not-pass-it-on-to-employees-through-ctc-adjustments/articleshow/134633761.cms" rel="noopener">Times of India</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-10-02/government-directs-companies-not-to-cut-salaries-as-epfo-wag.html" data-title="Government Directs Companies Not to Cut Salaries as EPFO Wage Ceiling Rises to Rs 25,000"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

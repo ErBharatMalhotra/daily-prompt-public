@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Asian Games</span> <span>#Cricket</span> <span>#India</span> <span>#Afghanistan</span></div>
        <p>The Indian cricket team, under the leadership of Shreyas Iyer, has commenced its campaign at the Asian Games with the objective of defending its gold medal. Their initial challenge is set against a new-look Afghanistan side. This highly anticipated match carries an additional element of uncertainty due to prevailing weather forecasts, which indicate a potential threat of rain.</p><img class="hero-art" src="/img/2026-09-27/indias-asian-games-gold-defence-kicks-off-against-afghanista.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The opening fixture marks a crucial point for the Indian squad as they embark on their title defence. The composition of the Afghanistan team, described as 'new-look', suggests potential tactical adjustments or player changes, which could influence the dynamics of the contest. Both teams will need to adapt to the conditions, especially if the anticipated rain materializes, adding a layer of complexity to the game. Spectators are keenly observing how Shreyas Iyer and his teammates navigate these initial stages.</p><p>What to watch: The performance of Shreyas Iyer's team in their gold defence against Afghanistan, particularly given the potential for rain.</p>
        <p class="critique">Editor's note: The article accurately reports on the source snippet provided.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdy1QWHEyVzhuX3ZMbjZNVVBwc1hSX2tMTU5vMFlGTWFGcExpaXlVMG1oNlFBRHZlUHlvcXlNTDJjYXdaTHVnOFlieHhON3pSZi1OdFVyZGRxYWRGeVhwYnFJWTg5el9CZFZZaWowRncwb0tuYlVmTHZVcW92MmJyOXl3SHRhMGlEWmpGbS1JdGdWUTVnOFBlaEw5dXFNZ0tEWjByWHVsdWpoU3hpc3psRnZBRjc1cDk2UjcwQUR3OHdoam5oX3RmaFBXZ1dBWExZSXV4RFFPVdIB3gFBVV95cUxNaGo0bkxpX0ltejNvUm9nZ0lFVEhETnRpZE5zM1RUVnUxNlBaVGdMRlUyMVZ0eWhEZDNVbmF0Y1BReDBkbHoySUNVaXdUU3dIbll4dDU2THdoYXFxZGhrdjd2azdKdTh1V1lTNFJHbHhNaS1QSGxMekg4aEtXeVV5TG1rcGZEemZNb2o4cEd5UmlkblU4ODVHNUk0RzVCYXBaaGNVLU5SeFZGLUFLajVKcmluUzhxVEdYY01xVEd1cjAxd2dkd2NsbU12cTFTUC1lQk05RlJvSl9UWVFQbkE?oc=5" rel="noopener">Defence (aggregate)</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdy1QWHEyVzhuX3ZMbjZNVVBwc1hSX2tMTU5vMFlGTWFGcExpaXlVMG1oNlFBRHZlUHlvcXlNTDJjYXdaTHVnOFlieHhON3pSZi1OdFVyZGRxYWRGeVhwYnFJWTg5el9CZFZZaWowRncwb0tuYlVmTHZVcW92MmJyOXl3SHRhMGlEWmpGbS1JdGdWUTVnOFBlaEw5dXFNZ0tEWjByWHVsdWpoU3hpc3psRnZBRjc1cDk2UjcwQUR3OHdoam5oX3RmaFBXZ1dBWExZSXV4RFFPVdIB3gFBVV95cUxNaGo0bkxpX0ltejNvUm9nZ0lFVEhETnRpZE5zM1RUVnUxNlBaVGdMRlUyMVZ0eWhEZDNVbmF0Y1BReDBkbHoySUNVaXdUU3dIbll4dDU2THdoYXFxZGhrdjd2azdKdTh1V1lTNFJHbHhNaS1QSGxMekg4aEtXeVV5TG1rcGZEemZNb2o4cEd5UmlkblU4ODVHNUk0RzVCYXBaaGNVLU5SeFZGLUFLajVKcmluUzhxVEdYY01xVEd1cjAxd2dkd2NsbU12cTFTUC1lQk05RlJvSl9UWVFQbkE?oc=5" rel="noopener">Defence (aggregate)</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-27/indias-asian-games-gold-defence-kicks-off-against-afghanista.html" data-title="India's Asian Games Gold Defence Kicks Off Against Afghanistan Amid Rain Threat"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

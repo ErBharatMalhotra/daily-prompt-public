@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#World News</span> <span>#Morocco</span> <span>#Politics</span> <span>#Women in Leadership</span></div>
        <p>Morocco's monarch has appointed the nation's first woman prime minister, a move lauded as &quot;truly historic.&quot; This significant development places Fatima Ezzahra El Mansouri at the helm of the Moroccan government, marking a notable moment in the country's political history.</p><img class="hero-art" src="/img/2026-09-29/morocco-appoints-first-woman-prime-minister-marking-historic.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The appointment is particularly significant beyond Morocco's borders. Fatima Ezzahra El Mansouri now becomes only the second woman to ever serve as prime minister within the broader Arab world. This underscores the groundbreaking nature of her new role and highlights the rarity of women reaching such high political offices in the region.</p><p>Her elevation to this position is expected to resonate across the Arab world, potentially inspiring discussions on political representation and the advancement of women in leadership roles. While the specific details surrounding her new mandate or immediate policy agenda were not provided, the symbolic weight of her appointment is considerable.</p><p>This decision by the Moroccan king signals a significant step in the nation's governance, reflecting a commitment to inclusive political participation. The &quot;truly historic&quot; designation emphasizes the profound impact this appointment is anticipated to have both domestically and internationally, positioning Morocco as a frontrunner in certain aspects of regional political development.</p><p>El Mansouri's new role will undoubtedly be under close observation as she navigates the responsibilities of prime minister. Her presence in such a high office marks a tangible shift in a region where such appointments remain uncommon.</p><p>What to watch: The implications of this appointment for gender representation in Arab world politics.</p>
        <p class="critique">Editor's note: The article captures the core claim of the source summary perfectly.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister?traffic_source=rss" rel="noopener">Al Jazeera</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister?traffic_source=rss" rel="noopener">Al Jazeera</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-29/morocco-appoints-first-woman-prime-minister-marking-historic.html" data-title="Morocco Appoints First Woman Prime Minister, Marking Historic Regional Milestone"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Science</span> <span>#AI</span> <span>#Psychology</span> <span>#Technology</span></div>
        <p>In a notable shift in societal interaction, individuals are increasingly seeking advice and support from artificial intelligence. This emerging trend sees chatbots adopting roles traditionally held by human confidantes or even spiritual guides, offering a modern parallel to ancient practices of consulting inscrutable sources for answers.</p><img class="hero-art" src="/img/2026-09-29/the-rise-of-ai-as-a-source-of-guidance-and-companionship.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>A report published by Pew in 2026 highlighted the extent of this reliance, revealing that 10% of Americans utilize chatbots specifically for emotional support or companionship. This statistic underscores a growing comfort level and dependency on AI systems for personal and relational needs, extending beyond mere informational queries.</p><p>The phenomenon also includes instances where some users perceive AI entities as charismatic leaders. This development suggests a deeper psychological engagement with AI, where algorithms and language models are not just tools but are beginning to influence personal perspectives and potentially shape user beliefs.</p><p>This trend raises questions about the evolving relationship between humans and technology, and the potential societal implications of AI becoming a primary source of emotional and intellectual guidance. The accessibility and non-judgmental nature of chatbots may contribute to their appeal in these roles.</p><p>What to watch: Further research into the psychological impact and societal implications of AI companionship.</p>
        <p class="critique">Editor's note: The article faithfully summarizes the source information provided.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://phys.org/news/2026-09-chatbots-oracles-ai-life-ancient.html" rel="noopener">Phys.org</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://phys.org/news/2026-09-chatbots-oracles-ai-life-ancient.html" rel="noopener">Phys.org</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-29/the-rise-of-ai-as-a-source-of-guidance-and-companionship.html" data-title="The Rise of AI as a Source of Guidance and Companionship"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

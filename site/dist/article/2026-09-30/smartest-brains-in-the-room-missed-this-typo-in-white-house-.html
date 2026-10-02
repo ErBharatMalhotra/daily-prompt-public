@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#USA</span> <span>#AI</span> <span>#government</span> <span>#typo</span></div>
        <p>A typographical error in a recently released White House artificial intelligence agreement has drawn widespread attention online. The document, which identifies former President Donald Trump as the &quot;President of the Unites States,&quot; misspells the country's name as &quot;Unites&quot; instead of &quot;United.&quot; Users on social media platforms quickly flagged the mistake, noting that the error appears in a formal line that should name the United States correctly.</p><img class="hero-art" src="/img/2026-09-30/smartest-brains-in-the-room-missed-this-typo-in-white-house-.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The typo has been shared across multiple channels, prompting discussions about the drafting process for high‑profile government agreements. Observers point out that even well‑reviewed documents can contain simple oversights, especially when produced under tight timelines. While the substance of the AI pact remains unchanged, the spelling error has become a viral talking point, highlighting the importance of meticulous proofreading in official communications.</p><p>The incident serves as a reminder that public scrutiny extends to every detail of policy documents, regardless of their size or perceived significance.</p><p>What to watch: Whether the White House issues a corrected version of the AI agreement and how the error influences public perception of the pact.</p>
        <p class="critique">Editor's note: The article accurately summarizes the source material regarding the typo in the White House document.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.news18.com/world/smartest-brains-in-the-room-missed-this-typo-in-white-house-ai-pact-goes-viral-ws-l-10360603.html" rel="noopener">News18 World</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.news18.com/world/smartest-brains-in-the-room-missed-this-typo-in-white-house-ai-pact-goes-viral-ws-l-10360603.html" rel="noopener">News18 World</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-30/smartest-brains-in-the-room-missed-this-typo-in-white-house-.html" data-title="'Smartest Brains In The Room' Missed This? Typo In White House AI Pact Goes Viral"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

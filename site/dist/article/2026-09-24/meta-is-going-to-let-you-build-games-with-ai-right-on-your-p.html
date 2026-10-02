@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Tech</span> <span>#AI</span> <span>#Meta</span> <span>#Gaming</span></div>
        <p>Meta has unveiled an ambitious new strategy aimed at broadening game development for its Horizon social platform. The company today announced innovative tools designed to empower users to create games using artificial intelligence prompts, making the process more accessible and intuitive for a wider audience.</p><img class="hero-art" src="/img/2026-09-24/meta-is-going-to-let-you-build-games-with-ai-right-on-your-p.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>Central to this initiative are two distinct development applications: Horizon Create and Horizon Studio. Horizon Create is introduced as a mobile application, allowing users to leverage AI capabilities directly from their smartphones, simplifying the game creation process on the go. Complementing this, Horizon Studio is a browser-based application that offers more comprehensive and granular controls for developers seeking advanced customization and features.</p><p>These new tools represent Meta's commitment to fostering a vibrant and user-generated content ecosystem within Horizon. By integrating AI into the development workflow, Meta aims to lower the barrier to entry for aspiring game creators, enabling them to bring their ideas to life with unprecedented ease. The availability of these apps is anticipated to significantly expand the variety and quantity of experiences available on the Horizon platform.</p><p>What to watch: The rollout and adoption of Horizon Create and Horizon Studio among the user base.</p>
        <p class="critique">Editor's note: The article effectively summarizes the source material regarding Meta's new tools without introducing unverified claims.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games" rel="noopener">The Verge</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games" rel="noopener">The Verge</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-24/meta-is-going-to-let-you-build-games-with-ai-right-on-your-p.html" data-title="Meta is going to let you build games with AI right on your phone"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

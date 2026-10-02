@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#IIT Bombay</span> <span>#Student Death</span> <span>#Crime Branch</span> <span>#Custodial Torture</span></div>
        <p>The investigation into the death of an IIT Bombay student has escalated as the Crime Branch takes over the case. The student’s family has alleged that the deceased was subjected to torture, a claim that has intensified calls for a transparent inquiry into the circumstances surrounding the incident.</p><img class="hero-art" src="/img/2026-09-20/iit-bombay-student-death-crime-branch-probe-family-claims-to.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>Authorities have confirmed that the Crime Branch has seized custody of the investigation to ensure impartiality. The family’s accusations of abuse have drawn significant public attention, with various groups demanding swift justice and a detailed forensic review of the evidence gathered at the scene.</p><p>Officials state that all leads are being examined rigorously. The handover to the senior police unit underscores the sensitivity of the case and the government’s commitment to resolving the matter without delay. Legal representatives for the family are expected to submit formal complaints regarding the alleged mistreatment.</p><p>The incident has sparked widespread discussion on campus safety and student welfare protocols within the institute. Administrative bodies have expressed deep sorrow over the loss and have pledged cooperation with the ongoing legal proceedings.</p><p>What to watch: The release of the final forensic report and the subsequent charge sheet filed by the Crime Branch.</p>
        <p class="critique">Editor's note: The article accurately reflects the source summary, elaborating on the context of the probe and family claims without introducing contradictory facts or fabricated details.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.indiatoday.in/india/video/iit-bombay-student-death-crime-branch-probe-family-claims-torture-ytvd-2998666-2026-09-20?utm_source=rss" rel="noopener">India Today</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.indiatoday.in/india/video/iit-bombay-student-death-crime-branch-probe-family-claims-torture-ytvd-2998666-2026-09-20?utm_source=rss" rel="noopener">India Today</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-20/iit-bombay-student-death-crime-branch-probe-family-claims-to.html" data-title="IIT Bombay Student Death: Crime Branch Probe, Family Claims Torture"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#NASA</span> <span>#Space Food</span> <span>#Mars Mission</span> <span>#Innovation</span></div>
        <p>NASA has announced the winners of its Deep Space Food Challenge: Mars to Table, a competition aimed at fostering innovative solutions for astronaut sustenance during long-duration space missions. The announcement was made on Thursday, highlighting significant advancements in integrated space food systems.</p><img class="hero-art" src="/img/2026-09-24/nasa-awards-top-prize-in-deep-space-food-challenge-for-mars-.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The top prize, a substantial $300,000, was awarded to Chinyere Ukeje from Philadelphia, Pennsylvania. Ukeje's winning concept, named the Adaptive Nourishment Infrastructure (ANI) food system, impressed judges with its potential to provide safe and nutritious meals in the challenging environment of deep space, particularly for future Mars missions.</p><p>The Deep Space Food Challenge called upon solvers to develop novel approaches to space food systems. The core objective was to ensure astronauts have access to wholesome and reliable nutrition, a critical factor for the success and well-being of crews undertaking extended journeys beyond Earth orbit.</p><p>This initiative underscores NASA's commitment to overcoming the logistical complexities of human space exploration. Providing sustainable and diverse food options is essential for maintaining crew health and morale during missions that could last for months or even years, such as those envisioned for Mars.</p><p>The Adaptive Nourishment Infrastructure (ANI) system represents a step forward in designing food solutions that are not only nutritious but also adaptable to the unique constraints of space travel, including limited resources and the need for efficient storage and preparation. The competition sought to push the boundaries of what is possible in extraterrestrial dining.</p><p>What to watch: Future developments in space food technology for upcoming long-duration missions.</p>
        <p class="critique">Editor's note: The article faithfully summarizes the NASA announcement and correctly attributes the prize and concept name.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-unveils-winning-designs-for-mars-space-food-systems-challenge/" rel="noopener">NASA</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-unveils-winning-designs-for-mars-space-food-systems-challenge/" rel="noopener">NASA</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-24/nasa-awards-top-prize-in-deep-space-food-challenge-for-mars-.html" data-title="NASA Awards Top Prize in Deep Space Food Challenge for Mars Missions"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Meta</span> <span>#Mark Zuckerberg</span> <span>#Connect Conference</span> <span>#Muse AI</span></div>
        <p>Meta experienced a significant week, marked by its major Connect conference, which commenced on Wednesday. The event served as a platform for various announcements, with particular attention drawn to the company's new Muse AI agent. Initial reception to the Muse AI agent has been remarkably positive, with early users describing it as surprisingly effective.</p><img class="hero-art" src="/img/2026-09-24/i-have-some-questions-for-mark-zuckerberg.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The successful launch and positive feedback surrounding the Muse AI agent indicate a potential early hit for Meta in the competitive artificial intelligence landscape. This development has naturally led to increased public visibility for Meta CEO Mark Zuckerberg. He has been actively engaged in what appears to be a &quot;victory lap,&quot; participating in numerous public appearances and discussions following the conference and the agent's favorable initial reviews.</p><p>The Connect conference is typically a key event for Meta, showcasing its latest innovations and strategic directions. The introduction of the Muse AI agent and its immediate positive user feedback suggest a strong start for Meta's latest AI endeavors. Zuckerberg's prominent role in the aftermath underscores the company's confidence in its new AI offerings and its broader technological advancements.</p><p>What to watch: Further details and widespread adoption of Meta's Muse AI agent.</p>
        <p class="critique">Editor's note: Faithfully reports on Meta's Connect conference and the Muse AI agent based on the provided source summary.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.theverge.com/podcast/999383/mark-zuckerberg-meta-glasses-ai-teen-safety-surveillance-data-centers" rel="noopener">The Verge</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.theverge.com/podcast/999383/mark-zuckerberg-meta-glasses-ai-teen-safety-surveillance-data-centers" rel="noopener">The Verge</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-24/i-have-some-questions-for-mark-zuckerberg.html" data-title="I have some questions for Mark Zuckerberg"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

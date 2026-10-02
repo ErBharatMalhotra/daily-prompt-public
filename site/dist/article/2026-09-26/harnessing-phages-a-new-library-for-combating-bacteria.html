@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Microbiology</span> <span>#Antibiotic Resistance</span> <span>#Phage Therapy</span> <span>#Public Health</span></div>
        <p>An estimated 38 trillion bacteria reside within the human body. While the vast majority of these microorganisms are harmless or even beneficial, a small fraction can cause serious illness. The challenge intensifies when these harmful bacteria develop resistance to standard antibiotics, rendering conventional treatments ineffective and leaving patients vulnerable to severe infections.</p><img class="hero-art" src="/img/2026-09-26/harnessing-phages-a-new-library-for-combating-bacteria.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>In response to growing antibiotic resistance, scientists are turning to bacteriophages, often called phages, which are viruses that specifically infect and kill bacteria. These biological agents offer a targeted alternative to broad-spectrum antibiotics. By constructing a “library” of diverse phages, researchers aim to identify and deploy specific viral strains capable of neutralizing particular resistant bacterial strains.</p><p>This approach leverages the natural specificity of phages, which typically target only certain bacteria without harming the surrounding beneficial microbial community. Unlike antibiotics, which can disrupt the broader microbiome and promote further resistance, phage therapy offers a precise mechanism for eliminating pathogenic bacteria. As the global health community seeks sustainable solutions to the crisis of multi-drug resistant pathogens, the development of comprehensive phage libraries represents a significant step forward. These resources allow for the rapid matching of phages to specific bacterial threats, potentially restoring the efficacy of infection control measures in clinical settings. The focus is on creating a robust, accessible repository of these viral tools to address the escalating threat of untreatable bacterial infections.</p><p>What to watch: The expansion of phage libraries and the integration of phage therapy into clinical protocols for resistant infections.</p>
        <p class="critique">Editor's note: The article accurately summarizes the source and provides appropriate context regarding phage therapy.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://phys.org/news/2026-09-library-bacteria-viruses-harnessing-power.html" rel="noopener">Phys.org</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://phys.org/news/2026-09-library-bacteria-viruses-harnessing-power.html" rel="noopener">Phys.org</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-26/harnessing-phages-a-new-library-for-combating-bacteria.html" data-title="Harnessing Phages: A New Library for Combating Bacteria"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

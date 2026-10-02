@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#EPA</span> <span>#Labor Union</span> <span>#AFGE</span> <span>#First Amendment</span></div>
        <p>A union representing federal workers has filed a lawsuit against the Trump administration, alleging that the Environmental Protection Agency (EPA) illegally terminated its collective bargaining agreement. The lawsuit, filed on Tuesday by two local unions of the American Federation of Government Employees (AFGE), targets the EPA and its administrator, Lee Zeldin. The unions claim that the agency failed to provide a valid justification for ending the contract and that the termination was motivated by a desire to repress political dissent. This action, according to the legal filing, violates the employees’ First Amendment rights.</p><img class="hero-art" src="/img/2026-09-29/epa-union-sues-administration-to-restore-collective-bargaini.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The AFGE represents more than 8,000 workers at the EPA, making this a significant labor dispute within the federal government. The lawsuit asserts that the decision to terminate the agreement was not based on operational or financial grounds but rather on political motivations. The union argues that by stripping away the collective bargaining rights, the agency is undermining the protections afforded to federal employees. The case highlights the ongoing tensions between federal agencies and labor unions regarding workplace rights and political expression. The legal challenge seeks to restore the collective bargaining contract, arguing that its removal was illegal and politically motivated. As the lawsuit proceeds, it will test the boundaries of federal labor law and the extent to which political considerations can influence employment practices within government agencies. The outcome could have broader implications for labor relations across the federal workforce.</p><p>What to watch: The court’s ruling on the legality of the contract termination and the impact on federal labor relations.</p>
        <p class="critique">Editor's note: Faithfully captures the EPA union lawsuit details and context from the source.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.theguardian.com/environment/2026/sep/29/epa-union-sues-trump-administration" rel="noopener">Guardian Environment</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.theguardian.com/environment/2026/sep/29/epa-union-sues-trump-administration" rel="noopener">Guardian Environment</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-29/epa-union-sues-administration-to-restore-collective-bargaini.html" data-title="EPA union sues administration to restore collective bargaining contract"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

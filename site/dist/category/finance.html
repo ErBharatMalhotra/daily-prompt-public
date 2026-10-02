@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -652,6 +661,6 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
     <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/brahma-ai-receives-equity-funding-of-150-million-led-by-multiples-alternate-asset-management-126092300180_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/brahma-ai-secures-150-million-equity-funding-highlighting-ai.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
   </article>
       <p class="src">More in Money: <a href="/category/business.html">business</a> · <a href="/category/education.html">education</a></p>
-      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.livemint.com/money/personal-finance/nps-retirement-income-scheme-how-payouts-work-what-happens-to-annuity-and-where-corpus-is-invested-11790936952559.html" target="_blank" rel="noopener">NPS Retirement Income Scheme: How payouts work, what happens to annuity and where corpus is invested</a> <small>· Livemint Money · 1h ago</small></li><li><a href="https://www.livemint.com/money/esops-as-part-of-salary-when-should-indian-employees-of-foreign-companies-declare-these-shares-in-itr-11790931625693.html" target="_blank" rel="noopener">ESOPs as part of salary: When should Indian employees of foreign companies declare these shares in ITR?</a> <small>· Livemint Money · 3h ago</small></li></ul></main>
+      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.livemint.com/money/personal-finance/nps-retirement-income-scheme-how-payouts-work-what-happens-to-annuity-and-where-corpus-is-invested-11790936952559.html" target="_blank" rel="noopener">NPS Retirement Income Scheme: How payouts work, what happens to annuity and where corpus is invested</a> <small>· Livemint Money · 3h ago</small></li><li><a href="https://www.livemint.com/money/esops-as-part-of-salary-when-should-indian-employees-of-foreign-companies-declare-these-shares-in-itr-11790931625693.html" target="_blank" rel="noopener">ESOPs as part of salary: When should Indian employees of foreign companies declare these shares in ITR?</a> <small>· Livemint Money · 5h ago</small></li></ul></main>
 <footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

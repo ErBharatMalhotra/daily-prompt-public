@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#AI</span> <span>#Machine Learning</span> <span>#Large Language Models</span> <span>#AlphaGo</span></div>
        <p>Large Language Models (LLMs) fundamentally operate through pattern completion, a mechanism distinct from genuine reasoning, according to AI experts. This contrasts with systems like AlphaGo, which demonstrated advanced reasoning capabilities during its historic 4-1 victory over Go champion Lee Sedol in Seoul in March 2016. AlphaGo's &quot;Move 37,&quot; initially deemed absurd, was a product of its deliberative search, not just intuition.</p><img class="hero-art" src="/img/2026-10-02/alphagos-reasoning-vs-llms-pattern-completion-a-distinction-.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>AlphaGo's architecture comprised two key systems: a policy network providing intuitive hunches, and a search machinery that weighed future consequences by constructing and searching game trees. This mirrors Daniel Kahneman's System 1 (fast, associative) and System 2 (slow, deliberative) human thought. Modern LLMs, however, primarily function via next-token prediction, akin to System 1, even when employing &quot;chain of thought&quot; processes that merely iterate this same prediction mechanism.</p><p>Chatbot &quot;reasoning&quot; suffers from three core shortcomings: a lack of explicit epistemic state, an intertwined knowledge and manipulation system, and the post-hoc fabrication of reasoning chains. The author, a former Google DeepMind contributor, highlights the need for a fresh approach to machine reasoning that incorporates an inspectable epistemic state, drawing inspiration from AlphaGo's architecture, especially for high-stakes applications in science and medicine.</p><p>What to watch: Future research into AI architectures that integrate explicit, deliberative reasoning mechanisms beyond current LLM paradigms.</p>
        <p class="critique">Editor's note: The draft provides a sophisticated summary of the author's argument regarding AI reasoning and the distinction between AlphaGo and LLMs.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" rel="noopener">MIT Tech Review AI</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" rel="noopener">MIT Tech Review AI</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-10-02/alphagos-reasoning-vs-llms-pattern-completion-a-distinction-.html" data-title="AlphaGo's Reasoning vs. LLMs' Pattern Completion: A Distinction in AI Capabilities"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Global Health</span> <span>#Climate Change</span> <span>#Science</span> <span>#Policy</span></div>
        <p>A recent paper warns that the triple planetary crisis—comprising climate change, biodiversity loss, and environmental pollution—is exacerbating global inequalities in health opportunities. Scientists from Heidelberg University, whose research focuses on global health, environment-related diseases, and climate action, argue that addressing this disparity requires more than improvements to health systems. Instead, they advocate for embedding health equity as a central concern within climate and environmental policy frameworks.</p><img class="hero-art" src="/img/2026-09-22/study-links-planetary-crises-to-deepening-health-inequality.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The study, published in the journal Nature Human Behaviour, outlines the necessary approaches for both research and policymaking. The authors emphasize that countering inequality must go beyond individual-level interventions. They urge a focus on removing the structural causes that drive these disparities. By integrating health considerations into broader environmental strategies, policymakers can better protect vulnerable populations from the compounding effects of ecological degradation.</p><p>This perspective highlights the interconnectedness of environmental stability and public health outcomes. The research suggests that current policy silos may be insufficient to address the scale of the challenge. By aligning climate action with health equity goals, governments and international bodies can foster more resilient and fair societies. The paper serves as a call to action for cross-disciplinary collaboration to mitigate the health impacts of the planetary crisis.</p><p>What to watch: How international climate forums incorporate these health equity recommendations into future policy agreements.</p>
        <p class="critique">Editor's note: The article faithfully summarizes the source, correctly attributing the arguments to Heidelberg University scientists and the Nature Human Behaviour publication. No factual deviations detected.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://phys.org/news/2026-09-planetary-crises-deepen-global-health.html" rel="noopener">Phys.org</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://phys.org/news/2026-09-planetary-crises-deepen-global-health.html" rel="noopener">Phys.org</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-22/study-links-planetary-crises-to-deepening-health-inequality.html" data-title="Study Links Planetary Crises to Deepening Health Inequality"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

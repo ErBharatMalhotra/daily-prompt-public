@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#business</span> <span>#legal</span> <span>#food-safety</span> <span>#red-bull</span></div>
        <p>Red Bull has moved to the High Court to challenge a directive from the Food Safety and Standards Authority of India (FSSAI). The regulator had prohibited several beverage brands from using the term &quot;energy&quot; in their product labeling. The FSSAI cited the lack of specific category standards for such drinks as the reason for the prohibition. During the recent court hearing, the judge queried the FSSAI, asking them to verify whether a formal notice had been issued to Red Bull prior to the directive. The legal dispute highlights a broader tension in the beverage industry regarding labeling regulations. Industry representatives have argued that the term &quot;caffeinated beverages&quot; is too broad and potentially confusing for consumers. They contend that the specific use of &quot;energy&quot; helps distinguish these products from other caffeinated drinks. The case now rests on whether the FSSAI’s actions were procedurally correct and whether the current regulatory framework adequately addresses the nuances of energy drink marketing. This legal move signals Red Bull’s determination to protect its branding and market identity. The outcome may set a precedent for how other beverage companies navigate labeling restrictions in India. As the court deliberates, the focus remains on the balance between consumer clarity and corporate branding rights in the absence of detailed category standards.</p><img class="hero-art" src="/img/2026-09-29/red-bull-challenges-fssai-ban-on-energy-labeling.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>What to watch: The High Court’s ruling on procedural fairness and the potential impact on industry-wide labeling practices.</p>
        <p class="critique">Editor's note: The article effectively synthesizes the information from the source regarding the legal dispute and industry concerns.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://health.economictimes.indiatimes.com/news/policy/red-bull-moves-hc-against-fssai-order-on-use-of-energy-term-in-drinks/134553818" rel="noopener">ET Healthworld</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://health.economictimes.indiatimes.com/news/policy/red-bull-moves-hc-against-fssai-order-on-use-of-energy-term-in-drinks/134553818" rel="noopener">ET Healthworld</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-29/red-bull-challenges-fssai-ban-on-energy-labeling.html" data-title="Red Bull Challenges FSSAI Ban on 'Energy' Labeling"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

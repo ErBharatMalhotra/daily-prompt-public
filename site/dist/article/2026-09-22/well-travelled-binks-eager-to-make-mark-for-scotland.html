@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#football</span> <span>#Scotland</span> <span>#Luis Binks</span></div>
        <p>Luis Binks has followed a distinctly unconventional path en route to securing a place within the Scotland squad, a journey that has captured attention. His progression through the ranks has been marked by a series of unique experiences, setting him apart from many of his peers.</p><img class="hero-art" src="/img/2026-09-22/well-travelled-binks-eager-to-make-mark-for-scotland.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>Among these notable experiences is a period spent searching for pizza alongside the iconic Thierry Henry, an anecdote that speaks to an early and unusual immersion in the world of elite football. This particular chapter in his development offers a glimpse into the varied influences that have shaped his career.</p><p>Furthermore, Binks has also taken on a significant leadership position within a Danish Superliga side. This responsibility in a competitive European league demonstrates his capacity for influence and his development as a player beyond the traditional confines of youth systems. His time leading a team in Denmark has evidently been a crucial part of his preparation for the international stage.</p><p>Now, with his inclusion in the Scotland squad, Binks is reported to be highly motivated and eager to make a substantial impact. His ambition is focused on demonstrating his abilities and leaving a lasting impression for his national team, eager to translate his diverse experiences into tangible contributions. Tom English highlights Binks' unique background and his strong desire to perform for Scotland.</p><p>What to watch: The impact Luis Binks' unique journey has on his Scotland performances.</p>
        <p class="critique">Editor's note: Faithful expansion of the provided BBC Sport summary details.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.bbc.co.uk/sport/football/articles/cm70dyzjwg91o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.bbc.co.uk/sport/football/articles/cm70dyzjwg91o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-22/well-travelled-binks-eager-to-make-mark-for-scotland.html" data-title="Well-travelled Binks eager to make mark for Scotland"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

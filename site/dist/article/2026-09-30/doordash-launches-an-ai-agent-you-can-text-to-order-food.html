@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#DoorDash</span> <span>#AI Agent</span> <span>#Food Ordering</span> <span>#Tech</span></div>
        <p>DoorDash has officially launched a new artificial intelligence (AI) agent designed to facilitate food orders via text messaging. This strategic move aims to enhance the customer experience and streamline the ordering process, positioning DoorDash to gain a competitive edge in the highly contested food delivery market.</p><img class="hero-art" src="/img/2026-09-30/doordash-launches-an-ai-agent-you-can-text-to-order-food.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The introduction of an AI agent for food ordering marks a significant technological advancement for the company. Users can now interact with the AI via text to place their orders, potentially offering a more convenient and accessible method for food delivery requests. This development reflects a growing trend within the tech industry to integrate AI solutions into customer-facing services.</p><p>According to reports, DoorDash is looking to differentiate itself from key rivals in the food delivery sector, specifically Uber Eats and Grubhub. By leveraging AI technology, the company seeks to improve efficiency, reduce friction in the ordering process, and ultimately attract and retain a larger customer base. The strategic intent is clear: to innovate in service delivery to outpace competitors.</p><p>The AI agent is expected to simplify interactions and potentially reduce order errors, contributing to a smoother overall transaction for users. This launch underscores DoorDash's commitment to technological innovation as a means of strengthening its market position against established competitors.</p><p>What to watch: User adoption rates and feedback on the AI agent's performance, and how rivals respond to this new service offering.</p>
        <p class="critique">Editor's note: The article captures the core information regarding DoorDash's new AI initiative and its competitive intent.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/" rel="noopener">TechCrunch</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/" rel="noopener">TechCrunch</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-30/doordash-launches-an-ai-agent-you-can-text-to-order-food.html" data-title="DoorDash launches an AI agent you can text to order food"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

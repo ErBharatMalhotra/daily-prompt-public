@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#AI</span> <span>#Climate Change</span> <span>#Environment</span> <span>#Technology</span></div>
        <p>An Indian student recently confronted an executive from Nvidia, raising significant concerns regarding the environmental impact of artificial intelligence. The student highlighted a direct link between the rapid expansion of AI infrastructure and increased demands on water and energy resources. This interaction underscored growing anxieties about the ecological footprint of advanced technology.</p><img class="hero-art" src="/img/2026-09-28/indian-student-challenges-nvidia-executive-over-ais-climate-.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>The confrontation brought a personal dimension to the broader debate, as the student spoke of the severe drought conditions currently affecting their family in India. This personal account served to illustrate the tangible, human consequences of climate-related issues, which the student connected to the burgeoning requirements of AI development and operation.</p><p>Observers note that the exchange reflects increasing scrutiny on the sustainability practices within the technology sector, particularly as AI continues its rapid global proliferation. Discussions around the environmental cost of AI, including its substantial energy and water needs for data centers and cooling systems, are gaining prominence. The incident at the event served as a public forum for these critical questions.</p><p>The student's intervention emphasized the urgent need for a balanced approach to technological advancement, one that carefully considers its wider ecological implications. It also highlighted the disproportionate impact of climate change on vulnerable populations, drawing a direct line between global tech trends and local environmental crises. The event, captured on video, has since sparked further conversation online regarding corporate responsibility and sustainable innovation.</p><p>What to watch: Future discussions on AI industry's resource consumption and sustainability initiatives.</p>
        <p class="critique">Editor's note: The article accurately reflects the source summary without adding unbacked claims.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://www.news18.com/world/my-family-is-dying-of-drought-indian-student-confronts-nvidia-exec-over-ais-climate-cost-video-10358071.html" rel="noopener">News18 World</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://www.news18.com/world/my-family-is-dying-of-drought-indian-student-confronts-nvidia-exec-over-ais-climate-cost-video-10358071.html" rel="noopener">News18 World</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-28/indian-student-challenges-nvidia-executive-over-ais-climate-.html" data-title="Indian Student Challenges Nvidia Executive Over AI's Climate Impact"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

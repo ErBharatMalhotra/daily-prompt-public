@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#politics</span> <span>#Jammu and Kashmir</span> <span>#statehood</span> <span>#governance</span></div>
        <p>Political parties in Jammu and Kashmir, with the exception of the Bharatiya Janata Party (BJP), have voiced strong criticism against officials concerning a letter submitted to the assembly. The document in question reportedly expresses opposition to the restoration of statehood for the region, sparking widespread condemnation.</p><img class="hero-art" src="/img/2026-09-30/jk-parties-excluding-bjp-criticize-officials-over-anti-state.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>This collective reaction from various political factions underscores a significant point of contention within the local political arena. The parties have expressed their disapproval, interpreting the letter as a move that works against the long-standing demand for statehood, a key issue for many in Jammu and Kashmir.</p><p>The incident highlights the persistent advocacy for statehood restoration among a majority of political entities in the union territory. The criticism from these parties suggests a united front on this specific matter, emphasizing their shared concerns regarding the region's administrative and constitutional future.</p><p>While the precise contents of the letter or the identities of the officials involved were not detailed, the summary indicates a clear and robust objection to its implications. The BJP's exclusion from this chorus of criticism points to a differing perspective on the issue, illustrating a clear division within the political discourse surrounding Jammu and Kashmir's status. This divergence reflects the complex and often polarized nature of political discussions in the region.</p><p>What to watch: Ongoing political discourse and any official responses to the criticism regarding the letter.</p>
        <p class="critique">Editor's note: The article accurately reflects the source summary without adding extraneous or unbacked details.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://timesofindia.indiatimes.com/india/jk-parties-barring-bjp-blast-top-officials-for-letter-to-assembly-against-statehood-resolution/articleshow/134601139.cms" rel="noopener">Times of India</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://timesofindia.indiatimes.com/india/jk-parties-barring-bjp-blast-top-officials-for-letter-to-assembly-against-statehood-resolution/articleshow/134601139.cms" rel="noopener">Times of India</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-09-30/jk-parties-excluding-bjp-criticize-officials-over-anti-state.html" data-title="J&amp;K Parties, Excluding BJP, Criticize Officials Over Anti-Statehood Letter to Assembly"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·

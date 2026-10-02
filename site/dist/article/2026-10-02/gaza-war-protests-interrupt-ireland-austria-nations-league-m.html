@@ -226,6 +226,15 @@ h2.sec {
 .hi-title a { font-size: 16px; }
 .src { font-size: 13px; color: var(--ink-soft); }
 
+/* Provenance box: every outlet the story was synthesised from (multi-source). */
+.provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
+.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
+.provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
+.provenance a:hover { border-bottom-color: currentColor; }
+.provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
+
 /* ---------- badges (pills) ---------- */
 .badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
@@ -376,7 +385,11 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
        <div class="tags"><span>#Nations League</span> <span>#Ireland</span> <span>#Austria</span> <span>#Gaza War</span></div>
        <p>The Nations League football match between Ireland and Austria in Dublin on Thursday was interrupted twice by pro-Palestine demonstrations. In the 19th minute, spectators threw tennis balls adorned with Palestinian flag stickers onto the pitch, prompting a brief halt as players exited. The game was paused again in the 35th minute when a man ran onto the field waving a Palestinian flag.</p><img class="hero-art" src="/img/2026-10-02/gaza-war-protests-interrupt-ireland-austria-nations-league-m.webp" width="1200" height="675" alt="" loading="eager" fetchpriority="high" decoding="async"><p>Despite the disruptions, the match concluded in a 2-2 draw. Ireland's Icelandic coach, Heimir Hallgrimsson, commented that while one is &quot;never happy with this,&quot; he understands and respects the protests. These incidents followed controversy surrounding Sunday’s Nations League match between Ireland and Israel, which was held in Hungary in a virtually empty stadium after discussions about a boycott.</p><p>During the Sunday match, which Ireland won 3-0, Irish players wore black armbands, and captains did not shake hands or exchange pennants before kick-off. The return leg between Ireland and Israel is slated for Sunday on neutral ground in Serbia, as the Football Association of Ireland deemed a home match too sensitive. Approximately 200 protesters gathered outside the Dublin Arena on Thursday evening as part of a &quot;Stop the Game&quot; campaign, criticizing the matches as &quot;sports-washing a genocide.&quot;</p><p>What to watch: The upcoming Ireland-Israel return leg and any further protests.</p>
        <p class="critique">Editor's note: The article provides a concise and accurate summary of the protests and match context provided in the source text.</p>
-       <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://sports.ndtv.com/football/fiery-scenes-on-the-ground-as-gaza-war-protests-halt-ireland-austria-clash-twice-12127991#publisher=newsstand" rel="noopener">NDTV Sports</a></p>
+       <div class="provenance">
+      <b>Source</b>
+      <ul><li><a href="https://sports.ndtv.com/football/fiery-scenes-on-the-ground-as-gaza-war-protests-halt-ireland-austria-clash-twice-12127991#publisher=newsstand" rel="noopener">NDTV Sports</a></li></ul>
+      <p>AI-generated and fact-checked against the original report; claims the gate cannot verify are held back.</p>
+    </div>
        <div class="sharebar" data-href="article/2026-10-02/gaza-war-protests-interrupt-ireland-austria-nations-league-m.html" data-title="Gaza War Protests Interrupt Ireland-Austria Nations League Match in Dublin"><b>Share:</b>
          <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
          <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·
