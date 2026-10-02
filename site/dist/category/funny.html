@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — funny</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/category/funny">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — funny">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/category/funny">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,42 +325,12 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>FUNNY</h1><p>11 stories across all editions</p></header>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>FUNNY</h1><p>3 stories across all editions</p></header>
       <article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-10-01/mcdonalds-deploys-ai-to-set-big-mac-prices.html">McDonald's Deploys AI to Set Big Mac Prices</a></h2>
-    <p>Patrons of McDonald's may now find the cost of their Big Mac determined by artificial intelligence. The fast-food chain has reportedly integrated AI systems directly into its pricing structure, specifically for its iconic sandwich.</p><p>This deployment signifies a shift in how menu items are valued, with an algorithm now tasked with calculating the appropriate price. The system is designed to decide precisely how much individual customers should pay for a Big Mac.</p><p>While the specific parameters guiding these AI-driven adjustments have not been detailed, the core function involves an automated assessment of pricing. This marks a notable step in the application of advanced technology within the quick-service restaurant industry.</p><p>One can only hope the AI is feeling generous today.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wv3td0/mcdonalds_has_been_using_ai_to_decide_how_much/" rel="noopener">r/nottheonion</a> · <a href="article/2026-10-01/mcdonalds-deploys-ai-to-set-big-mac-prices.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-30/tsa-officers-now-not-allowed-to-sit-down-while-checking-boar.html">TSA officers now not allowed to sit down while checking boarding passes and IDs</a></h2>
-    <p>A recent post on r/nottheonion submitted by user /u/shield_x notes a new policy affecting Transportation Security Administration personnel. According to the brief, officers are prohibited from sitting while they verify boarding passes and identification documents. The rule requires agents to remain standing throughout the entire screening process, regardless of the length of the queue or the time of day. No additional details about the rationale, enforcement mechanisms, or implementation timeline were provided in the source. The announcement appears to be the sole factual element of the report, and no further commentary or speculation is included. </p><p>Deadpan kicker: Standing desks just got a federal upgrade.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wtyfr2/tsa_officers_now_not_allowed_to_sit_down_while/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-30/tsa-officers-now-not-allowed-to-sit-down-while-checking-boar.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
     <div class="meta">FUNNY · r/nottheonion · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-29/745k-returned-after-gofundme-fraud.html">$745K Returned After GoFundMe Fraud</a></h2>
     <p>A GoFundMe campaign has resulted in the return of $745,000 to donors after it was discovered that the daughter of the elderly couple featured in the story had fabricated the identity of a neighbor. The campaign, which had raised substantial funds for the couple, was shut down when the discrepancy in the narrative came to light. The daughter’s fabrication of a neighbor’s identity raised immediate red flags, leading to an investigation by the platform. The sum of $745,000 is a significant amount, highlighting the scale of the fundraising effort and the trust placed by donors. The incident serves as a stark reminder of the risks associated with online fundraising, where verifying the details of a story can be challenging. The fact that the daughter was involved in the deception adds a layer of complexity to the case. The funds have now been returned to the original donors, a process that underscores the platform’s commitment to accountability. The elderly couple, presumably unaware of the extent of the fraud, are likely left to deal with the aftermath of their daughter’s actions. The story is a cautionary tale for both donors and fundraisers, emphasizing the need for transparency and verification. The return of the funds is a positive step, but the damage to trust remains. The incident highlights the importance of due diligence in charitable giving.</p><p>Kicker: The neighbor was real only on the internet.</p>
     <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wsyc8n/745k_returned_to_donors_after_gofundme_says/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-29/745k-returned-after-gofundme-fraud.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY BRIEF<span class="badge quick">quick bite</span> · r/nottheonion · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-28/woman-loses-discrimination-case-over-pate-signage.html">Woman loses discrimination case over pâté signage</a></h2>
-    <p>A woman has lost a discrimination case regarding signage she labeled as misleading.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wspt6u/woman_loses_misleading_pâté_signage/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-28/woman-loses-discrimination-case-over-pate-signage.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY BRIEF<span class="badge quick">quick bite</span> · r/nottheonion · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-28/owners-mourn-spoiled-food-after-firmware-update-bricks-samsu.html">Owners mourn spoiled food after firmware update bricks Samsung smart fridges</a></h2>
-    <p>Owners mourned spoiled food after a firmware update bricked Samsung smart fridges.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wslfp1/owners_mourn_spoiled_food_after_firmware_update/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-28/owners-mourn-spoiled-food-after-firmware-update-bricks-samsu.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 7/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-28/tinder-swindler-claims-his-scamming-past-makes-him-the-perfe.html">Tinder Swindler Claims His Scamming Past Makes Him the Perfect Person To Build a 'Safe' Dating App</a></h2>
-    <p>The individual widely known as the 'Tinder Swindler' has reportedly asserted that his history of fraudulent activities positions him as the ideal candidate to develop a 'safe' dating application. His claim suggests that his unique past experiences, which involved extensive deception within online dating platforms, provide him with unparalleled insight into creating a secure environment for users.</p><p>This proposal leverages the very reputation that brought him notoriety, reframing a history of scamming as a qualification for enhancing digital safety. The initiative aims to offer a new platform, presumably designed to protect users from the very types of schemes he became infamous for orchestrating. The concept hinges on the premise that one who intimately understands the vulnerabilities of online dating, particularly from a perpetrator's perspective, is best equipped to fortify them.</p><p>Experts are reportedly awaiting further details on the app's proposed security features.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wsc74t/tinder_swindler_claims_his_scamming_past_makes/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-28/tinder-swindler-claims-his-scamming-past-makes-him-the-perfe.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-28/1-in-3-americans-with-health-insurance-have-medical-debt-sur.html">1 in 3 Americans with health insurance have medical debt, survey finds</a></h2>
-    <p>A recent survey has revealed that a significant portion of the American population, specifically one in three individuals, carries medical debt despite possessing health insurance. This finding indicates that having coverage does not necessarily insulate individuals from accumulating financial burdens related to healthcare expenses.</p><p>The survey highlights a situation where the presence of health insurance, typically intended to mitigate such costs, does not always prevent substantial debt. This suggests that even with a policy in place, unforeseen medical events or gaps in coverage can still lead to considerable financial obligations for many Americans. The data underscores a persistent challenge within the healthcare system, where the insured population continues to face significant financial strain from medical care.</p><p>Policyholders anticipate their next bill with a renewed sense of security.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1ws8059/1_in_3_americans_with_health_insurance_have/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-28/1-in-3-americans-with-health-insurance-have-medical-debt-sur.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
   </article><article class="story">
     <div class="meta">FUNNY · r/nottheonion · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-26/stadt-salzburg-wants-to-sue-google-maps.html">Stadt Salzburg wants to sue Google Maps</a></h2>
@@ -351,18 +341,8 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-26/the-mafia-may-be-keeping-fentanyl-out-of-italy.html">The Mafia may be keeping fentanyl out of Italy</a></h2>
     <p>Reports suggest a surprising development in Italy’s ongoing struggle with illicit narcotics. While typically associated with various forms of organized crime, an unexpected role has been attributed to the Mafia regarding the flow of fentanyl into the nation. This unusual dynamic, highlighted by recent discussions, points to a potential, albeit informal, barrier against the synthetic opioid. The implications suggest a complex interplay of power and control within the country’s underworld, where traditional criminal structures may inadvertently be serving a public health function, at least concerning this particular substance. The full extent or nature of this alleged involvement remains, for now, largely unelaborated in publicly available summaries. It appears that in some instances, even the most established criminal enterprises might find themselves on the unexpected side of a public safety issue. The world, it seems, continues to offer its peculiar ironies.</p><p>Sometimes, the most effective gatekeepers operate outside conventional law enforcement.</p>
     <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wq8l63/the_mafia_may_be_keeping_fentanyl_out_of_italy/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-26/the-mafia-may-be-keeping-fentanyl-out-of-italy.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-25/wisconsin-frat-leaders-arrested-after-pledges-found-injured-.html">Wisconsin Frat Leaders Arrested After Pledges Found Injured and Condiment-Covered</a></h2>
-    <p>Authorities in Wisconsin recently reported the arrest of several fraternity leaders following a discovery in a local chapter house. According to reports, thirty pledges were found in the basement, which was described as unsanitary.</p><p>The individuals, who were reportedly undergoing initiation activities, were also noted to have sustained various injuries. Furthermore, they were found to be covered in an assortment of condiments, presenting a rather unusual scene for responding officers.</p><p>The incident led to the apprehension of the fraternity’s leadership, indicating a serious breach of conduct and potential legal infractions related to the treatment of new members. The investigation is expected to determine the full extent of the circumstances surrounding the pledges' condition.</p><p>What to watch: Ensuring your next condiment-themed party has adequate ventilation.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1wq1y0y/wisconsin_frat_leaders_arrested_after_30_pledges/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-25/wisconsin-frat-leaders-arrested-after-pledges-found-injured-.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
-  </article><article class="story">
-    <div class="meta">FUNNY · r/nottheonion · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-24/meta-removes-video-featuring-its-own-glasses-citing-bullying.html">Meta Removes Video Featuring Its Own Glasses, Citing 'Bullying'</a></h2>
-    <p>A video by Dutch satirical journalist Roel Maalderink, which gained significant viewership, has been removed by Meta. The journalist's work involved him asking critical questions directly to Meta employees, notably while utilising Meta's own glasses to film these interactions. Meta’s stated justification for the content's removal was that it constituted 'bullying and harassment.' This action follows a period where the video was widely discussed. Despite its removal from Meta's platforms, the video continues to be available on YouTube. Commentators have described the content as 'funny and not even that critical,' observing that Maalderink's approach was primarily to inquire what Meta employees themselves thought of the glasses, all while recording with the very same hardware.</p><p>One might surmise that some product feedback is more welcome than others.</p>
-    <p class="src">Source: <a href="https://www.reddit.com/r/nottheonion/comments/1woyb77/meta_removes_critical_widely_viewed_video_about/" rel="noopener">r/nottheonion</a> · <a href="article/2026-09-24/meta-removes-video-featuring-its-own-glasses-citing-bullying.html">permalink</a> · <a href="/category/funny.html">more funny</a></p>
   </article>
       <p class="src">More in Culture: <a href="/category/entertainment.html">entertainment</a> · <a href="/category/positive.html">positive</a></p>
-      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv731z/love_and_deepspace_posts_cocktail_recipes_on/" target="_blank" rel="noopener">Love and Deepspace posts cocktail recipes on social media that could actually kill users</a> <small>· r/nottheonion · 1h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv53tg/inside_man_how_chinese_spies_used_lies_love_and/" target="_blank" rel="noopener">Inside Man: How Chinese spies used lies, love and betrayal to target the Federal Reserve</a> <small>· r/nottheonion · 2h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv4rup/pats_king_of_steaks_owner_wants_justice_after/" target="_blank" rel="noopener">Pat's King of Steaks owner wants justice after cheesesteak assault caught on video</a> <small>· r/nottheonion · 3h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv274k/it_was_a_mess_tennessee_fails_to_execute_inmate/" target="_blank" rel="noopener">'It was a mess': Tennessee fails to execute inmate after 2 lethal injections</a> <small>· r/nottheonion · 4h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv1uq1/tottenham_more_beyoncé_concerts_than_home_wins_at/" target="_blank" rel="noopener">Tottenham: More Beyoncé concerts than home wins at their own stadium</a> <small>· r/nottheonion · 4h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wv0te8/turkish_prosecutors_have_indicted_mabel_matiz_one/" target="_blank" rel="noopener">Turkish prosecutors have indicted Mabel Matiz, one of Turkey’s most prominent openly queer pop artists, on obscenity charges over a scene in one of his music videos showing two men dancing</a> <small>· r/nottheonion · 5h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wuzyv3/ai_image_of_crocodile_in_reservoir_triggers/" target="_blank" rel="noopener">AI image of crocodile in reservoir triggers search and leaves Singapore man facing 10 years in prison</a> <small>· r/nottheonion · 6h ago</small></li></ul>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvixwx/eminem_is_featured_on_kid_rocks_new_christian/" target="_blank" rel="noopener">Eminem is featured on Kid Rock's new Christian album 'Halfway 2 Jesus'</a> <small>· r/nottheonion · 3h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvhp2k/former_cop_who_fatally_shot_botham_jean_in/" target="_blank" rel="noopener">Former cop who fatally shot Botham Jean in apartment that she mistook for hers gets parole</a> <small>· r/nottheonion · 4h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvhimz/judge_denies_defense_motion_asking_lindsay_clancy/" target="_blank" rel="noopener">Judge denies defense motion asking Lindsay Clancy be found not guilty due to a lack of evidence</a> <small>· r/nottheonion · 4h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvf2qd/florida_county_discovers_mysterious_flock_cameras/" target="_blank" rel="noopener">Florida county discovers mysterious Flock cameras with no obvious owner</a> <small>· r/nottheonion · 6h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvedud/montana_officials_praise_repeal_of_power_plant/" target="_blank" rel="noopener">Montana officials praise repeal of power plant emission regs</a> <small>· r/nottheonion · 6h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvcnyx/jimmy_hoffas_former_lake_orion_home_can_now_be/" target="_blank" rel="noopener">Jimmy Hoffa's former Lake Orion home can now be rented on Airbnb, Vrbo</a> <small>· r/nottheonion · 8h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvclsp/abandoned_pet_cemetery_caretaker_asks_public_to/" target="_blank" rel="noopener">Abandoned pet cemetery caretaker asks public to stop bringing dead animals</a> <small>· r/nottheonion · 8h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wvajj8/pentagon_launches_office_of_religious_affairs/" target="_blank" rel="noopener">Pentagon launches Office of Religious Affairs, will report directly to Hegseth</a> <small>· r/nottheonion · 9h ago</small></li><li><a href="https://www.reddit.com/r/nottheonion/comments/1wva0fg/huddersfield_teenager_admits_trying_to_have_sex/" target="_blank" rel="noopener">Huddersfield teenager admits trying to have sex with Shetland pony named Cheeky</a> <small>· r/nottheonion · 10h ago</small></li></ul></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

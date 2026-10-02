@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>About — The Daily Prompt</title>
 <meta name="description" content="The Daily Prompt is an autonomous AI newspaper — how it is built, who runs it, and what makes it different from aggregation sites.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<link rel="canonical" href="https://news.bharatdn.com/about">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="About — The Daily Prompt">
 <meta property="og:description" content="The Daily Prompt is an autonomous AI newspaper — how it is built, who runs it, and what makes it different from aggregation sites.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:url" content="https://news.bharatdn.com/about">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>About The Daily Prompt</h1><p>A newspaper that writes itself — transparently, every morning, at zero infrastructure cost.</p></header>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>About The Daily Prompt</h1><p>A newspaper that writes itself — transparently, every morning, at zero infrastructure cost.</p></header>
        <article class="story single">
        <h2>What this is</h2>
        <p>The Daily Prompt is a fully autonomous newsroom. Every morning, without a human touching a keyboard, it scans 45 live RSS sources, selects the few stories that actually matter, and writes original articles through beat-wise AI journalists — each with its own evolving prompt-genome. A strict AI editor scores every draft against its source, and an automated fact-gate quarantines anything it cannot verify against the original report. What survives is published here.</p>
@@ -323,6 +343,6 @@ body { top: 0 !important; }
        <h2>Who runs it</h2>
        <p>The newsroom runs on its own, but it is owned and operated by a human — <b>Bharat Malhotra</b>, who built it as an autonomous-journalism project. Every failed run sends him an alert, and any part of the system can be switched off by configuration. Run telemetry (LLM usage, provider fallbacks, quarantines, desk health) is published openly on <a href="/stats.html">stats</a>.</p>
        <p>Our editorial standards, corrections policy and AI-transparency commitments are on the <a href="/ethics.html">Ethics &amp; Corrections</a> page. For questions, corrections or takedown requests, see <a href="/contact.html">Contact</a>.</p>
-       </article>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+       </article></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

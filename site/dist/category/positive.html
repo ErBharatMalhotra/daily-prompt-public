@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — positive</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/category/positive">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — positive">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/category/positive">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>POSITIVE</h1><p>35 stories across all editions</p></header>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>POSITIVE</h1><p>33 stories across all editions</p></header>
       <article class="story">
     <div class="meta">POSITIVE · Good News Network · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-10-01/chinese-commercial-reactor-achieves-nuclear-fusion-with-clea.html">Chinese Commercial Reactor Achieves Nuclear Fusion with Clean Hydrogen-Boron Fuel</a></h2>
@@ -351,11 +371,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-29/report-on-entrepreneurs-farming-success-awaits-details.html">Report on Entrepreneur's Farming Success Awaits Details</a></h2>
     <p>A compelling headline from The Better India draws attention to a remarkable story of career transformation and agricultural achievement. Titled ‘I Quit Banking To Become a Farmer’: His 650-Acre Farm Now Earns Rs 21 Crore, Employs 3000 Women, the article's headline suggests a significant narrative of entrepreneurial spirit and impactful rural development.</p><p>However, the provided source summary for this report is currently empty. As such, specific factual details regarding the individual's journey from a banking career to farming, the exact nature of the agricultural operations, the strategies employed to cultivate a 650-acre farm, the mechanisms behind its reported Rs 21 crore earnings, or the context surrounding the employment of 3000 women are not available. Without the summary content, the intricate details of this inspiring success, including the challenges overcome and the innovative practices adopted, cannot be elaborated upon. The full scope of this achievement, which undoubtedly holds valuable lessons, awaits further information.</p><p>Why it matters: Stories of successful career transitions into sustainable agriculture, especially those creating significant employment, offer valuable insights and inspiration for economic development.</p>
     <p class="src">Source: <a href="https://thebetterindia.com/web-stories/farming/amith-kishan-banking-to-natural-farming-andhra-pradesh-organic-farmer-12589927" rel="noopener">The Better India</a> · <a href="article/2026-09-29/report-on-entrepreneurs-farming-success-awaits-details.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
-  </article><article class="story">
-    <div class="meta">POSITIVE BRIEF<span class="badge quick">quick bite</span> · Good News Network · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-29/indonesian-program-incentivizes-wildlife-conservation-throug.html">Indonesian program incentivizes wildlife conservation through photography</a></h2>
-    <p>A new pay-per-pic program in West Kalimantan, Indonesia, is encouraging conservation efforts by paying villagers to photograph or record endangered orangutans and birds. Participants from nine villages can earn supplemental income through the initiative.</p>
-    <p class="src">Source: <a href="https://www.goodnewsnetwork.org/a-strategy-of-cash-for-photos-turns-animal-hunters-into-animal-protectors-in-indonesia/" rel="noopener">Good News Network</a> · <a href="article/2026-09-29/indonesian-program-incentivizes-wildlife-conservation-throug.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
   </article><article class="story">
     <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-29/shifting-periods-from-panic-to-preparation.html">Shifting Periods from Panic to Preparation</a></h2>
@@ -427,11 +442,6 @@ body { top: 0 !important; }
     <p>While rabies remains a persistent threat across India, the state of Goa has successfully eliminated human rabies, offering a concrete blueprint for other regions. This achievement was not accidental but the result of a structured, three-module approach that addresses the disease at multiple points simultaneously. The first module focuses on immediate response. Since 2014, a 24/7 hotline has coordinated care for bite victims, ensuring standardized, free treatment including post-exposure prophylaxis at all government facilities, removing financial barriers to life-saving care. The second module targets the source of infection by systematically vaccinating free-roaming dogs. By tracking coverage with precision, Goa reached the critical threshold of 70% vaccination in specific areas, effectively breaking the chain of viral transmission. The final module focuses on prevention through education. Rabies awareness was integrated into the state science curriculum for grades 11 and 12, reaching over 150,000 community members annually. This long-term strategy ensures that future generations understand the critical first 15 minutes after a bite. The results are profound: human rabies deaths dropped from 17 in 2014 to zero by 2018, while canine cases fell by 92%. An independent analysis confirmed the program is highly cost-effective. This model requires no unique infrastructure, only disciplined implementation of existing protocols, making it a viable path for India’s broader national efforts to achieve rabies-free status.</p><p>Why it matters: Goa’s success proves that integrated, cost-effective public health strategies can eliminate deadly zoonotic diseases, providing a replicable template for the rest of India.</p>
     <p class="src">Source: <a href="https://thebetterindia.com/health-care/goa-rabies-blueprint-replication-guide-12575448" rel="noopener">The Better India</a> · <a href="article/2026-09-26/goas-blueprint-for-ending-rabies-a-replicable-model.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
   </article><article class="story">
-    <div class="meta">POSITIVE BRIEF<span class="badge quick">quick bite</span> · Good News Network · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-25/nonprofit-provides-paid-machinist-apprenticeships-to-formerl.html">Nonprofit Provides Paid Machinist Apprenticeships to Formerly Incarcerated Men</a></h2>
-    <p>Rise Up Industries in San Diego is helping men recently released from prison gain trade skills. The nonprofit's program offers paid machinist apprenticeships and therapy to help participants earn professional certifications.</p>
-    <p class="src">Source: <a href="https://www.goodnewsnetwork.org/nonprofit-puts-ex-cons-to-work-with-paid-apprenticeships-as-machinists/" rel="noopener">Good News Network</a> · <a href="article/2026-09-25/nonprofit-provides-paid-machinist-apprenticeships-to-formerl.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
-  </article><article class="story">
     <div class="meta">POSITIVE · The Better India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-25/from-crop-pests-to-sick-cattle-these-farmers-are-using-ai-to.html">From Crop Pests to Sick Cattle: These Farmers Are Using AI To Get Answers In Their Language</a></h2>
     <p>Across India, farmers are embracing artificial intelligence to tackle daily challenges, from crop management to animal welfare, receiving vital information in their native languages. This technological integration is transforming agricultural practices by making expert advice accessible at the grassroots level.</p><p>For instance, Gayatriben in Gujarat sought help when her buffalo repeatedly banged its head against a tree, while Charmiben in Ishnav needed to understand why her cow wasn't thriving. Both found solutions through AI systems. Similarly, Dipali Kalbhor, a smallholder farmer from Maharashtra, leveraged MahaVISTAAR for critical information on crop prices, weather, and pest control. She credits its fertiliser calculator with helping reduce her fertiliser use by 15% and uses it to connect with agricultural officials multiple times daily.</p><p>Amul's 'Sarlaben' AI assistant in Gujarat provides dairy farmers with guidance on cattle health, breeding, and vaccinations in Gujarati. Gayatriben, who previously faced delays and costs for vet visits, now calls Sarlaben for immediate advice, such as cleaning an animal's horns with oil and turmeric, which proved effective. This demonstrates how AI, built with local context and language in mind, offers personalized, timely insights, helping farmers save crops, improve livestock health, and navigate government schemes. The Gates Foundation’s 2026 Goalkeepers Report highlights the critical need for AI to understand local languages and contexts to ensure equitable access and impact.</p><p>Why it matters: AI is bridging information gaps for farmers, leading to better outcomes and livelihoods.</p>
@@ -483,6 +493,6 @@ body { top: 0 !important; }
     <p class="src">Source: <a href="https://thebetterindia.com/culture/gondhal-marathi-film-india-oscar-entry-ritual-12567686" rel="noopener">The Better India</a> · <a href="article/2026-09-23/ancient-marathi-ritual-gondhal-takes-center-stage-as-indias-.html">permalink</a> · <a href="/category/positive.html">more positive</a></p>
   </article>
       <p class="src">More in Culture: <a href="/category/entertainment.html">entertainment</a> · <a href="/category/funny.html">funny</a></p>
-      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/" target="_blank" rel="noopener">&amp;#8216;Flourishing&amp;#8217; Sycamore Gap Tree Has Ring of New Shoots Already 3-Feet Tall</a> <small>· Good News Network · 1h ago</small></li><li><a href="https://thebetterindia.com/videos/society/100-women-exploited-ips-meeran-borwankar-took-action-12614635" target="_blank" rel="noopener">100+ Women Exploited | IPS Meeran Borwankar Took Action</a> <small>· The Better India · 4h ago</small></li></ul>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://thebetterindia.com/wildlife/women-beeswax-income-traditional-beekeeping-himachal-12613339" target="_blank" rel="noopener">250+ Farmers Trained, Many of Them Women: How This Collective Is Reviving Traditional Beekeeping</a> <small>· The Better India · 1h ago</small></li><li><a href="https://thebetterindia.com/videos/lifestyle/single-mother-rebuilt-her-life-after-divorce-sheenam-12615738" target="_blank" rel="noopener">Single Mother Rebuilt Her Life After Divorce | Sheenam</a> <small>· The Better India · 2h ago</small></li><li><a href="https://thebetterindia.com/325596/journalist-pir-muhammed-munis-letter-to-gandhi-sparked-champaran-satyagraha-history/" target="_blank" rel="noopener">How a ‘Rogue’ Journalist’s Letter Helped Bring Gandhi to Champaran’s Struggling Farmers</a> <small>· The Better India · 3h ago</small></li></ul></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

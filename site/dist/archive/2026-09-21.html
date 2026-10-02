@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-21</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/archive/2026-09-21">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — 2026-09-21">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/archive/2026-09-21">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-21</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-21</h1></header><article class="story">
     <div class="meta">NATIONAL · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/iit-bombay-student-death-crime-branch-probes-case-amid-tortu.html">IIT Bombay Student Death: Crime Branch Probes Case Amid Torture Allegations</a></h2>
     <p>The Mumbai Crime Branch has initiated a comprehensive investigation into the death of an Indian Institute of Technology Bombay (IIT Bombay) student. This development follows serious allegations of torture emerging in connection with the case.</p><p>The student's demise at the premier educational institution has triggered widespread concern and demands for a thorough inquiry. The Crime Branch's involvement elevates the probe, focusing specifically on the veracity and implications of the torture claims.</p><p>Authorities are now tasked with meticulously examining all circumstances surrounding the student's death. The allegations suggest potential foul play or extreme duress, prompting investigators to look beyond initial assessments.</p><p>The investigation will involve gathering forensic evidence, interviewing fellow students, faculty members, and staff, and reviewing campus security footage and other relevant documents. The objective is to establish a clear timeline and understand any contributing factors.</p><p>The nature of the alleged torture, while not publicly detailed, has intensified scrutiny on campus environment and student well-being. The institution faces pressure to ensure full transparency and cooperation with law enforcement.</p><p>This high-profile case underscores the complexities involved in student welfare incidents at major academic institutions. The Crime Branch's ongoing work is critical to uncovering the truth behind these grave allegations.</p><p>What to watch: Updates from the Crime Branch on the evidence gathered and any preliminary findings related to the torture allegations.</p>
@@ -345,6 +365,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-21/dilip-buildcon-wins-1265-crore-epc-work-for-maharashtra-powe.html">Dilip Buildcon wins ₹1,265 crore EPC work for Maharashtra power project</a></h2>
     <p>Mumbai: Infrastructure firm Dilip Buildcon Ltd. has secured a significant engineering, procurement, and construction (EPC) contract for an intra-state transmission project in Maharashtra. The project, awarded by REC Power Development and Consultancy Limited (RECPDCL), marks a notable addition to the company's order book.</p><p>The EPC component of the contract is valued at ₹1,265 crore, a figure that excludes Goods and Services Tax (GST). This win underscores Dilip Buildcon's continued presence and capabilities in the critical power infrastructure sector. The project aims to enhance Maharashtra's internal power transmission capabilities, contributing to the state's energy grid stability and efficiency.</p><p>RECPDCL, a wholly-owned subsidiary of REC Limited (formerly Rural Electrification Corporation Limited), is a key player in developing power projects and providing consultancy services across India. Their selection of Dilip Buildcon highlights the latter's competitive standing and expertise in executing large-scale infrastructure assignments.</p><p>This contract is expected to further solidify Dilip Buildcon's revenue streams and operational footprint in Western India. The company has a diversified portfolio, including roads, bridges, and other civil construction projects, and this latest award reinforces its strategic focus on infrastructure development.</p><p>What to watch: The timeline for project execution and its impact on Dilip Buildcon's financial performance in upcoming quarters.</p>
     <p class="src">Source: <a href="https://www.business-standard.com/industry/news/dilip-buildcon-l1-bidder-recpdcl-maharashtra-transmission-project-126092100273_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-21/dilip-buildcon-wins-1265-crore-epc-work-for-maharashtra-powe.html">permalink</a> · <a href="/category/business.html">more business</a></p>
-  </article>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+  </article></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-20</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/archive/2026-09-20">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — 2026-09-20">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/archive/2026-09-20">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-20</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-20</h1></header><article class="story">
     <div class="meta">NATIONAL · India Today · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-20/iit-bombay-student-death-crime-branch-probe-family-claims-to.html">IIT Bombay Student Death: Crime Branch Probe, Family Claims Torture</a></h2>
     <p>The investigation into the death of an IIT Bombay student has escalated as the Crime Branch takes over the case. The student’s family has alleged that the deceased was subjected to torture, a claim that has intensified calls for a transparent inquiry into the circumstances surrounding the incident.</p><p>Authorities have confirmed that the Crime Branch has seized custody of the investigation to ensure impartiality. The family’s accusations of abuse have drawn significant public attention, with various groups demanding swift justice and a detailed forensic review of the evidence gathered at the scene.</p><p>Officials state that all leads are being examined rigorously. The handover to the senior police unit underscores the sensitivity of the case and the government’s commitment to resolving the matter without delay. Legal representatives for the family are expected to submit formal complaints regarding the alleged mistreatment.</p><p>The incident has sparked widespread discussion on campus safety and student welfare protocols within the institute. Administrative bodies have expressed deep sorrow over the loss and have pledged cooperation with the ongoing legal proceedings.</p><p>What to watch: The release of the final forensic report and the subsequent charge sheet filed by the Crime Branch.</p>
@@ -335,6 +355,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-20/tragedy-strikes-mumbai-ganpati-pandal-2-dead-6-injured-in-el.html">Tragedy Strikes Mumbai Ganpati Pandal: 2 Dead, 6 Injured in Electrocution</a></h2>
     <p>A tragic incident at a Ganpati pandal in Mumbai's Kala Chowki area has resulted in the deaths of two individuals and left six others injured due to electrocution. The unfortunate event occurred at a site prepared for the upcoming Ganpati festival, casting a somber mood over the preparations.</p><p>Emergency services were immediately dispatched to the scene following reports of the incident. The injured were swiftly transported to nearby medical facilities for treatment, with their conditions currently being monitored. Authorities have initiated a thorough investigation to ascertain the precise cause of the electrical malfunction that led to the fatalities and injuries.</p><p>Preliminary inquiries are expected to focus on the electrical wiring, temporary installations, and overall safety protocols implemented at the pandal. Such incidents during festive setups raise serious questions about adherence to safety standards and the oversight mechanisms in place to prevent preventable accidents. The local administration and event organizers are likely to face scrutiny regarding the measures taken to ensure public safety.</p><p>The tragedy serves as a stark reminder of the critical importance of rigorous safety checks and adherence to electrical codes, especially in crowded public venues and temporary structures erected for celebrations. Efforts are underway to support the affected families and ensure accountability for the incident.</p><p>What to watch: The ongoing inquiry into safety standards and electrical installations at such public venues.</p>
     <p class="src">Source: <a href="https://www.indiatoday.in/india/video/mumbai-ganpati-pandal-electrocution-2-dead-6-injured-at-kala-chowki-site-ytvd-2998663-2026-09-20?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-20/tragedy-strikes-mumbai-ganpati-pandal-2-dead-6-injured-in-el.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+  </article></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

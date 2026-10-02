@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — space</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/category/space">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — space">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/category/space">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,17 +325,12 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>SPACE</h1><p>18 stories across all editions</p></header>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>SPACE</h1><p>16 stories across all editions</p></header>
       <article class="story">
     <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-10-01/nasas-spacex-crew-13-launches-to-international-space-station.html">NASA’s SpaceX Crew-13 Launches to International Space Station</a></h2>
     <p>On October 1, 2026, the NASA-led SpaceX Crew-13 mission successfully launched aboard a Falcon 9 rocket and Dragon spacecraft from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida. This launch initiates a long-duration science mission to the International Space Station (ISS), carrying a diverse, international crew.</p><p>The four-person crew includes NASA astronauts Jessica Watkins and Luke Delaney, alongside CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov. These astronauts and cosmonauts are embarking on a critical mission to conduct scientific research and maintain the orbital outpost, contributing to global space exploration efforts.</p><p>The Dragon spacecraft is anticipated to dock with the International Space Station at 7 p.m. EDT. NASA will provide extensive live coverage of Crew-13’s arrival, with the agency’s broadcast set to begin at 5:20 p.m. EDT across multiple digital platforms. The mission highlights ongoing international collaboration in human spaceflight and scientific discovery.</p><p>What to watch: Tune into NASA’s live broadcast of Crew-13’s docking at the ISS starting at 5:20 p.m. EDT at https://www.nasa.gov/live.</p>
     <p class="src">Source: <a href="https://www.nasa.gov/image-article/nasas-spacex-crew-13-launches/" rel="noopener">NASA</a> · <a href="article/2026-10-01/nasas-spacex-crew-13-launches-to-international-space-station.html">permalink</a> · <a href="/category/space.html">more space</a></p>
-  </article><article class="story">
-    <div class="meta">SPACE · NASA · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-10-01/nasa-contracts-modulate-space-for-lunar-5g-communications.html">NASA Contracts Modulate Space for Lunar 5G Communications</a></h2>
-    <p>NASA has awarded a significant contract to Modulate Space Corporation, initiating an accelerated effort to advance lunar communication capabilities. The agreement tasks Modulate Space Corporation with developing key elements of a 5G communications system specifically designed for use on the lunar surface.</p><p>This innovative system is slated to incorporate built-in Wi-Fi 6 technology. The development work is being conducted for NASA’s Glenn Research Center, located in Cleveland. This strategic partnership aims to establish robust communication infrastructure beyond Earth.</p><p>The project is structured into two primary work areas. These focused efforts are intended to collectively produce a scalable and standards-based communications capability. Such a system is crucial for supporting future lunar missions and extended human presence on the Moon, facilitating advanced data exchange and operational efficiency.</p><p>What to watch: Progress on lunar 5G development and its integration into future missions.</p>
-    <p class="src">Source: <a href="https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/" rel="noopener">NASA</a> · <a href="article/2026-10-01/nasa-contracts-modulate-space-for-lunar-5g-communications.html">permalink</a> · <a href="/category/space.html">more space</a></p>
   </article><article class="story">
     <div class="meta">SPACE · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-30/arp-78-a-peculiar-galaxy-featured-on-astronomy-picture-of-th.html">Arp 78: A Peculiar Galaxy Featured on Astronomy Picture of the Day</a></h2>
@@ -362,11 +377,6 @@ body { top: 0 !important; }
     <p>NASA has announced the winners of its Deep Space Food Challenge: Mars to Table, a competition aimed at fostering innovative solutions for astronaut sustenance during long-duration space missions. The announcement was made on Thursday, highlighting significant advancements in integrated space food systems.</p><p>The top prize, a substantial $300,000, was awarded to Chinyere Ukeje from Philadelphia, Pennsylvania. Ukeje's winning concept, named the Adaptive Nourishment Infrastructure (ANI) food system, impressed judges with its potential to provide safe and nutritious meals in the challenging environment of deep space, particularly for future Mars missions.</p><p>The Deep Space Food Challenge called upon solvers to develop novel approaches to space food systems. The core objective was to ensure astronauts have access to wholesome and reliable nutrition, a critical factor for the success and well-being of crews undertaking extended journeys beyond Earth orbit.</p><p>This initiative underscores NASA's commitment to overcoming the logistical complexities of human space exploration. Providing sustainable and diverse food options is essential for maintaining crew health and morale during missions that could last for months or even years, such as those envisioned for Mars.</p><p>The Adaptive Nourishment Infrastructure (ANI) system represents a step forward in designing food solutions that are not only nutritious but also adaptable to the unique constraints of space travel, including limited resources and the need for efficient storage and preparation. The competition sought to push the boundaries of what is possible in extraterrestrial dining.</p><p>What to watch: Future developments in space food technology for upcoming long-duration missions.</p>
     <p class="src">Source: <a href="https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-unveils-winning-designs-for-mars-space-food-systems-challenge/" rel="noopener">NASA</a> · <a href="article/2026-09-24/nasa-awards-top-prize-in-deep-space-food-challenge-for-mars-.html">permalink</a> · <a href="/category/space.html">more space</a></p>
   </article><article class="story">
-    <div class="meta">SPACE BRIEF<span class="badge quick">quick bite</span> · NASA · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-24/nssc-travel-reimbursement-services-detailed.html">NSSC travel reimbursement services detailed</a></h2>
-    <p>The NSSC manages travel reimbursement for authorized NASA travel, including domestic, foreign, local, ETDY, and Change of Station, in accordance with Federal Travel Regulations.</p>
-    <p class="src">Source: <a href="https://www.nasa.gov/centers-and-facilities/nssc/travel/" rel="noopener">NASA</a> · <a href="article/2026-09-24/nssc-travel-reimbursement-services-detailed.html">permalink</a> · <a href="/category/space.html">more space</a></p>
-  </article><article class="story">
     <div class="meta">SPACE · NASA · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-24/nasas-spacex-crew-13-mission-to-intensify-human-health-and-p.html">NASA's SpaceX Crew-13 Mission to Intensify Human Health and Performance Studies on ISS</a></h2>
     <p>NASA's SpaceX Crew-13 mission to the International Space Station (ISS) will focus extensively on understanding human health and performance in microgravity. During their tenure aboard the orbiting laboratory, astronauts will participate in a comprehensive series of biomedical and human performance investigations designed to advance knowledge critical for future space exploration.</p><p>A key element of these studies includes a new collaborative effort specifically aimed at examining how spaceflight impacts blood flow and clotting mechanisms in the human body. This research is vital for addressing potential health risks associated with prolonged exposure to the space environment.</p><p>Beyond physiological responses, NASA will also assess crew members' manual piloting skills, an essential aspect of operational capabilities for both current and future missions. Furthermore, the Crew-13 mission will involve evaluating various methods to counter vision and brain changes that can occur during extended periods in space. The astronauts will also be engaged in gathering essential health data, contributing to a broader understanding of human adaptation and resilience in extraterrestrial conditions. These investigations underscore NASA's commitment to ensuring astronaut well-being and mission success.</p><p>What to watch: Upcoming reports on the preliminary findings from these critical health studies.</p>
@@ -398,6 +408,6 @@ body { top: 0 !important; }
     <p class="src">Source: <a href="https://www.sciencedaily.com/releases/2026/08/260828082336.htm" rel="noopener">ScienceDaily Space</a> · <a href="article/2026-09-23/scientists-uncover-major-heat-anomaly-deep-within-mars.html">permalink</a> · <a href="/category/space.html">more space</a></p>
   </article>
       <p class="src">More in Life: <a href="/category/science.html">science</a> · <a href="/category/environment.html">environment</a> · <a href="/category/health.html">health</a></p>
-      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://science.nasa.gov/solar-system/skywatching/whats-up-october-2026-skywatching-tips-from-nasa/" target="_blank" rel="noopener">What’s Up: October 2026 Skywatching Tips from NASA</a> <small>· NASA · 3h ago</small></li></ul>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://science.nasa.gov/image-article/apod-2026-october-2-the-complete-sharpless-catalog-313-nebulae/" target="_blank" rel="noopener">APOD: 2026 October 2 – The Complete Sharpless Catalog: 313 Nebulas</a> <small>· NASA · 2h ago</small></li><li><a href="https://science.nasa.gov/earth/earth-observatory/rains-swamp-the-gandak-river/" target="_blank" rel="noopener">Rains Swamp the Gandak River</a> <small>· NASA · 2h ago</small></li><li><a href="https://science.nasa.gov/solar-system/10-things-movie-night/" target="_blank" rel="noopener">10 Things: Movie Night</a> <small>· NASA · 5h ago</small></li><li><a href="https://www.nasa.gov/news-release/nasa-awards-enterprise-logistics-support-services-agreements/" target="_blank" rel="noopener">NASA Awards Enterprise Logistics Support Services Agreements</a> <small>· NASA · 9h ago</small></li></ul></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

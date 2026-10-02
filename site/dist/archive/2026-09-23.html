@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-23</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/archive/2026-09-23">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — 2026-09-23">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/archive/2026-09-23">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-23</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-23</h1></header><article class="story">
     <div class="meta">SCIENCE · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-23/reinvestigation-of-6800-year-old-site-in-serbia-reveals-larg.html">Reinvestigation of 6,800-year-old site in Serbia reveals larger settlement and egalitarian social structure</a></h2>
     <p>New archaeological insights are emerging from a 6,800-year-old site located in Serbia, a region crucial for understanding the European Neolithic period. Southeastern Europe and the Balkans served as a key incubator for various ways of life and economic systems that first appeared in Europe and subsequently diffused across the continent, profoundly shaping modern societies.</p><p>A specific archaeological culture, named after the Vinča site in present-day Serbia, signifies a late phase of the Neolithic era in this significant region. Over 6,500 years ago, the inhabitants of this area embarked on a new mode of living, establishing and dwelling in large settlements for extended durations—a practice not commonly seen before.</p><p>These early communities were not isolated; they cultivated and maintained extensive trade networks, indicating a complex social and economic structure. Their proficiency in material culture is evident through their pottery and stonework, which showcase a deep understanding of various materials. These artifacts also display a wide array of decorative styles, reflecting the rich artistic and technical knowledge prevalent among the Vinča people during this pivotal period in European prehistory.</p><p>What to watch: Continued archaeological efforts are expected to deepen our understanding of early European societal development and cultural exchange.</p>
@@ -380,151 +400,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-23/harvey-weinstein-sentenced-to-15-years-in-prison-for-sexual-.html">Harvey Weinstein Sentenced to 15 Years in Prison for Sexual Assault</a></h2>
     <p>Harvey Weinstein has been sentenced to 15 years in prison following a conviction for sexual assault. The court proceedings marked a significant legal conclusion to cases brought by various accusers alleging misconduct over several decades.</p><p>During the sentencing phase, Miriam Haley, one of the victims, addressed the court regarding the long-term impact of the assault. She stated that the incident had a &quot;devastating effect on my life and sense of security that may never go away.&quot; Her testimony highlighted the enduring psychological toll on survivors, emphasizing that the consequences of such crimes extend far beyond the immediate physical act.</p><p>The 15-year sentence reflects the severity of the charges and the cumulative weight of the evidence presented. The case has been a focal point in the broader cultural reckoning with sexual violence in the entertainment industry. The legal outcome serves as a precedent for similar cases, demonstrating that high-profile figures are subject to the same judicial standards.</p><p>The prison term will likely be served in a federal or state facility, with details regarding parole eligibility and prison conditions to be determined by the relevant corrections authorities. The decision has been noted by legal experts as a substantial penalty, aligning with the gravity of the offenses committed.</p><p>What to watch: Legal appeals processes and the subsequent impact on industry policies regarding workplace safety and accountability.</p>
     <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC World</a> · <a href="article/2026-09-23/harvey-weinstein-sentenced-to-15-years-in-prison-for-sexual-.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/parental-intervention-follows-crafting-class-complaints.html">Parental intervention follows crafting class complaints</a></h2>
-    <p>After Fan Yang's children returned home with complaints about a crafting class, they found a strong advocate in their parent.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-small-slightly-significant-affects.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/parental-intervention-follows-crafting-class-complaints.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/study-explores-how-soil-heterogeneity-affects-bacterial-fora.html">Study explores how soil heterogeneity affects bacterial foraging</a></h2>
-    <p>Bacteria use chemotaxis to find nutrient hotspots, but the impact of complex, heterogeneous subsurface environments on this process remains poorly understood.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-soil-heterogeneity-bacteria-nutrients.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/study-explores-how-soil-heterogeneity-affects-bacterial-fora.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/nlcil-and-c-dac-partner-for-green-digital-infrastructure.html">NLCIL and C-DAC partner for green digital infrastructure</a></h2>
-    <p>NLCIL has signed a Memorandum of Understanding with C-DAC to identify and explore opportunities within the green digital infrastructure sector.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/tamil-nadu/nlcil-signs-mou-with-c-dac-to-explore-opportunities-in-green-digital-infrastructure/article71498560.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/nlcil-and-c-dac-partner-for-green-digital-infrastructure.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/cpcl-targets-expansion-into-renewable-energy.html">CPCL targets expansion into renewable energy</a></h2>
-    <p>CPCL Managing Director H. Shankar says the company plans to invest in compressed bio-gas and sustainable aviation fuel as part of its sustainability efforts.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/cities/chennai/cpcl-looking-to-be-a-part-of-the-renewable-energy-growth-journey-h-shankar/article71501107.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/cpcl-targets-expansion-into-renewable-energy.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/researchers-study-gravitys-role-in-human-genome-organization.html">Researchers study gravity's role in human genome organization</a></h2>
-    <p>While the Human Genome Project successfully sequenced the human genome, researchers continue to investigate the role of gravity in how the genome is organized.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-uncovering-gravity-impact-human-genome.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/researchers-study-gravitys-role-in-human-genome-organization.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/the-far-side-of-the-moon-provides-clues-to-a-past-magnetic-f.html">The far side of the moon provides clues to a past magnetic field</a></h2>
-    <p>Unlike Earth, the moon no longer has a core-generated magnetic field. While Earth's movement of liquid iron generates a global magnetic field through a geodynamo, there is an ongoing debate as to whether the moon operated a dynamo in the past due to contradictory analyses of Apollo rock samples.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-side-moon-clues-magnetic-field.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/the-far-side-of-the-moon-provides-clues-to-a-past-magnetic-f.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/brain-organoids-uncover-how-primates-develop-different-brain.html">Brain organoids uncover how primates develop different brain shapes</a></h2>
-    <p>Most primate species feature relatively large brains with pronounced bulges and furrows on the surface. In contrast, the brains of small common marmosets are smooth and virtually unfolded.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-brain-organoids-uncover-primates.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/brain-organoids-uncover-how-primates-develop-different-brain.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/past-emissions-from-top-polluters-will-keep-the-planet-warme.html">Past emissions from top polluters will keep the planet warmer for decades to come</a></h2>
-    <p>Assigning responsibility for complex and costly disasters is not as clear as tracing the cause and effect of a simple household flood.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-emissions-polluters-planet-warmer-decades.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/past-emissions-from-top-polluters-will-keep-the-planet-warme.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/kibble-with-microbial-proteins-appeals-to-cats-and-dogs-in-n.html">Kibble with microbial proteins appeals to cats and dogs in new study</a></h2>
-    <p>A new study published in PLOS One shows that cats and dogs exhibited a short-term preference for kibble containing protein derived from microorganisms over standard animal-derived protein kibble. The findings were presented by Ally Motta de Matos and A.L.B. Cruz of MicroHarvest.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-kibble-microbial-proteins-appeals-cats.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/kibble-with-microbial-proteins-appeals-to-cats-and-dogs-in-n.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/notice-issued-to-candidate-for-applying-for-guest-lecturer-p.html">Notice issued to candidate for applying for guest lecturer post under two names</a></h2>
-    <p>A notice has been issued to a candidate for applying for a guest lecturer post using two different names.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/notice-issued-to-candidate-for-applying-for-guest-lecturer-post-under-two-names/article71500187.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/notice-issued-to-candidate-for-applying-for-guest-lecturer-p.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/trump-administration-weighs-90-day-diesel-export-ban-amid-re.html">Trump administration weighs 90-day diesel export ban amid record US fuel prices</a></h2>
-    <p>The Trump administration is considering a 90-day ban on US diesel exports to address rising energy prices driven by surging diesel costs, international conflicts, and supply disruptions. While certain officials oppose the measure due to potential long-term economic consequences, discussions have intensified amid pressure from Republican lawmakers ahead of the midterm elections.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/business/international-business/trump-weighs-90-day-diesel-export-ban-as-us-fuel-prices-hit-record-high-report/articleshow/134443699.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/trump-administration-weighs-90-day-diesel-export-ban-amid-re.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/federal-reserve-survey-reveals-how-us-firms-plan-to-use-tari.html">Federal Reserve survey reveals how US firms plan to use tariff refunds</a></h2>
-    <p>A survey report from the Federal Reserve Bank of Atlanta indicates that the majority of US firms receiving or seeking tariff refunds plan to retain the funds as cash, invest in R&amp;D or new capital projects, temporarily lower prices, or provide bonuses to workers and managers.</p>
-    <p class="src">Source: <a href="https://www.livemint.com/money/trump-tariff-refunds-are-americans-benefitting-federal-reserve-bank-of-atlanta-survey-finds-how-us-firms-are-using-funds-11790179452151.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-23/federal-reserve-survey-reveals-how-us-firms-plan-to-use-tari.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Economic Times · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/uk-adviser-states-workers-must-call-bosses-on-sick-leave.html">UK adviser states workers must call bosses on sick leave</a></h2>
-    <p>A UK adviser has stated that workers must call their bosses when taking sick leave.</p>
-    <p class="src">Source: <a href="https://economictimes.indiatimes.com/news/international/global-trends/uk-news-after-germany-sick-leave-policy-row-uk-adviser-sir-charlie-mayfield-says-you-cant-just-text-send-whatsapp-or-email-boss-when-sick-wants-workers-to-call/articleshow/134443597.cms" rel="noopener">Economic Times</a> · <a href="article/2026-09-23/uk-adviser-states-workers-must-call-bosses-on-sick-leave.html">permalink</a> · <a href="/category/business.html">more business</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/abhishek-manu-singhvi-comments-on-ec-dissent.html">Abhishek Manu Singhvi comments on EC dissent</a></h2>
-    <p>Abhishek Manu Singhvi stated that dissent within the Election Commission leads to consequences similar to those faced by Lavasa.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/abhishek-manu-singhvi-dissent-inside-the-ec-means-that-you-suffer-the-fate-of-lavasa-ytvd-3001592-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/abhishek-manu-singhvi-comments-on-ec-dissent.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/considerations-for-securing-a-second-home-loan.html">Considerations for securing a second home loan</a></h2>
-    <p>Indian home buyers can obtain a second loan subject to lender approval. Key factors for consideration include repayment capacity, income coverage, and available tax deductions.</p>
-    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/should-you-take-a-second-home-loan-ask-yourself-these-3-questions-before-you-take-a-call-11790173883294.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-23/considerations-for-securing-a-second-home-loan.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/uttam-pledges-funds-for-tatipamula-schools.html">Uttam pledges funds for Tatipamula schools</a></h2>
-    <p>During a homecoming in Tatipamula, Uttam pledged ₹7 crore for local educational institutions, including ₹5 crore for a high school and ₹2 crore for primary school buildings.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/telangana/tatipamula-erupts-in-celebration-as-uttam-makes-an-emotional-homecoming/article71500100.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/uttam-pledges-funds-for-tatipamula-schools.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/op-rawat-and-syed-zafar-islam-address-election-commission-ri.html">O.P. Rawat and Syed Zafar Islam address Election Commission rift</a></h2>
-    <p>O.P. Rawat and Syed Zafar Islam have provided comments regarding the objections and rift within the Election Commission.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/election-commission-rift-op-rawat-syed-zafar-islam-on-objections-ytvd-3001587-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/op-rawat-and-syed-zafar-islam-address-election-commission-ri.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/star-players-return-ahead-of-ballon-dor.html">Star Players Return Ahead of Ballon d'Or</a></h2>
-    <p>Lionel Messi prepares for his final match with Argentina. Meanwhile, Kylian Mbappe, Lamine Yamal, and Harry Kane return to action prior to the announcement of the Ballon d'Or.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/football/lionel-messi-set-for-argentina-farewell-kylian-mbappe-lamine-yamal-and-cristiano-ronaldo-return-after-world-cup-12088320#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/star-players-return-ahead-of-ballon-dor.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · BBC Sport · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/heart-transplant-recipient-wins-world-cup.html">Heart Transplant Recipient Wins World Cup</a></h2>
-    <p>After undergoing a heart transplant in 2024, Martyn Jackson doubted he would ever play football again. Less than two years later, he achieved victory in the World Cup with England.</p>
-    <p class="src">Source: <a href="https://www.bbc.co.uk/sport/football/articles/cmgjqx96nxdeo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a> · <a href="article/2026-09-23/heart-transplant-recipient-wins-world-cup.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/bjp-leader-urges-karnataka-to-emulate-tamil-nadu-on-water-ri.html">BJP Leader Urges Karnataka to Emulate Tamil Nadu on Water Rights</a></h2>
-    <p>Deputy Leader of the Opposition Arvind Bellad criticized the Karnataka government and CM D.K. Shivakumar over the Cauvery issue, suggesting the state should follow Tamil Nadu's example in protecting its water share and farmers.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/bjp-leader-asks-karnataka-to-learn-from-tamil-nadu-on-protecting-interests-of-farmers/article71500732.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/bjp-leader-urges-karnataka-to-emulate-tamil-nadu-on-water-ri.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · TechCrunch · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/cybersecurity-startups-attract-massive-capital-amid-ai-growt.html">Cybersecurity Startups Attract Massive Capital Amid AI Growth</a></h2>
-    <p>As concerns over AI safety and rogue agents grow, cybersecurity stocks are rising and investors are pouring massive capital into startups building next-generation security for an AI-native world. Companies like Instinct and Simile are securing nine-figure checks and unprecedented valuations.</p>
-    <p class="src">Source: <a href="https://techcrunch.com/video/the-old-cybersecurity-model-is-breaking/" rel="noopener">TechCrunch</a> · <a href="article/2026-09-23/cybersecurity-startups-attract-massive-capital-amid-ai-growt.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · Engadget · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/disney-and-hulu-prices-increasing-again.html">Disney+ and Hulu Prices Increasing Again</a></h2>
-    <p>Disney+ and Hulu are raising their subscription prices, marking another annual increase for the services.</p>
-    <p class="src">Source: <a href="https://www.engadget.com/2266737/disney-and-hulu-are-getting-even-more-expensive-again/" rel="noopener">Engadget</a> · <a href="article/2026-09-23/disney-and-hulu-prices-increasing-again.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/vijayendra-seeks-5-lakh-farm-loan-waiver-for-drought-hit-far.html">Vijayendra seeks ₹5 lakh farm loan waiver for drought-hit farmers in Karnataka</a></h2>
-    <p>BJP State president B.Y. Vijayendra has demanded a crop loan waiver of up to ₹5 lakh for farmers affected by the severe drought in Karnataka.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/vijayendra-seeks-5-lakh-farm-loan-waiver-for-drought-hit-farmers-in-karnataka/article71500018.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/vijayendra-seeks-5-lakh-farm-loan-waiver-for-drought-hit-far.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/a-horse-named-pea-tests-focused-ultrasound-for-sarcoids.html">A horse named Pea tests focused ultrasound for sarcoids</a></h2>
-    <p>Sophie Bogers, an assistant professor of large animal surgery, notes there is no single solution for sarcoids, which often require chemotherapy or invasive surgery, prompting the search for a better treatment.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-horse-pea-focused-ultrasound-treatment.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/a-horse-named-pea-tests-focused-ultrasound-for-sarcoids.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/hormone-disrupting-chemicals-detected-in-water-sources.html">Hormone-disrupting chemicals detected in water sources</a></h2>
-    <p>A study published in the journal iScience found estrogenic endocrine-disrupting chemicals in various water sources, including tap, bottled, tank, and rainwater. Researchers have developed a new tool to assist in detecting these substances.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-hormone-disrupting-chemicals-range-natural.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/hormone-disrupting-chemicals-detected-in-water-sources.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/las-vegas-aces-clinch-top-three-seed-as-golden-state-falters.html">Las Vegas Aces clinch top-three seed as Golden State falters</a></h2>
-    <p>The Golden State Valkyries surrendered a 17-point lead to Portland, while the Las Vegas Aces defeated Los Angeles to lock in a top-three seed and home-court advantage for the first round of the playoffs.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/us-nba/golden-state-valkyries-blow-17-point-lead-as-a-ja-wilson-s-las-vegas-aces-secure-top-three-seed-12088596#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/las-vegas-aces-clinch-top-three-seed-as-golden-state-falters.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/fir-filed-in-rajasthan-over-alleged-forced-conversion.html">FIR filed in Rajasthan over alleged forced conversion</a></h2>
-    <p>Authorities in Banswara, Rajasthan, have registered an FIR against 16 individuals accused of using pressure and financial inducements to facilitate religious conversions. Alleged offers included cash payments, government jobs, and vehicles.</p>
-    <p class="src">Source: <a href="https://www.news18.com/videos/india/rajasthan-conversion-row-fir-against-16-over-alleged-1-lakh-inducement-pressure-rawreport-10349349.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/fir-filed-in-rajasthan-over-alleged-forced-conversion.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/fssai-to-implement-front-of-pack-nutrition-labelling-in-sing.html">FSSAI to implement front-of-pack nutrition labelling in single phase</a></h2>
-    <p>The FSSAI has informed the Supreme Court that it will roll out front-of-pack nutrition labelling in a single phase, requesting four months to finalise the draft regulations under the Food Safety and Standards Act.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/sci-tech/health/front-of-pack-nutrition-labelling-to-be-rolled-out-in-single-phase-fssai-tells-supreme-court/article71501256.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/fssai-to-implement-front-of-pack-nutrition-labelling-in-sing.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/sean-sharaf-addresses-mindset-following-gable-steveson-knock.html">Sean Sharaf addresses mindset following Gable Steveson knockout</a></h2>
-    <p>UFC newcomer Sean Sharaf described his 12-second knockout of Gable Steveson as a &quot;nothing to lose&quot; moment. Following the bout, Sharaf shook hands with both Steveson and Jon Jones.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/us-mma/nothing-to-lose-sean-sharaf-s-spills-the-tea-on-what-happened-after-steveson-s-shock-ko-12088579#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/sean-sharaf-addresses-mindset-following-gable-steveson-knock.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
   </article><article class="story">
     <div class="meta">ENTERTAINMENT · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-23/disney-raises-prices-again-the-fourth-hike-in-four-years.html">Disney+ Raises Prices Again, the Fourth Hike in Four Years</a></h2>
@@ -641,181 +516,6 @@ body { top: 0 !important; }
     <p>As the United Nations gathers, an open letter signed by prominent figures including Bernie Sanders and Yeb Saño is calling for immediate global action: clean power for all by the decade’s end. The letter, penned &quot;out of great fear and great hope,&quot; underscores the dual crises of war and warming that are currently setting the world ablaze.</p><p>The signatories highlight recent global events, pointing to the conflict in Iran, which has tragically claimed thousands of lives and disrupted billions more. This humanitarian crisis is juxtaposed with a series of escalating climate disasters, from devastating wildfires across Europe to collapsing glaciers in Nepal. The letter paints a stark picture of a world seemingly &quot;falling apart exactly when it needs to be coming together,&quot; emphasizing the critical need for unified action.</p><p>The central message is a powerful appeal to global leaders to prioritize and implement solar power universally. The urgency stems from the recognition that while the world faces profound challenges, the solution for a sustainable future lies in widespread adoption of clean energy. The letter serves as a potent reminder that the climate fight has a powerful, often overlooked, ally in renewable resources.</p><p>What to watch: The response of global leaders to the call for universal clean power.</p>
     <p class="src">Source: <a href="https://www.theguardian.com/commentisfree/2026/sep/23/solar-power-bernie-sanders-yeb-sano-letter" rel="noopener">Guardian Environment</a> · <a href="article/2026-09-23/global-leaders-urged-for-universal-solar-power-by-decades-en.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
   </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/brace-your-heart-review-tradition-and-modernity-collide-in-a.html">‘Brace Your Heart’ Review: Tradition and Modernity Collide in an Impassioned Ode to Sámi Womanhood</a></h2>
-    <p>‘Brace Your Heart’ follows the present‑day life and trials of a young female reindeer herder, offering a stark, realistic portrayal stripped of fairytale elements.</p>
-    <p class="src">Source: <a href="https://variety.com/2026/film/reviews/brace-your-heart-review-1236873135/" rel="noopener">Variety</a> · <a href="article/2026-09-23/brace-your-heart-review-tradition-and-modernity-collide-in-a.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/more-bullying-more-resistance-iranian-president-pezeshkians-.html">‘More Bullying, More Resistance’: Iranian President Pezeshkian’s Message To Trump</a></h2>
-    <p>President Pezeshkian said Iran is ready for dialogue, diplomacy and negotiations but will not accept a language of force.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/more-bullying-more-resistance-iranian-president-pezeshkians-message-to-trump-10348972.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/more-bullying-more-resistance-iranian-president-pezeshkians-.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/keralams-leader-of-opposition-extends-support-to-bank-strike.html">Keralam’s Leader of Opposition extends support to bank strike</a></h2>
-    
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/keralams-leader-of-opposition-extends-support-to-bank-strike/article71500227.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/keralams-leader-of-opposition-extends-support-to-bank-strike.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/pp-umer-musliyar-koyyode-chosen-samastha-general-secretary.html">P.P. Umer Musliyar Koyyode chosen Samastha general secretary</a></h2>
-    <p>P.P. Umer Musliyar Koyyode was chosen as Samastha general secretary and the Sunni scholars’ forum formed an eight‑member consultative committee to deliberate on important matters.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/pp-umer-musliyar-koyyode-chosen-samastha-general-secretary/article71499763.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/pp-umer-musliyar-koyyode-chosen-samastha-general-secretary.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/america-israel-hit-iran-but-we-didnt-bend-the-knee-pezeshkia.html">‘America-Israel Hit Iran But We Didn’t Bend The Knee’: Pezeshkian’s Fiery UNGA Address Amid US Walkout</a></h2>
-    <p>Pezeshkian accused the United States and Israel of targeting Iranian civilians and civilian infrastructure, including schools, universities, health centres and hospitals.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/pezeshkian-unga-address-america-israel-hit-iran-but-we-didnt-bend-the-knee-10348927.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/america-israel-hit-iran-but-we-didnt-bend-the-knee-pezeshkia.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/jagan-seeks-cbi-probe-into-dsc-2025-irregularities.html">Jagan Seeks CBI Probe into DSC-2025 Irregularities</a></h2>
-    <p>YSRCP chief Jagan has complained to the Governor regarding serious lapses in the DSC-2025 recruitment process, alleging police excesses under the present government and seeking a CBI probe to restore the confidence of job aspirants.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/jagan-complains-to-governor-on-dsc-2025-irregularities-seeks-cbi-probe/article71500153.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/jagan-seeks-cbi-probe-into-dsc-2025-irregularities.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/disproportionate-rates-of-family-violence-against-indigenous.html">Disproportionate Rates of Family Violence Against Indigenous Women in Australia</a></h2>
-    <p>Aboriginal and Torres Strait Islander women and children experience disproportionate levels of family violence, being killed at rates up to six times higher than non-Indigenous women, overwhelmingly by intimate partners at 76% or other family members.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-australia-violence-indigenous-women-dont.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/disproportionate-rates-of-family-violence-against-indigenous.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/adding-limestone-to-mississippi-river-basin-farmlands-acts-a.html">Adding Limestone to Mississippi River Basin Farmlands Acts as Carbon Sink</a></h2>
-    <p>A new Yale-led study reveals that farmers in the Mississippi River Basin who add limestone to their fields are storing more carbon dioxide in the soil than they emit, acting as a major carbon sink.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-adding-limestone-mississippi-river-basin.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/adding-limestone-to-mississippi-river-basin-farmlands-acts-a.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/pvr-inox-cashless-policy-sparks-legal-notice-and-discussion.html">PVR INOX Cashless Policy Sparks Legal Notice and Discussion</a></h2>
-    <p>An advocate from Ahmedabad recently sent a legal notice to PVR INOX over its cashless policy. According to experts, private businesses are permitted to skip cash and insist on digital payments.</p>
-    <p class="src">Source: <a href="https://www.livemint.com/money/visiting-pvr-inox-to-watch-a-movie-carrying-hard-cash-and-no-soft-cash-in-your-account-be-aware-of-the-rules-first-11790021509213.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-23/pvr-inox-cashless-policy-sparks-legal-notice-and-discussion.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/pezeshkian-criticizes-western-hypocrisy-at-unga.html">Pezeshkian Criticizes Western Hypocrisy at UNGA</a></h2>
-    <p>Pezeshkian stated that Israel operates outside international regulatory frameworks like the NPT and remains shielded, while Iran faces economic sanctions.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/nukes-are-in-israel-but-iaea-inspectors-are-in-iran-pezeshkian-blasts-western-hypocrisy-on-unga-floor-ws-lrt-10349004.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/pezeshkian-criticizes-western-hypocrisy-at-unga.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/priyanka-seeks-urgent-rehabilitation-for-vaniyampuzha-tribal.html">Priyanka Seeks Urgent Rehabilitation for Vaniyampuzha Tribal Families</a></h2>
-    <p>Priyanka is seeking urgent rehabilitation for 26 Paniya families who have been living in makeshift tarpaulin shelters in the forest since August 2019 floods destroyed their homes across the Chaliyar river.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/priyanka-seeks-urgent-rehabilitation-of-vaniyampuzha-tribal-families/article71500403.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/priyanka-seeks-urgent-rehabilitation-for-vaniyampuzha-tribal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/study-explores-how-animal-groups-escape-danger-using-social-.html">Study Explores How Animal Groups Escape Danger Using Social Brains</a></h2>
-    <p>Social behavior helps animals in groups, such as large bird flocks and fish schools, coordinate actions against predators by sharing threat information, though how this information passes between individuals has remained a mystery.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-social-brains-animal-groups-danger.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/study-explores-how-animal-groups-escape-danger-using-social-.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/william-shatner-to-headline-star-trek-panel-at-new-york-comi.html">William Shatner to Headline Star Trek Panel at New York Comic-Con</a></h2>
-    <p>The Star Trek New York Comic-Con panel will feature franchise legend William Shatner as the series celebrates its 60th anniversary, following his famous role as Capt. James T. Kirk.</p>
-    <p class="src">Source: <a href="https://variety.com/2026/tv/news/star-trek-nycc-william-shatner-starfleet-academy-season-2-1236873226/" rel="noopener">Variety</a> · <a href="article/2026-09-23/william-shatner-to-headline-star-trek-panel-at-new-york-comi.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/lsr-students-protest-rape-incident-dark-lanes-and-inactive-p.html">LSR Students Protest Rape Incident, Dark Lanes, and Inactive Pink Booths</a></h2>
-    <p>Students of LSR have staged a protest addressing a rape incident, dark lanes, and inactive pink booths.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/lsr-students-protest-rape-incident-dark-lanes-and-inactive-pink-booths-ytvd-3001441-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/lsr-students-protest-rape-incident-dark-lanes-and-inactive-p.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/west-bengal-anti-corruption-branch-catches-revenue-inspector.html">West Bengal Anti-Corruption Branch Catches Revenue Inspector Taking Bribe</a></h2>
-    <p>The West Bengal Anti-Corruption Branch has caught a revenue inspector taking a Rs 25,000 bribe.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/west-bengal-acb-arrests-bagdah-revenue-inspector-rs-25000-land-bribe-case-north-24-parganas-3001403-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/west-bengal-anti-corruption-branch-catches-revenue-inspector.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/t20-mumbai-league-expands-with-ninth-franchise.html">T20 Mumbai League Expands with Ninth Franchise</a></h2>
-    <p>The Mumbai Cricket Association (MCA) expanded its flagship T20 Mumbai League for the upcoming season by adding a ninth franchise.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/cricket/rs-106-88-crore-for-one-team-indias-major-t20-league-welcomes-ninth-franchise-12087845#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/t20-mumbai-league-expands-with-ninth-franchise.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 7/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/ka-ratheesh-seeks-kerala-hc-nod-to-withdraw-resignation-and-.html">K.A. Ratheesh seeks Kerala HC nod to withdraw resignation and rejoin service</a></h2>
-    
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/ka-ratheesh-seeks-kerala-hc-nod-to-withdraw-resignation-and-rejoin-service/article71499913.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/ka-ratheesh-seeks-kerala-hc-nod-to-withdraw-resignation-and-.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · The Verge · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/discord-will-now-automatically-estimate-your-age.html">Discord will now automatically estimate your age</a></h2>
-    <p>Discord is rolling out a new global age assurance system, seven months after pausing its previous verification measures following backlash from users. Starting today in every country except Australia and the UK, Discord will automatically assign users to an estimated age group based on &quot;multiple account signals,&quot; with account restrictions placed on users believed to ...</p>
-    <p class="src">Source: <a href="https://www.theverge.com/tech/999305/discord-updated-age-assurance-global-rollout" rel="noopener">The Verge</a> · <a href="article/2026-09-23/discord-will-now-automatically-estimate-your-age.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 7/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/telangana-burglar-tracked-to-varanasi-after-wilson-garden-th.html">Telangana burglar tracked to Varanasi after Wilson Garden theft; 271 gms gold seized</a></h2>
-    
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/telangana-burglar-tracked-to-varanasi-after-wilson-garden-theft-271-gms-gold-seized/article71498976.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/telangana-burglar-tracked-to-varanasi-after-wilson-garden-th.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/karnataka-high-court-cautions-state-government-against-upgra.html">Karnataka High Court cautions State government against upgrading compassionate appointees to higher posts in contradiction of norms</a></h2>
-    <p>The cases involved Sathish V. Gulla and Sandeepkumar Vinayakarao Kulkarni, whose fathers, both working as Bandh Peons in the office of the Assistant Director of Land Records, died in harness in 2017.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/karnataka/karnataka-high-court-cautions-state-government-against-upgrading-compassionate-appointees-to-higher-posts-in-contradiction-of-norms/article71500157.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/karnataka-high-court-cautions-state-government-against-upgra.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">DEFENCE BRIEF<span class="badge quick">quick bite</span> · Defence (aggregate) · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/video-indias-defence-leadership-together-at-ndtv-defence-sum.html">Video | India's Defence Leadership Together At NDTV Defence Summit 2026 - NDTV</a></h2>
-    <p>Video | India's Defence Leadership Together At NDTV Defence Summit 2026   NDTV</p>
-    <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNMTREMGlTVndkTjVFdVJoaWxpaDlaVC01ZURIWG5BUy1tUHNsSldzMXNta1pZWW9JclYzM2NXcEpURjVQZVJvQnFTMG1zX3lONVZLTnJBR213SGw2WVpEcHMtc3F2WkhvWG8yc1VWb2Q5R082Qm1PTThyRm5jTkJhX3p6OEpYVXZXMllBamJsTm9xM1NFaWJ1M0EtN1kzTXc?oc=5" rel="noopener">Defence (aggregate)</a> · <a href="article/2026-09-23/video-indias-defence-leadership-together-at-ndtv-defence-sum.html">permalink</a> · <a href="/category/defence.html">more defence</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/exclusive-cctv-footage-sahil-wakode-caught-with-phone-during.html">Exclusive CCTV Footage: Sahil Wakode Caught With Phone During Exam | IIT Bombay Case | News18</a></h2>
-    <p>CCTV footage from the IIT Bombay examination hall shows Sahil Wakode looking at material during the exam, being questioned by Professor Suryanarayana Doolla and asked to leave the hall.</p>
-    <p class="src">Source: <a href="https://www.news18.com/videos/india/exclusive-cctv-footage-sahil-wakode-caught-with-phone-during-exam-iit-bombay-case-news18-10349032.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/exclusive-cctv-footage-sahil-wakode-caught-with-phone-during.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/srisailam-temple-gears-up-for-dasara-festivities-starting-oc.html">Srisailam temple gears up for Dasara festivities starting October 11</a></h2>
-    <p>At the temple’s Trust Board meeting, 20 agenda items were discussed, with 18 approved and two deferred.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/srisailam-temple-gears-up-for-dasara-festivities-starting-october-11/article71500480.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/srisailam-temple-gears-up-for-dasara-festivities-starting-oc.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/deepika-reveals-secret-behind-her-historic-goal-scoring-spre.html">Deepika Reveals Secret Behind Her Historic Goal-Scoring Spree At Asian Games</a></h2>
-    <p>Deepika scored a record nine goals in India’s 20-1 victory over Thailand, surpassing her previous tally of eight goals against Uzbekistan in the opening match.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/hockey/deepika-reveals-secret-behind-her-historic-goal-scoring-spree-at-asian-games-12087125#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/deepika-reveals-secret-behind-her-historic-goal-scoring-spre.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/grabbed-kissed-me-hyderabad-techie-molested-by-security-guar.html">'Grabbed &amp; Kissed Me': Hyderabad Techie Molested By Security Guard</a></h2>
-    <p>The woman alleges that a private security guard at a nearby hostel, standing beside a cab, grabbed and kissed her.</p>
-    <p class="src">Source: <a href="https://www.news18.com/cities/hyderabad-news/grabbed-kissed-me-hyderabad-techie-molested-by-security-guard-10348855.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/grabbed-kissed-me-hyderabad-techie-molested-by-security-guar.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/asian-games-shooting-range-enforces-dress-code-for-athletes-.html">Asian Games shooting range enforces dress code for athletes and others</a></h2>
-    <p>The Asian Games shooting range requires adherence to a dress code, applying the rules beyond just the athletes.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/othersports/no-blue-jeans-no-camouflage-asian-games-shooting-range-lays-down-dress-code-12087215#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/asian-games-shooting-range-enforces-dress-code-for-athletes-.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/18-year-old-telangana-nursing-student-found-dead-at-home.html">18-year-old Telangana nursing student found dead at home</a></h2>
-    <p>An 18-year-old nursing student in Telangana was discovered dead at her home under suspicious circumstances.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/telangana/story/telangana-nursing-student-harini-found-dead-with-injuries-at-village-home-3001416-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/18-year-old-telangana-nursing-student-found-dead-at-home.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · TechCrunch · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/eight-sleeps-new-pod-6-is-20-faster-than-previous-generation.html">Eight Sleep's new Pod 6 is 20% faster than previous generation</a></h2>
-    <p>Eight Sleep announced that its new Pod 6 operates 20% faster than the prior generation of pods.</p>
-    <p class="src">Source: <a href="https://techcrunch.com/2026/09/23/eight-sleeps-new-pod-6-comes-in-smaller-and-solo-sizes-starting-at-1999/" rel="noopener">TechCrunch</a> · <a href="article/2026-09-23/eight-sleeps-new-pod-6-is-20-faster-than-previous-generation.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/lakshya-raichandani-scores-unbeaten-110-as-india-u-19-clinch.html">Lakshya Raichandani scores unbeaten 110 as India U-19 clinches 3-0 sweep over Australia</a></h2>
-    <p>Captain Lakshya Raichandani hit an unbeaten 110, leading India U-19 to a six-wicket win in the third Youth ODI against Australia, completing a 3-0 series sweep.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/cricket/captain-lakshya-raichandani-hits-century-in-india-u19s-dominant-win-over-australia-12086987#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/lakshya-raichandani-scores-unbeaten-110-as-india-u-19-clinch.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/four-students-killed-one-critically-injured-in-train-collisi.html">Four students killed, one critically injured in train collision in Srikakulam, Andhra Pradesh</a></h2>
-    <p>A train struck a group of students in Srikakulam, Andhra Pradesh, resulting in four deaths and one critical injury.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/srikakulam-train-accident-four-youths-killed-while-fishing-in-tekkali-floodwaters-3001411-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/four-students-killed-one-critically-injured-in-train-collisi.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/afghan-cyclist-fariba-hashimi-wins-silver-in-asian-games-wom.html">Afghan Cyclist Fariba Hashimi Wins Silver in Asian Games Women's Road Race</a></h2>
-    <p>Fariba Hashimi secured a silver medal in the women's cycling road race at the Asian Games.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/cycling/she-trained-disguised-as-a-man-afghan-cyclists-incredible-asian-games-silver-story-12086757#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/afghan-cyclist-fariba-hashimi-wins-silver-in-asian-games-wom.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/early-earth-may-have-achieved-life-supporting-conditions-433.html">Early Earth May Have Achieved Life-Supporting Conditions 4.33 Billion Years Ago</a></h2>
-    <p>New research led by Planetary Science Institute senior scientist Oleg Abramov suggests that around 4.33 billion years ago, Earth's conditions became stable enough to sustain chemistry linked to the origins of life.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-earth-gained-optimal-conditions-life.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/early-earth-may-have-achieved-life-supporting-conditions-433.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/debate-over-dingoes-intensifies.html">Debate Over Dingoes Intensifies</a></h2>
-    <p>The question of how to manage dingoes remains under discussion.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-dingo-debate-animals-future.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/debate-over-dingoes-intensifies.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/indian-shooters-secure-bronze-with-331-points-in-asian-games.html">Indian Shooters Secure Bronze with 331 Points in Asian Games Skeet</a></h2>
-    <p>Parinaaz Dhaliwal, Raiza Dhillon and Maheshwari Chauhan amassed 331 points in the qualification rounds, finishing third behind China (347) and Kazakhstan (336).</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/shooting/parinaaz-dhaliwal-reveals-key-factor-behind-historic-asian-games-bronze-in-skeet-12087190#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/indian-shooters-secure-bronze-with-331-points-in-asian-games.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · Al Jazeera · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/ethiopias-seven-group-rebel-alliance-challenges-abiy-ahmed.html">Ethiopia’s Seven-Group Rebel Alliance Challenges Abiy Ahmed</a></h2>
-    <p>The alliance unites movements with varied enemies, claims and histories amid rising tensions with Prime Minister Abiy Ahmed.</p>
-    <p class="src">Source: <a href="https://www.aljazeera.com/news/2026/9/23/can-ethiopias-seven-group-rebel-alliance-challenge-abiy-ahmed?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-23/ethiopias-seven-group-rebel-alliance-challenges-abiy-ahmed.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
     <div class="meta">NATIONAL · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-23/lpg-ekyc-deadline-nears-complete-process-by-october-1.html">LPG eKYC Deadline Nears: Complete Process by October 1</a></h2>
     <p>Domestic LPG consumers across India are urged to complete their eKYC process well in advance of the impending October 1 deadline. This mandate is crucial for all users of domestic liquefied petroleum gas connections. Non-compliance by the specified date could lead to issues concerning their LPG services.</p><p>The eKYC procedure offers flexibility for consumers, providing both offline and online avenues for completion. Individuals can opt to visit their designated gas agency, where personnel are available to assist with the necessary verification steps. This traditional method ensures direct support for those who may require it or prefer in-person interaction.</p><p>For consumers seeking a more convenient, at-home solution, the eKYC process can be accomplished digitally. This involves downloading the specific mobile applications provided by their respective LPG service providers. These applications are designed to guide users through the identity verification process, enabling them to link their authenticated details to their existing LPG connection without needing to leave their homes.</p><p>The October 1 deadline has been established to ensure a comprehensive authentication of all domestic LPG connections, enhancing transparency and service delivery. It is imperative for consumers to prioritize this task to prevent any potential interruptions or complications with their LPG supply. Both agency visits and mobile app completion are structured to be user-friendly, emphasizing the importance of timely adherence to the new regulations.</p><p>What to watch: Potential official announcements regarding extensions or penalties post-October 1.</p>
@@ -891,126 +591,6 @@ body { top: 0 !important; }
     <p>Women who have undergone inexpensive blepharoplasty, or eyelid surgery, are increasingly raising alarms about severe post-operative complications. Reports include distressing issues such as open wounds and the inability to fully close their eyes, highlighting significant concerns with certain procedures.</p><p>Medical professionals are observing a concerning trend, noting that a growing number of patients are presenting with problems stemming from treatments received abroad. This phenomenon points to potential risks associated with seeking cosmetic surgeries in foreign clinics, particularly when cost is the primary driving factor.</p><p>The complications described, such as persistent open wounds, suggest inadequate surgical techniques, poor hygiene standards, or insufficient post-operative care. The inability to close eyelids properly can lead to severe dry eye, corneal damage, and other long-term vision issues, drastically impacting patients' quality of life.</p><p>Doctors are urging caution for individuals considering cosmetic procedures overseas, emphasizing the importance of thorough research into clinics, surgeons' qualifications, and the standards of care. The low cost of some treatments may mask significant risks that can result in serious health consequences and the need for corrective surgeries, which can be both complex and expensive.</p><p>What to watch: The ongoing efforts by medical bodies to regulate and inform patients about medical tourism risks.</p>
     <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/c9rk3rdp644mo?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Health</a> · <a href="article/2026-09-23/open-wounds-and-eyes-that-cant-close-women-warn-about-cheap-.html">permalink</a> · <a href="/category/health.html">more health</a></p>
   </article><article class="story">
-    <div class="meta">ENVIRONMENT BRIEF<span class="badge quick">quick bite</span> · Mongabay India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/ladakh-snow-leopard-safari-plans-spark-conservation-concerns.html">Ladakh snow leopard safari plans spark conservation concerns</a></h2>
-    <p>Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails in the country's largest contiguous snow leopard habitat. Conservationists warn that these tours could disturb the species and other wildlife in the fragile high-altitude wilderness.</p>
-    <p class="src">Source: <a href="https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/" rel="noopener">Mongabay India</a> · <a href="article/2026-09-23/ladakh-snow-leopard-safari-plans-spark-conservation-concerns.html">permalink</a> · <a href="/category/environment.html">more environment</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/canadian-musicians-report-hostility-toward-ai-and-streaming.html">Canadian musicians report hostility toward AI and streaming</a></h2>
-    <p>New research indicates that Canadian musicians are increasingly hostile toward the tech industry and generative AI. Artists claim these developments are devaluing their work and complicating efforts to earn money and find listeners.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-canadian-musicians-multi-front-ai.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/canadian-musicians-report-hostility-toward-ai-and-streaming.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/indigo-flight-from-london-to-delhi-returns-to-heathrow.html">IndiGo flight from London to Delhi returns to Heathrow</a></h2>
-    <p>An IndiGo flight traveling from London to Delhi was forced to make a U-turn and return to Heathrow Airport following a technical issue.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/indigo-flight-6e04-london-to-delhi-returns-to-heathrow-after-technical-issue-3001237-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/indigo-flight-from-london-to-delhi-returns-to-heathrow.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/syrian-president-recalls-joke-to-trump-regarding-golan-heigh.html">Syrian President Recalls Joke to Trump Regarding Golan Heights</a></h2>
-    <p>Syrian President Ahmed al-Sharaa stated he joked with Donald Trump about offering New Jersey to Israel during a discussion concerning the status of the disputed Golan Heights.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/why-dont-you-give-new-jersey-to-israelis-syrias-al-sharaas-terse-response-to-trump-on-golan-heights-handover-ws-l-10348597.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/syrian-president-recalls-joke-to-trump-regarding-golan-heigh.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/controversy-surrounds-eci-appeals-following-bengal-sir-anoma.html">Controversy Surrounds ECI Appeals Following Bengal SIR Anomaly Report</a></h2>
-    <p>A controversy has emerged regarding who filed appeals on behalf of the Election Commission of India following a report that flagged an anomaly involving the Bengal SIR.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/bengal-sir-election-commission-dissent-gyanesh-kumar-mamata-banerjee-repoll-3001234-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/controversy-surrounds-eci-appeals-following-bengal-sir-anoma.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/european-producers-downplay-impact-of-potential-us-federal-t.html">European Producers Downplay Impact of Potential U.S. Federal Tax Credit</a></h2>
-    <p>At the Creative Investors’ Conference in San Sebastián, industry experts discussed the potential impact of a U.S. federal tax credit for film production. Lorenzo de Maio of De Maio Entertainment suggested that the measure would not threaten Europe’s production boom.</p>
-    <p class="src">Source: <a href="https://variety.com/2026/film/global/u-s-federal-tax-do-not-threaten-european-production-boom-1236873096/" rel="noopener">Variety</a> · <a href="article/2026-09-23/european-producers-downplay-impact-of-potential-us-federal-t.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/odisha-closes-schools-amid-heavy-rain.html">Odisha Closes Schools Amid Heavy Rain</a></h2>
-    <p>The Odisha government has ordered the closure of educational institutions and Anganwadi centres across 10 districts as heavy rain impacts the region.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/odisha/heavy-rain-lashes-odisha-as-deep-depression-approaches-coast/article71499120.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/odisha-closes-schools-amid-heavy-rain.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/nursing-student-found-dead-in-telangana.html">Nursing Student Found Dead in Telangana</a></h2>
-    <p>A nursing student was discovered dead with bodily injuries outside their home in Telangana.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/telangana-shock-nursing-student-found-dead-with-body-injuries-outside-home-ytvd-3001231-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/nursing-student-found-dead-in-telangana.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/madhya-pradesh-traders-stage-no-upi-day.html">Madhya Pradesh Traders Stage 'No UPI Day'</a></h2>
-    <p>Traders in Madhya Pradesh are observing 'No UPI Day' to protest the 0.4% Merchant Discount Rate (MDR) levy.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/mp-traders-no-upi-day-mdr-upi-payments-above-rs-2000-ptag-3001072-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/madhya-pradesh-traders-stage-no-upi-day.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/court-queries-nawab-malik-charge-framing.html">Court Queries Nawab Malik Charge Framing</a></h2>
-    <p>A court has questioned the framing of charges against Nawab Malik due to a pending plea regarding Enforcement Directorate documents.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/law-news/story/nawab-malik-case-bombay-high-court-questions-framing-charges-pending-ed-document-plea-ncp-leader-money-laundering-3001083-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/court-queries-nawab-malik-charge-framing.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/multiple-killed-in-azamgarh-shootout.html">Multiple Killed in Azamgarh Shootout</a></h2>
-    <p>A man killed his wife, son, and priests in Azamgarh before dying in an encounter.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/azamgarh-shootout-man-kills-wife-priests-son-dies-in-encounter-ytvd-3001222-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/multiple-killed-in-azamgarh-shootout.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">CRICKET BRIEF<span class="badge quick">quick bite</span> · Crictracker · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/litton-das-leads-bangladesh-to-asian-games.html">Litton Das leads Bangladesh to Asian Games</a></h2>
-    <p>Bangladesh captain Litton Das has expressed confidence in his team's prospects for the men's cricket tournament in Japan, with the squad scheduled to depart Dhaka on September 24.</p>
-    <p class="src">Source: <a href="https://www.crictracker.com/cricket-news/target-is-definitely-clear-litton-das-eyes-asian-games-final-with-bangladesh-5608/" rel="noopener">Crictracker</a> · <a href="article/2026-09-23/litton-das-leads-bangladesh-to-asian-games.html">permalink</a> · <a href="/category/cricket.html">more cricket</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/garware-hi-tech-films-and-lubrizol-partner-on-tpu-technology.html">Garware Hi Tech Films and Lubrizol partner on TPU technology</a></h2>
-    <p>Garware Hi Tech Films has signed a memorandum of understanding with Lubrizol to collaborate on the development and manufacturing of Lubrizol's global TPU technology in India.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/garware-hi-tech-films-signs-mou-with-lubrizol-126092300971_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/garware-hi-tech-films-and-lubrizol-partner-on-tpu-technology.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · Engadget · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/apple-maps-integrates-hidden-histories-podcast-content.html">Apple Maps integrates Hidden Histories podcast content</a></h2>
-    <p>Apple has introduced podcast guides for specific US landmarks within its Maps application, providing listeners with historical information and lesser-known stories.</p>
-    <p class="src">Source: <a href="https://www.engadget.com/2266233/apple-links-landmarks-on-its-maps-app-to-hidden-histories-podcast-episodes/" rel="noopener">Engadget</a> · <a href="article/2026-09-23/apple-maps-integrates-hidden-histories-podcast-content.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/karnataka-mla-resigns-over-drought-list-exclusion.html">Karnataka MLA Resigns Over Drought List Exclusion</a></h2>
-    <p>A Karnataka Congress MLA has resigned from his position after his constituency was excluded from the government's list of drought-hit areas.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/karnataka/story/karnataka-drought-hit-list-congress-mla-yeshwanthrayagouda-patil-resigns-over-indi-exclusion-ptag-3001075-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/karnataka-mla-resigns-over-drought-list-exclusion.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/lsr-students-protest-for-womens-safety.html">LSR Students Protest for Women's Safety</a></h2>
-    <p>Students at LSR are protesting for women's safety in Delhi following the recent gang rape case in Kalkaji.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/lsr-students-protest-for-women-safety-in-delhi-following-kalkaji-gang-rape-case-ytvd-3001211-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/lsr-students-protest-for-womens-safety.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · Al Jazeera · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/uefa-president-says-trust-in-fifa-remains-broken.html">UEFA President Says Trust in FIFA Remains Broken</a></h2>
-    <p>UEFA President Aleksander Ceferin has stated that trust in FIFA remains broken following a dispute over investment decisions, marking his first comments since FIFA announced a review of its decision-making processes.</p>
-    <p class="src">Source: <a href="https://www.aljazeera.com/sports/2026/9/23/uefas-ceferin-says-fifa-trust-still-broken-after-infantino-investment-row?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-23/uefa-president-says-trust-in-fifa-remains-broken.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/shibasish-sarkar-re-elected-president-of-producers-guild-of-.html">Shibasish Sarkar Re-elected President of Producers Guild of India</a></h2>
-    <p>Shibasish Sarkar was unanimously re-elected as President of the Producers Guild of India during the first meeting of the new Council of Management, following the organization's 72nd Annual General Meeting held on September 22, 2026.</p>
-    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/bollywood/shibasish-sarkar-re-elected-as-president-of-producers-guild-of-india/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-23/shibasish-sarkar-re-elected-president-of-producers-guild-of-.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/indian-apache-helicopters-join-us-forces-for-exercise-yudh-a.html">Indian Apache Helicopters Join US Forces for Exercise Yudh Abhyas</a></h2>
-    <p>Indian Army Apache attack helicopters are participating in the joint Exercise Yudh Abhyas 2026 with US forces in Rajasthan and Uttarakhand. The drills involve 600 personnel and focus on mountain warfare, live-fire exercises, and precision engagement.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/defence/news/watch-apache-firepower-joins-us-war-machines-during-india-us-drill-yudh-abhyas/articleshow/134434923.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/indian-apache-helicopters-join-us-forces-for-exercise-yudh-a.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/ktr-urges-sc-to-take-suo-motu-cognizance-of-eci-functioning-.html">KTR urges SC to take suo motu cognizance of ECI functioning concerns</a></h2>
-    <p>The BRS working president stated that the ECI is facing a crisis of confidence and that only a top-court-monitored inquiry can restore public trust.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/telangana/ktr-urges-sc-to-take-suo-motu-cognizance-of-concerns-over-eci-functioning/article71499488.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/ktr-urges-sc-to-take-suo-motu-cognizance-of-eci-functioning-.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/sc-reminds-lok-sabha-speaker-on-plea-to-disqualify-20-tmc-re.html">SC reminds Lok Sabha Speaker on plea to disqualify 20 TMC rebel MPs</a></h2>
-    <p>The Supreme Court urged an expeditious decision on TMC’s plea seeking disqualification of 20 rebel MPs, citing the anti-defection law.</p>
-    <p class="src">Source: <a href="https://www.news18.com/india/expeditious-resolution-sc-reminds-lok-sabha-speaker-on-plea-to-disqualify-20-tmc-rebel-mps-10348578.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/sc-reminds-lok-sabha-speaker-on-plea-to-disqualify-20-tmc-re.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/cargills-bank-selects-intellects-composable-emachai-core-ban.html">Cargills Bank selects Intellect's Composable eMACH.ai Core Banking Architecture</a></h2>
-    <p>Intellect Design Arena announced that Cargills Bank, a licensed commercial bank in Sri Lanka, has selected the Composable eMACH.ai Core Banking Architecture to expand its digital banking capabilities and strengthen its long-standing technology partnership with Intellect.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/cargills-bank-selects-intellect-s-composable-emach-ai-core-banking-architecture-for-its-digital-transformation-126092300937_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/cargills-bank-selects-intellects-composable-emachai-core-ban.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/tmc-demands-re-elections-following-criticism-of-cec.html">TMC Demands Re-elections Following Criticism of CEC</a></h2>
-    <p>The Trinamool Congress (TMC) has attacked Chief Election Commissioner Gyanesh Kumar and demanded re-elections, while the BJP has defended the current election process.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/tmc-attacks-cec-gyanesh-kumar-demands-re-elections-as-bjp-defends-process-ytvd-3001204-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/tmc-demands-re-elections-following-criticism-of-cec.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/rare-faberge-figurine-sells-for-record-52-million.html">Rare Fabergé Figurine Sells for Record $5.2 Million</a></h2>
-    <p>A Fabergé hardstone figure of a bodyguard to Empress Alexandra Feodorovna, commissioned by Emperor Nicholas II, has sold for a record $5.2 million after being discovered in a New York attic.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/us/in-1934-a-new-york-collector-bought-a-faberg-figure-tied-to-russias-imperial-court-nearly-80-years-later-it-resurfaced-in-a-family-attic-and-sold-at-auction-for-a-record-5-2-million/articleshow/134432375.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/rare-faberge-figurine-sells-for-record-52-million.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
     <div class="meta">WORLD · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-23/trump-issues-stark-warning-to-iran-amidst-un-general-assembl.html">Trump Issues Stark Warning to Iran Amidst UN General Assembly Talks</a></h2>
     <p>Tensions between the United States and Iran have seen a significant escalation, with former President Trump issuing a stern warning. Trump stated that he might “annihilate” Iran if a new deal with the U.S. is not reached. This assertive declaration comes even as U.S. and Iranian officials are engaged in unexpected discussions.</p><p>The talks between representatives from both nations are reportedly taking place at the United Nations General Assembly. The nature and specifics of these discussions remain under wraps, but their occurrence alongside Trump’s strong rhetoric highlights the complex and volatile state of U.S.-Iran relations.</p><p>Trump’s threat of “annihilation” underscores the high stakes involved in the ongoing diplomatic efforts and the potential for severe consequences should a resolution not be found. The juxtaposition of dialogue and aggressive warnings paints a picture of a delicate geopolitical situation.</p><p>What to watch: The outcomes of the unexpected talks at the UN General Assembly and any subsequent statements from involved parties.</p>
@@ -1055,156 +635,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-23/fssai-ex-chief-proposes-phased-food-warning-rollout.html">FSSAI Ex-Chief Proposes Phased Food Warning Rollout</a></h2>
     <p>Former Food Safety and Standards Authority of India (FSSAI) chief Pawan Kumar Agarwal has urged the Supreme Court to consider a phased rollout of front-of-pack food warnings. He argued that the currently proposed nutrient thresholds are too broad, potentially placing warning labels on more than 94% of packaged foods. </p><p>Agarwal warned that such a high prevalence of labels could dilute their impact, making it difficult for consumers to distinguish between healthier and less healthy options. To address this, his foundation suggested a more gradual approach. </p><p>The proposal involves setting interim thresholds first, followed by stricter limits over a period of three to five years. This phased strategy aims to ensure that the warning labels remain meaningful and effective in guiding consumer choices. </p><p>Under the suggested timeline, mandatory labelling would be proposed to start from July 1, 2027. This allows for a transition period where the industry can adapt to the new regulations while the criteria are tightened. </p><p>Agarwal’s intervention highlights the ongoing debate over how to implement effective food safety regulations without overwhelming consumers or the market. </p><p>What to watch: The Supreme Court’s ruling on the implementation timeline for front-of-pack food warnings.</p>
     <p class="src">Source: <a href="https://health.economictimes.indiatimes.com/news/policy/94-of-packaged-foods-may-face-warnings-under-nutrient-limits-fssai-ex-chief-pawan-kumar-agarwal-urges-sc-for-phased-food-warning-rollout/134424130" rel="noopener">ET Healthworld</a> · <a href="article/2026-09-23/fssai-ex-chief-proposes-phased-food-warning-rollout.html">permalink</a> · <a href="/category/health.html">more health</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/us-secures-greenland-military-access-deal.html">US Secures Greenland Military Access Deal</a></h2>
-    <p>The United States has reached a deal with Denmark regarding military access to Greenland, though the pact falls short of some of Donald Trump's original ambitions for the Arctic island.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/trumps-greenland-push-ends-in-a-deal-with-denmark-what-has-the-us-secured-ws-l-10347338.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/us-secures-greenland-military-access-deal.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/sp-mp-rejects-muslim-clerics-criticism-of-akhilesh-yadav.html">SP MP Rejects Muslim Cleric's Criticism of Akhilesh Yadav</a></h2>
-    <p>Samajwadi Party MP Ramji Lal Suman has dismissed a Muslim cleric’s critique of Akhilesh Yadav’s political strategy, stating the party will determine its own leadership and direction.</p>
-    <p class="src">Source: <a href="https://www.news18.com/india/will-he-run-our-party-sp-slams-muslim-cleric-over-akhilesh-yadavs-soft-hindutva-remarks-ws-l-10347472.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/sp-mp-rejects-muslim-clerics-criticism-of-akhilesh-yadav.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/glenmark-receives-eir-for-goa-manufacturing-facility.html">Glenmark Receives EIR for Goa Manufacturing Facility</a></h2>
-    <p>Glenmark has received an Establishment Inspection Report (EIR) for its manufacturing facility in Goa following an inspection conducted from June 22 to June 30, 2026.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/glenmark-receives-eir-report-for-formulations-facility-in-goa-126092300179_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/glenmark-receives-eir-for-goa-manufacturing-facility.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/man-kills-family-and-priests-in-azamgarh-dies-in-police-enco.html">Man kills family and priests in Azamgarh; dies in police encounter</a></h2>
-    <p>A man in Azamgarh, Uttar Pradesh, shot and killed his wife, his son, and two priests during a home religious ceremony. The suspect was later killed in an encounter with police.</p>
-    <p class="src">Source: <a href="https://www.news18.com/india/azamgarh-shooting-7-hour-standoff-police-encounter-children-rescued-man-kills-wife-priests-ws-l-10347267.html" rel="noopener">News18 India</a> · <a href="article/2026-09-23/man-kills-family-and-priests-in-azamgarh-dies-in-police-enco.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/demolition-drive-conducted-in-delhis-shalimar-bagh.html">Demolition Drive Conducted in Delhi's Shalimar Bagh</a></h2>
-    <p>A demolition drive was carried out in Delhi's Shalimar Bagh, resulting in the razing of the Madina Masjid and nearby houses to make way for a road project.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/demolition-drive-in-delhis-shalimar-bagh-madina-masjid-and-nearby-houses-razed-for-road-project-ytvd-3000786-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/demolition-drive-conducted-in-delhis-shalimar-bagh.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/press-meet-for-the-paradise-delayed-following-car-confusion.html">Press Meet for The Paradise Delayed Following Car Confusion</a></h2>
-    <p>A press meet for the film 'The Paradise' in Mumbai, featuring actors Nani, Sonali Kulkarni, Raghav Juyal, and Kayadu Lohar, was delayed due to confusion involving Raghav Juyal's driver, who mistakenly took another resident's car. The event was notable for the actors taking unscheduled questions from the media.</p>
-    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/high-drama-before-the-paradise-mumbai-press-meet-raghav-juyals-driver-steals-fellow-residents-car-by-mistake-confusion-causes-delay/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-23/press-meet-for-the-paradise-delayed-following-car-confusion.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/communal-harmony-at-kadapa-vinayaka-chavithi-procession.html">Communal Harmony at Kadapa Vinayaka Chavithi Procession</a></h2>
-    <p>The Vinayaka Chavithi procession in Kadapa was marked by communal harmony as members of various communities participated and exchanged pleasantries. MLA Madhavi Reddy led the Shobha Yatra from NGOs Colony, while police maintained surveillance in sensitive areas.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/communal-harmony-marks-vinayaka-chavithi-procession-in-kadapa-ahead-of-nimajjanam/article71496384.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/communal-harmony-at-kadapa-vinayaka-chavithi-procession.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/research-project-identifies-climate-resilient-water-and-soil.html">Research project identifies climate-resilient water and soil management strategies</a></h2>
-    <p>The European Blue Transition project, led by the LIAG Institute for Applied Geophysics, has concluded four years of research across 16 pilot regions. The findings highlight three key levers for climate resilience: changing land use, improving soil health, and diversifying and optimizing water resources.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-pathways-climate-resilient-soil.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-23/research-project-identifies-climate-resilient-water-and-soil.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/itat-rules-in-favor-of-taxpayer-in-penny-stock-gain-dispute.html">ITAT rules in favor of taxpayer in penny-stock gain dispute</a></h2>
-    <p>The Mumbai ITAT has deleted a ₹1.93 crore tax addition related to gains from Toyam Industries. The tribunal ruled that the taxpayer provided a sufficient transaction trail, while the Revenue failed to provide evidence linking the taxpayer to alleged price manipulation.</p>
-    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/taxman-called-a-penny-stock-gain-bogus-after-70-000-became-1-93-crore-here-s-what-mumbai-itat-said-11790133393547.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-23/itat-rules-in-favor-of-taxpayer-in-penny-stock-gain-dispute.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/insufficient-information-regarding-us-iran-talks.html">Insufficient information regarding US-Iran talks</a></h2>
-    <p>No summary information was provided to report on the details of the US-Iran meeting.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/middle-east/us-iran-talks-what-was-discussed-in-trumps-good-meeting-on-the-sidelines-of-unga/articleshow/134425060.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/insufficient-information-regarding-us-iran-talks.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/christopher-meloni-to-return-to-law-order-svu.html">Christopher Meloni to return to 'Law &amp; Order: SVU'</a></h2>
-    <p>Mariska Hargitay posted photos on Instagram suggesting that Christopher Meloni has returned to the set of 'Law &amp; Order: SVU' to film an episode, marking another reunion for their characters Elliot Stabler and Olivia Benson.</p>
-    <p class="src">Source: <a href="https://variety.com/2026/tv/news/mariska-hargitay-christopher-meloni-law-and-order-reunite-1236872962/" rel="noopener">Variety</a> · <a href="article/2026-09-23/christopher-meloni-to-return-to-law-order-svu.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/oswal-pumps-secures-rs-29750-crore-order-from-tredcl.html">Oswal Pumps secures Rs 297.50 crore order from TREDCL</a></h2>
-    <p>Oswal Pumps has been awarded an order valued at Rs 297.50 crore from TREDCL.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/oswal-pumps-wins-order-worth-rs-297-50-cr-from-tredcl-126092300166_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/oswal-pumps-secures-rs-29750-crore-order-from-tredcl.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · BS Personal Finance · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/fo-trading-restrictions-announced-for-september-23.html">F&amp;O Trading Restrictions Announced for September 23</a></h2>
-    <p>Shares of Kaynes Technology, LIC Housing Finance, Manappuram Finance, and SAIL have been excluded from F&amp;O trading effective September 23, 2026.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/markets/capital-market-news/stock-alert-360-one-wam-irb-infra-arvind-smartspace-aditya-infotech-cupid-126092300159_1.html" rel="noopener">BS Personal Finance</a> · <a href="article/2026-09-23/fo-trading-restrictions-announced-for-september-23.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/election-commission-faces-criticism-over-west-bengal-operati.html">Election Commission Faces Criticism Over West Bengal Operations</a></h2>
-    <p>The Election Commission of India is currently being accused of acting as a tool for the Bharatiya Janata Party within West Bengal.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/opinion/editorial/freezing-democracy-on-the-eci-and-west-bengal/article71495672.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/election-commission-faces-criticism-over-west-bengal-operati.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/karnataka-man-found-murdered-in-sharjah.html">Karnataka Man Found Murdered in Sharjah</a></h2>
-    <p>A Karnataka man has been murdered in Sharjah, with his body dismembered into nine pieces. His wife and son remain missing.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/karnataka/story/sharjah-murder-udupi-kundapur-man-alwin-prakash-kunder-wife-son-untraceable-3000764-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/karnataka-man-found-murdered-in-sharjah.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/manu-bhaker-advances-to-10m-air-pistol-final-at-asian-games.html">Manu Bhaker Advances to 10m Air Pistol Final at Asian Games</a></h2>
-    <p>On Day 4 of the 2026 Asian Games, Manu Bhaker qualified for the women's 10m Air Pistol Individual final but failed to secure a team medal in the same event.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/othersports/asian-games-2026-live-updates-day-4-india-medal-tally-results-gold-silver-bronze-medal-count-aichi-nagoya-japan-live-news-shooting-weightlifting-12083555#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/manu-bhaker-advances-to-10m-air-pistol-final-at-asian-games.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/bihar-police-aspirant-stalked-and-attacked.html">Bihar Police Aspirant Stalked and Attacked</a></h2>
-    <p>A woman preparing for the police force in Bihar was stalked and attacked with a knife after she rejected a man's advances.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/bihar/story/muzaffarpur-assault-case-bihar-cop-aspirant-stalked-attacked-with-knife-after-rejecting-mans-advances-3000779-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/bihar-police-aspirant-stalked-and-attacked.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/ethanol-firm-sues-andhra-farmer-over-pollution-claims.html">Ethanol Firm Sues Andhra Farmer Over Pollution Claims</a></h2>
-    <p>An ethanol manufacturer has filed a ₹1 crore lawsuit against M. Muralidhar Reddy of Gandepalli, seeking an apology and an injunction against his statements regarding pollution. The legal action follows an Andhra Pradesh Pollution Control Board fine and a Lokayukta inquiry that confirmed the presence of untreated effluents in a local irrigation canal.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/ethanol-company-sues-andhra-farmer-over-pollution-claims-seeks-1-crore-compensation/article71496115.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-23/ethanol-firm-sues-andhra-farmer-over-pollution-claims.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/lsr-shifts-to-online-classes-following-delhi-police-encounte.html">LSR Shifts to Online Classes Following Delhi Police Encounter</a></h2>
-    <p>Lady Shri Ram (LSR) College has moved classes to an online format following a police encounter that occurred near its campus in connection with the Delhi Kalkaji gang rape case.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/delhi-kalkaji-gang-rape-lsr-shifts-classes-online-following-police-encounter-near-campus-ytvd-3000781-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/lsr-shifts-to-online-classes-following-delhi-police-encounte.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/the-hermitage-announces-132-million-redevelopment-plan.html">The Hermitage Announces $132 Million Redevelopment Plan</a></h2>
-    <p>The Andrew Jackson Foundation is planning a $132 million redevelopment of The Hermitage, which includes an underground visitor and education center designed to preserve historic sightlines. The project, which has received $6 million in initial state funding, aims to provide a comprehensive history of the site, including the experiences of enslaved people.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/world/us/tennessees-andrew-jackson-estate-spans-1200-acres-its-new-plan-puts-much-of-a-70000-square-foot-visitor-center-underground-so-the-building-does-not-interrupt-views-across-the-historic-landscape/articleshow/134416912.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/the-hermitage-announces-132-million-redevelopment-plan.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Business Standard · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/dixon-technologies-expands-focus-to-boost-global-presence.html">Dixon Technologies Expands Focus to Boost Global Presence</a></h2>
-    <p>Contract manufacturer Dixon Technologies is looking to increase its profit margins by expanding into the production of electronic components, such as camera modules, while continuing to scale its smartphone and laptop manufacturing operations.</p>
-    <p class="src">Source: <a href="https://www.business-standard.com/companies/news/dixon-technologies-eyes-growth-beyond-smartphones-to-add-global-clout-126092300152_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-23/dixon-technologies-expands-focus-to-boost-global-presence.html">permalink</a> · <a href="/category/business.html">more business</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/vanshi-bedi-denies-spot-fixing-allegations.html">Vanshi Bedi Denies Spot-Fixing Allegations</a></h2>
-    <p>Former Chennai Super Kings wicket-keeper batter Vanshi Bedi has threatened criminal action following allegations linking him to spot-fixing in the Delhi Premier League and IPL lineup leaks.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/cricket/ex-csk-star-vansh-bedi-breaks-silence-as-ipl-fixing-row-grips-indian-cricket-false-and-defamatory-12082908#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/vanshi-bedi-denies-spot-fixing-allegations.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/pezeshkian-arrives-at-unga-amid-trump-threats.html">Pezeshkian Arrives at UNGA Amid Trump Threats</a></h2>
-    <p>Iranian President Pezeshkian has arrived in New York for the UNGA 2026 after Donald Trump stated that Washington may either reach a deal with Tehran or &quot;annihilate&quot; the nation following the US midterm elections.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/unga-2026-live-updates-trump-iran-pezeshkian-zelensky-un-general-assembly-liveblog-10347295.html" rel="noopener">News18 World</a> · <a href="article/2026-09-23/pezeshkian-arrives-at-unga-amid-trump-threats.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">SPORTS BRIEF<span class="badge quick">quick bite</span> · NDTV Sports · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/javier-tebas-criticizes-real-madrids-conspiracy-claims.html">Javier Tebas Criticizes Real Madrid's Conspiracy Claims</a></h2>
-    <p>La Liga president Javier Tebas has dismissed accusations of a refereeing conspiracy made by Real Madrid following the club's recent derby defeat to Atletico Madrid.</p>
-    <p class="src">Source: <a href="https://sports.ndtv.com/football/la-liga-chief-javier-tebas-slams-real-madrids-refereeing-conspiracy-narrative-12083626#publisher=newsstand" rel="noopener">NDTV Sports</a> · <a href="article/2026-09-23/javier-tebas-criticizes-real-madrids-conspiracy-claims.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · TOI Entertainment · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/vivek-oberoi-supports-salman-khans-stance-against-trolling.html">Vivek Oberoi Supports Salman Khan’s Stance Against Trolling</a></h2>
-    <p>Vivek Oberoi has praised Salman Khan for speaking out against trolling on Bigg Boss, specifically regarding the body-shaming of Katrina Kaif. Despite their past 2003 conflict, Oberoi stated he is now focused on moving forward with positivity.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/amid-past-fallout-vivek-oberoi-reacts-to-salman-khans-stand-against-trolls/articleshow/134424922.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-23/vivek-oberoi-supports-salman-khans-stance-against-trolling.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/india-claims-womens-skeet-team-bronze-at-asian-games.html">India Claims Women's Skeet Team Bronze at Asian Games</a></h2>
-    <p>The Indian women's skeet team won bronze at the Aichi-Nagoya Asian Games with a total score of 331 points. China took gold with 346 points, while Kazakhstan took silver.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/sports/asian-games-2026/india-win-bronze-in-womens-skeet-team-event-at-asian-games/articleshow/134424864.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-23/india-claims-womens-skeet-team-bronze-at-asian-games.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · BBC Business · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/experts-skeptical-of-trumps-super-intelligence-ai-rebranding.html">Experts Skeptical of Trump's 'Super Intelligence' AI Rebranding</a></h2>
-    <p>While some of the president's associates have begun using the term 'super intelligence' to describe AI, experts suggest the rebranding is unlikely to gain widespread traction.</p>
-    <p class="src">Source: <a href="https://www.bbc.co.uk/news/articles/cqy4z9pv4w0po?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Business</a> · <a href="article/2026-09-23/experts-skeptical-of-trumps-super-intelligence-ai-rebranding.html">permalink</a> · <a href="/category/business.html">more business</a></p>
-  </article><article class="story">
-    <div class="meta">FINANCE BRIEF<span class="badge quick">quick bite</span> · Livemint Money · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/8th-pay-commission-reviews-central-government-compensation.html">8th Pay Commission Reviews Central Government Compensation</a></h2>
-    <p>The 8th Pay Commission is currently reviewing salaries, pensions, and allowances for central government employees and pensioners, addressing inquiries regarding fitment factors, pay scales, and implementation timelines.</p>
-    <p class="src">Source: <a href="https://www.livemint.com/money/personal-finance/8th-pay-commission-25-faqs-on-latest-updates-salary-pension-fitment-factor-and-key-dates-11790130573924.html" rel="noopener">Livemint Money</a> · <a href="article/2026-09-23/8th-pay-commission-reviews-central-government-compensation.html">permalink</a> · <a href="/category/finance.html">more finance</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/potential-five-day-psu-bank-strike-looming.html">Potential Five-Day PSU Bank Strike Looming</a></h2>
-    <p>Public sector unit banks may face a five-day closure as unions organize a strike to demand the implementation of a five-day work week.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/psu-banks-may-be-shut-for-5-days-straight-as-unions-call-for-strike-over-5-day-work-week-demand-ytvd-3000778-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/potential-five-day-psu-bank-strike-looming.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-23/supreme-court-advises-against-penalizing-vande-mataram-refus.html">Supreme Court Advises Against Penalizing Vande Mataram Refusals</a></h2>
-    <p>The Supreme Court has instructed the government not to punish individuals who refuse to sing Vande Mataram based on grounds of conscience.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/law-news/story/vande-mataram-case-supreme-court-conscientious-objector-tm-krishna-plea-ptag-3000372-2026-09-23?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-23/supreme-court-advises-against-penalizing-vande-mataram-refus.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+  </article></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

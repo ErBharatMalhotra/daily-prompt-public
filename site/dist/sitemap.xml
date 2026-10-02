@@ -2,31 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://news.bharatdn.com/</loc></url>
   <url><loc>https://news.bharatdn.com/archive</loc></url>
-  <url><loc>https://news.bharatdn.com/search</loc></url>
-  <url><loc>https://news.bharatdn.com/stats</loc></url>
   <url><loc>https://news.bharatdn.com/night</loc></url>
   <url><loc>https://news.bharatdn.com/ethics</loc></url>
   <url><loc>https://news.bharatdn.com/about</loc></url>
   <url><loc>https://news.bharatdn.com/privacy</loc></url>
   <url><loc>https://news.bharatdn.com/contact</loc></url>
-  <url><loc>https://news.bharatdn.com/hi/</loc></url>
+  <url><loc>https://news.bharatdn.com/category/education</loc></url>
+  <url><loc>https://news.bharatdn.com/category/sports</loc></url>
+  <url><loc>https://news.bharatdn.com/category/entertainment</loc></url>
   <url><loc>https://news.bharatdn.com/category/tech</loc></url>
+  <url><loc>https://news.bharatdn.com/category/science</loc></url>
   <url><loc>https://news.bharatdn.com/category/national</loc></url>
   <url><loc>https://news.bharatdn.com/category/world</loc></url>
-  <url><loc>https://news.bharatdn.com/category/sports</loc></url>
   <url><loc>https://news.bharatdn.com/category/finance</loc></url>
   <url><loc>https://news.bharatdn.com/category/positive</loc></url>
-  <url><loc>https://news.bharatdn.com/category/funny</loc></url>
   <url><loc>https://news.bharatdn.com/category/space</loc></url>
   <url><loc>https://news.bharatdn.com/category/cricket</loc></url>
-  <url><loc>https://news.bharatdn.com/category/science</loc></url>
-  <url><loc>https://news.bharatdn.com/category/entertainment</loc></url>
-  <url><loc>https://news.bharatdn.com/category/education</loc></url>
-  <url><loc>https://news.bharatdn.com/category/defence</loc></url>
   <url><loc>https://news.bharatdn.com/category/environment</loc></url>
   <url><loc>https://news.bharatdn.com/category/business</loc></url>
+  <url><loc>https://news.bharatdn.com/category/defence</loc></url>
   <url><loc>https://news.bharatdn.com/category/health</loc></url>
   <url><loc>https://news.bharatdn.com/category/ai</loc></url>
+  <url><loc>https://news.bharatdn.com/category/funny</loc></url>
+  <url><loc>https://news.bharatdn.com/archive/2026-10-02</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://news.bharatdn.com/archive/2026-10-01</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://news.bharatdn.com/archive/2026-09-30</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://news.bharatdn.com/archive/2026-09-29</loc><lastmod>2026-09-29</lastmod></url>
@@ -41,13 +39,20 @@
   <url><loc>https://news.bharatdn.com/archive/2026-09-20</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://news.bharatdn.com/archive/2026-09-19</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://news.bharatdn.com/archive/2026-09-12</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/india-secures-12th-gold-at-asian-games-2026-medal-tally-reac</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/drishyam-the-conclusion-sparks-pre-release-midnight-shows-hi</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/chatgpt-introduces-virtual-clothing-try-on-feature</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/uk-farmers-criticize-sustainable-farming-initiative-funding-</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/election-commission-orders-targeted-voter-roll-verification</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/trump-threatens-retaliation-if-iran-linked-to-flight-attack</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/eci-orders-blos-to-re-enroll-eligible-voters-omitted-from-li</loc></url>
+  <url><loc>https://news.bharatdn.com/article/2026-10-02/delhi-police-restrict-protests-against-cec-gyanesh-kumar</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/openai-introduces-virtual-try-on-and-favorites-for-chatgpt-s</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/indias-drug-panel-seeks-tighter-watch-on-narcotic-medicines-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/putin-warns-nuclear-weapons-use-cannot-be-ruled-out-amid-esc</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/nitesh-siwach-secures-historic-greco-roman-silver-at-asian-g</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/tcs-acquires-best-buys-india-gcc-eyes-ai-native-development</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/chinese-commercial-reactor-achieves-nuclear-fusion-with-clea</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/mcdonalds-deploys-ai-to-set-big-mac-prices</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/nasas-spacex-crew-13-launches-to-international-space-station</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/wanderers-to-stage-2027-odi-world-cup-final-and-india-vs-pak</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/physicists-identify-singular-funnels-in-complex-systems</loc></url>
@@ -57,9 +62,7 @@
   <url><loc>https://news.bharatdn.com/article/2026-10-01/icc-reveals-2027-world-cup-schedule-india-to-face-australia-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/bombay-hc-rules-whatsapp-video-circulation-under-scst-act</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/no-upi-day-protest-called-off-what-this-means-for-your-payme</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/harvard-mba-graduate-overcomes-job-search-challenges</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/new-research-reveals-distinctive-deepfake-victim-blaming-for</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/samantha-josephs-debut-novel-carrying-to-become-feature-film</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/international-probe-underway-after-flydubai-pilot-attack</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/alaskas-permafrost-soils-warming-rapidly-posing-climate-and-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/university-of-surrey-study-criticizes-just-say-no-approach-t</loc></url>
@@ -69,7 +72,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-10-01/indian-pilot-smit-machchhar-recovering-after-foiling-cockpit</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/parliamentary-panel-postpones-supreme-court-visit-on-simulta</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/indian-household-debt-growth-outpaces-asset-accumulation-in-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/indian-defence-drones-kaalbhairav-and-yama-to-be-manufacture</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/anil-kapoor-nominated-for-best-actor-at-asian-academy-creati</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/flydubai-boeing-737-max-survives-extreme-dive-after-co-pilot</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/maharashtra-to-issue-women-farmers-certificates-recognizing-</loc></url>
@@ -89,10 +91,8 @@
   <url><loc>https://news.bharatdn.com/article/2026-10-01/top-run-getters-in-south-africa-australia-2026-odi-series</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/cm-vijay-positions-tvk-as-aiadmk-successor-at-dharapuram-ral</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/baththa-wins-critical-acclaim-for-vijay-sethupathis-performa</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/indias-higher-education-sector-sees-college-growth-amid-pers</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/hero-motors-stock-surges-99-since-listing-driven-by-ev-focus</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/whatsapp-introduces-new-optional-parental-controls-for-teena</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/seventh-grader-isabella-garry-develops-gel-removing-933-of-m</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/dutch-farmers-pilot-rice-cultivation-to-combat-peatland-sink</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/arabian-aces-finalize-squad-for-abu-dhabi-t10</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/ivanna-lisette-ortiz-indicted-for-attempted-murder-at-rihann</loc></url>
@@ -110,8 +110,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-10-01/regional-legal-hurdles-stall-response-to-indonesian-transbou</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/mumbai-neighbors-hail-flydubai-pilot-smit-machchhar-as-hero</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/el-nino-wildfires-devastate-indonesian-orangutan-habitats</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/nadda-emphasizes-ncd-screening-at-wcog-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-10-01/nasa-contracts-modulate-space-for-lunar-5g-communications</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/yami-gautams-nayyi-navelli-trailer-launched-in-mumbai</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/yami-gautam-addresses-oscar-speculation-at-nayyi-navelli-tra</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-10-01/nivin-pauly-confirms-benz-connection-to-lokesh-kanagaraj-cin</loc></url>
@@ -126,38 +124,7 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-30/video-bangladesh-dengue-deaths-surpass-233-in-deadly-outbrea</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/japan-forms-first-national-intelligence-agency-eyes-its-own-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/stree-3-confirmed-for-2028-release-rajkummar-rao-reflects-on</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/apple-studios-visual-effects-workers-secure-first-iatse-cont</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/side-hustle-vs-costcutting-should-you-earn-more-or-curb-your</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/openai-introduces-decisions-api</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/new-click-beetle-species-discovered-in-dominican-republic</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/texas-am-researchers-assist-gulf-coast-evacuation-planning</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bolsonaro-family-maintains-dominance-in-brazilian-right-wing</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/khadi-santha-to-be-held-in-city</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/research-examines-impact-of-underwater-noise-on-seafloor-cre</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ronaldo-health-status-uncertain-for-denmark-match</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/daniel-zolghadri-joins-cast-of-my-darling-california</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/women-exit-psychology-research-careers-more-frequently-than-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ram-gopal-yadav-declares-assets-over-rs-13-crore</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/portugal-coach-denies-rift-with-cristiano-ronaldo</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/overview-of-kisan-vikas-patra-investment-rules</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/seven-bar-workers-injured-in-ecil-hit-and-run</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/coastal-populations-face-rising-sea-level-threat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/study-reveals-how-chlamydia-hijacks-host-cells</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/residents-protest-tasmac-outlet-relocation-in-tiruvannamalai</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/tasmac-outlet-burgled-in-vellore</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/uk-pm-points-to-iran-in-airbase-plot</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/meta-and-openai-explore-ai-hardware</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/gill-and-rohit-lead-india-in-opening-partnership</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/pinarayi-vijayan-labels-hostel-clash-a-one-sided-attack</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/amarinder-singh-raja-warring-resigns-as-punjab-congress-chie</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/trump-to-announce-200bn-in-south-korean-energy-investments</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/reddit-limits-old-reddit-access-to-curb-ai-bots</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/eu-poverty-rates-saw-decline-from-2015-to-2023</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/fossil-evidence-pushes-back-homo-erectus-timeline-in-souther</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/nyc-entertainment-chief-works-to-revitalize-film-and-tv-indu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/fxs-adults-returns-for-season-two</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ariana-madix-to-star-in-peacocks-future-housewives</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/concerns-raised-over-malaysias-return-of-rohingya-refugees</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/from-upi-to-investments-bridging-indias-wealth-participation</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/proving-inherited-gold-ownership-a-taxpayers-guide</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/indias-higher-education-grows-but-one-third-of-faculty-posts</loc></url>
@@ -177,30 +144,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-30/afghanistans-defence-ministry-claims-forces-killed-41-insurg</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/pakistan-deputy-pm-reaffirms-its-commitment-to-open-inclusiv</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/english-players-urged-to-reconsider-afghan-t20-tournament</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/venkaiah-naidu-urges-conservation-of-ongole-cattle</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/microsoft-gaming-chief-denies-xbox-sale-rumors</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/nio-goa-identifies-breach-prone-areas-on-godavari</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/research-investigates-origins-of-life-on-earth</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/elderly-day-celebrations-to-be-held-in-capital</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/nep-2020-impact-on-indian-education</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/india-advances-to-asian-games-2026-final</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/hollywood-policy-shifts-reflect-growing-government-ties</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/new-political-battle-for-young-india-emerges</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/mea-warns-against-indians-joining-russian-army</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/cabinet-approves-186-lakh-crore-green-energy-corridor</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/flydubai-co-pilot-arrested-after-mid-air-altercation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/man-city-women-focus-remains-on-football-despite-club-charge</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/xbox-launches-disc-to-digital-feature</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/india-bloc-plans-campaign-for-electoral-reform</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/the-rise-of-dark-kitchens</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/planetary-origins-debated</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/cbs-expands-unscripted-programming</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/freckle-launches-smartphone-to-encourage-outdoor-play-for-ki</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/india-bloc-announces-ec-protest-amid-internal-tensions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/instinct-users-dissatisfied-with-unsolicited-recommendations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/delhi-high-court-rules-on-property-rights-for-residents</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/jdu-responds-to-sonia-gandhi-on-nitish</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/new-recruits-join-northern-ireland-squad</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/new-toad-species-discovered-in-mizorams-phawngpui-national-p</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/new-research-highlights-insects-crucial-ecosystem-roles-beyo</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/kuldeep-yadav-joins-elite-club-with-200-odi-wickets-mileston</loc></url>
@@ -211,33 +154,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-30/tech-leaders-commit-to-ai-self-regulation-under-new-accord</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/trump-just-fired-starting-gun-on-new-war-with-china</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/csir-ccmb-study-describes-how-viral-infection-may-pave-way-f</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/tsa-officers-now-not-allowed-to-sit-down-while-checking-boar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/harriers-migrate-to-indias-grasslands</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/flight-tracking-data-reveals-flydubai-jets-rapid-descent</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/india-a-trails-australia-a-by-236-runs</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bahrain-gp-in-malaysia-labeled-heat-hazard</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/rajya-sabha-panel-proposes-ethics-code-for-members</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bjp-demands-drought-relief-for-karnataka-farmers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/terrorism-not-ruled-out-in-flydubai-incident</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/tara-sutaria-discusses-hosting-philosophy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/pragyan-ojha-expected-to-serve-as-interim-chief-selector</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/study-examines-factors-influencing-national-happiness</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/us-rejects-irans-seven-day-peace-proposal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/dubai-to-tel-aviv-flight-diverts-to-tabuk</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/retired-tamil-nadu-temple-officers-cite-audit-delays</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/kieran-maguire-and-dale-johnson-discuss-man-city-verdict</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/vijay-criticizes-dmk-and-aiadmk</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/south-carolina-nature-preserve-to-host-affordable-housing</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/nani-visits-kanaka-durga-temple-following-film-release</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/criminal-psychology-behind-use-of-containers-in-murders</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/kerala-private-bus-operators-plan-secretariat-march</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/babar-azam-struggles-in-presidents-trophy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/israeli-minister-comments-on-flydubai-incident</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/indias-chess-olympiad-captain-reflects-on-silver-medal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bangladesh-increases-durga-puja-funding</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/gandak-river-floods-bihars-west-champaran-district</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/empty-pub-chairs-used-to-support-mental-health</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/lalit-prabhakar-to-play-ajmal-kasab-in-prahaar</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/israel-scrambles-jets-as-tel-aviv-bound-flydubai-plane-decla</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/openai-launches-dots-personal-ai-assistant-built-to-handle-e</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/who-is-attending-india-bloc-meet-today-mamata-banerjee-other</loc></url>
@@ -253,39 +169,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-30/50-tonnes-of-waste-removed-from-munak-canal-delhi</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/12-yos-annual-diaper-drive-delivers-30000-diapers-off-at-ari</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/smartest-brains-in-the-room-missed-this-typo-in-white-house-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/10th-indiarepublic-of-korea-jcm-on-defence-industries-logist</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/asian-games-2026-3-bowlers-to-watch-in-india-vs-sri-lanka-se</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/mahindra-manulife-launches-equity-longshort-fund-in-sif-segm</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/france-why-hundreds-of-students-are-protesting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/omar-abdullah-suggests-bharat-ratna-for-cec-gyanesh-kumar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/mithun-chakraborty-caused-a-stampede-on-om-shanti-om-sets</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ravi-kishan-highlights-fan-engagement-at-ficci-frames-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/calcutta-hc-dismisses-isf-plea-over-poll-symbol</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/kapil-dev-weighs-in-on-virat-kohlis-test-career</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/eci-updates-form-6</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/telangana-deputy-cm-appeals-to-former-congress-members</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/indias-kaveri-engine-hits-milestone</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/defence-stock-sees-significant-growth</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/mumbai-court-grants-bail-to-sachin-vaze-in-antilia-bomb-scar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/jk-cm-calls-for-eci-soul-searching-following-allegations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/india-bloc-holds-meeting-in-new-delhi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/all-four-lashkar-terrorists-from-viral-photo-eliminated</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/us-announces-significant-eb-5-visa-fee-increase</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/opposition-grows-against-tamil-nadus-mamallan-reservoir-proj</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/samajwadi-party-names-two-candidates-for-rajya-sabha-polls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bjp-criticizes-opposition-over-india-bloc-meeting-absences</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/increasing-number-of-indian-students-opting-for-ireland</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/brendon-mccullum-shares-vision-for-england-cricket</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/amazon-mgm-executives-discuss-strategy-for-spanish-language-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/michigan-mansion-bought-for-1-listed-for-113-million</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/congress-ruled-states-to-draft-education-reform-plans</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/jordans-sunken-c-130-aircraft-boosts-marine-life</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/greta-thunberg-speaks-out-at-zurich-film-festival</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/americagov-launches-ai-government-information-portal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/shooter-neeru-dhanda-shines-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/third-pocso-case-filed-against-veeramani</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/christa-pike-execution-scheduled-in-tennessee</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bbc-sport-examines-manchester-citys-financial-history</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/tvk-left-rift-widens-ahead-of-tamil-nadu-by-polls-cpim-to-fi</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/battlefield-needs-dictate-strategy-says-cds-subramani</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/indias-higher-education-sector-sees-sharp-growth-increased-w</loc></url>
@@ -300,36 +183,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-30/tern-colonies-in-england-show-encouraging-signs-of-recovery</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/india-will-get-better-with-time-says-abhishek-nayar-on-bowli</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-30/powerful-storms-continue-to-prowl-the-pacific</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ed-raids-bengal-congress-leader</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/flea-market-buddha-statue-fetches-millions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/police-file-new-fir-following-lpu-protests</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/security-increased-for-dharapuram-by-poll-campaign</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/global-firms-compete-for-10-billion-indian-navy-submarine-co</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/retired-ias-officer-murdered-in-bhopal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/kalyani-priyadarshan-moves-to-mumbai-for-hindi-debut</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/south-korea-demands-apology-from-pyongyang-over-dmz-landmine</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/drishyam-3-sees-strong-opening-day-ticket-sales</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/2027-north-west-200-schedule-and-format-changes-announced</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/kerala-high-court-calls-for-transparency-in-temple-priest-se</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/microdramas-attract-mainstream-stars</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/new-endometriosis-study-launched</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/casting-directors-post-triggers-debate-on-industry-talent</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/birth-centenary-of-poet-kannadasan-observed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/bihar-minister-responds-to-chirag-paswan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/the-enduring-legacy-of-fort-st-george</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/aishwarya-rai-bachchan-greets-fans-and-photographers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/posters-targeting-rahul-gandhi-and-akhilesh-yadav-appear-in-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/hansal-mehtas-shahid-arrives-on-prime-video</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/tirupattur-assembly-constituency-returns-to-the-spotlight</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/karthik-subbarajs-dorothy-resonates-with-the-queer-community</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/aiadmk-internal-tensions-prompt-historical-review</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/rajinikanth-wraps-filming-for-dharmam</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/shillong-teer-results-for-september-30-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/varanasi-to-host-milestone-event-for-pm-modi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/ashwin-discusses-tendulkar-vs-kohli-debate</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/trump-denies-offering-iran-concessions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/heating-oil-customers-delaying-orders</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-30/congress-criticizes-centre-over-nicobar-project</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/urvashi-rautelas-team-files-rs-7000-crore-lawsuit-against-la</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/the-rise-of-ai-as-a-source-of-guidance-and-companionship</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/three-gujarat-men-kidnapped-in-ethiopia-rs-1-crore-ransom-de</loc></url>
@@ -352,27 +205,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-29/xbox-just-unveiled-mythic-achievements-which-are-basically-p</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/varietys-pixels-and-pencils-panel-returns-to-scad-savannah-f</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/homebuyers-can-claim-interest-on-delayed-flats-even-after-ac</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/warner-bros-uses-polarizing-reviews-in-new-digger-ad</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/us-military-presence-in-iraq-ends</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/tamil-nadu-proposes-memorial-on-university-union-grounds</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/study-examines-how-children-assist-peers-across-cultures</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/iliza-shlesinger-announces-2027-tour</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/producers-guild-of-america-elects-new-presidents</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/tata-trusts-proposes-merger-of-tess-and-tce-with-tata-sons</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/west-bank-lockdown-enters-third-day-amid-rising-violence</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/us-government-launches-official-ai-chatbot</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/the-hidden-costs-of-suburban-living</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/encounter-in-jks-budgam</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/openais-stance-on-nvidias-ai-safety-platform</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/supreme-court-proposes-16-margin-cap-on-cancer-drugs</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/food-safety-officials-inspect-eat-street-stalls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/margot-robbie-and-jason-blum-join-cinema-united-council</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/gemini-and-find-hub-simplify-document-tracking</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/rahul-gandhi-alleges-poll-irregularities-at-cwc-meet</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/god-of-war-laufey-release-date-and-pre-order-details-announc</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/matthew-schaefer-named-islanders-youngest-alternate-captain</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/new-research-targets-planets-in-nearby-binary-system</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/yellowstone-wolf-reintroduction-revisited</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/connected-tv-reshaping-indian-storytelling-say-media-chiefs</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/cwc-demands-resignations-of-pm-modi-shah-over-vote-chori-all</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/tax-alert-working-for-a-foreign-employer-from-india</loc></url>
@@ -384,33 +216,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-29/trump-claims-iran-war-will-conclude-very-soon-and-assesses-i</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/what-is-virat-kohlis-record-at-guwahati-in-odis</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/india-beat-qatar-3-2-to-enter-quarter-finals-of-mens-volleyb</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/verve-signs-actress-maggie-kuntz</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/sit-prepares-chargesheet-in-gem-granites-veeramani-pocso-cas</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/chirag-paswan-says-ljprv-will-contest-up-and-punjab-polls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/reliance-industries-stock-drop-impacts-mutual-funds</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/iimb-alumni-raise-funds-for-injured-student</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/dr-abhishek-manu-singhvi-criticizes-opponent</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/justin-greaves-sidelined-by-injury</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/allahabad-hc-bans-hookah-in-restaurants</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/sebi-updates-equity-mutual-fund-allocation-rules</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/parasites-manipulate-host-behavior-independently-of-lunar-cy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/microsoft-introduces-mythic-achievements-for-xbox</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/details-on-christa-pike-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/why-prebuilt-pcs-might-be-a-better-buy-in-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/man-murdered-after-brawl-in-vijayawada</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/police-complaints-authority-and-karnataka-police-push-for-im</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/power-utilities-advised-to-prepare-for-rising-demand</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/major-fire-breaks-out-at-fort-kochis-iconic-koder-house</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/nda-committed-to-welfare-development-good-governance-in-andh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/nasa-announces-new-missions-for-boeing-starliner-spacecraft</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/india-bloc-plans-meet-over-cec-impeachment-as-dmk-skips-and-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/k-annamalai-targets-traffic-curbs-for-cm-vijays-bypoll-rally</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/himesh-reshammiya-composes-first-ever-garba-song-for-yeh-pre</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/tropical-weather-patterns-impact-antarctic-snowfall</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/gusty-winds-force-mumbai-flight-diversions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/at-cwc-rahul-credits-cong-for-ec-revelations-gives-oppose-re</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/spain-vs-croatia-nations-league</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/sparsh-shrivastava-on-how-bollywood-stars-inspired-bhugol-in</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/indias-coking-coal-ambitions-highlight-methane-emission-conc</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/uk-eases-immigration-rules-for-erasmus-visitors-impacting-in</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/survey-explores-factors-driving-indian-students-choice-for-c</loc></url>
@@ -438,29 +243,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-29/un-warns-of-critical-window-for-global-forest-restoration</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/gold-buyers-face-higher-costs-as-india-doubles-import-duty-a</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/gulveer-singh-wins-bronze-in-mens-5000m-at-asian-games-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/ircs-to-map-andhra-pradesh-blood-banks</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/researchers-identify-worlds-loudest-bird-candidates</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/indonesian-program-incentivizes-wildlife-conservation-throug</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/snl-uk-announces-upcoming-hosts</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/8gb-ram-no-longer-sufficient-for-windows-11</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/instagram-updates-school-partnership-program</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/investigation-into-death-of-premanand-maharajs-disciple</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/former-ias-officer-divya-mittal-enters-politics</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/esa-exclusion-sparks-political-tension-in-pathanamthitta</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/rahul-gandhi-urges-stronger-focus-on-vote-chori-issue</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/firefox-launches-design-overhaul-for-desktop-and-mobile</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/tensions-rise-over-electoral-rolls-before-india-bloc-meeting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/smriti-irani-questions-congress-on-electoral-rolls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/calcutta-hc-grants-interim-bail-to-milan-pradhan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/aap-leaders-detained-during-delhi-protest</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/why-wi-fi-extenders-are-poor-choices-in-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/sam-harper-century-fuels-australia-a-recovery</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/will-reeve-announces-testicular-cancer-recovery</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/study-activist-motives-impact-campaign-success</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/demonte-colony-3-clears-legal-hurdle-for-release</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/turkish-officials-arrest-football-refereeing-body-members</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/rooney-man-utd-should-not-inherit-man-city-titles</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/lee-sinje-featured-at-pingyao-film-festival</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/lpu-violence-sit-formed-cctv-footage-under-scanner-punjab-po</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/rupee-falls-16-paise-to-9613-against-us-dollar-in-early-trad</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/india-eyes-iit-campus-in-france-new-research-partnerships-in</loc></url>
@@ -476,32 +258,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-29/red-bull-challenges-fssai-ban-on-energy-labeling</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/mit-tech-review-documents-failures-of-us-border-surveillance</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-29/745k-returned-after-gofundme-fraud</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/kerala-local-body-polls-test-udf-ldf-and-nda</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/maharashtra-poll-chief-requested-expanded-local-staff-powers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/asian-games-2026-quarter-finalists-determined-by-seedings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/rima-das-discusses-independent-cinema-and-village-rockstars-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/jaishankar-addresses-impact-of-terror-concerns-on-us-india-t</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/kareena-kapoor-khan-shares-birthday-tribute-for-niece-inaaya</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/anand-seamless-shares-maintain-steady-performance-post-listi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/congress-to-address-eci-internal-differences</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/kapurthala-police-form-sit-to-probe-lpu-incident</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/neeru-dhanda-wins-historic-gold-at-asian-games-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/maharashtra-ceo-requests-ecinet-software-updates</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/government-of-india-to-auction-rs-33000-crore-in-dated-secur</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/honasa-consumer-shares-see-18-fold-volume-jump</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/ola-electric-board-to-consider-rs-1000-crore-rights-issue</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/himalaya-nutravedics-india-debuts-with-1557-premium</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/anne-hathaway-eyes-hot-ones-appearance-post-pregnancy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/illinois-mans-conservation-efforts-protect-kinkaid-lake-wate</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/landmark-cars-expands-operations-with-new-facilities</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/ancient-gymnasium-linked-to-alexander-the-great-discovered-i</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/fans-speculate-on-taylor-swifts-wardrobe-choice</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/north-india-experiences-early-temperature-drop</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/food-waste-charity-secures-council-grant</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/revanth-reddy-criticizes-bjps-focus-on-ram-politics</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/manila-transport-drivers-launch-three-day-strike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/indian-rupee-falls-below-96-per-dollar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-29/azad-engineering-shares-climb-following-facility-inauguratio</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/india-and-france-explore-expanded-higher-education-and-resea</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/india-invites-french-universities-to-explore-campus-setups</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/haryana-education-minister-dhanda-cites-bhagat-singhs-ideals</loc></url>
@@ -514,30 +270,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-28/shopify-integrates-ai-agents-into-checkout-process</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/discord-tests-new-game-mode-to-optimize-performance</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/julianne-moore-to-receive-icon-award-at-scad-savannah-film-f</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/woman-loses-discrimination-case-over-pate-signage</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/parasitic-fly-uses-cricket-song-to-locate-host</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/former-cbs-executive-james-h-rosenfield-sr-dies-at-97</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/paramount-and-states-defend-antitrust-settlement</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/new-tool-visualizes-real-world-climate-impacts-of-carbon-emi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/coast-redwoods-slow-metabolic-processes-during-heat-waves</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/uttar-pradesh-man-subjected-to-public-humiliation-following-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/pharmaceutical-companies-extend-patent-protections-through-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/bob-chapek-reflects-on-his-dismissal-from-disney</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/italian-court-convicts-egyptian-agents-for-giulio-regeni-kid</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/uae-confirms-visit-from-israeli-prime-minister-netanyahu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/black-pod-disease-continues-to-threaten-global-cacao-product</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/trump-administration-lowers-fuel-economy-standards-to-35-mpg</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/rakhine-conflict-displaces-nearly-500000</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/bose-adds-auracast-support-to-ultra-headphones</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/mississippi-wildlife-center-prepares-raccoons-for-wild-relea</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/disney-and-columbia-sportswear-launch-mickey-mouse-outdoor-c</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/joe-hart-backs-manchester-city-chairman-over-financial-charg</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/ai-and-data-centers-spark-debate-at-climate-week</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/canucks-target-christmas-return-for-thatcher-demko</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/research-advances-into-quantum-battery-technology</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/droughts-cause-forests-to-stop-absorbing-co2</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/karnataka-youth-succeeds-at-shanghai-world-skills-competitio</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/bharatiya-vidya-bhavan-to-host-indigenous-language-festival</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/sharad-pawar-refutes-merger-speculations-vows-independence</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/key-financial-changes-take-effect-from-october</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/scientists-find-lunar-magnetic-fossil-in-change-6-samples</loc></url>
@@ -556,30 +288,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-28/nia-court-sentences-4-isis-operatives-in-voice-of-hind-terro</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/hulu-developing-the-kid-detective-series-adaptation</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/brother-india-renews-educational-support-for-400-children-in</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/former-zp-president-calls-for-kalaburagi-to-be-second-state-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/keltron-starts-sonar-system-integration-for-jalkapi-project</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/study-examines-societal-judgment-of-childless-women</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/greys-anatomy-season-23-adds-three-guest-stars</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/simple-android-adjustment-may-improve-device-speed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/bank-strike-deferred-in-india</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/jeff-thomasson-gives-100m-gift-to-indiana-university</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/hospitals-in-visakhapatnam-mark-world-heart-day-with-focus-o</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/election-commission-must-come-out-answer-every-point-amid-in</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/imd-forecasts-light-showers-strong-winds-in-andhra-pradesh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/officials-question-demographic-panels-request-for-religious-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/trump-rejects-latest-iranian-proposal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/aldi-boss-says-some-loyalty-discounts-dupe-customers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/owners-mourn-spoiled-food-after-firmware-update-bricks-samsu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/iran-denies-involvement-in-uk-airbase-security-scare</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/antonelli-crashes-during-azerbaijan-f1-qualifying</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/neuroproteins-may-help-diagnose-nms-in-foals</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/man-exposed-as-fraud-after-faking-ceo-role</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/vikas-singh-calls-for-removal-of-cec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/motilal-oswal-suggests-investment-strategy-amid-market-uncer</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/russian-drone-strikes-hit-kyiv</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/nifty-hits-five-month-low-as-market-sentiment-sours</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/patient-information-in-healthcare</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/suspects-released-on-bail-following-raf-base-terror-incident</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/worm-experiments-reveal-how-epigenetic-effects-persist-acros</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/best-thing-we-can-offer-young-people-is-a-job-not-benefits-s</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/nepal-mountain-crashes-into-kali-gandaki-river-should-india-</loc></url>
@@ -590,59 +298,22 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-28/from-panaji-to-the-final-reckoning-vijay-salgaonkars-story-c</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/maharashtra-declares-drought-as-el-nino-deepens</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/after-7-years-of-upsc-heartbreak-burnout-32-yo-found-her-pur</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/india-achieves-most-successful-athletics-day-at-asian-games-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/tinder-swindler-claims-his-scamming-past-makes-him-the-perfe</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/defence-secretary-defends-rafale-deal-confirms-tejas-progres</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/pralhad-joshi-meets-french-minister-to-discuss-student-and-f</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/apod-features-cosmic-latte-as-average-color-of-the-universe-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/sc-reserves-verdict-on-fssais-front-of-pack-food-labelling-r</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/openai-agents-linked-to-cyberattacks-raises-liability-questi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/spacexs-starship-rocket-launches-headed-to-orbit</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/safety-inclusion-cultural-diversity-why-31-of-foreign-studen</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/arise-learning-festival-2026-in-collaboration-with-ficci-bri</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/asian-games-marred-by-logistical-and-organizational-issues</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/ofgem-announces-4-energy-price-cap-increase-for-households</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/oasis-reunion-documentary-dont-look-back-in-anger-set-for-oc</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/kerala-teenager-invents-bicycle-powered-washing-machine-for-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/1-in-3-americans-with-health-insurance-have-medical-debt-sur</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/exclusive-no-su-57-decision-yet-says-defence-secretary-india</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/reliable-robots-meet-johnsons-dexterous-robotics-team</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/india-poised-to-globally-lead-next-generation-of-medical-pra</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/isolated-island-tribes-should-choose-their-own-destinies-say</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/nasa-engineers-complete-environmental-and-physical-tests-on-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/imran-khans-son-hints-at-possible-deal-for-fathers-release</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/kerala-home-minister-cites-project-zero-as-step-toward-corru</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/delhi-police-say-suspect-used-ashoka-emblem-on-whatsapp-to-b</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/medical-negligence-alleged-after-patients-death-at-ernakulam</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/andhra-pradesh-government-employees-association-opposes-pres</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/bose-launches-first-wired-earbuds-in-11-years</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/karnataka-shrine-awaits-pawan-sehrawats-return-after-indias-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/protests-erupt-nationwide-over-electoral-rolls-revision</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/story</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/publicist-lydia-kanuga-launches-pr-firm-when-there-are-nine</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/minister-addresses-swarna-gram-and-swarna-ward-staff-grievan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/kerala-government-plans-airport-transformation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/atlassian-ceo-mike-cannon-brookes-discusses-platform-tools</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/leap-india-invests-rs-204-crore-in-leap-gulf-company</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/story</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/your-final-chance-to-grab-your-exhibit-table-at-techcrunch-d</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/insuretech-outmarket-secures-345m-in-new-funding</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/sohum-shah-receives-handmade-tumbbad-inspired-statue-from-fa</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/vijay-introduces-gold-ring-scheme-for-newborns</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/asian-games-medal-tally-india-win-8-medals-but-remain-outsid</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/maharashtra-village-residents-protest-water-crisis</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/global-beef-supply-faces-potential-crisis</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/tata-trusts-propose-restructuring-to-change-tata-sons-status</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/european-heat-pump-sales-rise-amid-energy-price-surge</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/iraq-seeks-alternative-oil-export-routes</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/study-suggests-risks-in-overly-tight-glucose-control</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/tamil-nadu-launches-gold-ring-scheme-for-newborns</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/wpl-2027-up-warriorz-enter-auction-with-seven-vacancies</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/supreme-court-takes-suo-motu-cognisance-of-delhi-ncr-rape-in</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/violent-protests-erupt-at-lpu-over-alleged-assault-claim-sit</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/sp-chief-to-skip-india-bloc-meet-seat-sharing-rift-with-cong</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/egypts-intel-chief-warned-netanyahu-of-hamas-attack-days-bef</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/the-vvaan-box-office-sidharth-malhotra-tamannaah-bhatia-star</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/bigg-boss-20-salman-khan-urges-censorship-on-social-media-ra</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/bristol-residents-report-persistent-river-pollution</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/spacex-starship-test-flights-a-retrospective</loc></url>
@@ -652,35 +323,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-28/navy-chief-directs-skyroot-to-develop-next-gen-space-defence</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/india-misses-team-medal-as-bhaker-and-sarnobat-exit-womens-2</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-28/india-vs-afghanistan-quarterfinal-abandoned-due-to-rain-at-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/boeing-737-max-software-glitch-identified</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/sun-tv-network-sees-surge-in-trading-volume</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/indian-rupee-declines-amid-oil-price-pressures</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/political-tensions-escalate-in-tamil-nadu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/virat-kohli-matches-sachin-tendulkars-list-a-record</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/markets-dip-as-rupee-falls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/savings-habits-explored-in-east-london</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/lpu-campus-unrest-leads-to-class-suspension</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/mirzapur-the-movie-crosses-rs-211-crore</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/chemplast-sanmar-partially-restarts-karaikal-plant</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/robokidz-eduventures-shares-surge-on-bse-debut</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/supreme-court-addresses-rising-sexual-assault-cases-in-delhi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/som-distilleries-shares-rise-following-court-order</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/sensex-and-nifty-decline-over-1-as-market-focus-shifts-to-ec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/indigo-flight-avoids-major-incident-during-landing-in-bengal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/waste-food-initiative-supports-families-in-the-west-midlands</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/shillong-teer-results-for-september-28-2026</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/aggressive-hybrid-funds-see-mixed-five-year-sip-returns</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/virat-kohli-reaches-15000-odi-runs-with-55th-century</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/rape-case-pendency-rises-as-conviction-rates-remain-low</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/taylor-swift-wins-video-of-the-year-at-mtv-vmas</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/supreme-court-notes-rise-in-delhi-rape-cases</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/pm-modi-pays-tribute-to-ashok-singhal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/kerala-government-reviewing-waqf-board-reconstitution</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/pc-jeweller-achieves-debt-free-status</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/market-sell-off-hits-sectoral-indices</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/shweta-tripathi-makes-production-debut-with-queer-love-story</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-28/unrest-at-lpu-following-student-death</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/faridabad-borewell-horror-3-year-old-trapped-rescue-efforts-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/neet-pg-2026-candidates-allege-score-discrepancies-aimsa-app</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/nationwide-3-day-bank-strike-commences-september-28-2026</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/lg-sinha-unveils-book-on-ancient-indian-education-and-nep-20</loc></url>
@@ -688,11 +330,8 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-27/manufacturing-mutual-funds-top-scheme-delivered-over-23-in-1</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/ind-vs-wi-2026-india-vs-west-indies-1st-odi-who-said-what</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/india-working-towards-developing-sixth-generation-fighter-je</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/india-doesnt-seek-to-occupy-any-countrys-territory-but-will-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/a-red-carpet-a-fragile-truce-uschina-stability</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/indigo-flight-suffers-tail-strike-during-second-landing-atte</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/iran-ready-for-doomsday-war-fm-araghchi-says</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/strikes-kill-6-in-ukraine-1-in-russia-after-moscow-rejects-g</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/can-bionic-reading-really-help-you-read-faster-scientists-pu</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/soil-protection-measures-can-make-agri-photovoltaics-more-su</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/how-to-use-androids-desktop-mode-to-turn-your-phone-into-a-t</loc></url>
@@ -703,34 +342,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-27/adam-brody-addresses-political-stance-calls-for-free-palesti</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/zverev-secures-laver-cup-title-for-team-europe-with-decisive</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/bantons-maiden-century-secures-england-odi-series-win-agains</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/2026-asian-games-held-in-nagoya-japan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/manchester-united-secure-first-wsl-win-under-eva-olid</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/marineland-canada-animals-relocated-following-facility-closu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/proposed-bank-strike-deferred</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/ifc-to-provide-70-million-loan-to-jn-port-for-green-infrastr</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/south-africa-clinches-odi-series-against-australia</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/punjab-cm-bhagwant-mann-stresses-importance-of-anti-sacrileg</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/ancy-sojan-wins-silver-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/us-proposed-uranium-sale-to-iran-for-civilian-use</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/former-tripura-cms-convoy-attacked</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/three-killed-in-detroit-strip-club-shooting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/cookery-competition-held-in-vellore</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/army-chief-on-defence-preparedness</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/ranipet-police-return-recovered-phones</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/tnpcb-reports-on-sun-pharma-expansion</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/legacy-of-baker-industries-founder-charles-p-baker-iii</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/nepal-flood-recovery-continues-one-month-later</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/new-food-safety-regulations-in-uttar-pradesh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/manipur-tourism-declines-due-to-ethnic-conflict</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/pregnant-maharashtra-woman-burnt-alive-after-dispute</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/lancashire-concludes-season-as-durham-wins-division-two</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/rahul-gandhi-alleges-match-fixing-in-election-commission</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/political-reactions-follow-violent-lpu-protests</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/yellow-line-marks-gaza-areas-under-israeli-control</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/openai-agents-scanned-un-website-thousands-of-times</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/sebi-updates-vault-rules-for-gold-and-silver-etfs</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/virat-kohli-reaches-15000-odi-runs</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/lpu-protests-turn-violent-amid-alleged-rape-claim-police-veh</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/from-iit-bombay-to-sarvam-ai-pratyush-kumars-journey-in-indi</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/jee-air-1-returns-to-iit-kanpur-inspired-by-swades-now-studi</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/gate-2027-regular-application-deadline-today-new-aspects-hig</loc></url>
@@ -749,38 +360,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-27/nani-says-the-paradise-reactions-show-the-trust-and-expectat</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/sanjay-slams-smoking-posters-filmmaker-questions-macho-smoke</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/powerful-noreaster-batters-us-northeast-over-100000-without-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/jakson-green-targets-125-gw-operational-renewable-projects-i</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/supply-constraints-bolster-premium-office-rents-in-mumbai-de</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/astronomers-uncover-radio-galaxy-with-evidence-of-four-jet-o</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/datacenter-developers-accused-of-skirting-us-pollution-rules</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/samastha-centenary-celebrations-planning-underway</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/srfti-students-protest-at-idsffk-venue</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/review-sennheiser-momentum-5</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/lpu-campus-clash-involves-stone-pelting-and-vehicle-fire</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/coimbatore-policeman-clings-to-suv-roof-to-catch-smugglers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/rcb-pays-tribute-to-stadium-drummer-deva</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/rescue-operations-underway-after-ambala-building-collapse</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/kondotty-school-launches-website-for-differently-abled</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/protests-at-lpu-turn-violent</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/pvr-inox-offers-free-pav-bhaji-with-drishyam-the-conclusion-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/reggie-exits-clover-boys-amid-controversy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/nhl-stars-could-reach-30-million-salary-milestone</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/asmongold-faces-backlash-over-slavery-comments</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/rekha-gupta-launches-projects-in-delhi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/clashes-erupt-at-satyajit-ray-film-institute</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/jacksonville-jaguars-implement-drone-defense</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/scheffler-overtakes-tiger-woods-in-career-prize-money</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/tensions-rise-following-rejected-us-iran-deal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/scotland-and-northern-ireland-qualify-for-netball-world-cup</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/maharashtra-faces-worst-drought-in-25-years</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/building-collapse-in-haryana-leaves-two-dead</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/clashes-erupt-between-taliban-and-anti-taliban-forces</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/france-deploys-defensive-support-for-saudi-oil-infrastructur</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/essex-faces-relegation-risk-amid-leicestershire-appeal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/17-judges-recuse-from-sanjiv-chaturvedi-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/india-secures-seven-medals-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/zimbabwe-defeats-west-indies-to-level-series</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/addressing-synthetic-dye-pollution-in-wastewater</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/india-vs-west-indies-live-score-1st-odi-kuldeep-yadav-tears-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/virat-kohli-breaks-mohammad-azharuddins-28-year-old-record-i</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/how-to-use-android-apps-on-your-windows-pc-and-why-you-might</loc></url>
@@ -807,29 +386,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-27/indias-asian-games-gold-defence-kicks-off-against-afghanista</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/gyanesh-kumars-political-journey-under-scrutiny-amidst-new-l</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/mumbai-demonstrates-exemplary-civic-responsibility-during-ga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/tom-banton-hits-maiden-odi-century</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/parvesh-verma-addresses-tilak-nagar-incident</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/delhi-minister-accused-of-slapping-youth</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/bollywood-pays-tribute-at-krishna-mukerjis-chautha</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/ancy-sojan-narrowly-misses-asian-games-gold</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/jaishankar-meets-venezuelan-foreign-minister-at-unga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/south-africa-police-investigate-deadly-mass-shootings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/mobile-retailers-to-protest-upi-charges-on-october-2</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/kerala-leaders-clash-over-lok-ayukta-meeting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/tech-newsletter-examines-the-state-of-smart-home-devices</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/road-project-for-sc-village-triggers-communal-tensions-in-ni</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/russian-ambassador-discusses-future-of-india-russia-defence-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/cricket-south-africa-anticipates-financial-losses</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/vasseur-labels-horner-a-distraction</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/bullion-markets-expected-to-remain-volatile</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/parties-clash-over-election-commission-allegations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/samajwadi-party-veteran-ram-govind-chaudhary-cremated</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/expert-warns-of-ai-security-risks-for-india</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/director-ram-reveals-plot-for-yezhu-kadal-yezhu-malai</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/priyanka-gandhi-demands-cec-gyanesh-kumars-resignation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/sophie-molineux-praises-bangladesh-ahead-of-odi-series</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/kapil-sibal-calls-for-gyanesh-kumars-removal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/analyst-suggests-mcdavid-could-leave-oilers</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/rohit-sharma-virat-kohli-eye-several-milestones-ahead-of-1st</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/name-missing-from-sir-if-tribunals-take-a-decade-to-decide-a</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/tamil-nadu-government-exempts-public-law-and-order-departmen</loc></url>
@@ -846,36 +402,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-27/india-enters-day-8-of-asian-games-2026</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/neet-with-a-disability-whats-holding-back-visually-impaired-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-27/black-hole-jets-reach-far-beyond-galaxies-visible-edges-pote</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/kohli-eyes-dream-world-cup-finale</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/election-commission-denies-rift</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/gavaskar-warns-incoming-selection-chief</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/mojtaba-khamenei-remains-out-of-sight-after-strike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/private-university-students-protest-over-unverified-reports</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/public-sector-and-rural-banks-to-open-this-sunday</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/proposed-greenfield-shipyard-planned-for-thoothukudi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/shai-hope-addresses-challenge-of-playing-in-india</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/pope-leo-xiv-leads-mass-in-paris</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/vijay-marks-anniversary-of-karur-stampede</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/taiwan-awaits-14-billion-us-arms-deal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/taiwan-awaits-14-billion-arms-package</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/iit-bombay-student-protests</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/border-clash-reported-between-pakistan-and-afghanistan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/michael-clarke-supports-kuldeep-yadavs-selection</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/jeremy-culhane-returns-as-tucker-carlson-on-snl</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/australia-senate-summons-openai-and-anthropic-ceos</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/lpu-campus-situation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/mohanlal-showcases-organic-gardening-at-kochi-home</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/ex-kerala-chief-secretary-alleges-cec-gyanesh-kumar-proposed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/cm-vijay-commemorates-karur-stampede-victims</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/mecca-defence-pact-highlights-european-economic-policy-issue</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/kajol-rakul-preet-singh-and-jackky-bhagnani-attend-mijwan-fu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/weather-change-brings-relief-to-andhra-pradesh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/bollywood-stars-offer-travel-inspiration-for-world-tourism-d</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/dmk-mp-files-complaint-against-tvk-leaders</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/off-duty-couple-rescues-five-from-expressway-crash</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/privacy-concerns-over-fitness-data-in-health-insurance</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/understanding-the-risks-of-stock-averaging</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-27/election-commission-denies-internal-discord</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/jaishankar-delivers-blunt-rebuke-to-pakistan-at-unga-cites-s</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/hope-eyes-india-tour-as-key-indicator-for-west-indies-progre</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/openai-halts-training-of-advanced-models-amid-containment-co</loc></url>
@@ -883,33 +409,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-26/skip-bayless-names-trinidad-chambliss-as-early-2027-nfl-draf</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/russia-backs-indias-bid-for-permanent-unsc-membership-at-ung</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/trump-says-he-does-not-want-to-integrate-with-china-on-ai</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/vedanta-urges-odisha-govt-to-accelerate-1-trillion-investmen</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/punjab-cm-bhagwant-mann-schedules-panel-meeting-on-guru-gran</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bohannon-century-boosts-lancashire</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jaishankar-addresses-cross-border-terrorism-at-unga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/eam-jaishankar-calls-for-peace-and-seafarer-safety-at-unga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/food-safety-department-closes-25-eateries-following-inspecti</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/spotify-comments-become-impromptu-group-chat-for-middle-scho</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/james-gray-discusses-political-subtext-in-paper-tiger</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/pib-fact-check-clarifies-status-of-bengal-anti-goonda-bill</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/delhi-high-court-rules-personal-law-cannot-override-pocso</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jaishankar-brics-supports-un-reform</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/parents-of-iit-bombay-student-to-begin-hunger-strike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/godzilla-minus-zero-receives-positive-early-reactions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/russia-supports-india-for-unsc-permanent-seat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ethiopian-fano-fighters-claim-seizure-of-military-assets</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ladakh-music-festival-sparks-controversy-on-anniversary-of-s</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bjp-and-jds-form-alliance-for-karnataka-council-seats</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/gwalior-man-arrested-for-stealing-bikes-in-chhattisgarh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/iit-madras-deep-tech-fund-secures-450-crore-in-first-close</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/lessons-from-scotlands-draw-with-slovenia</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jaishankar-confronts-journalist-over-terrorism-allegations-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/azerbaijan-grand-prix-driver-ratings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/delhi-university-students-raise-concerns-over-womens-safety-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/pune-ganeshotsav-sparks-debate-on-public-disturbance</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/two-dead-six-injured-in-maharashtra-old-age-home-attack</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/opposition-demands-resignation-of-cec-gyanesh-kumar-amid-ele</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/manchester-city-faces-114-charges-in-premier-league-verdict</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/135-relief-camps-ready-as-sabari-rises-in-polavaram-district</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/dmks-stalin-attacks-cm-vijay-over-tamil-nadu-power-cuts-affe</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/hindu-jeweller-murdered-in-bangladesh-body-found-inside-floa</loc></url>
@@ -938,39 +437,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-26/keralam-government-will-extend-all-support-to-tech-driven-en</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/delegation-of-sri-lankas-ruling-party-to-visit-india-under-k</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/indias-defence-exports-see-significant-56x-surge-over-12-yea</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/kurnool-hosts-nature-walk-for-world-tourism-day</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/mundhe-cites-non-compliance-as-main-food-safety-challenge</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ec-reforms-and-voter-database-issues-under-review</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/three-children-drown-in-vizianagaram-pond</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/cm-naidu-orders-urgent-flood-relief-measures</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/minister-govt-benefits-are-rights-not-charity</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/kerala-cm-criticizes-declining-media-standards</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/cabinet-to-discuss-milk-price-hike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/cpi-leader-calls-for-resignation-of-chief-election-commissio</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/uttarakhand-weather-disrupts-travel-and-schools</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/russell-secures-victory-at-azerbaijan-grand-prix</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/warwickshire-clinch-county-championship-title</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/up-chief-minister-seeks-investment-from-six-nations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/odisha-to-clear-pension-backlog-by-october</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/namit-malhotra-discusses-ramayana-casting-and-future-project</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/heavy-rains-cause-flooding-and-flight-cancellations-in-jhark</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jordan-cox-poised-for-odi-return-following-buttler-injury</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/rahul-gandhi-levels-election-match-fixing-allegations-agains</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/political-row-intensifies-over-eci-and-voter-roll-revisions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/middlesex-defeats-northants</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/india-returns-to-top-10-in-asian-games-medal-count</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/former-child-prodigy-elias-phoenix-alleges-childhood-abuse</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/new-alliance-forms-against-ethiopian-government</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/lt-gen-hasnain-discusses-the-rise-of-information-warfare-at-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/shreevats-goswami-names-south-africa-favorites-for-2027-odi-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/warwickshire-secures-ninth-county-championship-title</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/lt-gen-ds-hooda-discusses-2016-uri-surgical-strikes-planning</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ec-confirms-unanimous-approval-for-nationwide-sir-order</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/priyanka-gandhi-calls-for-resignation-of-cec-gyanesh-kumar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/steelers-thin-at-running-back-following-rico-dowdle-injury</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/dk-shivakumar-criticizes-election-commission</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/samsung-galaxy-users-can-test-hardware-health</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/mrbeast-attends-ramayana-event-in-mumbai</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/air-india-express-student-offer-get-10-off-25-kg-baggage-cha</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/teach-for-india-fellowship-2027-apply-for-the-education-and-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/cisce-launches-indias-largest-school-based-mental-health-dia</loc></url>
@@ -995,71 +461,15 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-26/indian-army-ah-64e-apaches-to-spearhead-joint-aviation-ops-w</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/stadt-salzburg-wants-to-sue-google-maps</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/could-an-iced-coffee-freeze-you-out-of-the-job-market</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bjp-defends-election-commission-amid-opposition-allegations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/zaheer-khan-reflects-on-career-following-csk-appointment</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/lavu-sri-krishna-devarayalu-credits-telugu-desam-for-sir-sup</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/tamil-nadu-police-oppose-bail-in-sexual-abuse-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/priyank-kharge-criticizes-bjp-regarding-election-commission</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/sunil-grover-mimics-ajay-devgn-on-kapil-show</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/sunetra-pawar-outlines-drought-relief-measures</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/investigation-opened-into-gauhati-university-student-death</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/blast-in-pakistans-dera-ismail-khan-leaves-11-dead</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/cm-sukhu-criticizes-bjp-mps</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/up-government-promotes-rural-sanitation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/actor-dhanush-visits-palani-temple</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/tenth-woman-found-dead-in-south-africa</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/pilots-body-seeks-inclusion-in-air-india-crash-report-review</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/hd-kumaraswamy-calls-for-ec-clarification-amid-sir-row</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/raghav-juyal-praises-the-paradise-co-star-nani</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/kabul-taxi-drivers-use-music-to-defy-taliban-restrictions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/sunil-jakhar-supports-amarinder-singh-following-bjp-remark</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/mirzapur-the-movie-surpasses-rs-209-crore-mark</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/former-aiadmk-ministers-appointed-to-tvk-party-posts</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/uttar-pradesh-chief-minister-meets-prime-minister</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/kaif-favors-kohli-over-rohit-for-2027-odi-world-cup</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/kunal-ghoshs-vehicle-attacked-in-hooghly</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ex-executive-warns-of-man-city-legal-battle-risks</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/iran-warns-of-potential-attacks-on-us-bases</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/preity-zinta-reflects-on-early-film-career</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ebola-outbreak-expands-in-dr-congo</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/mamata-banerjee-supports-cpms-joint-strategy-proposal-calls-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/monsoon-session-concludes-amid-protests-and-low-productivity</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/mandeep-k-bhandari-appointed-new-cbse-chairman</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/goas-blueprint-for-ending-rabies-a-replicable-model</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/harnessing-phages-a-new-library-for-combating-bacteria</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/climate-crisis-is-affecting-childrens-nutrition</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/before-ayushman-bharat-families-sold-their-homes-to-afford-t</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/how-the-bare-nails-trend-became-a-class-issue</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/the-mafia-may-be-keeping-fentanyl-out-of-italy</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/at-meta-connect-the-companys-smart-glasses-were-everywhere</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-26/warrington-edge-past-leeds-to-reach-grand-final</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jurisdiction-questioned-in-pappu-yadav-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bjd-eyes-political-comeback-in-odisha</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/suraasa-launches-higher-education-pathway-for-pgctl-graduate</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bjp-demands-cbi-probe-in-tamil-nadu-veeramani-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/sp-rld-dispute-highlights-uttar-pradesh-caste-tensions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/india-women-defeat-japan-3-1</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/discourse-on-religious-texts-and-gender-roles</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/aaps-consistent-support-for-cjp-noted</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bengal-bjp-chief-calls-for-padma-bhushan-for-cec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/cpi-cpim-dispute-signals-push-for-collective-leadership</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/french-court-recognizes-breast-cancer-as-occupational-diseas</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/nepal-cancels-tibetan-studies-conference-amid-china-pressure</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/virender-sehwag-says-crickets-appeal-transcends-individual-s</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/why-swades-star-gayatri-oberoi-left-acting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/hardik-pandya-ruled-out-of-new-zealand-series</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/iran-signals-nuclear-stance-amid-diplomatic-talks</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/ndtv-defence-summit-2026-to-feature-top-officials</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/rcfl-awards-rs-797-crore-contract-to-larsen-toubro</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/bangkok-faces-major-flooding-following-heavy-rains</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/pm-modi-dismisses-adani-queries-during-us-visit</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/us-evaluates-potential-military-deployment-near-cuba</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/us-official-trump-holds-all-the-cards-in-iran-negotiations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/satwik-chirag-eliminated-from-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/iran-proposes-strait-of-hormuz-reopening</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/jk-autonomy-resolution-sparks-controversy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/insufficient-data-provided</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-26/iran-makes-conditional-offer-regarding-strait-of-hormuz</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/iphone-18-pro-camera-faces-aperture-control-limitations</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/supabase-customers-exposing-user-data-due-to-configuration-i</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/universal-pictures-achieves-5-billion-global-box-office-mile</loc></url>
@@ -1079,35 +489,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-25/indias-drone-sector-sees-explosive-revenue-growth-under-make</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/morne-morkel-advocates-opportunities-for-young-pacers-in-wes</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/india-secures-impressive-1-1-draw-against-panama-in-internat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/wisconsin-frat-leaders-arrested-after-pledges-found-injured-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/paddy-fields-submerged-in-east-godavari</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/frank-martinez-named-bleecker-street-head-of-distribution</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/analyzing-three-year-performance-of-diversified-equity-funds</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/minister-promises-support-for-srikakulam-farmers</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/two-arrested-for-fake-maoist-letters-in-toopran</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/stalin-critiques-vijays-tvk-party</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/zuckerberg-defends-ray-ban-meta-glasses</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/air-india-pilot-suspended-after-failing-breathalyzer</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/residents-oppose-sewage-treatment-plant-in-sholinghur</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/trump-schedules-2026-meetings-with-xi-jinping</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/eu-envoy-highlights-growing-political-intensity-in-europe-in</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/plant-roots-transmit-injury-alerts-via-pressure-waves</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/ntu-singapore-researchers-enhance-plant-immune-responses</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/director-dave-boyle-discusses-never-after-dark-horror-style</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/cmc-announces-world-diabetes-day-cookery-competition</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/dvac-conducts-searches-linked-to-dmk-mp-cn-annadurai</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/india-bloc-demands-cec-resignation-amid-election-commission-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/court-permits-matthew-vandyke-and-six-ukrainians-to-leave-in</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/essex-struggles-against-glamorgan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/global-citizen-festival-2026-canceled-due-to-extreme-weather</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/former-cec-s-y-quraishi-criticizes-gyanesh-kumar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/lebanese-brazilians-maintain-connection-to-ancestral-homelan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/shivakumar-sparks-controversy-over-bengaluru-mlas</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/northants-promotion-hopes-persist-amid-middlesex-challenge</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/trump-and-xi-plan-further-meetings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/warwickshire-nears-championship-title</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/vijay-and-stalin-clash-over-veeramani-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/op-rawat-dismisses-election-complaints</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/student-death-at-marwadi-university-marks-second-incident-in</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/supreme-court-order-places-private-university-fees-under-scr</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/the-growing-disparity-between-education-and-job-market-needs</loc></url>
@@ -1117,38 +498,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-25/russell-secures-pole-in-baku-as-championship-leader-antonell</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/gen-zs-workplace-communication-style-decipherable-by-older-c</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/adolescent-loneliness-linked-to-less-secure-employment-in-ad</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/nonprofit-provides-paid-machinist-apprenticeships-to-formerl</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/consumer-sentiment-declines-in-september</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/ancient-burial-sites-investigated-at-gobeklitepe</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/vikram-singh-negi-comments-on-voting-rights</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/yvu-kadapa-announces-2-year-ma-in-journalism</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/karnataka-tries-to-pass-the-buck-on-centre-to-hide-its-finan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/idukki-to-resume-dismantling-of-illegal-fences-blocking-elep</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/the-light-in-the-darkness-holocaust-narrative-game-launches-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/governor-swears-in-three-new-judges-of-karnataka-high-court</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/haryana-cuts-stubble-burning-91</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/box-office-challengers-face-resident-evil</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/students-urged-to-look-beyond-politicians-and-film-stars</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/yadgir-dc-orders-action-against-illegal-clinics-and-fake-doc</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/congress-to-resume-discussions-on-nominations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/prioritizing-accessibility-in-tourism</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/parents-of-deceased-iit-bombay-student-meet-crime-branch</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/eshwar-khandre-questions-central-grant-rules-for-karnataka</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/ed-sheeran-gillette-stadium-concerts-canceled-due-to-storm</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/tips-for-buying-a-resale-flat-with-an-existing-home-loan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/tamil-nadu-forms-all-women-sit-for-pocso-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/3d-imaging-provides-insight-into-bacterial-cell-operations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/banks-issue-advisory-ahead-of-strike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/mamata-camp-criticizes-bjps-bengal-campaign-choices</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/manchester-city-face-significant-sanctions</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/delhi-teen-gang-raped-in-astha-kunj-park</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/first-look-at-lena-dunham-in-it-gets-worse</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/trinamool-rebels-granted-extension-in-disqualification-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/chinese-swimmer-sets-asian-games-record</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/jaishankar-shuts-down-pakistani-journalist-at-unga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/dr-mohammad-amin-comments-on-election-commission-veto-power</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/as-bappa-bids-goodbye-a-new-product-cycle-begins</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/nani-says-he-chooses-films-he-wont-cringe-over-when-son-watc</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/your-body-fights-to-stay-cool-workers-toil-in-record-heat-as</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/upi-mdr-decision-completely-professional-no-external-pressur</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/durand-line-erupts-as-pak-afghan-tensions-escalate-casualtie</loc></url>
@@ -1172,54 +521,11 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-25/assam-universities-urged-to-develop-higher-education-strengt</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/prestige-launches-1191-acre-residential-project-prestige-par</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/germany-completes-internal-process-for-p-75i-aip-submarine-d</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/indias-exotic-pet-trade-under-scrutiny</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/kerala-fishers-report-rough-seas-amid-monsoon</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/israeli-delegate-monitors-un-hall-following-walkout</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/eci-introduces-mark-vip-tag-on-blo-app</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/research-reveals-customers-misjudge-wait-times</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/understanding-random-access-memory-in-computing</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/fatima-sana-shaikh-discusses-financial-pressures-in-acting</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/controversy-follows-removal-of-verified-goa-voters</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/spacex-completes-starship-wet-dress-rehearsal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/traffic-restrictions-set-for-ganesh-immersion-procession</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/political-parties-prepare-for-2027-uttar-pradesh-assembly-el</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/banka-police-investigate-video-of-woman-being-harassed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/local-holiday-declared-for-kuttichira-by-election</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/government-distributes-36754-crore-under-pli-schemes</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/delhi-hc-orders-meta-to-remove-morphed-photo-of-woman-and-pm</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/congress-protests-against-cec-gyanesh-kumar-in-chandigarh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/nifty-realty-index-gains-092</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/karthik-subbarajs-dorothy-faces-reported-malaysia-ban</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/congress-stages-protests-in-delhi-over-alleged-election-rigg</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/jnmc-amu-hosts-simulation-based-education-workshop</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/defence-secretary-notes-growth-in-indian-exports</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/imd-issues-warning-as-heavy-rain-hits-odisha</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/iit-bombay-mentorship-program-under-review</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/minor-recounts-horror-in-delhi-park-accused-booked-under-bns</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/shillong-teer-results-announced-for-september-25-2026</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/magnetic-bacteria-extend-worm-lifespan-by-over-43-in-new-stu</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/orient-cables-ipo-brokerages-bullish-on-gains-from-indias-di</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-25/india-adds-gold-and-silver-in-shooting-at-asian-games-2026-m</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/bjp-responds-to-rahul-gandhis-election-integrity-claims</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/endangered-dormice-found-on-bridport-farm</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/steamhouse-india-secures-rs-311-crore-bulk-drug-park-project</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/iranian-president-reaffirms-stance-against-nuclear-weapons</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/tukaram-mundhe-criticizes-bollywood-endorsements</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/fssai-addresses-concerns-over-analogue-paneer</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/bengaluru-waste-collection-revamp-stalls</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/pm-modi-meets-bike-rally-participants</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/welspun-corp-shares-surge</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/madhuri-dixit-named-brand-ambassador-for-madhusudan-frozen</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/indian-rupee-recovers-slightly-against-dollar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/saudi-grand-mufti-calls-for-action-against-houthis</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/broader-markets-show-modest-gains</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/onion-prices-remain-high-amid-crop-damage-in-karnataka</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/hong-kong-secures-first-win-against-oman-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/neet-pg-2026-scorecards-available-october-10</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/pb-fintech-earnings-face-potential-risk-from-proposed-irdai-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/welspun-corp-shares-rise-following-rs-4000-crore-us-order</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/massachusetts-restores-century-bog-to-support-rare-trout</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-25/esds-software-solution-hits-lower-circuit-on-q1-results</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/short-peptides-assemble-into-honeycomb-fibers-that-hold-wate</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/6-international-mutual-funds-are-reopening-5-delivered-doubl</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/upi-mdr-on-loan-repayments-what-charge-applies-to-emis-and-w</loc></url>
@@ -1234,32 +540,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-24/linc-provides-free-counselling-for-blood-cancer-patients-in-</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/california-teens-set-world-record-for-recycling-sports-balls</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/study-finds-dog-brains-track-consonant-patterns-like-humans</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/arctic-sea-ice-hits-annual-minimum</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/ancient-ritual-baths-discovered-near-temple-mount</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/hybrid-quantum-classical-method-aids-investment-selection</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/oracle-sends-force-majeure-notice-on-new-mexico-stargate-dat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/key-factors-to-evaluate-during-health-insurance-policy-renew</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nssc-travel-reimbursement-services-detailed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nvidia-ceo-discusses-ai-and-climate-change</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/lactose-intolerant-consumers-pay-more-for-lactose-free-ice-c</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/sam-worthington-and-sofia-carson-to-star-in-the-parsifal-mos</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/white-house-reporters-readmitted</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/macklemore-announces-free-palestine-tour</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/emilio-gay-leads-durham-against-lancashire</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/emilio-gay-hundred-and-durham-run-pile-up-leave-lancashire-r</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/premier-league-hopes-to-resolve-efl-funding-stalemate</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/goa-ceo-clarifies-exclusion-of-97-voters</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/leicestershire-relegated-after-defeat-to-warwickshire</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/a-new-venomous-british-snake-why-theres-no-need-to-panic</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/term-insurance-maths-what-you-actually-need-to-avoid-being-u</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/iranian-american-group-sues-trump-over-war</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/supreme-court-signals-cbi-probe-into-sai-krishna-custodial-d</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/black-bear-acquires-worldwide-rights-for-atmosphere-adaptati</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/lawmakers-propose-20-federal-film-incentive-bill</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/opposition-demands-cec-gyanesh-kumars-resignation-amid-elect</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/p-chidambaram-calls-for-resignation-before-inquiry</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/alphafold-database-expands-with-viral-protein-structures</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/research-explores-shark-hearing-capabilities</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/us-china-share-historic-responsibility-for-human-development</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/nifty-hits-five-month-low-amid-soaring-oil-prices-and-financ</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/upi-payments-new-mdr-rules-for-large-merchants-from-october-</loc></url>
@@ -1279,44 +559,11 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-24/fossil-fuel-industry-secured-190-billion-in-benefits-after-t</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/nasas-spacex-crew-13-mission-to-intensify-human-health-and-p</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/japans-valiant-effort-against-t20-champions-india-captivates</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/meta-removes-video-featuring-its-own-glasses-citing-bullying</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/indias-tribal-jewellery-a-tapestry-of-nature-trade-and-ident</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/decades-of-research-re-evaluates-gender-differences-in-emoti</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/breaking-barriers-two-women-cycle-through-age-stereotypes</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/nikon-introduces-z5-iic-a-more-affordable-full-frame-option</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/hospitals-body-rejects-hotel-analogy-for-room-charges-urges-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/former-disney-ceo-bob-chapek-says-bob-iger-led-three-year-ca</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/lionsgate-releases-trailer-for-day-drinker-starring-johnny-d</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/anil-kapoor-reveals-familys-love-for-feeding-guests-on-india</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/mospi-survey-shows-travel-purpose-drives-household-spending-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/25-years-on-academics-alumni-recall-struggle-to-save-uas-b-l</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/cpim-demands-action-against-pudukad-police-officers-over-mot</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nalsar-students-screen-documentary-on-activist-prisoner-no-6</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/two-daughter-households-report-greater-happiness-than-son-on</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/apoorva-compares-her-nyu-nyfw-double-life-to-miley-cyrus-han</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/alaskas-orange-rivers-are-more-metallic-than-acid-mine-drain</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/women-take-the-controls-as-farms-embrace-new-tech-in-telanga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/those-doing-vote-chori-are-deshdrohis-rahul-gandhi-demands-c</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/madhavi-lathas-visit-to-bagalkot-ganesha-immersion-cancelled</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/mazagon-dock-goa-shipyard-give-major-fillip-to-aps-shipbuild</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/story</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/xi-urges-chinaus-cooperation-with-sincerity-in-white-house-m</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/srinagar-temple-reopens-after-decades-of-damage-welcomes-kas</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/david-oyelowo-and-viola-prettejohn-cast-as-leads-in-skys-gir</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/mathematical-models-seen-as-key-to-averting-africas-water-co</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/bronze-age-migration-in-greece-largely-involved-young-adults</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/shield-ai-waabi-and-general-motors-on-building-ai-when-failu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/razers-kiyo-v2-pro-webcam-can-capture-4k-video-at-60-fps</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/parents-of-iit-b-student-who-died-by-suicide-begin-hunger-st</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/rajnath-singh-on-ai-defence-design-in-india-to-aipowered-war</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/upi-mdr-row-banks-to-ensure-merchants-dont-pass-charges-to-c</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/macklemore-announces-free-palestine-tour-with-all-ticket-sal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/asian-games-seema-mixed-relay-win-athletics-medals-roshibina</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/i-dont-feel-any-pressure-or-burden-because-of-my-fathers-nam</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/adani-group-unveils-rs-1-lakh-crore-bengal-plan-cm-lays-2000</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/defence-minister-rajnath-singh-says-india-will-not-tolerate-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/dhanush-calls-karthik-subbarajs-dorothy-a-masterpiece</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/87-year-olds-eviction-in-madrid-sparks-protests-as-spains-ho</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/india-postpones-cambodia-tiger-reintroduction-to-2028</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/rahul-gandhi-cites-ec-dissent-notes-amidst-electoral-roll-co</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/ynos-secures-212-crore-investment-from-gnan-circle-ventures</loc></url>
@@ -1335,74 +582,13 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-24/rashmika-mandanna-commands-attention-at-milan-fashion-week-f</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/shree-refrigerations-funds-ai-robotics-stem-education-in-mah</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/india-moves-to-restrict-junk-food-sales-within-50-metres-of-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/poland-investigates-starlink-station-fire</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nagender-disqualification-spurs-hyderabad-by-election</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/fury-and-joshua-to-fight-in-cardiff</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/new-begonia-species-identified-in-arunachal-pradesh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/sri-lanka-bats-and-brings-in-eshan-malinga-against-england</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/anbumani-ramadoss-calls-for-speedy-probe-in-posco-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/laxman-sivaramakrishnan-offers-advice-for-ipl-spinners</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/saudi-civil-defence-issues-weather-warnings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/lt-gen-puneet-ahuja-outlines-vision-for-indias-future-ready-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/tmc-mp-files-complaint-against-cec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/rahul-gandhi-claims-laws-passed-are-illegal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/roshibina-devi-naorem-wins-silver-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/india-bloc-readies-impeachment-motion-against-cec-gyanesh-ku</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/belgium-and-rwanda-restore-diplomatic-ties</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/ipo-bound-cj-darcl-expands-logistics-verticals-for-revenue-g</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/election-commission-faces-fresh-scrutiny-over-internal-disag</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/cjp-threatens-jantar-mantar-20-over-cec-gyanesh-kumar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/knife-attack-at-polish-abbey-leaves-one-dead</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/report-urges-legal-reform-for-climate-induced-displacement</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/tamil-nadu-universities-to-appoint-interim-v-cs</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/russia-launches-attacks-on-ukraine-during-unga-address</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/danam-nagender-prepares-for-khairatabad-bypoll</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/supreme-court-asks-ec-for-adjudication-timeline-in-tmc-symbo</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/cjp-threatens-nationwide-agitation-over-cec-resignation-dema</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/keerthy-suresh-shares-bts-moments-from-the-paradise-as-film-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/judge-orders-white-house-to-restore-press-access-for-cnn-ms-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/laxmi-ratan-shukla-named-batting-coach-of-rest-of-india-for-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/indi-bloc-to-move-impeachment-motion-against-cec-gyanesh-kum</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/sc-tells-eci-to-act-on-tmc-dispute-citing-shiv-sena-case-del</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/actor-sooraj-pancholi-issues-new-denial-regarding-disha-sali</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/fssai-proposes-single-phase-food-warning-labels-gives-indust</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/icai-announces-ca-january-2027-foundation-intermediate-exam-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/hurun-rich-list-2025-shah-rukh-khans-wealth-surpasses-combin</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/defence-ministry-signs-81079-crore-deal-with-bdl-for-anti-ai</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/rupee-slides-against-dollar-as-oil-prices-surge-amid-geopoli</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/cloudy-cloak-over-the-northwest</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/more-rem-sleep-linked-to-lower-risk-of-83-diseases</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/16yo-autistic-girls-bond-with-her-baby-sister</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/india-vs-chinese-taipei-mens-kabaddi-live-streaming-asian-ga</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-24/everything-new-coming-to-meta8217s-ai-agent-muse</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/former-cec-quraishi-questions-special-intensive-revision</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/trumps-historical-approval-ratings-reviewed</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nimhans-and-partners-to-launch-ai-driven-mental-health-initi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/justice-datta-criticizes-executive-handling-of-collegium-rec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/rahul-gandhi-contacts-parents-of-deceased-iit-b-student</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/crime-branch-investigates-iit-bombay-student-death</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/karnataka-government-considers-supreme-court-appeal-in-kpsc-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nse-shares-debut-with-gains</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/gambhir-reflects-on-dropping-samson-from-t20i-squad</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/viral-video-shows-contrasting-reactions-to-b-1-bombers-durin</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/thiruvananthapuram-riding-clubs-unite-two-wheeler-enthusiast</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/steel-exchange-india-receives-credit-rating-upgrade</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/supreme-court-judge-discusses-election-commissioner-appointm</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/jagsonpal-pharmaceuticals-to-acquire-group-pharmaceuticals-w</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/idfc-first-bank-performance-update</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/dinesh-reddy-urges-industries-to-manage-hazardous-waste-disp</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nse-favored-over-bse-for-long-term-investment</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/taapsee-pannu-on-gandharis-unexpected-global-success</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/nse-ipo-sees-571-times-subscription</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/cjp-to-prioritize-electoral-reforms</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/quad-nations-to-brief-iran-on-mecca-defence-alliance</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/claude-ai-identifies-new-crispr-like-gene-editing-system</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/anthropics-claude-discovers-new-enzyme-system</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/insufficient-data-provided</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/insufficient-data-provided</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/lawsuit-against-sam-smith-and-normanis-dancing-with-a-strang</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/richa-chadha-labels-2026-as-the-year-of-ali-fazal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-24/landmark-cars-and-olx-india-announce-strategic-partnership</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/reinvestigation-of-6800-year-old-site-in-serbia-reveals-larg</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/sc-stays-hc-order-to-recover-5-lakh-from-noida-dm-in-nsa-det</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/irans-president-tells-trump-it-will-never-bend-the-knee</loc></url>
@@ -1418,35 +604,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-23/gambhir-hints-at-white-ball-rest-for-top-batters-ahead-of-ne</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/psychological-capital-buffers-workers-against-rising-stress</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/harvey-weinstein-sentenced-to-15-years-in-prison-for-sexual-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/parental-intervention-follows-crafting-class-complaints</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/study-explores-how-soil-heterogeneity-affects-bacterial-fora</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/nlcil-and-c-dac-partner-for-green-digital-infrastructure</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/cpcl-targets-expansion-into-renewable-energy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/researchers-study-gravitys-role-in-human-genome-organization</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/the-far-side-of-the-moon-provides-clues-to-a-past-magnetic-f</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/brain-organoids-uncover-how-primates-develop-different-brain</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/past-emissions-from-top-polluters-will-keep-the-planet-warme</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/kibble-with-microbial-proteins-appeals-to-cats-and-dogs-in-n</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/notice-issued-to-candidate-for-applying-for-guest-lecturer-p</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/trump-administration-weighs-90-day-diesel-export-ban-amid-re</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/federal-reserve-survey-reveals-how-us-firms-plan-to-use-tari</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/uk-adviser-states-workers-must-call-bosses-on-sick-leave</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/abhishek-manu-singhvi-comments-on-ec-dissent</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/considerations-for-securing-a-second-home-loan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/uttam-pledges-funds-for-tatipamula-schools</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/op-rawat-and-syed-zafar-islam-address-election-commission-ri</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/star-players-return-ahead-of-ballon-dor</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/heart-transplant-recipient-wins-world-cup</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/bjp-leader-urges-karnataka-to-emulate-tamil-nadu-on-water-ri</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/cybersecurity-startups-attract-massive-capital-amid-ai-growt</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/disney-and-hulu-prices-increasing-again</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/vijayendra-seeks-5-lakh-farm-loan-waiver-for-drought-hit-far</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/a-horse-named-pea-tests-focused-ultrasound-for-sarcoids</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/hormone-disrupting-chemicals-detected-in-water-sources</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/las-vegas-aces-clinch-top-three-seed-as-golden-state-falters</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/fir-filed-in-rajasthan-over-alleged-forced-conversion</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/fssai-to-implement-front-of-pack-nutrition-labelling-in-sing</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/sean-sharaf-addresses-mindset-following-gable-steveson-knock</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/disney-raises-prices-again-the-fourth-hike-in-four-years</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/netflix-orders-two-new-seasons-of-chefs-table-devoted-to-des</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/sir-row-what-changed-in-form-6-and-why-did-2-election-commis</loc></url>
@@ -1470,41 +627,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-23/bangladesh-drafts-uncapped-aliss-al-islam-for-asian-games-fo</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/solar-power-emerges-as-beacon-of-hope-amidst-dire-climate-wa</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/global-leaders-urged-for-universal-solar-power-by-decades-en</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/brace-your-heart-review-tradition-and-modernity-collide-in-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/more-bullying-more-resistance-iranian-president-pezeshkians-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/keralams-leader-of-opposition-extends-support-to-bank-strike</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/pp-umer-musliyar-koyyode-chosen-samastha-general-secretary</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/america-israel-hit-iran-but-we-didnt-bend-the-knee-pezeshkia</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/jagan-seeks-cbi-probe-into-dsc-2025-irregularities</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/disproportionate-rates-of-family-violence-against-indigenous</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/adding-limestone-to-mississippi-river-basin-farmlands-acts-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/pvr-inox-cashless-policy-sparks-legal-notice-and-discussion</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/pezeshkian-criticizes-western-hypocrisy-at-unga</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/priyanka-seeks-urgent-rehabilitation-for-vaniyampuzha-tribal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/study-explores-how-animal-groups-escape-danger-using-social-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/william-shatner-to-headline-star-trek-panel-at-new-york-comi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/lsr-students-protest-rape-incident-dark-lanes-and-inactive-p</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/west-bengal-anti-corruption-branch-catches-revenue-inspector</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/t20-mumbai-league-expands-with-ninth-franchise</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/ka-ratheesh-seeks-kerala-hc-nod-to-withdraw-resignation-and-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/discord-will-now-automatically-estimate-your-age</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/telangana-burglar-tracked-to-varanasi-after-wilson-garden-th</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/karnataka-high-court-cautions-state-government-against-upgra</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/video-indias-defence-leadership-together-at-ndtv-defence-sum</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/exclusive-cctv-footage-sahil-wakode-caught-with-phone-during</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/srisailam-temple-gears-up-for-dasara-festivities-starting-oc</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/deepika-reveals-secret-behind-her-historic-goal-scoring-spre</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/grabbed-kissed-me-hyderabad-techie-molested-by-security-guar</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/asian-games-shooting-range-enforces-dress-code-for-athletes-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/18-year-old-telangana-nursing-student-found-dead-at-home</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/eight-sleeps-new-pod-6-is-20-faster-than-previous-generation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/lakshya-raichandani-scores-unbeaten-110-as-india-u-19-clinch</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/four-students-killed-one-critically-injured-in-train-collisi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/afghan-cyclist-fariba-hashimi-wins-silver-in-asian-games-wom</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/early-earth-may-have-achieved-life-supporting-conditions-433</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/debate-over-dingoes-intensifies</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/indian-shooters-secure-bronze-with-331-points-in-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/ethiopias-seven-group-rebel-alliance-challenges-abiy-ahmed</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/lpg-ekyc-deadline-nears-complete-process-by-october-1</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/indian-medical-students-face-uncertainty-as-kyrgyzstan-black</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/choose-france-tour-2026-set-to-boost-india-france-educationa</loc></url>
@@ -1520,30 +642,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-23/chinas-yu-zidi-13-wins-third-gold-with-latest-asian-games-re</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/student-almost-dies-after-accidental-paracetamol-overdose</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/open-wounds-and-eyes-that-cant-close-women-warn-about-cheap-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/ladakh-snow-leopard-safari-plans-spark-conservation-concerns</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/canadian-musicians-report-hostility-toward-ai-and-streaming</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/indigo-flight-from-london-to-delhi-returns-to-heathrow</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/syrian-president-recalls-joke-to-trump-regarding-golan-heigh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/controversy-surrounds-eci-appeals-following-bengal-sir-anoma</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/european-producers-downplay-impact-of-potential-us-federal-t</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/odisha-closes-schools-amid-heavy-rain</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/nursing-student-found-dead-in-telangana</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/madhya-pradesh-traders-stage-no-upi-day</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/court-queries-nawab-malik-charge-framing</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/multiple-killed-in-azamgarh-shootout</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/litton-das-leads-bangladesh-to-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/garware-hi-tech-films-and-lubrizol-partner-on-tpu-technology</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/apple-maps-integrates-hidden-histories-podcast-content</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/karnataka-mla-resigns-over-drought-list-exclusion</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/lsr-students-protest-for-womens-safety</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/uefa-president-says-trust-in-fifa-remains-broken</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/shibasish-sarkar-re-elected-president-of-producers-guild-of-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/indian-apache-helicopters-join-us-forces-for-exercise-yudh-a</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/ktr-urges-sc-to-take-suo-motu-cognizance-of-eci-functioning-</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/sc-reminds-lok-sabha-speaker-on-plea-to-disqualify-20-tmc-re</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/cargills-bank-selects-intellects-composable-emachai-core-ban</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/tmc-demands-re-elections-following-criticism-of-cec</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/rare-faberge-figurine-sells-for-record-52-million</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/trump-issues-stark-warning-to-iran-amidst-un-general-assembl</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/stock-market-live-sensex-gains-100-pts-nifty-tops-23350-smid</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/iit-b-suicide-probe-focuses-on-digital-data-retrieval-includ</loc></url>
@@ -1553,36 +651,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-23/lake-powell-hits-record-low-amid-drought</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/jay-meena-targets-indias-first-soft-tennis-medal</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-23/fssai-ex-chief-proposes-phased-food-warning-rollout</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/us-secures-greenland-military-access-deal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/sp-mp-rejects-muslim-clerics-criticism-of-akhilesh-yadav</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/glenmark-receives-eir-for-goa-manufacturing-facility</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/man-kills-family-and-priests-in-azamgarh-dies-in-police-enco</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/demolition-drive-conducted-in-delhis-shalimar-bagh</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/press-meet-for-the-paradise-delayed-following-car-confusion</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/communal-harmony-at-kadapa-vinayaka-chavithi-procession</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/research-project-identifies-climate-resilient-water-and-soil</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/itat-rules-in-favor-of-taxpayer-in-penny-stock-gain-dispute</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/insufficient-information-regarding-us-iran-talks</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/christopher-meloni-to-return-to-law-order-svu</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/oswal-pumps-secures-rs-29750-crore-order-from-tredcl</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/fo-trading-restrictions-announced-for-september-23</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/election-commission-faces-criticism-over-west-bengal-operati</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/karnataka-man-found-murdered-in-sharjah</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/manu-bhaker-advances-to-10m-air-pistol-final-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/bihar-police-aspirant-stalked-and-attacked</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/ethanol-firm-sues-andhra-farmer-over-pollution-claims</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/lsr-shifts-to-online-classes-following-delhi-police-encounte</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/the-hermitage-announces-132-million-redevelopment-plan</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/dixon-technologies-expands-focus-to-boost-global-presence</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/vanshi-bedi-denies-spot-fixing-allegations</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/pezeshkian-arrives-at-unga-amid-trump-threats</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/javier-tebas-criticizes-real-madrids-conspiracy-claims</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/vivek-oberoi-supports-salman-khans-stance-against-trolling</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/india-claims-womens-skeet-team-bronze-at-asian-games</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/experts-skeptical-of-trumps-super-intelligence-ai-rebranding</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/8th-pay-commission-reviews-central-government-compensation</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/potential-five-day-psu-bank-strike-looming</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-23/supreme-court-advises-against-penalizing-vande-mataram-refus</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/shastri-bhawan-krishi-bhawan-demolition-imminent-for-central</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/bjp-questions-congress-after-court-order-on-sonia-gandhis-el</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/forest-ranger-crushed-by-dumper-while-stopping-illegal-sand-</loc></url>
@@ -1593,29 +661,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-22/first-ever-radio-signals-detected-from-exoplanet</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/how-to-add-extra-ethernet-ports-if-your-router-doesnt-have-e</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/well-travelled-binks-eager-to-make-mark-for-scotland</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/family-claims-police-jeep-rammed-bike-releases-police-conver</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/fall-equinox-falls-on-tuesday-day-and-night-equal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/anthropic-releases-claude-opus-55-with-enhanced-cybersecurit</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/congress-questions-eci-silence-after-convoy-attack</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/new-statistical-methods-aim-to-improve-research-reliability</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/greenhouse-gas-emissions-linked-to-intensified-european-heat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/varied-eu-response-to-fuel-price-spikes</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/up-alliance-leaders-support-rahul-gandhi-and-akhilesh-yadav</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/protests-and-legal-action-follow-iit-bombay-suicide-case</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/casualties-feared-following-pakistan-afghanistan-border-firi</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/bjp-mla-sparks-controversy-with-comments-on-muslims-at-garba</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/new-nanoplasmonic-chip-monitors-parkinsons-treatment</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/kartik-aaryan-wins-best-actor-national-award</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/study-suggests-origins-of-3iatlas-isotopic-discrepancy</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/adjusting-roku-tv-picture-settings</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/72nd-national-film-awards-2026-held</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/aap-questions-gst-registrations-at-government-bungalow</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/critical-infrastructure-faces-new-cyber-threat</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/ella-langley-sets-all-time-billboard-record</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/teen-gang-raped-in-kalkaji-park</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/trump-announces-venezuela-oil-deal</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/public-opinion-on-un-conflict-resolution</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/pakistan-must-act-against-terrorism-mea</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/trump-claims-intervention-prevented-india-pakistan-escalatio</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/trump-predicts-swift-end-to-ukraine-war</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/rajya-sabha-polls-set-for-october-16-in-12-seats</loc></url>
@@ -1626,8 +671,6 @@
   <url><loc>https://news.bharatdn.com/article/2026-09-22/new-amoeba-species-sets-record-for-heat-tolerance-in-complex</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/xbox-continues-reset-with-job-cuts-and-activision-developing</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/do-i-annihilate-them-trump-hints-at-iran-deal-after-us-midte</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/festive-processions-mark-immersion-of-1500-ganesh-idols-in-k</loc></url>
-  <url><loc>https://news.bharatdn.com/article/2026-09-22/supreme-court-questions-machine-generated-delhi-sir-notices</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/rbi-updates-valuation-guidelines-for-invit-and-reit-units</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/activision-to-lead-halo-and-sea-of-thieves-in-xbox-overhaul</loc></url>
   <url><loc>https://news.bharatdn.com/article/2026-09-22/netflix-launches-kpop-demon-hunters-ticketed-experience</loc></url>

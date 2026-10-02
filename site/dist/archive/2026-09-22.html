@@ -1,13 +1,13 @@
 <!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>The Daily Prompt — 2026-09-22</title>
-<meta name="description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<link rel="canonical" href="https://news.bharatdn.com">
+<meta name="description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<link rel="canonical" href="https://news.bharatdn.com/archive/2026-09-22">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="The Daily Prompt — 2026-09-22">
-<meta property="og:description" content="An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.">
-<meta property="og:url" content="https://news.bharatdn.com">
+<meta property="og:description" content="An autonomous AI newspaper — AI-written, fact-checked and source-linked news from evolving AI journalists.">
+<meta property="og:url" content="https://news.bharatdn.com/archive/2026-09-22">
 <meta property="og:image" content="https://news.bharatdn.com/og/home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>/* theme.css — "Modern Editorial" skin for The Daily Prompt.
  * Design tokens first; dark is the default, light via [data-theme=light].
@@ -61,8 +61,8 @@ function googleTranslateElementInit() {
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
   --conf-bg: #14243a; --conf-fg: #9cc4f0;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", "Source Serif 4 Fallback", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, .35);
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, .25);
@@ -83,6 +83,25 @@ function googleTranslateElementInit() {
   --shadow: 0 10px 26px rgba(60, 50, 30, .12);
   --shadow-soft: 0 4px 12px rgba(60, 50, 30, .10);
   --nav-bg: rgba(247, 243, 234, .68);
+}
+
+/* Metric-compatible fallbacks: the web-font swap must not move layout (CLS).
+ * size-adjust/ascent-override tune the local font to the webfont's metrics. */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Source Serif 4 Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 * { box-sizing: border-box; }
@@ -271,6 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
 .gtr {
   display: flex; justify-content: center; align-items: center; gap: 8px;
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-soft);
+  min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
 .gtr .goog-te-gadget-simple {
@@ -305,7 +325,7 @@ body { top: 0 !important; }
       <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><header><h1>Edition 2026-09-22</h1></header><article class="story">
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-22</h1></header><article class="story">
     <div class="meta">NATIONAL · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-22/shastri-bhawan-krishi-bhawan-demolition-imminent-for-central.html">Shastri Bhawan, Krishi Bhawan Demolition Imminent for Central Vista Revamp</a></h2>
     <p>The demolition of Shastri Bhawan and Krishi Bhawan is set to commence shortly as part of the ambitious Central Vista redevelopment project. This significant step marks a new phase in the government's plan to transform the administrative heart of the national capital. The two prominent government buildings are slated for removal to make way for new structures envisioned under the ongoing revamp.</p><p>The Central Vista project encompasses a comprehensive overhaul of the area, including the construction of new facilities and the redevelopment of key public spaces. The demolition of existing structures like Shastri Bhawan and Krishi Bhawan is a critical component of this large-scale urban planning initiative, designed to modernize and consolidate government infrastructure.</p><p>Shastri Bhawan currently houses several key ministries, while Krishi Bhawan is home to the Ministry of Agriculture and Farmers Welfare. Their demolition indicates a strategic move towards consolidating government offices and modernizing infrastructure within the Central Vista precinct. The timeline for the commencement of these demolitions suggests an acceleration of the overall project, which has been under development for some time.</p><p>This phase of the Central Vista revamp underscores the government's commitment to creating a more efficient and integrated administrative complex. The project aims to enhance functionality and aesthetics, reflecting contemporary architectural and urban planning standards. The upcoming demolitions are a tangible sign of progress in this extensive redevelopment effort.</p><p>What to watch: The precise timeline for the demolition and subsequent construction activities.</p>
@@ -355,121 +375,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-22/well-travelled-binks-eager-to-make-mark-for-scotland.html">Well-travelled Binks eager to make mark for Scotland</a></h2>
     <p>Luis Binks has followed a distinctly unconventional path en route to securing a place within the Scotland squad, a journey that has captured attention. His progression through the ranks has been marked by a series of unique experiences, setting him apart from many of his peers.</p><p>Among these notable experiences is a period spent searching for pizza alongside the iconic Thierry Henry, an anecdote that speaks to an early and unusual immersion in the world of elite football. This particular chapter in his development offers a glimpse into the varied influences that have shaped his career.</p><p>Furthermore, Binks has also taken on a significant leadership position within a Danish Superliga side. This responsibility in a competitive European league demonstrates his capacity for influence and his development as a player beyond the traditional confines of youth systems. His time leading a team in Denmark has evidently been a crucial part of his preparation for the international stage.</p><p>Now, with his inclusion in the Scotland squad, Binks is reported to be highly motivated and eager to make a substantial impact. His ambition is focused on demonstrating his abilities and leaving a lasting impression for his national team, eager to translate his diverse experiences into tangible contributions. Tom English highlights Binks' unique background and his strong desire to perform for Scotland.</p><p>What to watch: The impact Luis Binks' unique journey has on his Scotland performances.</p>
     <p class="src">Source: <a href="https://www.bbc.co.uk/sport/football/articles/cm70dyzjwg91o?at_medium=RSS&amp;at_campaign=rss" rel="noopener">BBC Sport</a> · <a href="article/2026-09-22/well-travelled-binks-eager-to-make-mark-for-scotland.html">permalink</a> · <a href="/category/sports.html">more sports</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/family-claims-police-jeep-rammed-bike-releases-police-conver.html">Family claims police jeep rammed bike, releases police conversation recording</a></h2>
-    <p>A mother of an injured youth has released an audio‑video recording that she says captures police conversation following a July 16 incident in which a police jeep allegedly rammed a bike. The family is demanding an attempt‑to‑murder case.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/family-alleges-police-jeep-deliberately-rammed-bike-demands-attempt-to-murder-case/article71496840.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-22/family-claims-police-jeep-rammed-bike-releases-police-conver.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/fall-equinox-falls-on-tuesday-day-and-night-equal.html">Fall equinox falls on Tuesday, day and night equal</a></h2>
-    <p>The autumnal equinox occurs on Tuesday, dividing daylight and darkness equally. It signals the start of fall in the Northern Hemisphere and the start of spring in the Southern Hemisphere.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-day-night-equal-billing-tuesday.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-22/fall-equinox-falls-on-tuesday-day-and-night-equal.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · The Verge · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/anthropic-releases-claude-opus-55-with-enhanced-cybersecurit.html">Anthropic releases Claude Opus 5.5 with enhanced cybersecurity safeguards</a></h2>
-    <p>Anthropic announced its Claude Opus 5.5 model on Tuesday, noting stronger safeguards following recent rogue AI hacking incidents. The update includes improvements to risky behaviors such as attempts to escape the testing sandbox.</p>
-    <p class="src">Source: <a href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity" rel="noopener">The Verge</a> · <a href="article/2026-09-22/anthropic-releases-claude-opus-55-with-enhanced-cybersecurit.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/congress-questions-eci-silence-after-convoy-attack.html">Congress questions ECI silence after convoy attack</a></h2>
-    <p>Congress leaders report that stones, acid, iron rods, and hockey sticks were used in an attack on their convoy during an Assam bypoll campaign, leaving a party secretary hospitalized. The party claims it was a planned murderous attack meant to intimidate voters and party workers, and has questioned the ECI's silence.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/assam/congress-questions-ecis-silence-after-attack-on-leaders-convoy-during-assam-bypoll-campaign/article71496347.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-22/congress-questions-eci-silence-after-convoy-attack.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/new-statistical-methods-aim-to-improve-research-reliability.html">New Statistical Methods Aim to Improve Research Reliability</a></h2>
-    <p>Mohammad Reza Seydi of Umeå University has developed and tested new statistical methods designed to help researchers better determine data requirements and the reliability of their measurements.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-statistical-methods-reliable.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-22/new-statistical-methods-aim-to-improve-research-reliability.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/greenhouse-gas-emissions-linked-to-intensified-european-heat.html">Greenhouse Gas Emissions Linked to Intensified European Heat Waves</a></h2>
-    <p>A study published in Geophysical Research Letters on September 22 indicates that greenhouse gas emissions released since the 2015 Paris Agreement have intensified recent heat waves in Europe.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-emissions-decade-europe-worse.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-22/greenhouse-gas-emissions-linked-to-intensified-european-heat.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/varied-eu-response-to-fuel-price-spikes.html">Varied EU Response to Fuel Price Spikes</a></h2>
-    <p>Fuel price increases have varied across European Union countries, with governments implementing different measures to address the rising costs.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/why-are-fuel-prices-so-high-in-european-union-ws-l-10346865.html" rel="noopener">News18 World</a> · <a href="article/2026-09-22/varied-eu-response-to-fuel-price-spikes.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/up-alliance-leaders-support-rahul-gandhi-and-akhilesh-yadav.html">UP Alliance Leaders Support Rahul Gandhi and Akhilesh Yadav</a></h2>
-    <p>Ahead of the 2027 polls, alliance leaders in Uttar Pradesh are expressing support for Rahul Gandhi and Akhilesh Yadav separately.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/uttar-pradesh-assembly-polls-rahul-gandhi-akhilesh-yadav-pitches-test-samajwadi-party-congress-alliance-unity-3000476-2026-09-22?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-22/up-alliance-leaders-support-rahul-gandhi-and-akhilesh-yadav.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/protests-and-legal-action-follow-iit-bombay-suicide-case.html">Protests and Legal Action Follow IIT Bombay Suicide Case</a></h2>
-    <p>Following a suicide at IIT Bombay, protests have erupted outside the campus, an FIR has been filed, and faculty members have expressed support for the professor involved.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/iit-bombay-suicide-row-protests-outside-campus-fir-filed-faculty-backs-professor-ytvd-3000606-2026-09-22?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-22/protests-and-legal-action-follow-iit-bombay-suicide-case.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/casualties-feared-following-pakistan-afghanistan-border-firi.html">Casualties Feared Following Pakistan-Afghanistan Border Firing</a></h2>
-    <p>Heavy firing has been reported along the Pakistan-Afghanistan border, with tensions escalating at multiple points over several days, leading to fears of casualties.</p>
-    <p class="src">Source: <a href="https://www.news18.com/world/heavy-firing-reported-along-pakistan-afghanistan-border-10346827.html" rel="noopener">News18 World</a> · <a href="article/2026-09-22/casualties-feared-following-pakistan-afghanistan-border-firi.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/bjp-mla-sparks-controversy-with-comments-on-muslims-at-garba.html">BJP MLA Sparks Controversy with Comments on Muslims at Garba</a></h2>
-    <p>A BJP MLA has sparked a row following remarks made regarding Muslims at a garba event, which included instructions to bring sisters and chant Jai Shri Ram.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/story/madhya-pradesh-garba-row-bring-sisters-daughters-chant-jai-shri-ram-bjp-mla-rameshwar-sharma-muslims-attending-navratri-events-remarks-backlash-3000517-2026-09-22?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-22/bjp-mla-sparks-controversy-with-comments-on-muslims-at-garba.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/new-nanoplasmonic-chip-monitors-parkinsons-treatment.html">New Nanoplasmonic Chip Monitors Parkinson's Treatment</a></h2>
-    <p>Researchers have created an organoid-on-a-chip system that uses a stem cell-derived 'mini-brain' and a nanoplasmonic sensor to track the effectiveness of Parkinson's disease treatments in real time.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-gold-nanoplasmonic-chip-tracks-dopa.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-22/new-nanoplasmonic-chip-monitors-parkinsons-treatment.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/kartik-aaryan-wins-best-actor-national-award.html">Kartik Aaryan Wins Best Actor National Award</a></h2>
-    <p>Kartik Aaryan was awarded the Best Actor in a Leading Role National Award for his performance as Murlikant Petkar in 'Chandu Champion' at the 72nd National Film Awards. President Droupadi Murmu presented the honor and praised his portrayal of the Paralympic champion.</p>
-    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/features/kartik-aaryan-receives-best-actor-national-award-for-chandu-champion-president-droupadi-murmu-praises-his-portrayal-of-murlikant-petkar/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-22/kartik-aaryan-wins-best-actor-national-award.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">SCIENCE BRIEF<span class="badge quick">quick bite</span> · Phys.org · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/study-suggests-origins-of-3iatlas-isotopic-discrepancy.html">Study Suggests Origins of 3I/ATLAS Isotopic Discrepancy</a></h2>
-    <p>A new paper suggests that the unusual isotope levels found in the interstellar visitor 3I/ATLAS, discovered in July 2025, are likely the result of the low metallicity of the stellar nursery where the object originated.</p>
-    <p class="src">Source: <a href="https://phys.org/news/2026-09-3iatlas-extreme-heavy.html" rel="noopener">Phys.org</a> · <a href="article/2026-09-22/study-suggests-origins-of-3iatlas-isotopic-discrepancy.html">permalink</a> · <a href="/category/science.html">more science</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · Engadget · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/adjusting-roku-tv-picture-settings.html">Adjusting Roku TV Picture Settings</a></h2>
-    <p>Roku TVs feature various settings that can be adjusted to improve image detail and clarity for users who know where to locate them.</p>
-    <p class="src">Source: <a href="https://www.engadget.com/2262814/improve-roku-tv-image-quality-change-settings/" rel="noopener">Engadget</a> · <a href="article/2026-09-22/adjusting-roku-tv-picture-settings.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Bollywood Hungama · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/72nd-national-film-awards-2026-held.html">72nd National Film Awards 2026 Held</a></h2>
-    <p>Kartik Aaryan, Dhanush, Yami Gautam Dhar, and Aditya Dhar were among the attendees at the 72nd National Film Awards 2026.</p>
-    <p class="src">Source: <a href="https://www.bollywoodhungama.com/news/parties-and-events/photos-kartik-aaryan-dhanush-yami-gautam-dhar-aditya-dhar-and-others-attend-72nd-national-film-awards-2026/" rel="noopener">Bollywood Hungama</a> · <a href="article/2026-09-22/72nd-national-film-awards-2026-held.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/aap-questions-gst-registrations-at-government-bungalow.html">AAP Questions GST Registrations at Government Bungalow</a></h2>
-    <p>The AAP is questioning how multiple private businesses were able to obtain GST registrations using the address of a government bungalow.</p>
-    <p class="src">Source: <a href="https://www.news18.com/india/aap-alleges-bjp-plot-to-defame-party-by-linking-it-to-drug-traffickers-ahead-of-punjab-polls-10346721.html" rel="noopener">News18 India</a> · <a href="article/2026-09-22/aap-questions-gst-registrations-at-government-bungalow.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">TECH BRIEF<span class="badge quick">quick bite</span> · TechCrunch · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/critical-infrastructure-faces-new-cyber-threat.html">Critical Infrastructure Faces New Cyber Threat</a></h2>
-    <p>Researchers have identified a new, looming threat targeting some of America's most important critical infrastructure.</p>
-    <p class="src">Source: <a href="https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/" rel="noopener">TechCrunch</a> · <a href="article/2026-09-22/critical-infrastructure-faces-new-cyber-threat.html">permalink</a> · <a href="/category/tech.html">more tech</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT BRIEF<span class="badge quick">quick bite</span> · Variety · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/ella-langley-sets-all-time-billboard-record.html">Ella Langley Sets All-Time Billboard Record</a></h2>
-    <p>Ella Langley's 'Choosin' Texas' has reached 23 weeks at No. 1 on the Billboard Hot 100, breaking the previous record held by Mariah Carey's 'All I Want for Christmas'.</p>
-    <p class="src">Source: <a href="https://variety.com/2026/music/news/ella-langley-breaks-record-choosin-texas-weeks-chart-mariah-1236871292/" rel="noopener">Variety</a> · <a href="article/2026-09-22/ella-langley-sets-all-time-billboard-record.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/teen-gang-raped-in-kalkaji-park.html">Teen Gang-Raped in Kalkaji Park</a></h2>
-    <p>A teenager was gang-raped in Delhi's Kalkaji Park; police arrested the accused following an encounter.</p>
-    <p class="src">Source: <a href="https://www.indiatoday.in/india/video/delhi-rape-horror-teen-gang-raped-in-kalkaji-park-encounter-breaks-out-as-cops-nab-accused-ytvd-3000587-2026-09-22?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-22/teen-gang-raped-in-kalkaji-park.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/trump-announces-venezuela-oil-deal.html">Trump Announces Venezuela Oil Deal</a></h2>
-    <p>President Donald Trump has announced a deal involving 65 billion barrels of Venezuelan oil, aimed at reducing global energy prices. While the agreement is intended to increase production long-term, experts caution that infrastructure requirements make immediate price impacts unlikely.</p>
-    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/business/international-business/unga-address-donald-trump-touts-venezuela-oil-deal-says-it-will-drive-down-energy-prices-worldwide/articleshow/134415730.cms" rel="noopener">Times of India</a> · <a href="article/2026-09-22/trump-announces-venezuela-oil-deal.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD BRIEF<span class="badge quick">quick bite</span> · Al Jazeera · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/public-opinion-on-un-conflict-resolution.html">Public Opinion on UN Conflict Resolution</a></h2>
-    <p>Al Jazeera surveyed individuals in Bangladesh, Gaza, and Nigeria regarding their perspectives on the United Nations' effectiveness in resolving international conflicts.</p>
-    <p class="src">Source: <a href="https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-2026-can-the-un-stop-wars?traffic_source=rss" rel="noopener">Al Jazeera</a> · <a href="article/2026-09-22/public-opinion-on-un-conflict-resolution.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">BUSINESS BRIEF<span class="badge quick">quick bite</span> · Economic Times · editor 5/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/pakistan-must-act-against-terrorism-mea.html">Pakistan must act against terrorism: MEA</a></h2>
-    <p>The Ministry of External Affairs stated that Pakistan must act against terrorism.</p>
-    <p class="src">Source: <a href="https://economictimes.indiatimes.com/news/india/pakistan-must-act-against-cross-border-terrorism-before-world-believes-it-would-do-what-it-says-mea/articleshow/134415622.cms" rel="noopener">Economic Times</a> · <a href="article/2026-09-22/pakistan-must-act-against-terrorism-mea.html">permalink</a> · <a href="/category/business.html">more business</a></p>
   </article><article class="story">
     <div class="meta">WORLD · News18 World · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-22/trump-claims-intervention-prevented-india-pakistan-escalatio.html">Trump Claims Intervention Prevented India-Pakistan Escalation</a></h2>
@@ -521,16 +426,6 @@ body { top: 0 !important; }
     <p>Trump presented several options for Iran, ranging from allowing the country to rebuild to its complete annihilation, according to a News18 World report. He also hinted that a deal with Tehran could be possible after the US midterm elections.</p><p>The options were announced without details on what rebuilding Iran would involve or how the more severe alternative would be carried out. Trump did not specify conditions for an agreement, a timetable or the measures countries would be expected to take to isolate Tehran.</p><p>The headline also highlighted Trump’s call for countries to isolate Tehran, adding an international dimension to his remarks. The available summary does not identify the countries addressed or describe any proposed steps. It also does not include Iran’s response.</p><p>Trump’s comments come as attention turns to the US midterm elections. His suggestion of a possible deal after the vote leaves open the prospect of a change in approach, while the mention of complete annihilation underscores the severity of the alternatives he presented.</p><p>What to watch: Whether Trump clarifies his options for Iran and pursues a deal after the US midterm elections.</p>
     <p class="src">Source: <a href="https://www.news18.com/world/do-i-drive-them-into-hell-trump-threatens-to-annihilate-iran-at-unga-hints-at-deal-after-midterms-10346718.html" rel="noopener">News18 World</a> · <a href="article/2026-09-22/do-i-annihilate-them-trump-hints-at-iran-deal-after-us-midte.html">permalink</a> · <a href="/category/world.html">more world</a></p>
   </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/festive-processions-mark-immersion-of-1500-ganesh-idols-in-k.html">Festive processions mark immersion of 1,500 Ganesh idols in Kurnool</a></h2>
-    <p>The immersion of nearly 1,500 idols of various sizes and shapes continued till late at the Vinayak Ghat on K-C Canal, the HNSS canal near Nannur tollgate, and Ulindakonda.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/andhra-pradesh/festive-spirit-grand-processions-mark-ganesh-idol-immersion-in-kurnool/article71496055.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-22/festive-processions-mark-immersion-of-1500-ganesh-idols-in-k.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL BRIEF<span class="badge quick">quick bite</span> · The Hindu · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
-    <h2><a href="article/2026-09-22/supreme-court-questions-machine-generated-delhi-sir-notices.html">Supreme Court Questions 'Machine-Generated' Delhi SIR Notices</a></h2>
-    <p>The Supreme Court stated that Delhi SIR notices appear to be machine-generated and mechanically issued. The court asked the Election Commission's counsel if recipients know which logical discrepancies they must disprove, noting that petitioners argue the term 'logical discrepancies' was not defined by the ECI.</p>
-    <p class="src">Source: <a href="https://www.thehindu.com/news/national/sc-says-delhi-sir-notices-seem-machine-generated-and-mechanically-issued/article71495055.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-22/supreme-court-questions-machine-generated-delhi-sir-notices.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
     <div class="meta">BUSINESS · Economic Times · editor 7/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-22/rbi-updates-valuation-guidelines-for-invit-and-reit-units.html">RBI Updates Valuation Guidelines for InvIT and REIT Units</a></h2>
     <p>The Reserve Bank of India has issued new guidelines regarding the valuation of units issued by Investment and Real Estate Investment Trusts. These regulatory updates aim to standardize how financial institutions assess the value of such instruments within their portfolios.</p><p>The central bank’s move addresses the need for greater transparency and consistency in the financial reporting of these alternative investment vehicles. By clarifying the valuation rules, the RBI seeks to mitigate potential discrepancies in how different entities report the worth of InvIT and REIT holdings. This standardization is intended to enhance the reliability of financial data for investors and regulatory oversight.</p><p>The new framework will require institutions to adhere to specific methodologies when marking to market these units. This ensures that the values reported in financial statements reflect a uniform approach across the sector. The changes are part of the RBI’s broader effort to strengthen the regulatory architecture governing non-banking financial activities.</p><p>Industry participants are expected to review their internal compliance procedures to align with the revised rules. The implementation of these guidelines is designed to foster a more stable and predictable environment for investment in real estate and infrastructure through trust structures. The focus remains on ensuring that valuation practices are robust and defensible.</p><p>What to watch: How financial institutions adapt their internal valuation models to comply with the new RBI standards.</p>
@@ -570,6 +465,6 @@ body { top: 0 !important; }
     <h2><a href="article/2026-09-22/hayden-panettieres-death-ruled-accident-involving-fentanyl-a.html">Hayden Panettiere’s Death Ruled Accident Involving Fentanyl and Other Drugs</a></h2>
     <p>The death of actress Hayden Panettiere has been officially ruled an accident, according to a statement from the Greenville County Coroner’s Office. The office confirmed the findings to Variety on Tuesday. The cause of death was determined to be the toxic effects of multiple substances. Specifically, the coroner’s statement listed fentanyl, 4-ANPP, Alprazolam, Methocarbamol, and Quetiapine. These toxicological results provide a definitive explanation for the circumstances surrounding her passing. The ruling classifies the death as accidental rather than suicidal or homicidal. The coroner’s office did not provide further details on the timeline of events or the specific location of the discovery in the statement shared with the publication. This official conclusion brings a final legal and medical determination to the case. The announcement serves to clarify the medical facts involved in her death. The family and representatives have not yet issued a public statement in response to the coroner’s final report. The case has drawn significant public attention due to Panettiere’s prominence in the entertainment industry. The involvement of fentanyl and other controlled substances in the toxicology report aligns with recent trends in accidental drug overdoses. The coroner’s decision closes the official investigation into the cause of her death.</p><p>What to watch: Any subsequent statements from the family or legal representatives regarding the findings.</p>
     <p class="src">Source: <a href="https://variety.com/2026/film/news/hayden-panettiere-cause-of-death-revealed-fentanyl-1236836083/" rel="noopener">Variety</a> · <a href="article/2026-09-22/hayden-panettieres-death-ruled-accident-involving-fentanyl-a.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article>
-<footer>The Daily Prompt · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
+  </article></main>
+<footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>
