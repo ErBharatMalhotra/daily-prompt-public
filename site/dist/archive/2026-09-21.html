@@ -58,7 +58,7 @@ function googleTranslateElementInit() {
   --paper-2: #1a1a1e;
   --card: #1f1f24;
   --line: #2c2c33;
-  --accent: #e03e3e;
+  --accent: #e85a5a; /* >=4.5:1 on --paper (was #e03e3e = 4.39:1, WCAG AA fail) */
   --accent-deep: #8b0000;
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
@@ -160,7 +160,7 @@ img { max-width: 100%; }
 .catgrp:last-child { border-right: 0; margin-right: 0; }
 .catgrp b {
   color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
-  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+  text-transform: uppercase; opacity: .85; margin-right: 2px; white-space: nowrap;
 }
 .catrow a {
   flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
@@ -219,7 +219,7 @@ h2.sec {
   font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
   color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
-.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.meta .beat-tag { color: #fff; font-weight: 700; }
 .tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
 .critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
 .hi-title a { font-size: 16px; }
@@ -295,11 +295,13 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
   min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
+#google_translate_element * { color: var(--ink) !important; } /* gadget injects black text on our dark bar */
 .gtr .goog-te-gadget-simple {
   border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
   background: var(--card) !important; color: var(--ink) !important;
 }
 .goog-te-banner-frame { display: none !important; }
+.goog-te-gadget-icon { display: none !important; } /* Google's 19px cleardot.gif = low-res image audit fail */
 body { top: 0 !important; }
 
 /* ---------- share / saved / search ---------- */
@@ -311,12 +313,51 @@ body { top: 0 !important; }
 .hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
 .hit small { color: var(--ink-soft); }
 
+/* ---------- per-beat colour system ([data-beat] vars are generated) ---------- */
+[data-beat] { --beat: var(--accent); }
+.beat-tag {
+  display: inline-block; background: var(--beat, var(--accent)); color: #fff;
+  padding: 1px 8px; border-radius: 6px; font-weight: 700; letter-spacing: .5px;
+}
+.story[data-beat]:not(.single):not(.hero) { border-left: 3px solid var(--beat, transparent); padding-left: 14px; }
+.story.hero[data-beat] { border-top-color: var(--beat, var(--accent)); }
+.col[data-beat] h3 { border-bottom: 2px solid var(--beat, var(--line)); padding-bottom: 4px; }
+header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--beat, var(--accent)); padding-bottom: 6px; }
+
+/* ---------- editorial typography ---------- */
+.story.single > p:first-of-type::first-letter {
+  float: left; font-family: var(--serif); font-weight: 700;
+  font-size: 3.05em; line-height: .82; padding: 5px 10px 0 0; color: var(--accent);
+}
+.critique::before { content: "\201C"; font-family: var(--serif); font-size: 1.5em; line-height: 0; color: var(--accent); margin-right: 3px; }
+.meta, .masthead-stats, .dates, table, .src { font-variant-numeric: tabular-nums; }
+
+/* ---------- article hero art (Pillow-generated) ---------- */
+.hero-art {
+  display: block; width: 100%; height: auto; border-radius: var(--radius);
+  border: 1px solid var(--line); margin: 6px 0 18px;
+}
+
+/* ---------- data-viz + front-page glance ---------- */
+.identicon { border-radius: 5px; vertical-align: -6px; margin-right: 8px; }
+.spark { display: block; }
+.glance { display: flex; gap: 20px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 14px 0 6px; }
+.glance .g-item { text-align: center; }
+.glance .g-item b { display: block; font-family: var(--serif); font-size: 22px; line-height: 1.1; }
+.glance .g-item span { font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-soft); }
+.glance .g-spark { opacity: .9; }
+@media (max-width: 560px) { .glance .g-spark { display: none; } }
+
+/* ---------- inline icons ---------- */
+.ic { vertical-align: -2px; margin-right: 5px; }
+.sharebar a { display: inline-flex; align-items: center; }
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
-</style></head><body><div class="topbar"><div class="topbar-row">
+[data-beat="national"]{--beat:#8b0000;}[data-beat="world"]{--beat:#143c6e;}[data-beat="defence"]{--beat:#2d3c46;}[data-beat="business"]{--beat:#145a3c;}[data-beat="finance"]{--beat:#146e2d;}[data-beat="education"]{--beat:#784614;}[data-beat="sports"]{--beat:#005a5a;}[data-beat="cricket"]{--beat:#006e3c;}[data-beat="entertainment"]{--beat:#963c14;}[data-beat="positive"]{--beat:#8c6400;}[data-beat="funny"]{--beat:#a05064;}[data-beat="science"]{--beat:#645000;}[data-beat="environment"]{--beat:#286928;}[data-beat="space"]{--beat:#1e2d5f;}[data-beat="health"]{--beat:#6e1446;}[data-beat="tech"]{--beat:#46286e;}[data-beat="ai"]{--beat:#552d87;}</style></head><body><div class="topbar"><div class="topbar-row">
     <a class="brand" href="/">The Daily <span>Prompt</span></a>
     <div class="tools">
       <a href="/search.html">Search</a>
@@ -324,48 +365,48 @@ body { top: 0 !important; }
       <a href="/wire.html">Wire</a>
       <a href="/stats.html">Stats</a>
       <a href="/feed.xml" title="RSS">RSS</a>
-      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+      <button id="tdp-theme" title="Toggle light/dark">Dark</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-21</h1></header><article class="story">
-    <div class="meta">NATIONAL · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header><h1>Edition 2026-09-21</h1></header><article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> · India Today · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/iit-bombay-student-death-crime-branch-probes-case-amid-tortu.html">IIT Bombay Student Death: Crime Branch Probes Case Amid Torture Allegations</a></h2>
-    <p>The Mumbai Crime Branch has initiated a comprehensive investigation into the death of an Indian Institute of Technology Bombay (IIT Bombay) student. This development follows serious allegations of torture emerging in connection with the case.</p><p>The student's demise at the premier educational institution has triggered widespread concern and demands for a thorough inquiry. The Crime Branch's involvement elevates the probe, focusing specifically on the veracity and implications of the torture claims.</p><p>Authorities are now tasked with meticulously examining all circumstances surrounding the student's death. The allegations suggest potential foul play or extreme duress, prompting investigators to look beyond initial assessments.</p><p>The investigation will involve gathering forensic evidence, interviewing fellow students, faculty members, and staff, and reviewing campus security footage and other relevant documents. The objective is to establish a clear timeline and understand any contributing factors.</p><p>The nature of the alleged torture, while not publicly detailed, has intensified scrutiny on campus environment and student well-being. The institution faces pressure to ensure full transparency and cooperation with law enforcement.</p><p>This high-profile case underscores the complexities involved in student welfare incidents at major academic institutions. The Crime Branch's ongoing work is critical to uncovering the truth behind these grave allegations.</p><p>What to watch: Updates from the Crime Branch on the evidence gathered and any preliminary findings related to the torture allegations.</p>
+    <p class="lede">The Mumbai Crime Branch has initiated a comprehensive investigation into the death of an Indian Institute of Technology Bombay (IIT Bombay) student. This development follows serious allegations of torture emerging in connection with the cas…</p>
     <p class="src">Source: <a href="https://www.indiatoday.in/india/video/iit-bombay-student-death-crime-branch-probes-case-amid-torture-allegations-ytvd-2999302-2026-09-21?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-21/iit-bombay-student-death-crime-branch-probes-case-amid-tortu.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> · News18 India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/we-need-proof-iit-bombay-students-parents-reject-cheating-al.html">'We Need Proof': IIT Bombay Student's Parents Reject Cheating Allegations, Demand CCTV Footage Of Exam</a></h2>
-    <p>The parents of the deceased Indian Institute of Technology Bombay (IIT Bombay) student have vehemently rejected allegations of cheating leveled against their son. They have demanded concrete proof and questioned the institute's official account regarding his death.</p><p>Their strong denial comes as the Mumbai Crime Branch continues its investigation into the student's demise. The parents assert that the cheating claims are unsubstantiated and appear to be an attempt to deflect from other potential issues.</p><p>A key demand from the family is the immediate release of CCTV footage from the examination hall. They believe this footage is crucial to verify the circumstances and refute the allegations made against their son.</p><p>The family has expressed deep skepticism about the narrative presented by IIT Bombay, urging for greater transparency. They have emphasized the need for a thorough and unbiased inquiry into all aspects of the incident.</p><p>Their rejection of the cheating claims adds another layer of complexity to the ongoing probe. The Crime Branch is already examining various angles related to the student's death, and these new demands from the family will likely be incorporated into their scope.</p><p>The parents have reiterated their call for justice, insisting that all facts be brought to light. This public stance puts additional pressure on both the institute and the investigating authorities to provide clear answers.</p><p>What to watch: The response from IIT Bombay regarding the parents' demands for CCTV footage and how the Crime Branch addresses these new claims in its ongoing investigation.</p>
+    <p class="lede">The parents of the deceased Indian Institute of Technology Bombay (IIT Bombay) student have vehemently rejected allegations of cheating leveled against their son. They have demanded concrete proof and questioned the institute's official acc…</p>
     <p class="src">Source: <a href="https://www.news18.com/india/iit-bombay-student-parents-reject-cheating-claims-demand-proof-ws-l-10343361.html" rel="noopener">News18 India</a> · <a href="article/2026-09-21/we-need-proof-iit-bombay-students-parents-reject-cheating-al.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">WORLD · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="world">
+    <div class="meta"><span class="beat-tag">WORLD</span> · News18 World · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/us-issues-stern-warning-to-iran-amid-escalating-gulf-tension.html">US Issues Stern Warning to Iran Amid Escalating Gulf Tensions</a></h2>
-    <p>The United States has issued a strong warning to Iran, with President Donald Trump indicating potential military action if Tehran's behavior does not change. The warning comes amidst heightened rhetoric and escalating tensions in the Gulf region.</p><p>President Trump stated that Iran faces &quot;serious consequences&quot; should it fail to &quot;behave,&quot; a clear hint at possible military intervention. This declaration underscores the growing volatility between the two nations, which has seen a series of confrontational exchanges.</p><p>The broader context of these warnings includes previous statements from Iran threatening US facilities in the Gulf, signaling that any perceived misstep could lead to retaliatory attacks. Such pronouncements from both sides contribute to a climate of apprehension, as international observers monitor the situation closely for any further escalation.</p><p>The diplomatic and military posturing highlights a critical period for stability in the Middle East, with concerns rising over the potential for miscalculation. The international community continues to urge de-escalation and a diplomatic resolution to the standoff.</p><p>What to watch: Any further diplomatic or military actions from either the US or Iran in the coming days.</p>
+    <p class="lede">The United States has issued a strong warning to Iran, with President Donald Trump indicating potential military action if Tehran's behavior does not change. The warning comes amidst heightened rhetoric and escalating tensions in the Gulf r…</p>
     <p class="src">Source: <a href="https://www.news18.com/world/us-iran-war-news-live-updates-saudi-houthi-conflict-trump-iran-talks-strait-of-hormuz-reopening-crude-oil-prices-latest-news-liveblog-ws-l-10343097.html" rel="noopener">News18 World</a> · <a href="article/2026-09-21/us-issues-stern-warning-to-iran-amid-escalating-gulf-tension.html">permalink</a> · <a href="/category/world.html">more world</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> · The Hindu · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/five-dead-one-missing-after-flash-flood-sweeps-keralas-nilam.html">Five Dead, One Missing After Flash Flood Sweeps Kerala's Nilambur</a></h2>
-    <p>A sudden flash flood in Nilambur, Kerala, tragically claimed the lives of five individuals on Sunday evening, with search operations continuing for a missing woman. The unexpected surge of water caught visitors off guard, transforming a popular recreational area into a scene of disaster.</p><p>The incident occurred as people had gathered along the riverbed and atop granite boulders, enjoying the natural surroundings. The rapid onset of the floodwaters swept away numerous individuals, leading to a frantic emergency response.</p><p>Local authorities and rescue teams immediately launched an extensive search and rescue mission. Efforts are focused on locating the sole remaining missing person, with teams navigating challenging terrain and strong currents in the affected areas.</p><p>The tragedy highlights the inherent dangers of unpredictable weather phenomena, especially in regions prone to sudden heavy rainfall. Community members and local officials are working together to support those affected and to ensure comprehensive search operations.</p><p>What to watch: The progress of the search operation for the missing woman and the official disaster relief efforts.</p>
+    <p class="lede">A sudden flash flood in Nilambur, Kerala, tragically claimed the lives of five individuals on Sunday evening, with search operations continuing for a missing woman. The unexpected surge of water caught visitors off guard, transforming a pop…</p>
     <p class="src">Source: <a href="https://www.thehindu.com/news/national/kerala/flash-floods-in-keralams-nilambur-five-bodies-recovered-search-on-for-missing-woman/article71490206.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-21/five-dead-one-missing-after-flash-flood-sweeps-keralas-nilam.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL · The Hindu · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> · The Hindu · editor 8/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/two-indian-students-killed-during-flight-training-in-canada.html">Two Indian students killed during flight training in Canada</a></h2>
-    <p>Two Indian students, Manoj Sivakumar from Tamil Nadu and Srisaran Thirugnanasambantham from Puducherry, have died during flight training in Canada. The tragic incident occurred while they were undergoing aviation instruction, as confirmed by reports from The Hindu.</p><p>Manoj Sivakumar hailed from Tamil Nadu, and Srisaran Thirugnanasambantham was a resident of Puducherry. Both had travelled to Canada to pursue their aspirations in the aviation sector, enrolling in a flight training program.</p><p>The specific details surrounding the circumstances of their deaths have not yet been fully disclosed. Canadian authorities are anticipated to launch a comprehensive investigation to ascertain the exact cause of the incident and identify any contributing factors. Such probes typically involve examining aircraft maintenance records, weather conditions, and training protocols.</p><p>This devastating loss has deeply impacted the families and communities of the two young men in India. Diplomatic channels between India and Canada are expected to be activated to facilitate information exchange and provide support to the grieving families, including assistance with the repatriation process.</p><p>The incident serves as a somber reminder of the inherent risks associated with pilot training, even under supervised conditions. It also brings into focus the safety standards and regulatory oversight within international flight schools.</p><p>What to watch: Further details from the ongoing investigation by Canadian authorities.</p>
+    <p class="lede">Two Indian students, Manoj Sivakumar from Tamil Nadu and Srisaran Thirugnanasambantham from Puducherry, have died during flight training in Canada. The tragic incident occurred while they were undergoing aviation instruction, as confirmed b…</p>
     <p class="src">Source: <a href="https://www.thehindu.com/news/national/two-indian-students-killed-during-flight-training-in-canada/article71490266.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-21/two-indian-students-killed-during-flight-training-in-canada.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">ENTERTAINMENT · TOI Entertainment · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="entertainment">
+    <div class="meta"><span class="beat-tag">ENTERTAINMENT</span> · TOI Entertainment · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/aamir-khan-to-start-3-idiots-sequel-in-april-2027-after-lalk.html">Aamir Khan to start ‘3 Idiots’ sequel in April 2027 after ‘Lalkaara’ schedule</a></h2>
-    <p>Bollywood superstar Aamir Khan is reportedly set to commence filming for the much-anticipated sequel to his blockbuster hit '3 Idiots' in April 2027. This development follows his current commitments, particularly the upcoming film 'Lalkaara'.</p><p>Khan is slated to begin intensive work on Ashutosh Gowariker's directorial venture, 'Lalkaara', this October. The film, which is based on the life of legendary cricketer Lala Amarnath, is targeting a theatrical release in December 2027.</p><p>Upon the completion of 'Lalkaara', sources suggest that Khan will transition to the '3 Idiots' sequel. The script for the follow-up project is expected to be finalized early next year, paving the way for its proposed April 2027 production start.</p><p>Fans can anticipate the return of several original cast members. Kareena Kapoor Khan, R Madhavan, and Sharman Joshi are all expected to reprise their iconic roles, reuniting the beloved trio from the 2009 original. The first film, directed by Rajkumar Hirani, was a critical and commercial success.</p><p>The news has generated considerable excitement among fans eager to see the next chapter of the story. The long gap between the original and its sequel underscores the careful planning involved in such high-profile projects.</p><p>What to watch: Official announcements regarding the '3 Idiots' sequel cast and production timeline.</p>
+    <p class="lede">Bollywood superstar Aamir Khan is reportedly set to commence filming for the much-anticipated sequel to his blockbuster hit '3 Idiots' in April 2027. This development follows his current commitments, particularly the upcoming film 'Lalkaara…</p>
     <p class="src">Source: <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/aamir-khan-to-start-3-idiots-sequel-in-april-2027-after-lalkaara-schedule-kareena-kapoor-r-madhavan-sharman-joshi-to-return-reports/articleshow/134380910.cms" rel="noopener">TOI Entertainment</a> · <a href="article/2026-09-21/aamir-khan-to-start-3-idiots-sequel-in-april-2027-after-lalk.html">permalink</a> · <a href="/category/entertainment.html">more entertainment</a></p>
-  </article><article class="story">
-    <div class="meta">NATIONAL · India Today · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> · India Today · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/money-power-influences-elections-says-cjps-dipke-after-abvps.html">Money Power Influences Elections, Says CJP's Dipke After ABVP's DUSU Sweep</a></h2>
-    <p>Following the recent sweep by the Akhil Bharatiya Vidyarthi Parishad (ABVP) in the Delhi University Students' Union (DUSU) polls, Abhijeet Dipke of the Citizens for Justice and Peace (CJP) has asserted that &quot;money power drives elections.&quot; This statement, reported by India Today, highlights a recurring concern about the influence of financial resources in student politics.</p><p>Dipke's comment comes in the wake of the DUSU election results, where the ABVP, the student wing of the RSS, secured a significant victory. Such observations about the role of money in elections are not new, particularly in high-profile student union contests that often mirror larger political battles. Critics frequently point to extensive campaigning, advertising, and resource mobilization as indicators of financial muscle.</p><p>The DUSU elections are often seen as a crucial platform for emerging political leaders and are closely watched by national political parties. Allegations or observations regarding the impact of &quot;money power&quot; raise questions about the fairness and level playing field for all contestants, especially those with limited financial backing.</p><p>While the summary does not provide specific details on how money power was allegedly exercised in the DUSU polls, Dipke's statement implies a perceived imbalance. Debates surrounding campaign finance and transparency in student elections remain pertinent, echoing broader national discussions on electoral reforms. The outcome of the DUSU polls, coupled with such critical commentary, draws attention to the dynamics of student politics.</p><p>What to watch: Ongoing discussions on campaign finance and transparency in student elections.</p>
+    <p class="lede">Following the recent sweep by the Akhil Bharatiya Vidyarthi Parishad (ABVP) in the Delhi University Students' Union (DUSU) polls, Abhijeet Dipke of the Citizens for Justice and Peace (CJP) has asserted that &quot;money power drives elections.&quot; T…</p>
     <p class="src">Source: <a href="https://www.indiatoday.in/india/story/dusu-polls-abvp-victory-abhijeet-dipke-money-power-campus-bias-ptag-2999230-2026-09-21?utm_source=rss" rel="noopener">India Today</a> · <a href="article/2026-09-21/money-power-influences-elections-says-cjps-dipke-after-abvps.html">permalink</a> · <a href="/category/national.html">more national</a></p>
-  </article><article class="story">
-    <div class="meta">BUSINESS · Business Standard · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+  </article><article class="story" data-beat="business">
+    <div class="meta"><span class="beat-tag">BUSINESS</span> · Business Standard · editor 9/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-09-21/dilip-buildcon-wins-1265-crore-epc-work-for-maharashtra-powe.html">Dilip Buildcon wins ₹1,265 crore EPC work for Maharashtra power project</a></h2>
-    <p>Mumbai: Infrastructure firm Dilip Buildcon Ltd. has secured a significant engineering, procurement, and construction (EPC) contract for an intra-state transmission project in Maharashtra. The project, awarded by REC Power Development and Consultancy Limited (RECPDCL), marks a notable addition to the company's order book.</p><p>The EPC component of the contract is valued at ₹1,265 crore, a figure that excludes Goods and Services Tax (GST). This win underscores Dilip Buildcon's continued presence and capabilities in the critical power infrastructure sector. The project aims to enhance Maharashtra's internal power transmission capabilities, contributing to the state's energy grid stability and efficiency.</p><p>RECPDCL, a wholly-owned subsidiary of REC Limited (formerly Rural Electrification Corporation Limited), is a key player in developing power projects and providing consultancy services across India. Their selection of Dilip Buildcon highlights the latter's competitive standing and expertise in executing large-scale infrastructure assignments.</p><p>This contract is expected to further solidify Dilip Buildcon's revenue streams and operational footprint in Western India. The company has a diversified portfolio, including roads, bridges, and other civil construction projects, and this latest award reinforces its strategic focus on infrastructure development.</p><p>What to watch: The timeline for project execution and its impact on Dilip Buildcon's financial performance in upcoming quarters.</p>
+    <p class="lede">Mumbai: Infrastructure firm Dilip Buildcon Ltd. has secured a significant engineering, procurement, and construction (EPC) contract for an intra-state transmission project in Maharashtra. The project, awarded by REC Power Development and Co…</p>
     <p class="src">Source: <a href="https://www.business-standard.com/industry/news/dilip-buildcon-l1-bidder-recpdcl-maharashtra-transmission-project-126092100273_1.html" rel="noopener">Business Standard</a> · <a href="article/2026-09-21/dilip-buildcon-wins-1265-crore-epc-work-for-maharashtra-powe.html">permalink</a> · <a href="/category/business.html">more business</a></p>
   </article></main>
 <footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>

@@ -58,7 +58,7 @@ function googleTranslateElementInit() {
   --paper-2: #1a1a1e;
   --card: #1f1f24;
   --line: #2c2c33;
-  --accent: #e03e3e;
+  --accent: #e85a5a; /* >=4.5:1 on --paper (was #e03e3e = 4.39:1, WCAG AA fail) */
   --accent-deep: #8b0000;
   --ok-bg: #10331c; --ok-fg: #7ede9b;
   --bad-bg: #3a1416; --bad-fg: #f2a0a0;
@@ -160,7 +160,7 @@ img { max-width: 100%; }
 .catgrp:last-child { border-right: 0; margin-right: 0; }
 .catgrp b {
   color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
-  text-transform: uppercase; opacity: .65; margin-right: 2px; white-space: nowrap;
+  text-transform: uppercase; opacity: .85; margin-right: 2px; white-space: nowrap;
 }
 .catrow a {
   flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
@@ -219,7 +219,7 @@ h2.sec {
   font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
   color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
-.meta .beat-tag { color: var(--accent); font-weight: 700; }
+.meta .beat-tag { color: #fff; font-weight: 700; }
 .tags { margin: 0 0 12px; font-size: 13px; color: var(--accent); }
 .critique { font-style: italic; color: var(--ink-soft); border-left: 3px solid var(--accent); padding-left: 10px; }
 .hi-title a { font-size: 16px; }
@@ -295,11 +295,13 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
   min-height: 42px; /* reserve space for the late-injected Google Translate widget (CLS) */
 }
 .gtr .goog-te-gadget { font-size: 13px !important; }
+#google_translate_element * { color: var(--ink) !important; } /* gadget injects black text on our dark bar */
 .gtr .goog-te-gadget-simple {
   border: 1px solid var(--line) !important; border-radius: 8px; padding: 4px 10px !important;
   background: var(--card) !important; color: var(--ink) !important;
 }
 .goog-te-banner-frame { display: none !important; }
+.goog-te-gadget-icon { display: none !important; } /* Google's 19px cleardot.gif = low-res image audit fail */
 body { top: 0 !important; }
 
 /* ---------- share / saved / search ---------- */
@@ -311,12 +313,51 @@ body { top: 0 !important; }
 .hit { border-bottom: 1px solid var(--line); padding: 10px 0; }
 .hit small { color: var(--ink-soft); }
 
+/* ---------- per-beat colour system ([data-beat] vars are generated) ---------- */
+[data-beat] { --beat: var(--accent); }
+.beat-tag {
+  display: inline-block; background: var(--beat, var(--accent)); color: #fff;
+  padding: 1px 8px; border-radius: 6px; font-weight: 700; letter-spacing: .5px;
+}
+.story[data-beat]:not(.single):not(.hero) { border-left: 3px solid var(--beat, transparent); padding-left: 14px; }
+.story.hero[data-beat] { border-top-color: var(--beat, var(--accent)); }
+.col[data-beat] h3 { border-bottom: 2px solid var(--beat, var(--line)); padding-bottom: 4px; }
+header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--beat, var(--accent)); padding-bottom: 6px; }
+
+/* ---------- editorial typography ---------- */
+.story.single > p:first-of-type::first-letter {
+  float: left; font-family: var(--serif); font-weight: 700;
+  font-size: 3.05em; line-height: .82; padding: 5px 10px 0 0; color: var(--accent);
+}
+.critique::before { content: "\201C"; font-family: var(--serif); font-size: 1.5em; line-height: 0; color: var(--accent); margin-right: 3px; }
+.meta, .masthead-stats, .dates, table, .src { font-variant-numeric: tabular-nums; }
+
+/* ---------- article hero art (Pillow-generated) ---------- */
+.hero-art {
+  display: block; width: 100%; height: auto; border-radius: var(--radius);
+  border: 1px solid var(--line); margin: 6px 0 18px;
+}
+
+/* ---------- data-viz + front-page glance ---------- */
+.identicon { border-radius: 5px; vertical-align: -6px; margin-right: 8px; }
+.spark { display: block; }
+.glance { display: flex; gap: 20px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 14px 0 6px; }
+.glance .g-item { text-align: center; }
+.glance .g-item b { display: block; font-family: var(--serif); font-size: 22px; line-height: 1.1; }
+.glance .g-item span { font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-soft); }
+.glance .g-spark { opacity: .9; }
+@media (max-width: 560px) { .glance .g-spark { display: none; } }
+
+/* ---------- inline icons ---------- */
+.ic { vertical-align: -2px; margin-right: 5px; }
+.sharebar a { display: inline-flex; align-items: center; }
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
-</style></head><body><div class="topbar"><div class="topbar-row">
+[data-beat="national"]{--beat:#8b0000;}[data-beat="world"]{--beat:#143c6e;}[data-beat="defence"]{--beat:#2d3c46;}[data-beat="business"]{--beat:#145a3c;}[data-beat="finance"]{--beat:#146e2d;}[data-beat="education"]{--beat:#784614;}[data-beat="sports"]{--beat:#005a5a;}[data-beat="cricket"]{--beat:#006e3c;}[data-beat="entertainment"]{--beat:#963c14;}[data-beat="positive"]{--beat:#8c6400;}[data-beat="funny"]{--beat:#a05064;}[data-beat="science"]{--beat:#645000;}[data-beat="environment"]{--beat:#286928;}[data-beat="space"]{--beat:#1e2d5f;}[data-beat="health"]{--beat:#6e1446;}[data-beat="tech"]{--beat:#46286e;}[data-beat="ai"]{--beat:#552d87;}</style></head><body><div class="topbar"><div class="topbar-row">
     <a class="brand" href="/">The Daily <span>Prompt</span></a>
     <div class="tools">
       <a href="/search.html">Search</a>
@@ -324,23 +365,23 @@ body { top: 0 !important; }
       <a href="/wire.html">Wire</a>
       <a href="/stats.html">Stats</a>
       <a href="/feed.xml" title="RSS">RSS</a>
-      <button id="tdp-theme" title="Toggle light/dark" aria-label="Toggle theme">Dark</button>
+      <button id="tdp-theme" title="Toggle light/dark">Dark</button>
     </div>
   </div>
   <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><p class="crumb"><a href="/">← Front page</a> · <a href="/archive.html">Archive</a> · <a href="/category/education.html">education</a></p>
-     <article class="story single">
-       <div class="meta">EDUCATION · Education (aggregate) · 2026-09-27 · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+     <article class="story single" data-beat="education">
+       <div class="meta"><span class="beat-tag">EDUCATION</span> · Education (aggregate) · 2026-09-27 · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
        <h1>GATE 2027 Regular Application Deadline Today; New Aspects Highlighted</h1>
        <div class="tags"><span>#GATE 2027</span> <span>#Application Deadline</span> <span>#Engineering Entrance</span> <span>#Postgraduate Admissions</span></div>
-       <p>Today marks the crucial deadline for regular applicants seeking to register for the Graduate Aptitude Test in Engineering (GATE) 2027. Prospective candidates must ensure that all necessary application procedures are completed and submitted by the close of the day to be considered for the examination.</p><p>The GATE 2027 examination cycle is noted for introducing certain new aspects this year. While the specifics of these changes have not been detailed, the announcement implies a potential evolution in the exam's structure or process. Candidates are encouraged to be aware of the ongoing updates regarding these new elements.</p><p>This examination holds significant importance for individuals aiming for postgraduate admissions in engineering and science disciplines at various Indian institutes, as well as for those seeking employment opportunities in public sector undertakings. The timely completion of the application process is a fundamental step for all regular applicants.</p><p>With the deadline set for today, candidates are urged to prioritize their application submissions. The mention of &quot;what's new this year&quot; for GATE 2027 suggests that applicants should also stay informed about any official communications that might detail these changes, even as they focus on meeting the current application cutoff.</p><p>What to watch: Official announcements detailing the new aspects introduced for GATE 2027.</p>
+       <p>Today marks the crucial deadline for regular applicants seeking to register for the Graduate Aptitude Test in Engineering (GATE) 2027. Prospective candidates must ensure that all necessary application procedures are completed and submitted by the close of the day to be considered for the examination.</p><img class="hero-art" src="/img/2026-09-27/gate-2027-regular-application-deadline-today-new-aspects-hig.webp" width="1200" height="675" alt="" loading="lazy" decoding="async"><p>The GATE 2027 examination cycle is noted for introducing certain new aspects this year. While the specifics of these changes have not been detailed, the announcement implies a potential evolution in the exam's structure or process. Candidates are encouraged to be aware of the ongoing updates regarding these new elements.</p><p>This examination holds significant importance for individuals aiming for postgraduate admissions in engineering and science disciplines at various Indian institutes, as well as for those seeking employment opportunities in public sector undertakings. The timely completion of the application process is a fundamental step for all regular applicants.</p><p>With the deadline set for today, candidates are urged to prioritize their application submissions. The mention of &quot;what's new this year&quot; for GATE 2027 suggests that applicants should also stay informed about any official communications that might detail these changes, even as they focus on meeting the current application cutoff.</p><p>What to watch: Official announcements detailing the new aspects introduced for GATE 2027.</p>
        <p class="critique">Editor's note: The article accurately reflects the provided source summary.</p>
        <p class="src">This article is AI-generated and fact-gated. Original reporting: <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxOcnp6eVB2Ml84NUZJcmRrU0JjRWhmc052eW5qd3JzbjVrNmMzLVhaa3F3S0FVbmFRUWFURnh1OER3endvMXlRNllpV0U4V3J1R0xpcmJKLUhVSEx6OWhLanpXQnRzX1dQVko2MWhuTDROdDlrM0hkYkYxMjZlSEpRdzZfbTItNkg2NkVGMVZuRW9rQXczRndUcndJYm9qZkVJNzBjX29rTElDQUFfRVNycjdqQWN3M1lTd3ZPUC1ySGkyM1ZaeUZ3ejQ0MUpBblJ1VTd4WXFDazNEWnJIZzIwcjM2ZThrVkJjOVlnWWZPVVk5VWlIblU5OUR5bkprd9IBhAJBVV95cUxPQWhHYUJEVHloYndESTRZamM1UmVKU1B4cnBiMzFfaENVanFQS2YwWFJJT3JQbkp6dWVnMThYaUV0ckRENXNxV2tSMEVSbF9GUTJtcHVZZTlvcHdBSXBhTjNONXJNcElKV3hCUHI0SzBKRThPeTRkOERNV2I1R0M1bHhYb1o5cS14X29Tektvd1VuLTJwQ0RXUkNsRHRqOHlEM3g5YmVXaDRpODZVODFnekw0bWRIRkl0dk5DT1lpdnBhWXI2U1pGekFWVG8wTXZ5dy1XalVBNkI2S252VVpqWHkwOU4yc2xEYXVDZkxUY1l3Z0djeWkwaGREVGFULVBKVWlxOA?oc=5" rel="noopener">Education (aggregate)</a></p>
        <div class="sharebar" data-href="article/2026-09-27/gate-2027-regular-application-deadline-today-new-aspects-hig.html" data-title="GATE 2027 Regular Application Deadline Today; New Aspects Highlighted"><b>Share:</b>
-         <a class="sh-wa" target="_blank" rel="noopener">WhatsApp</a> ·
-         <a class="sh-tg" target="_blank" rel="noopener">Telegram</a> ·
-         <a class="sh-x" target="_blank" rel="noopener">X</a> ·
-         <a href="#" class="sh-copy">Copy link</a> ·
-         <a href="#" class="sh-save" data-id="article/2026-09-27/gate-2027-regular-application-deadline-today-new-aspects-hig.html">Save for later</a>
+         <a class="sh-wa" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.8A6.2 6.2 0 0 0 2.7 11L1.8 14.2l3.3-.9A6.2 6.2 0 1 0 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>WhatsApp</a> ·
+         <a class="sh-tg" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14.4 1.6 1.6 7l3.6 1.2L6 13l2.2-3.1 3.4 2.4 2.8-10.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Telegram</a> ·
+         <a class="sh-x" target="_blank" rel="noopener"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.6 2.6l10.8 10.8M13.4 2.6 2.6 13.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>X</a> ·
+         <a href="#" class="sh-copy"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.6 9.4a3 3 0 0 0 4.2 0l1.8-1.8A3 3 0 1 0 8.4 3.4L7.5 4.3M9.4 6.6a3 3 0 0 0-4.2 0L3.4 8.4a3 3 0 1 0 4.2 4.2l.9-.9" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Copy link</a> ·
+         <a href="#" class="sh-save" data-id="article/2026-09-27/gate-2027-regular-application-deadline-today-new-aspects-hig.html"><svg class="ic" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4.2 2.2h7.6v11.6L8 10.6l-3.8 3.2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Save for later</a>
        </div></main>
 <footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>
