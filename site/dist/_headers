@@ -1,0 +1,11 @@
+# Cloudflare Pages custom headers for news.bharatdn.com
+# Added in the 2026-10-02 network audit: this portal shipped with no HSTS and no
+# X-Frame-Options. Mirrors the root domain's _headers.
+#
+# Strict-Transport-Security: max-age 1 saal, bina includeSubDomains
+#   (includeSubDomains tabhi add karna jab har subdomain HTTPS-ready ho)
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000

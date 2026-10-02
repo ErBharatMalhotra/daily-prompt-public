@@ -160,12 +160,12 @@ img { max-width: 100%; }
 }
 .catgrp:last-child { border-right: 0; margin-right: 0; }
 .catgrp b {
-  color: var(--ink-soft); font-size: 10px; letter-spacing: 1.5px;
+  color: var(--ink-soft); font-size: 12px; letter-spacing: 1.5px;
   text-transform: uppercase; opacity: .85; margin-right: 2px; white-space: nowrap;
 }
 .catrow a {
   flex: 0 0 auto; color: var(--ink-soft); text-decoration: none;
-  text-transform: uppercase; letter-spacing: .8px; font-size: 11.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .8px; font-size: 12px; font-weight: 600;
   padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
   background: transparent;
 }
@@ -217,7 +217,7 @@ h2.sec {
 .lede { font-size: 17px; font-style: italic; color: var(--ink-soft); }
 
 .meta {
-  font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase;
   color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
 .meta .beat-tag { color: #fff; font-weight: 700; }
@@ -228,7 +228,7 @@ h2.sec {
 
 /* Provenance box: every outlet the story was synthesised from (multi-source). */
 .provenance { border: 1px solid var(--line, rgba(148,163,184,.25)); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 18px 0; font-size: 13.5px; background: var(--panel, rgba(148,163,184,.06)); }
-.provenance b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
+.provenance b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); margin-bottom: 6px; }
 .provenance ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
 .provenance li::before { content: "\25B8"; color: var(--accent); margin-right: 5px; }
 .provenance a { color: var(--link, var(--accent)); text-decoration: none; border-bottom: 1px solid transparent; }
@@ -236,7 +236,7 @@ h2.sec {
 .provenance p { margin: 0; color: var(--ink-soft); font-size: 12.5px; }
 
 /* ---------- badges (pills) ---------- */
-.badge { padding: 3px 10px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .6px; }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .6px; }
 .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
 .badge.bad { background: var(--bad-bg); color: var(--bad-fg); }
 .badge.quick { background: rgba(224,62,62,.14); color: var(--accent); border: 1px solid rgba(224,62,62,.4); text-transform: uppercase; }
@@ -257,7 +257,7 @@ h2.sec {
 .crumb { font-size: 14px; color: var(--ink-soft); }
 table { width: 100%; border-collapse: collapse; margin: 16px 0; }
 td, th { border: 1px solid var(--line); padding: 7px 11px; text-align: left; font-size: 14px; }
-th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 11.5px; letter-spacing: 1px; }
+th { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-soft); text-align: center; border-top: 1px solid var(--line); padding-top: 18px; }
 
 /* ---------- columns / briefs ---------- */
@@ -290,7 +290,7 @@ ul.brief li { padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 
   flex: 1 1 160px; background: var(--card); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 14px; text-align: center; min-width: 150px;
 }
-.pstep .num { display: block; font-size: 10px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+.pstep .num { display: block; font-size: 12px; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
 .pstep .ico { display: block; font-size: 24px; margin: 6px 0; }
 .pstep b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
 .pstep p { font-size: 12.5px; color: var(--ink-soft); margin: 0; line-height: 1.45; }
@@ -328,6 +328,7 @@ body { top: 0 !important; }
 .beat-tag {
   display: inline-block; background: var(--beat, var(--accent)); color: #fff;
   padding: 1px 8px; border-radius: 6px; font-weight: 700; letter-spacing: .5px;
+  font-size: 12px; /* explicit: it sits inside .meta, which is sub-12px */
 }
 .story[data-beat]:not(.single):not(.hero) { border-left: 3px solid var(--beat, transparent); padding-left: 14px; }
 .story.hero[data-beat] { border-top-color: var(--beat, var(--accent)); }
@@ -354,7 +355,7 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
 .glance { display: flex; gap: 20px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 14px 0 6px; }
 .glance .g-item { text-align: center; }
 .glance .g-item b { display: block; font-family: var(--serif); font-size: 22px; line-height: 1.1; }
-.glance .g-item span { font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-soft); }
+.glance .g-item span { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-soft); }
 .glance .g-spark { opacity: .9; }
 @media (max-width: 560px) { .glance .g-spark { display: none; } }
 
@@ -378,8 +379,13 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
       <button id="tdp-theme" title="Toggle light/dark">Light</button>
     </div>
   </div>
-  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header data-beat="national"><h1>NATIONAL</h1><p>130 stories across all editions</p></header>
+  <nav class="catrow"><span class="catgrp"><b>News</b><a href="/category/national.html">national</a><a href="/category/world.html">world</a><a href="/category/defence.html">defence</a></span><span class="catgrp"><b>Money</b><a href="/category/business.html">business</a><a href="/category/finance.html">finance</a><a href="/category/education.html">education</a></span><span class="catgrp"><b>Sports</b><a href="/category/sports.html">sports</a><a href="/category/cricket.html">cricket</a></span><span class="catgrp"><b>Culture</b><a href="/category/entertainment.html">entertainment</a><a href="/category/positive.html">positive</a><a href="/category/funny.html">funny</a></span><span class="catgrp"><b>Life</b><a href="/category/science.html">science</a><a href="/category/environment.html">environment</a><a href="/category/space.html">space</a><a href="/category/health.html">health</a></span><span class="catgrp"><b>Tech</b><a href="/category/tech.html">tech</a><a href="/category/ai.html">ai</a></span></nav></div><div class="gtr"><span>Read in your language:</span><div id="google_translate_element"></div></div><div class="wrap"><main id="content"><header data-beat="national"><h1>NATIONAL</h1><p>131 stories across all editions</p></header>
       <article class="story" data-beat="national">
+    <div class="meta"><span class="beat-tag">NATIONAL</span> BRIEF · Times of India · editor 10/10 · 1 min read <span class="badge ok">fact-checked</span></div>
+    <h2><a href="article/2026-10-02/abhishek-sharma-reportedly-unhappy-at-sunrisers-hyderabad-an.html">Abhishek Sharma Reportedly Unhappy at Sunrisers Hyderabad and Seeks IPL Exit Ahead of Retention Deadline</a></h2>
+    <p class="lede">Abhishek Sharma's future with Sunrisers Hyderabad has drawn intense focus ahead of the upcoming IPL retention deadline. The opening batter is reportedly unhappy after Ishan Kishan was given the captaincy last year. Kishan is expected to con…</p>
+    <p class="src">Source: <a href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-retentions-unhappy-abhishek-sharma-wants-to-leave-srh-but-where-will-he-go/articleshow/134638490.cms" rel="noopener">Times of India</a> · <a href="article/2026-10-02/abhishek-sharma-reportedly-unhappy-at-sunrisers-hyderabad-an.html">permalink</a> · <a href="/category/national.html">more national</a></p>
+  </article><article class="story" data-beat="national">
     <div class="meta"><span class="beat-tag">NATIONAL</span> · India Today · editor 6/10 · 1 min read <span class="badge ok">fact-checked</span></div>
     <h2><a href="article/2026-10-02/pm-modi-commends-pilot-protests-erupt-over-election-commissi.html">PM Modi Commends Pilot; Protests Erupt Over Election Commissioner</a></h2>
     <p class="lede">Prime Minister Narendra Modi recently spoke with Captain Smit Machhar, the Indian pilot of a Flydubai Boeing 737 MAX 8, who averted a mid-air crisis. The flight from Dubai to Tel Aviv experienced a severe incident at 34,000 feet when Captai…</p>
@@ -1031,6 +1037,6 @@ header[data-beat] h1 { display: inline-block; border-bottom: 4px solid var(--bea
     <p class="src">Source: <a href="https://www.thehindu.com/news/national/pm-modi-holds-talks-with-iranian-president-pezeshkian/article71457281.ece" rel="noopener">The Hindu</a> · <a href="article/2026-09-12/modi-pezeshkian-meet-in-tehran-stress-diplomacy-amid-regiona.html">permalink</a> · <a href="/category/national.html">more national</a></p>
   </article>
       <p class="src">More in News: <a href="/category/world.html">world</a> · <a href="/category/defence.html">defence</a></p>
-      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.thehindu.com/news/national/uttar-pradesh/samajwadi-party-names-candidates-for-rajya-sabha-polls-in-up/article71527003.ece" target="_blank" rel="noopener">Akhilesh fields senior Reliance honcho for Rajya Sabha poll</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.news18.com/india/the-gandhi-photograph-you-carry-in-your-wallet-who-actually-took-it-and-how-did-it-end-up-on-indian-currency-notes-ws-lrt-10364750.html" target="_blank" rel="noopener">The Gandhi Photograph You Carry In Your Wallet: Who Actually Took It And How Did It End Up On Indian Currency Notes?</a> <small>· News18 India · 4h ago</small></li><li><a href="https://www.news18.com/india/news-this-week-sept-28-oct-2-smit-machchhar-flydubai-drishyam-3-asian-games-update-10364418.html" target="_blank" rel="noopener">News This Week (Sept 28-Oct 2): Pilot Smit Machchhar's Heroic Act, Drishyam 3 &amp; More</a> <small>· News18 India · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/sc-says-state-can-set-national-song-but-cannot-impose-conscientious-objectors-to-penal-action/article71494664.ece" target="_blank" rel="noopener">Supreme Court says state can set National Song, but cannot impose conscientious objectors to penal action</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/plea-in-sc-terms-six-stanza-vande-mataram-a-divisive-religious-war-song-a-step-towards-theocracy/article71536679.ece" target="_blank" rel="noopener">Plea in SC terms six-stanza Vande Mataram a ‘divisive religious war song’, a step towards ‘theocracy’</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/tamil-nadu/what-is-the-gem-granites-veeramani-pocso-act-case-all-about-explained/article71536641.ece" target="_blank" rel="noopener">What is the ‘Gem Granites’ Veeramani POCSO Act case all about? | Explained</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.indiatoday.in/india/video/cjp-shivaji-park-protest-vishal-dadlani-joins-in-youth-rally-on-gandhi-jayanti-ytvd-3008245-2026-10-02?utm_source=rss" target="_blank" rel="noopener">CJP Shivaji Park Protest, Vishal Dadlani Joins In, Youth Rally on Gandhi Jayanti</a> <small>· India Today · 4h ago</small></li><li><a href="https://www.indiatoday.in/india/video/protest-face-off-at-mumbai-shivaji-park-over-demand-for-cec-removal-ytvd-3008242-2026-10-02?utm_source=rss" target="_blank" rel="noopener">Protest Face-off at Mumbai Shivaji Park Over Demand for CEC Removal</a> <small>· India Today · 4h ago</small></li><li><a href="https://www.indiatoday.in/india/video/protests-against-cec-gyanesh-kumar-in-delhi-and-mumbai-cjp-demands-resignation-ytvd-3008240-2026-10-02?utm_source=rss" target="_blank" rel="noopener">Protests Against CEC Gyanesh Kumar in Delhi and Mumbai; CJP Demands Resignation</a> <small>· India Today · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/tamil-nadu/booth-less-toll-fee-collection-at-tamil-nadus-paranur-how-does-the-multi-lane-free-flow-system-work/article71536523.ece" target="_blank" rel="noopener">Booth-less toll fee collection at Tamil Nadu’s Paranur: how does the multi-lane free flow system work?</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/csir-ccmb-develops-india-specific-tool-to-predict-sickle-cell-severity/article71536615.ece" target="_blank" rel="noopener">CSIR-CCMB develops India-specific tool to predict Sickle Cell severity</a> <small>· The Hindu · 4h ago</small></li><li><a href="https://www.thehindu.com/news/national/uttar-pradesh/bsp-is-my-family-mayawatis-nephew-akash-anand-seeks-another-chance-after-expulsion/article71536904.ece" target="_blank" rel="noopener">BSP is my family: Mayawati's nephew Akash Anand seeks another chance after expulsion</a> <small>· The Hindu · 4h ago</small></li></ul></main>
+      <h2 class="sec">More from the wire</h2><ul class="brief"><li><a href="https://www.thehindu.com/news/national/uttar-pradesh/samajwadi-party-names-candidates-for-rajya-sabha-polls-in-up/article71527003.ece" target="_blank" rel="noopener">Akhilesh fields senior Reliance honcho for Rajya Sabha poll</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.news18.com/india/the-gandhi-photograph-you-carry-in-your-wallet-who-actually-took-it-and-how-did-it-end-up-on-indian-currency-notes-ws-lrt-10364750.html" target="_blank" rel="noopener">The Gandhi Photograph You Carry In Your Wallet: Who Actually Took It And How Did It End Up On Indian Currency Notes?</a> <small>· News18 India · 7h ago</small></li><li><a href="https://www.news18.com/india/news-this-week-sept-28-oct-2-smit-machchhar-flydubai-drishyam-3-asian-games-update-10364418.html" target="_blank" rel="noopener">News This Week (Sept 28-Oct 2): Pilot Smit Machchhar's Heroic Act, Drishyam 3 &amp; More</a> <small>· News18 India · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/sc-says-state-can-set-national-song-but-cannot-impose-conscientious-objectors-to-penal-action/article71494664.ece" target="_blank" rel="noopener">Supreme Court says state can set National Song, but cannot impose conscientious objectors to penal action</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/plea-in-sc-terms-six-stanza-vande-mataram-a-divisive-religious-war-song-a-step-towards-theocracy/article71536679.ece" target="_blank" rel="noopener">Plea in SC terms six-stanza Vande Mataram a ‘divisive religious war song’, a step towards ‘theocracy’</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/tamil-nadu/what-is-the-gem-granites-veeramani-pocso-act-case-all-about-explained/article71536641.ece" target="_blank" rel="noopener">What is the ‘Gem Granites’ Veeramani POCSO Act case all about? | Explained</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.indiatoday.in/india/video/cjp-shivaji-park-protest-vishal-dadlani-joins-in-youth-rally-on-gandhi-jayanti-ytvd-3008245-2026-10-02?utm_source=rss" target="_blank" rel="noopener">CJP Shivaji Park Protest, Vishal Dadlani Joins In, Youth Rally on Gandhi Jayanti</a> <small>· India Today · 7h ago</small></li><li><a href="https://www.indiatoday.in/india/video/protest-face-off-at-mumbai-shivaji-park-over-demand-for-cec-removal-ytvd-3008242-2026-10-02?utm_source=rss" target="_blank" rel="noopener">Protest Face-off at Mumbai Shivaji Park Over Demand for CEC Removal</a> <small>· India Today · 7h ago</small></li><li><a href="https://www.indiatoday.in/india/video/protests-against-cec-gyanesh-kumar-in-delhi-and-mumbai-cjp-demands-resignation-ytvd-3008240-2026-10-02?utm_source=rss" target="_blank" rel="noopener">Protests Against CEC Gyanesh Kumar in Delhi and Mumbai; CJP Demands Resignation</a> <small>· India Today · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/tamil-nadu/booth-less-toll-fee-collection-at-tamil-nadus-paranur-how-does-the-multi-lane-free-flow-system-work/article71536523.ece" target="_blank" rel="noopener">Booth-less toll fee collection at Tamil Nadu’s Paranur: how does the multi-lane free flow system work?</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/csir-ccmb-develops-india-specific-tool-to-predict-sickle-cell-severity/article71536615.ece" target="_blank" rel="noopener">CSIR-CCMB develops India-specific tool to predict Sickle Cell severity</a> <small>· The Hindu · 7h ago</small></li><li><a href="https://www.thehindu.com/news/national/uttar-pradesh/bsp-is-my-family-mayawatis-nephew-akash-anand-seeks-another-chance-after-expulsion/article71536904.ece" target="_blank" rel="noopener">BSP is my family: Mayawati's nephew Akash Anand seeks another chance after expulsion</a> <small>· The Hindu · 7h ago</small></li></ul></main>
 <footer>© 2026 The Daily Prompt · BharatDN · every article is AI-generated and fact-gated against its source · <a href="/about.html">about</a> · <a href="/ethics.html">ethics</a> · <a href="/privacy.html">privacy</a> · <a href="/contact.html">contact</a> · <a href="/stats.html">stats</a> · <a href="/feed.xml">RSS</a></footer>
 </div></body></html>

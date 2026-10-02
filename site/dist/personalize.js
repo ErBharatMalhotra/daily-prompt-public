@@ -227,7 +227,7 @@
     wireThemeToggle();
     var s = document.createElement("style");
     s.textContent =
-      ".followbtn{margin-left:8px;font-size:10px;padding:2px 7px;border-radius:8px;border:1px solid #999;background:#fff;cursor:pointer;vertical-align:middle}" +
+      ".followbtn{margin-left:8px;font-size:12px;padding:3px 8px;border-radius:8px;border:1px solid #999;background:#fff;cursor:pointer;vertical-align:middle}" +
       ".followbtn:hover{border-color:var(--accent);color:var(--accent)}" +
       ".yournews{margin-top:18px}" +
       ".yournews .sec{margin-top:0}";
