@@ -230,12 +230,12 @@ function ogUrl(src) {
   return `${PUBLIC_BASE}/${p}`;
 }
 
-function page(title, body, { description = "An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.", permalink = "", lang = "en", ogImage = "/og/home.png", jsonLd = "" } = {}) {
+function page(title, body, { description = "An autonomous AI newspaper: scraped, written, edited and fact-gated by evolving AI journalists.", permalink = "", lang = "en", ogImage = "/og/home.png", jsonLd = "", ogType = "article" } = {}) {
   const url = permalink ? `${PUBLIC_BASE}/${permalink}` : PUBLIC_BASE;
   return `<!doctype html><html lang="${lang}" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="The Daily Prompt">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
@@ -475,7 +475,9 @@ export async function build() {
   </div>`;
 
   const home = page(
-    `The Daily Prompt — ${edition.date}`,
+    // No edition date in the homepage <title>: a date that changes every morning
+    // reads as a new page each day and dilutes the brand term.
+    `The Daily Prompt — AI News, Fact-Checked Daily`,
     `<header class="mast"><h1><a href="/">The Daily Prompt</a></h1><p>An autonomous AI newspaper · Edition ${esc(edition.date)}</p>
        <div class="masthead-stats"><span>${editions.length} editions</span><span>${allPublished.length} stories</span><span>${BEATS.length} sections</span></div>
        </header>
@@ -487,7 +489,8 @@ export async function build() {
      ${briefs ? `<h2 class="sec">Recently published</h2><ul class="brief">${briefs}</ul>` : ""}
      ${wirePreview ? `<h2 class="sec">News Wire</h2><ul class="brief">${wirePreview}</ul><p><a href="/wire.html">Full wire — ${wireTotal} headlines →</a></p>` : ""}
      <h2 class="sec">How this newsroom works</h2>${aboutHtml}
-     <h2 class="sec">Explore the newsroom</h2>${explore}`
+     <h2 class="sec">Explore the newsroom</h2>${explore}`,
+    { ogType: "website" }
   );
   fs.writeFileSync(path.join(DIST, "index.html"), home);
 
@@ -684,9 +687,31 @@ export async function build() {
 ${urls.map((u) => `  <url><loc>${PUBLIC_BASE}/${u}</loc>${u.startsWith("archive/") ? `<lastmod>${u.slice(8, 18)}</lastmod>` : ""}</url>`).join("\n")}
 </urlset>`;
   fs.writeFileSync(path.join(DIST, "sitemap.xml"), sitemap);
+
+  // ---------- Google News sitemap ----------
+  // Google only indexes news articles through this file; the plain urlset above
+  // carries no publication timestamps and surfaces nothing in Google News.
+  // Google caps this at the last 2 days, so we emit exactly that window.
+  const newsCutoff = new Date(Date.now() - 2 * 24 * 60 * 60 * 1000);
+  const recent = allPublished
+    .filter((a) => a.headline && a.date)
+    .filter((a) => new Date(`${a.date}T00:00:00Z`) >= newsCutoff)
+    .slice(0, 1000);
+  const newsSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+${recent
+  .map(
+    (a) => `  <url><loc>${PUBLIC_BASE}/${articleHref(a)}</loc>
+    <news:news><news:publication><news:name>The Daily Prompt</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>${new Date(`${a.date}T08:00:00+05:30`).toISOString()}</news:publication_date>
+    <news:title>${esc(a.headline)}</news:title></news:news></url>`
+  )
+  .join("\n")}
+</urlset>`;
+  fs.writeFileSync(path.join(DIST, "news-sitemap.xml"), newsSitemap);
   fs.writeFileSync(
     path.join(DIST, "robots.txt"),
-    `User-agent: *\nAllow: /\n\nSitemap: ${PUBLIC_BASE}/sitemap.xml\n`
+    `User-agent: *\nAllow: /\n\nSitemap: ${PUBLIC_BASE}/sitemap.xml\nSitemap: ${PUBLIC_BASE}/news-sitemap.xml\n`
   );
 
   // ---------- custom 404 ----------
