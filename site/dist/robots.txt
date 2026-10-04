@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://news.bharatdn.com/sitemap.xml
+Sitemap: https://news.bharatdn.com/news-sitemap.xml
