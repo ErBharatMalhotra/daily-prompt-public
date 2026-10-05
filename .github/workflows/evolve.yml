@@ -50,6 +50,8 @@ jobs:
 
       - name: Rebuild site (leaderboard reflects new genome versions)
         working-directory: core
+        env:
+          BUNDLES_KEEP_FILES: "0"   # Phase 2: packed days drop their originals
         run: node site/build.js
 
       - name: Commit evolution report + genomes to core
