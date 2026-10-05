@@ -15,6 +15,143 @@
  * intake) is closed too — sending to existing subscribers still works, and
  * existing devices can still unsubscribe/clean up.
  */
+/* ---------- Daily Edition bundles ----------
+ * Old days ship as two files each (/bundles/<date>.<hash>.pages + .media)
+ * instead of three files per article — the hedge for the Cloudflare Pages
+ * 20,000-file cap. Nothing below changes normal behaviour: assets are served
+ * first and bundles are consulted only when the file is missing, or when
+ * ?bundle=1 forces the path (the pre-deletion verification switch). Any
+ * bundle problem falls through to the original 404, so this can never make a
+ * working URL worse.
+ *   GET/HEAD /article/YYYY-MM-DD/<slug>[.html]  -> .pages slice
+ *   GET/HEAD /img|og/YYYY-MM-DD/<file>          -> .media slice
+ */
+const BUNDLE_MANIFEST_TTL = 60; // seconds; month manifest rechecked every minute
+const BUNDLE_PART_TTL = 31536000; // hash-named parts are immutable
+
+function bundleCache() {
+  try {
+    return typeof caches !== "undefined" && caches.default ? caches.default : null;
+  } catch {
+    return null;
+  }
+}
+
+async function bundleAsset(env, pathname, ttl) {
+  const key = new Request(`https://bundle.internal${pathname}`, { method: "GET" });
+  const cache = bundleCache();
+  if (cache) {
+    const hit = await cache.match(key);
+    if (hit) return hit;
+  }
+  const res = await env.ASSETS.fetch(key);
+  if (!res || !res.ok) return null;
+  const out = new Response(res.body, {
+    status: 200,
+    headers: {
+      "content-type": res.headers.get("content-type") || "application/octet-stream",
+      "cache-control": `public, max-age=${ttl}`,
+    },
+  });
+  if (cache) {
+    try {
+      await cache.put(key, out.clone());
+    } catch {}
+  }
+  return out;
+}
+
+function slicePageBytes(buf, want) {
+  // latin1 keeps char == byte, so string indices address the ArrayBuffer 1:1
+  const text = new TextDecoder("latin1").decode(buf);
+  const marker = `@@PAGE ${want}\n`;
+  const start = text.indexOf(marker);
+  if (start < 0) return null;
+  const from = start + marker.length;
+  const end = text.indexOf("\n@@END\n", from);
+  if (end < 0) return null;
+  return { bytes: buf.slice(from, end), length: end - from };
+}
+
+function sliceAssetBytes(buf, want) {
+  const u8 = new Uint8Array(buf);
+  if (u8.length < 8 || String.fromCharCode(u8[0], u8[1], u8[2], u8[3]) !== "TDP1") return null;
+  const hlen = (u8[4] | (u8[5] << 8) | (u8[6] << 16) | (u8[7] << 24)) >>> 0;
+  const hEnd = 8 + hlen;
+  if (hEnd > u8.length) return null;
+  let head;
+  try {
+    head = JSON.parse(new TextDecoder().decode(u8.subarray(8, hEnd)));
+  } catch {
+    return null;
+  }
+  const a = (head.assets || []).find((x) => x.p === want);
+  if (!a) return null;
+  const from = hEnd + a.o;
+  const to = from + a.l;
+  if (to > u8.length) return null;
+  return { bytes: buf.slice(from, to), length: a.l, type: a.t || "application/octet-stream" };
+}
+
+async function fromBundle(request, env, url, forced) {
+  if (request.method !== "GET" && request.method !== "HEAD") return null;
+  const m = url.pathname.match(/^\/(article|img|og)\/(\d{4}-\d{2}-\d{2})\/(.+)$/);
+  if (!m) return null;
+  const kind = m[1] === "article" ? "pages" : "media";
+  let name = m[3];
+  if (name.endsWith("/")) name = name.slice(0, -1);
+  if (kind === "pages" && !name.endsWith(".html")) name += ".html";
+  if (kind === "media" && name.includes("/")) return null;
+  const date = m[2];
+  const manRes = await bundleAsset(env, `/bundles/m-${date.slice(0, 7)}.json`, BUNDLE_MANIFEST_TTL);
+  if (!manRes) return null;
+  let man;
+  try {
+    man = await manRes.json();
+  } catch {
+    return null;
+  }
+  const day = man && man.days && man.days[date];
+  if (!day) return null;
+  const parts = kind === "pages" ? day.pages : day.media;
+  if (!Array.isArray(parts) || !parts.length) return null;
+  const want = `${m[1]}/${date}/${name}`;
+  const extra = forced ? { "x-robots-tag": "noindex" } : {}; // only the debug path is non-canonical
+  for (const part of parts) {
+    const res = await bundleAsset(env, `/bundles/${part}`, BUNDLE_PART_TTL);
+    if (!res) continue;
+    const buf = await res.arrayBuffer();
+    if (kind === "pages") {
+      const hit = slicePageBytes(buf, want);
+      if (hit) {
+        return new Response(request.method === "HEAD" ? null : hit.bytes, {
+          status: 200,
+          headers: {
+            "content-type": "text/html; charset=utf-8",
+            "cache-control": "public, max-age=600",
+            "content-length": String(hit.length),
+            ...extra,
+          },
+        });
+      }
+    } else {
+      const hit = sliceAssetBytes(buf, want);
+      if (hit) {
+        return new Response(request.method === "HEAD" ? null : hit.bytes, {
+          status: 200,
+          headers: {
+            "content-type": hit.type,
+            "cache-control": "public, max-age=86400, immutable",
+            "content-length": String(hit.length),
+            ...extra,
+          },
+        });
+      }
+    }
+  }
+  return null;
+}
+
 const JSON_HEADERS = { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" };
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: JSON_HEADERS });
 
@@ -148,6 +285,23 @@ export default {
     }
     // Advanced-mode Pages: static assets come from the ASSETS binding
     // (plain fetch() does NOT reach the asset server here).
-    return env.ASSETS.fetch(request);
+    const forced = url.searchParams.get("bundle") === "1";
+    if (forced) {
+      // Verification path: serve the bundle slice even while originals exist.
+      try {
+        const hit = await fromBundle(request, env, url, true);
+        if (hit) return hit;
+      } catch {}
+      return env.ASSETS.fetch(request);
+    }
+    const res = await env.ASSETS.fetch(request);
+    if (res.status !== 404) return res;
+    if (request.method === "GET" || request.method === "HEAD") {
+      try {
+        const hit = await fromBundle(request, env, url, false);
+        if (hit) return hit;
+      } catch {}
+    }
+    return res;
   },
 };

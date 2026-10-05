@@ -9,3 +9,10 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000
+
+# Daily Edition bundles (2026-10-05): raw bundle files are plumbing — the
+# worker serves their contents at the normal article/media URLs, so the files
+# themselves must never be indexed. 60s cache keeps a fresh manifest visible.
+/bundles/*
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=60
