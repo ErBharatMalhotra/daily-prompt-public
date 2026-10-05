@@ -17,17 +17,44 @@
  */
 /* ---------- Daily Edition bundles ----------
  * Old days ship as two files each (/bundles/<date>.<hash>.pages + .media)
- * instead of three files per article — the hedge for the Cloudflare Pages
- * 20,000-file cap. Nothing below changes normal behaviour: assets are served
- * first and bundles are consulted only when the file is missing, or when
- * ?bundle=1 forces the path (the pre-deletion verification switch). Any
- * bundle problem falls through to the original 404, so this can never make a
+ * instead of three files per article - the hedge for the Cloudflare Pages
+ * 20,000-file cap. Assets are served first and bundles are consulted only
+ * when the file is missing, or when ?bundle=1 forces the path (the
+ * verification switch; forced reads stay byte-pure and noindex). Any bundle
+ * problem falls through to the original 404, so this can never make a
  * working URL worse.
+ * Phase 2 (BUNDLES_KEEP_FILES=0): packed days lose their originals, so old
+ * URLs are served from these slices. Cloudflare injects its Web Analytics
+ * beacon into asset-served HTML but not into worker-built responses, so the
+ * worker appends the same snippet to canonical (non-forced) page reads.
  *   GET/HEAD /article/YYYY-MM-DD/<slug>[.html]  -> .pages slice
  *   GET/HEAD /img|og/YYYY-MM-DD/<file>          -> .media slice
  */
 const BUNDLE_MANIFEST_TTL = 60; // seconds; month manifest rechecked every minute
 const BUNDLE_PART_TTL = 31536000; // hash-named parts are immutable
+
+// Cloudflare Pages injects this exact 214-byte snippet into HTML served from
+// static assets, but not into worker-built responses. Once packed days lose
+// their originals (BUNDLES_KEEP_FILES=0) the worker is the only server left,
+// so it appends the same snippet; otherwise old-day pageviews would silently
+// stop counting. The token is public (it ships in every asset-served page);
+// if it ever changes, re-derive this string from any live page body.
+const CF_BEACON_TOKEN = "63dedef04275425fb2df17087a59bae0";
+export const PAGES_ANALYTICS_SNIPPET = `<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "${CF_BEACON_TOKEN}"}'></script><!-- Cloudflare Pages Analytics -->`;
+const PAGES_ANALYTICS_BYTES = new TextEncoder().encode(PAGES_ANALYTICS_SNIPPET);
+
+function pageWithAnalytics(buf) {
+  // latin1 keeps char == byte, so string indices address the ArrayBuffer 1:1.
+  const text = new TextDecoder("latin1").decode(buf);
+  if (text.includes("cloudflareinsights.com/beacon.min.js")) return buf; // never inject twice
+  const at = text.lastIndexOf("</body>");
+  if (at < 0) return buf; // unrecognised page shape: ship it untouched
+  const out = new Uint8Array(buf.byteLength + PAGES_ANALYTICS_BYTES.length);
+  out.set(new Uint8Array(buf.slice(0, at)), 0);
+  out.set(PAGES_ANALYTICS_BYTES, at);
+  out.set(new Uint8Array(buf.slice(at)), at + PAGES_ANALYTICS_BYTES.length);
+  return out;
+}
 
 function bundleCache() {
   try {
@@ -124,12 +151,15 @@ async function fromBundle(request, env, url, forced) {
     if (kind === "pages") {
       const hit = slicePageBytes(buf, want);
       if (hit) {
-        return new Response(request.method === "HEAD" ? null : hit.bytes, {
+        // Forced reads stay byte-pure (that is the verification contract);
+        // canonical reads carry the same beacon the edge injects.
+        const body = forced ? hit.bytes : pageWithAnalytics(hit.bytes);
+        return new Response(request.method === "HEAD" ? null : body, {
           status: 200,
           headers: {
             "content-type": "text/html; charset=utf-8",
             "cache-control": "public, max-age=600",
-            "content-length": String(hit.length),
+            "content-length": String(body.byteLength),
             ...extra,
           },
         });
