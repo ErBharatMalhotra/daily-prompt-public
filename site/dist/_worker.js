@@ -15,6 +15,32 @@
  * intake) is closed too — sending to existing subscribers still works, and
  * existing devices can still unsubscribe/clean up.
  */
+let retiredPending = null;
+
+// Retired article paths, published by site/build.js as /retired-paths.json and read
+// from the asset server on first use (cached for the isolate). A static import would
+// resolve next to this file, which breaks importing the worker from the repo root —
+// the sanity suite does that. A retired URL answers 410 Gone so crawlers drop it
+// knowing it was on purpose; Cloudflare Pages cannot express 410 through _redirects,
+// so the platform default would be a plain 404.
+const normalisePath = (p) => {
+  let s = String(p || "");
+  while (s.endsWith("/")) s = s.slice(0, -1);
+  return s;
+};
+function retiredPaths(env, url) {
+  if (!retiredPending) {
+    // A Request with an absolute URL, same as bundleAsset below: that is the shape
+    // every ASSETS stub in the test suite understands.
+    const manifestReq = new Request(new URL("/retired-paths.json", url.origin), { method: "GET" });
+    retiredPending = env.ASSETS.fetch(manifestReq)
+      .then((r) => (r.ok ? r.json() : []))
+      .then((list) => new Set((Array.isArray(list) ? list : []).map(normalisePath)))
+      .catch(() => new Set());
+  }
+  return retiredPending;
+}
+
 /* ---------- Daily Edition bundles ----------
  * Old days ship as two files each (/bundles/<date>.<hash>.pages + .media)
  * instead of three files per article - the hedge for the Cloudflare Pages
@@ -312,6 +338,18 @@ export default {
       } catch (err) {
         return json({ ok: false, error: "internal" }, 500);
       }
+    }
+    // Retired articles: 410 before anything else is consulted. This has to sit
+    // ahead of the bundle lookup: a packed day can still hold the page after the
+    // original file is gone, and a retired URL must not be reachable by any route.
+    // Both URL shapes match - sitemaps use /article/<date>/<slug>, links add .html.
+    let bare = url.pathname;
+    while (bare.endsWith("/")) bare = bare.slice(0, -1);
+    if (bare.endsWith(".html")) bare = bare.slice(0, -5);
+    const RETIRED = await retiredPaths(env, url);
+    if (RETIRED.has(bare)) {
+      const gone = await env.ASSETS.fetch(new Request(new URL("/404.html", url.origin)));
+      return new Response(gone.body, { status: 410, headers: gone.headers });
     }
     // Advanced-mode Pages: static assets come from the ASSETS binding
     // (plain fetch() does NOT reach the asset server here).
