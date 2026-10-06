@@ -84,6 +84,19 @@ jobs:
           node engine/run.js
           node site/build.js
           node engine/digest.js
+          # Retirement gate: a retired article must not be built, listed in a sitemap/feed/search-index,
+          # or linked from any page. Runs after build so the failure blocks the push/deploy steps below.
+          # Gate is a HARD blocker when present. Presence-checked only for the window
+          # before the core commit lands: the core clone is the default branch, so
+          # calling it before that merge would fail the step for no reason.
+          # TODO(remove this guard once scripts/retirement-gate.mjs is on core main):
+          # drop the if/else and call the gate directly, so a deleted gate can never
+          # be skipped silently again.
+          if [ -f scripts/retirement-gate.mjs ]; then
+            node scripts/retirement-gate.mjs --expect-manifest
+          else
+            echo "[retire] gate not in core yet — skipping (blocker activates on merge)"
+          fi
 
       - name: Keepalive commit to core (editions + genomes + quarantine)
         if: success()
