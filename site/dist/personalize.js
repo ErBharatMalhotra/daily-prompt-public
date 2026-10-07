@@ -80,13 +80,13 @@
     wrap.className = "yournews";
     var html = '<h2 class="sec">Your news</h2><div class="cols">';
     followed.forEach(function (beat) {
-      var col = document.querySelector('.col h3 a[href="/category/' + beat + '.html"]');
+      var col = document.querySelector('.col h3 a[href="/category/' + beat + '"]');
       var colBox = col && col.closest(".col");
       if (colBox) {
         html += '<div class="col" data-beat="' + beat + '">' + colBox.innerHTML + "</div>";
       } else {
         // front page without that section (no stories yet) — link only
-        html += '<div class="col" data-beat="' + beat + '"><h3><a href="/category/' + beat + '.html">' + beat + "</a></h3><ul><li><small>Section waiting for stories…</small></li></ul></div>";
+        html += '<div class="col" data-beat="' + beat + '"><h3><a href="/category/' + beat + '">' + beat + "</a></h3><ul><li><small>Section waiting for stories…</small></li></ul></div>";
       }
     });
     html += "</div>";
