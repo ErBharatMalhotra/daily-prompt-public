@@ -4,7 +4,11 @@ on:
   push:
     branches: [main]
     paths-ignore:
-      - "site/dist/**"
+      # site/dist is deliberately NOT ignored. Every push this repo receives is
+      # site/dist from an edition, and skipping that meant CI quietly stopped
+      # (last real run 6 October) while the private core's own workflow carried
+      # the sanity gate and kept a workflow running in a private repo. That one
+      # is gone now; each site push tests the freshly cloned core instead.
       - "**.md"
   pull_request:
   workflow_dispatch: {}
