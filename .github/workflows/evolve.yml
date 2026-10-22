@@ -30,13 +30,11 @@ jobs:
       - name: Install Pillow (OG card generator)
         run: pip install --quiet pillow
 
-      - name: Clone private core
-        env:
-          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
-        run: |
-          rm -rf core
-          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
-          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+      # Header auth, not https://<token>@github.com/... — see checkout-core.
+      - name: Checkout private core
+        uses: ./.github/actions/checkout-core
+        with:
+          token: ${{ secrets.CORE_TOKEN }}
 
       - name: Run evolution (weakest journalist inherits winner habits)
         working-directory: core
@@ -56,38 +54,42 @@ jobs:
 
       - name: Commit evolution report + genomes to core
         if: success()
-        env:
-          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
         run: |
           cd core
-          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
           git config user.name "newsroom-bot"
           git config user.email "noreply@github.com"
           git add -f data/ site/dist/
           git diff --cached --quiet || git commit -m "evolve: weekly mutation $(date -u +%F) [skip ci]"
-          git push "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" HEAD:main
+          bash "$GITHUB_WORKSPACE/.github/scripts/push-retry.sh" main
 
       - name: Push rebuilt site to public repo
         if: success()
         run: |
           git config user.name "newsroom-bot"
           git config user.email "noreply@github.com"
-          git pull --rebase origin main || true
+          test -n "$(ls -A "$GITHUB_WORKSPACE/core/site/dist")" || { echo "::error::core/site/dist is empty — refusing to publish"; exit 1; }
           rm -rf site/dist
           mkdir -p site/dist
           cp -r "$GITHUB_WORKSPACE/core/site/dist/." site/dist/
-          git add site/dist
+          git add -A -- site/dist
           git diff --cached --quiet || git commit -m "site: leaderboard update $(date -u +%F)"
-          git push origin main
+          bash .github/scripts/push-retry.sh main
 
       # Cloudflare Pages is git-connected to this repo: the site push above auto-deploys.
 
       # Dead-man switch: must stay the LAST step so `if: failure()` sees any
-      # earlier step's failure and tells the owner on Telegram.
+      # earlier step's failure and tells the owner on Telegram. It must never fail
+      # on its own — a missing clone used to abort it with "working directory does
+      # not exist", so the alert never went out.
       - name: Failure alert (Telegram)
         if: failure()
-        working-directory: core
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: node engine/alert.js fail "Weekly evolution workflow failed at $(date -u +%F\ %H:%M\ UTC) — check the Actions log for the failing step."
+        run: |
+          if [ -d core ] && [ -f core/engine/alert.js ]; then
+            cd core
+            node engine/alert.js fail "Weekly evolution workflow failed at $(date -u +%F\ %H:%M\ UTC) — check the Actions log for the failing step."
+          else
+            echo "::warning::core clone missing — cannot send the Telegram failure alert from the pipeline; the red run is the signal"
+          fi

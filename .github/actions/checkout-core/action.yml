@@ -1,0 +1,57 @@
+name: Checkout private core
+description: >
+  Clone the private core repository with header-based auth.
+
+  A token embedded in the clone URL (https://<token>@github.com/owner/repo.git)
+  is dropped by git the moment GitHub answers with its 301 (repo.git -> repo/
+  trailing-slash redirect): git re-sends the request without the URL userinfo and
+  the clone dies with "fatal: could not read Username". That is exactly how the
+  scheduled runs of 2026-10-19..22 were lost — the job failed before it did any
+  work, and the same URL credential was also the only auth later pushes had.
+
+  actions/checkout authenticates with http.https://github.com/.extraheader
+  instead, which survives redirects and stays in the clone's git config, so the
+  commits these workflows push back to the core keep working without ever
+  writing the token into a URL.
+
+inputs:
+  token:
+    description: PAT with read/write access to the private core
+    required: true
+  repository:
+    description: owner/name of the private core repository
+    required: false
+    default: ErBharatMalhotra/AI-Newsroom
+  path:
+    description: Directory (relative to the workspace) to clone into
+    required: false
+    default: core
+  ref:
+    description: Branch or SHA to check out
+    required: false
+    default: main
+
+runs:
+  using: composite
+  steps:
+    - name: Clone core (header auth, redirect-safe)
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.repository }}
+        token: ${{ inputs.token }}
+        ref: ${{ inputs.ref }}
+        path: ${{ inputs.path }}
+        fetch-depth: 1
+        persist-credentials: true
+
+    # One line of proof in the log: which repo, which commit, and whether the
+    # credential landed in the clone's config (the thing pushes depend on).
+    - name: Verify core clone is pushable
+      shell: bash
+      working-directory: ${{ inputs.path }}
+      run: |
+        echo "[core] $(git remote get-url origin) @ $(git rev-parse --short HEAD)"
+        if ! git config --get http.https://github.com/.extraheader >/dev/null; then
+          echo "::error::core clone has no auth header — pushes back to core would fail"
+          exit 1
+        fi

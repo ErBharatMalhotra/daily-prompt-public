@@ -27,13 +27,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Clone private core
-        env:
-          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
-        run: |
-          rm -rf core
-          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\"')"
-          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+      # Header auth, not a token in the URL: git drops the URL credential on
+      # GitHub's 301 redirect and this job then failed before running a test.
+      - name: Checkout private core
+        uses: ./.github/actions/checkout-core
+        with:
+          token: ${{ secrets.CORE_TOKEN }}
 
       - name: Sanity suite
         working-directory: core

@@ -31,13 +31,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Clone private core
-        env:
-          CORE_TOKEN: ${{ secrets.CORE_TOKEN }}
-        run: |
-          rm -rf core
-          TOKEN="$(printf '%s' "$CORE_TOKEN" | tr -d '\r\n\t \\\"')"
-          git clone --depth 1 "https://${TOKEN}@github.com/ErBharatMalhotra/AI-Newsroom.git" core
+      # Header auth, not a token in the URL — see checkout-core.
+      - name: Checkout private core
+        uses: ./.github/actions/checkout-core
+        with:
+          token: ${{ secrets.CORE_TOKEN }}
 
       - name: Send test push
         working-directory: core
