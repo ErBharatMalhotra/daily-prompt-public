@@ -56,8 +56,8 @@ jobs:
         if: success()
         run: |
           cd core
-          git config user.name "newsroom-bot"
-          git config user.email "noreply@github.com"
+          git config user.name "Bharat Malhotra"
+          git config user.email "mr.bharatmalhotra@gmail.com"
           git add -f data/ site/dist/
           git diff --cached --quiet || git commit -m "evolve: weekly mutation $(date -u +%F) [skip ci]"
           bash "$GITHUB_WORKSPACE/.github/scripts/push-retry.sh" main
@@ -65,8 +65,8 @@ jobs:
       - name: Push rebuilt site to public repo
         if: success()
         run: |
-          git config user.name "newsroom-bot"
-          git config user.email "noreply@github.com"
+          git config user.name "Bharat Malhotra"
+          git config user.email "mr.bharatmalhotra@gmail.com"
           test -n "$(ls -A "$GITHUB_WORKSPACE/core/site/dist")" || { echo "::error::core/site/dist is empty — refusing to publish"; exit 1; }
           rm -rf site/dist
           mkdir -p site/dist
